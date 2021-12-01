@@ -186,8 +186,9 @@ const MainPlot = (props) => {
 		})
     update_init();
 
-    //console.log("Main");
-    //console.log(tableData_o.tableData);
+    console.log("Main");
+    console.log(tableData_o.tableData);
+
   }, []);
 
   var cb_f;
