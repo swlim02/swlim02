@@ -16,6 +16,7 @@ function App() {
   const margin = 35;
   const pointSize = 3;
   const maxPointSize = 10;
+  const stage = [[40,40,20],[40,30,30],[30,35,35],[20,40,40]];
 
   return (
     <div className="App">
@@ -35,6 +36,7 @@ function App() {
           nominal={nominal}
           ordinal={ordinal}
           quantitative={quantitative}
+          stage={stage}
         />
       </div>
     </div>

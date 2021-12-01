@@ -185,6 +185,12 @@ const MainPlot = (props) => {
       d["imdb_votes"] = parseInt(d["imdb_votes"].replace(new RegExp(",", 'g'), ""));
 		})
     update_init();
+<<<<<<< HEAD
+=======
+
+    console.log("Main");
+    console.log(tableData_o.tableData);
+>>>>>>> 6429045613a41a4258aab19959b5917d052d06c7
   }, []);
 
   var cb_f;
@@ -211,9 +217,9 @@ const MainPlot = (props) => {
         }
   		});
   	}
-    console.log("Main2");
-    console.log(tableData_o.tableData);
-    console.log(cb_f);
+    //console.log("Main2");
+    //console.log(tableData_o.tableData);
+    //console.log(cb_f);
     cb_f(tableData_o.tableData);
   }
 //  const [selectData, setSelectData] = useState(tableData);
@@ -231,6 +237,7 @@ const MainPlot = (props) => {
           width={controlWidth}
           selectedOptions={selectedOptions}
           update_f={update}
+          stage={props.stage}
         />
       </div>
       <div class="splotContainer02" z-index="0" style={{
