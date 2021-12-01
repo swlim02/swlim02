@@ -5,15 +5,16 @@ import TableView from './TableView';
 import MapContainer from "./MapContainer"
 
 var selectedOptions = new Object();
-selectedOptions.selectedOption_green = "imdb_rating";
-selectedOptions.selectedOption_yellow = "us_gross";
-selectedOptions.selectedOption_Color = "none"; //none
-selectedOptions.selectedOption_Opacity = "none"; //none
-selectedOptions.selectedOption_Size = "none"; //none
-
 var tableData_o = new Object();
 
 const MainPlot = (props) => {
+  var cb_f;
+  function callBack(f) {
+    cb_f = f;
+  }
+
+  selectedOptions.selectedOption_green = props.stage[0][0];
+  selectedOptions.selectedOption_yellow = props.stage[0][0]+props.stage[0][1];
   tableData_o.tableData = [];
   const splotSvg = useRef(null);
 
@@ -82,96 +83,9 @@ const MainPlot = (props) => {
       .call(brush);
   }
 
-  function update(){
-    d3.selectAll(".selected").classed("selected", false);
-    tableData_o.tableData = [];
-    cb_f(tableData_o.tableData);
-
-    d3.select(".selection").remove();
-    d3.select(splotSvg.current)
-      .append('g')
-      .attr("class", "selection")
-      .attr('transform', `translate(${props.margin}, ${props.margin})`)
-      .call(brush);
-
-    xScale = d3.scaleLinear()
-      .domain([
-      d3.min(props.data, d => d[selectedOptions.selectedOption_x]),
-      d3.max(props.data, d => d[selectedOptions.selectedOption_x])
-      ])
-      .range([0, props.width]);
-
-    yScale = d3.scaleLinear()
-      .domain([
-      d3.min(props.data, d => d[selectedOptions.selectedOption_y]),
-      d3.max(props.data, d => d[selectedOptions.selectedOption_y])
-      ])
-      .range([props.height, 0]);
-
-    let opacityScale = d3.scaleLinear()
-      .domain([
-      d3.min(props.data, d => d[selectedOptions.selectedOption_Opacity]),
-      d3.max(props.data, d => d[selectedOptions.selectedOption_Opacity])
-      ])
-      .range([0, 1]);
-    let sizeScale = d3.scaleLinear()
-      .domain([
-      d3.min(props.data, d => d[selectedOptions.selectedOption_Size]),
-      d3.max(props.data, d => d[selectedOptions.selectedOption_Size])
-      ])
-      .range([props.pointSize, props.maxPointSize]);
-
-    let nominalSet = new Set();
-    props.data.forEach(d => {
-       nominalSet.add(d[selectedOptions.selectedOption_Color]);
-    })
-
-    let colorScale = d3.scaleOrdinal()
-      .domain(nominalSet)
-      .range(d3.schemeCategory10);
-
-    const xAxis = d3.axisBottom(xScale);
-    const yAxis = d3.axisLeft(yScale);
-
-//    d3.selectAll(".chartGroup").remove();
-
-    d3.selectAll(".xAxis")
-      .transition()
-      .duration(1000)
-      .attr('transform', `translate(${props.margin}, ${props.height + props.margin})`)
-      .call(xAxis);
-
-    d3.selectAll(".yAxis")
-      .transition()
-      .duration(1000)
-      .attr('transform', `translate(${props.margin}, ${props.margin})`)
-      .call(yAxis);
-
-    d3.selectAll(".chartGroup")
-      .selectAll('circle')
-      .data(props.data)
-      .join('circle')
-      .transition()
-      .duration(1000)
-//      .enter()
-//      .append('circle')
-//      .join('circle')
-//      .attr('transform', `translate(${props.margin}, ${props.margin})`)
-      .attr('cx', d => xScale(d[selectedOptions.selectedOption_x]))
-      .attr('cy', d => yScale(d[selectedOptions.selectedOption_y]))
-      .attr('fill', function(d) {
-        if(selectedOptions.selectedOption_Color === "none") { return "Black"}
-        else { return colorScale(d[selectedOptions.selectedOption_Color])};
-      })
-      .style("fill-opacity", function(d) {
-        if(selectedOptions.selectedOption_Opacity === "none") { return 1}
-        else { return opacityScale(d[selectedOptions.selectedOption_Opacity])};
-      })
-      .attr('r', function(d) {
-        if(selectedOptions.selectedOption_Size === "none") { return props.pointSize}
-        else { return sizeScale(d[selectedOptions.selectedOption_Size])};
-      });
-
+  function update_new(){
+    console.log("update_new");
+    cb_f();
   }
 
   useEffect(() => {
@@ -190,11 +104,6 @@ const MainPlot = (props) => {
     console.log(tableData_o.tableData);
 
   }, []);
-
-  var cb_f;
-  function callBack(f) {
-    cb_f = f;
-  }
 
   function brushed({selection}) {
     tableData_o.tableData = []; //clear
@@ -234,7 +143,7 @@ const MainPlot = (props) => {
           height={controlHeight}
           width={controlWidth}
           selectedOptions={selectedOptions}
-          update_f={update}
+          update_f={update_new}
           stage={props.stage}
         />
       </div>
@@ -244,6 +153,7 @@ const MainPlot = (props) => {
       }}>
         <MapContainer
         selectedOptions={selectedOptions}
+        callBack={callBack}
         />
       </div>
     </div>

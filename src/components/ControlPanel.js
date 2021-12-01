@@ -14,19 +14,23 @@ const ControlPanel = (props) => {
   const [curStage, setCurStage] = useState('1 단계')
   console.log("after");
   function handleChange_x(evt) {
-    
-    setCurStage(evt.value);
-    //props.update_f();
+    if (evt.value === curStage) {
+      //nothing
+    } else {
+      setCurStage(evt.value);
+      props.update_f();
+      console.log("update_f");
+    }
   }
 
   const densityBarSvgRef = useRef();
-  
+
   //props.selectedOptions.selectedOption_x = '1 단계';
-  
+
   useEffect(() => {
 
     const densityBar = d3.select(densityBarSvgRef.current);
-    
+
     densityBar.selectAll(".line1").remove();
     densityBar.selectAll(".line2").remove();
     densityBar.selectAll(".line3").remove();
@@ -69,7 +73,7 @@ const ControlPanel = (props) => {
               .attr('stroke-width', 18)
               .attr('stroke-linecap','round');
           //console.log(props.stage[stageNum][0]*3);
-    
+
     densityBar.selectAll(".line3")
               .data(props.stage)
               .enter()
@@ -127,7 +131,7 @@ const ControlPanel = (props) => {
                 .attr("font-family", "sans-serif")
                 .attr("font-size", "12px")
                 .attr('fill','black');
-    
+
     densityBar.selectAll(".text3")
                 .data(props.stage)
                 .enter()
@@ -172,9 +176,7 @@ const ControlPanel = (props) => {
 
     props.selectedOptions.selectedOption_green = props.stage[stageNum][0];
     props.selectedOptions.selectedOption_yellow = props.stage[stageNum][0]+props.stage[stageNum][1];
-  }) 
-
-
+  })
 
   return (
     <div class="selectionPanel">

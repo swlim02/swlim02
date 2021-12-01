@@ -5,9 +5,8 @@ import RoomOccu from "./RoomOccu"
 let bdName = " ";
 
 const FloorOccu = (props) => {
-	var cb_f;
 	function callBack(f) {
-		cb_f = f;
+		props.floor_cb_f.f = f;
 	}
 	const selectedOptions = props.selectedOptions;
 	var current_data = null;
@@ -19,28 +18,24 @@ const FloorOccu = (props) => {
 	width = 445 - margin.left - margin.right,
 	height = 445 - margin.top - margin.bottom;
 	props.callBack(setSelectData);
-	//console.log("FloorOccu");
-	//console.log(selectData);
+	console.log("FloorOccu1");
 
+	let colorScale = d3.scaleThreshold()
+                    .domain([props.selectedOptions.selectedOption_green,props.selectedOptions.selectedOption_yellow])
+                    .range(['green','yellow','red']);
 
-
-	useEffect(() => {
-
+//	useEffect(() => {
+		console.log("FloorOccu2");
 		if(selectData === null)
 		{
 			//nothing
 		}else{
 				current_data = null;
-				cb_f(current_data);
+				props.floor_cb_f.f(current_data);
 //				d3.select(mainBarSvg.current).remove();
 				d3.selectAll(".selection99").remove();
 
 				console.log(props.selectedOptions.selectedOption_green);
-
-				const colorScale = d3.scaleThreshold()
-                                .domain([props.selectedOptions.selectedOption_green,props.selectedOptions.selectedOption_yellow])
-                                .range(['green','yellow','red']);
-
 
         const svg = d3.select(mainBarSvg.current)
   //                      .append("svg")
@@ -118,47 +113,26 @@ const FloorOccu = (props) => {
             .attr("font-size", "12px")
             .style("fill", "black");
 
-						svg.selectAll('rect')
-								.on('click', function(d, i) {
-									switch (selectData.bdNumber) {
-										case "33":
-										current_data = props.roomData[i.floor-1];
-										break;
-										case "301":
-										current_data = props.roomData2[i.floor-1];
-										break;
-										case "302":
-										current_data = props.roomData3[i.floor-1];
-										break;
-										default:
-									}
-									cb_f(current_data);
-								}
-							);
-
-/*
-						svg.selectAll('rect')
-								.on('click', clickRect);
-
-								function clickRect() {
-									switch (selectData.bdNumber) {
-										case "33":
-										current_data = props.roomData[0];
-										break;
-										case "301":
-										current_data = props.roomData2[0];
-										break;
-										case "302":
-										current_data = props.roomData3[0];
-										break;
-										default:
-									}
-									console.log(current_data);
-									cb_f(current_data);
-								}
-*/
+				svg.selectAll('rect')
+						.on('click', function(d, i) {
+							switch (selectData.bdNumber) {
+								case "33":
+								current_data = props.roomData[i.floor-1];
+								break;
+								case "301":
+								current_data = props.roomData2[i.floor-1];
+								break;
+								case "302":
+								current_data = props.roomData3[i.floor-1];
+								break;
+								default:
+							}
+							props.floor_cb_f.f(current_data);
+						}
+					);
 		}
-	})
+//	},[selectData]);
+
 	return (
 		<div class="splotContainerx" style={{
 			width: '1000px',
@@ -188,89 +162,3 @@ const FloorOccu = (props) => {
 };
 
 export default FloorOccu;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React from 'react';
-// import { HorizontalBar } from 'react-chartjs-2';
-
-// const FloorOccu = (props) => {
-
-//     const data = {
-//     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-//     datasets: [
-//       {
-//         // label: selectData.bdName+'동',
-//         data: [12, 19, 3, 5, 2, 3],
-//         backgroundColor: [
-//           'rgba(255, 99, 132, 0.2)',
-//           'rgba(54, 162, 235, 0.2)',
-//           'rgba(255, 206, 86, 0.2)',
-//           'rgba(75, 192, 192, 0.2)',
-//           'rgba(153, 102, 255, 0.2)',
-//           'rgba(255, 159, 64, 0.2)',
-//         ],
-//         borderColor: [
-//           'rgba(255, 99, 132, 1)',
-//           'rgba(54, 162, 235, 1)',
-//           'rgba(255, 206, 86, 1)',
-//           'rgba(75, 192, 192, 1)',
-//           'rgba(153, 102, 255, 1)',
-//           'rgba(255, 159, 64, 1)',
-//         ],
-//         borderWidth: 1,
-//       },
-//     ],
-//     };
-
-//     const options = {
-//         elements: {
-//         bar: {
-//             borderWidth: 2,
-//         },
-//         },
-//         scales: {
-//             xAxes: [
-//             {
-//                 ticks: {
-//                 beginAtZero: true,
-//                 },
-//             },
-//             ],
-//         },
-//         legend: {
-//             display: false, // label 숨기기
-//         },
-//     };
-
-//     return (
-//         <fragment>
-//         <h1 style={{marginLeft: 20, marginTop: 10, marginBottom: 0, fontSize: 25}}>
-//         {selectData.bdName+ "동 "}
-//         </h1>
-//         <div>
-//         <HorizontalBar data={data} options={options} />
-//         </div>
-//         </fragment>
-//     )
-//   };
-
-// export default FloorOccu;

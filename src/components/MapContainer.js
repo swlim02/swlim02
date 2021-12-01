@@ -92,12 +92,27 @@ const buildingsInfo = [
 ];
 
 const MapContainer = (props) => {
+  var floor_o = new Object();
+  floor_o.f = null;
+
+
   var cb_f;
   function callBack(f) {
     cb_f = f;
   }
+
+
+
   const selectedOptions = props.selectedOptions;
   var current_data = null;
+
+  function update() {
+    console.log("MapContainerupdate_f")
+    cb_f(null);
+    cb_f(current_data);
+  }
+  props.callBack(update);
+
   useEffect(() => {
     const container = document.getElementById('myMap');
     const options = {
@@ -329,6 +344,8 @@ const MapContainer = (props) => {
           roomData2={room2}
           roomData3={room3}
           selectedOptions={selectedOptions}
+          callBack={callBack}
+          floor_cb_f={floor_o}
         />
       </div>
     </div>
