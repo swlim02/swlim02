@@ -185,12 +185,10 @@ const MainPlot = (props) => {
       d["imdb_votes"] = parseInt(d["imdb_votes"].replace(new RegExp(",", 'g'), ""));
 		})
     update_init();
-<<<<<<< HEAD
-=======
 
     console.log("Main");
     console.log(tableData_o.tableData);
->>>>>>> 6429045613a41a4258aab19959b5917d052d06c7
+
   }, []);
 
   var cb_f;
