@@ -1,0 +1,53 @@
+[
+{"bdName":"301", "floor": "1", "children":[
+{"roomNumber":"101","capacity":50,"occupancy":10},
+{"roomNumber":"102","capacity":50,"occupancy":0},
+{"roomNumber":"103","capacity":10,"occupancy":10},
+{"roomNumber":"104","capacity":10,"occupancy":0},
+{"roomNumber":"105","capacity":10,"occupancy":10},
+{"roomNumber":"110","capacity":100,"occupancy":70},
+{"roomNumber":"111","capacity":100,"occupancy":50},
+{"roomNumber":"112","capacity":100,"occupancy":40},
+{"roomNumber":"113","capacity":100,"occupancy":0},
+{"roomNumber":"114","capacity":120,"occupancy":35}]},
+{"bdName":"301", "floor": "2", "children":[
+{"roomNumber":"201","capacity":50,"occupancy":0},
+{"roomNumber":"202","capacity":50,"occupancy":0},
+{"roomNumber":"203","capacity":10,"occupancy":10},
+{"roomNumber":"210","capacity":10,"occupancy":3},
+{"roomNumber":"211","capacity":10,"occupancy":10},
+{"roomNumber":"212","capacity":10,"occupancy":10},
+{"roomNumber":"213","capacity":60,"occupancy":50},
+{"roomNumber":"214","capacity":80,"occupancy":0}]},
+{"bdName":"301", "floor": "3", "children":[
+{"roomNumber":"301","capacity":40,"occupancy":0},
+{"roomNumber":"302","capacity":40,"occupancy":30},
+{"roomNumber":"303","capacity":20,"occupancy":0},
+{"roomNumber":"304","capacity":10,"occupancy":6},
+{"roomNumber":"305","capacity":20,"occupancy":20},
+{"roomNumber":"306","capacity":100,"occupancy":10},
+{"roomNumber":"307","capacity":100,"occupancy":50},
+{"roomNumber":"308","capacity":100,"occupancy":70}]},
+{"bdName":"301", "floor": "4", "children":[
+{"roomNumber":"401","capacity":10,"occupancy":10},
+{"roomNumber":"402","capacity":10,"occupancy":0},
+{"roomNumber":"403","capacity":10,"occupancy":10},
+{"roomNumber":"404","capacity":40,"occupancy":30},
+{"roomNumber":"405","capacity":40,"occupancy":0}]},
+{"bdName":"301", "floor": "5", "children":[
+{"roomNumber":"501","capacity":10,"occupancy":0},
+{"roomNumber":"502","capacity":10,"occupancy":0},
+{"roomNumber":"503","capacity":10,"occupancy":10},
+{"roomNumber":"504","capacity":10,"occupancy":10},
+{"roomNumber":"505","capacity":10,"occupancy":2}]},
+{"bdName":"301", "floor": "6", "children":[
+{"roomNumber":"601","capacity":10,"occupancy":0},
+{"roomNumber":"602","capacity":10,"occupancy":5},
+{"roomNumber":"603","capacity":10,"occupancy":10}]},
+{"bdName":"301", "floor": "7", "children":[
+{"roomNumber":"701","capacity":10,"occupancy":10},
+{"roomNumber":"702","capacity":10,"occupancy":0},
+{"roomNumber":"703","capacity":10,"occupancy":10},
+{"roomNumber":"704","capacity":10,"occupancy":0},
+{"roomNumber":"705","capacity":40,"occupancy":20}]}
+]

@@ -1,0 +1,62 @@
+.splotContainer {
+  display: flex;
+  justify-content: center;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  float: left;
+}
+.selection_item {
+  float: left;
+  margin-right: 5px;
+  font-size: small;
+
+}
+.selection_label {
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: large;
+  line-height: 35px;
+}
+.selected {
+  stroke: black;
+}
+
+.splotContainer0 {
+}
+
+.splotContainer01 {
+    height: 4%;
+}
+.splotContainer02 {
+
+}
+
+.splotContainerx{
+  float:left;
+}
+
+
+.splotContainer1 {
+  margin-left: 5px;
+  float:left;
+  width : 30%;
+}
+.splotContainer2 {
+  margin-left: 5px;
+  float:left;
+  width : 70%;
+}
+.splotContainer3 {
+  margin-left: 5px;
+  float:left;
+  width : 20%;
+}
+.splotContainer4 {
+  margin-left: 5px;
+  float:left;
+  width : 80%;
+}
