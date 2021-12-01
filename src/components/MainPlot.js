@@ -186,8 +186,8 @@ const MainPlot = (props) => {
 		})
     update_init();
 
-    console.log("Main");
-    console.log(tableData_o.tableData);
+    //console.log("Main");
+    //console.log(tableData_o.tableData);
   }, []);
 
   var cb_f;
@@ -214,9 +214,9 @@ const MainPlot = (props) => {
         }
   		});
   	}
-    console.log("Main2");
-    console.log(tableData_o.tableData);
-    console.log(cb_f);
+    //console.log("Main2");
+    //console.log(tableData_o.tableData);
+    //console.log(cb_f);
     cb_f(tableData_o.tableData);
   }
 //  const [selectData, setSelectData] = useState(tableData);
@@ -234,6 +234,7 @@ const MainPlot = (props) => {
           width={controlWidth}
           selectedOptions={selectedOptions}
           update_f={update}
+          stage={props.stage}
         />
       </div>
       <div class="splotContainer02" z-index="0" style={{

@@ -18,8 +18,8 @@ const FloorOccu = (props) => {
 	width = 445 - margin.left - margin.right,
 	height = 445 - margin.top - margin.bottom;
 	props.callBack(setSelectData);
-	console.log("FloorOccu");
-	console.log(selectData);
+	//console.log("FloorOccu");
+	//console.log(selectData);
 
 
 
@@ -69,9 +69,9 @@ const FloorOccu = (props) => {
         floorList.reverse();
 
         // append the svg object to the body of the page
-        console.log();
+        //console.log();
 
-        console.log(selectData);
+        //console.log(selectData);
         // use this information to add rectangles:
 				svg.append('g')
             .attr("transform", `translate(${margin.left+1}, ${0})`)
@@ -114,23 +114,23 @@ const FloorOccu = (props) => {
             .attr("font-size", "12px")
             .style("fill", "black");
 
-				svg.selectAll('rect')
-						.on('click', function(d, i) {
-							switch (selectData.bdNumber) {
-								case "33":
-								current_data = props.roomData[i.floor-1];
-								break;
-								case "301":
-								current_data = props.roomData2[i.floor-1];
-								break;
-								case "302":
-								current_data = props.roomData3[i.floor-1];
-								break;
-								default:
-							}
-							cb_f(current_data);
-						}
-					);
+						svg.selectAll('rect')
+								.on('click', function(d, i) {
+									switch (selectData.bdNumber) {
+										case "33":
+										current_data = props.roomData[i.floor-1];
+										break;
+										case "301":
+										current_data = props.roomData2[i.floor-1];
+										break;
+										case "302":
+										current_data = props.roomData3[i.floor-1];
+										break;
+										default:
+									}
+									cb_f(current_data);
+								}
+							);
 
 /*
 						svg.selectAll('rect')
@@ -154,9 +154,7 @@ const FloorOccu = (props) => {
 								}
 */
 		}
-		// TODO @hskim
-		//getFloorDensity(bdNumber, floor) {return FloorCrowdDensity}
-	});
+	})
 	return (
 		<div class="splotContainerx" style={{
 			width: '1000px',
