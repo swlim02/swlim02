@@ -160,7 +160,7 @@ const MapContainer = (props) => {
       let crowd = item.occuancy/item.capacity;
       let severity = building[2];
       if (crowd > 0.6) {
-        severity = 2;
+        severity = 2; // 0,1,2
       }
       severity = i%3; // TODO 실제 severity level 별로 넣어야 함.
       let o = new Object();
@@ -179,8 +179,8 @@ const MapContainer = (props) => {
     // 지도 위에 마커를 표시합니다
     for (var i = 0; i < positions.length; i++) {
         var gapX = (MARKER_WIDTH + SPRITE_GAP), // 스프라이트 이미지에서 마커로 사용할 이미지 X좌표 간격 값
-            originY = (MARKER_HEIGHT + SPRITE_GAP) * i, // 스프라이트 이미지에서 기본, 클릭 마커로 사용할 Y좌표 값
-            overOriginY = (OVER_MARKER_HEIGHT + SPRITE_GAP) * i, // 스프라이트 이미지에서 오버 마커로 사용할 Y좌표 값
+            originY = (MARKER_HEIGHT + SPRITE_GAP) * positions[i].severity, // 스프라이트 이미지에서 기본, 클릭 마커로 사용할 Y좌표 값
+            overOriginY = (OVER_MARKER_HEIGHT + SPRITE_GAP) * positions[i].severity, // 스프라이트 이미지에서 오버 마커로 사용할 Y좌표 값
             normalOrigin = new kakao.maps.Point(0, originY), // 스프라이트 이미지에서 기본 마커로 사용할 영역의 좌상단 좌표
             clickOrigin = new kakao.maps.Point(gapX, originY), // 스프라이트 이미지에서 마우스오버 마커로 사용할 영역의 좌상단 좌표
             overOrigin = new kakao.maps.Point(gapX * 2, overOriginY); // 스프라이트 이미지에서 클릭 마커로 사용할 영역의 좌상단 좌표
