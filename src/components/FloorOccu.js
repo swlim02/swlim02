@@ -17,14 +17,13 @@ const FloorOccu = (props) => {
 	width = 445 - margin.left - margin.right,
 	height = 445 - margin.top - margin.bottom;
 	props.callBack(setSelectData);
-	console.log("FloorOccu1");
 
 	let colorScale = d3.scaleThreshold()
                     .domain([props.selectedOptions.selectedOption_green,props.selectedOptions.selectedOption_yellow])
                     .range(['green','yellow','red']);
 
 //	useEffect(() => {
-		console.log("FloorOccu2");
+
 		if(selectData === null)
 		{
 			//nothing
