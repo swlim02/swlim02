@@ -6,10 +6,9 @@ let bdName = " ";
 
 const FloorOccu = (props) => {
 	function callBack(f) {
-		props.floor_cb_f.f = f;
+		props.floor_o.f = f;
 	}
 	const selectedOptions = props.selectedOptions;
-	var current_data = null;
 	const [selectData, setSelectData] = useState(props.data);
 	// set the dimensions and margins of the graph
 
@@ -30,8 +29,8 @@ const FloorOccu = (props) => {
 		{
 			//nothing
 		}else{
-				current_data = null;
-				props.floor_cb_f.f(current_data);
+				props.floor_o.f(null);
+				props.floor_o.f(props.floor_o.roomData);
 //				d3.select(mainBarSvg.current).remove();
 				d3.selectAll(".selection99").remove();
 
@@ -117,17 +116,17 @@ const FloorOccu = (props) => {
 						.on('click', function(d, i) {
 							switch (selectData.bdNumber) {
 								case "33":
-								current_data = props.roomData[i.floor-1];
+								props.floor_o.roomData = props.roomData[i.floor-1];
 								break;
 								case "301":
-								current_data = props.roomData2[i.floor-1];
+								props.floor_o.roomData = props.roomData2[i.floor-1];
 								break;
 								case "302":
-								current_data = props.roomData3[i.floor-1];
+								props.floor_o.roomData = props.roomData3[i.floor-1];
 								break;
 								default:
 							}
-							props.floor_cb_f.f(current_data);
+							props.floor_o.f(props.floor_o.roomData);
 						}
 					);
 		}
@@ -152,7 +151,7 @@ const FloorOccu = (props) => {
 				height: '700px'
 			}}>
 				<RoomOccu
-					data = {current_data}
+					data = {props.floor_o.roomData}
 					callBack={callBack}
 					selectedOptions={selectedOptions}
 				/>

@@ -10,7 +10,7 @@ const RoomOccu = (props) => {
 	height = 445 - margin.top - margin.bottom;
 
 	props.callBack(setSelectData);
-	useEffect(() => {
+//	useEffect(() => {
 
 		if (selectData == null) {
 			d3.selectAll(".selection98").remove();
@@ -60,7 +60,7 @@ const RoomOccu = (props) => {
 				.attr("font-size", "13px")
 				.attr("fill", "black");
 		}
-	})
+//	})
 
 	return (
 		<fragment>

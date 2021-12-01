@@ -94,7 +94,7 @@ const buildingsInfo = [
 const MapContainer = (props) => {
   var floor_o = new Object();
   floor_o.f = null;
-
+  floor_o.roomData = null;
 
   var cb_f;
   function callBack(f) {
@@ -273,7 +273,7 @@ const MapContainer = (props) => {
 
                 // 현재 클릭된 마커의 이미지는 클릭 이미지로 변경합니다
                 marker.setImage(clickImage);
-
+                floor_o.roomData = null;
                 current_data = position.data;
                 console.log(current_data);
                 cb_f(current_data)
@@ -345,7 +345,7 @@ const MapContainer = (props) => {
           roomData3={room3}
           selectedOptions={selectedOptions}
           callBack={callBack}
-          floor_cb_f={floor_o}
+          floor_o={floor_o}
         />
       </div>
     </div>
