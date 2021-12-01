@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState} from "react";
 import * as d3 from "d3";
 import ControlPanel from './ControlPanel';
-import TableView from './TableView';
 import MapContainer from "./MapContainer"
 
 var selectedOptions = new Object();

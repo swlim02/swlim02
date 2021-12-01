@@ -101,8 +101,6 @@ const MapContainer = (props) => {
     cb_f = f;
   }
 
-
-
   const selectedOptions = props.selectedOptions;
   var current_data = null;
 
@@ -150,25 +148,7 @@ const MapContainer = (props) => {
         */
     var    selectedMarker = null; // 클릭한 마커를 담을 변수
 
-    var positions = [
-/*
-          {
-              content: '<div>33동, 공학관4</div>',
-              latlng: new kakao.maps.LatLng(37.45625, 126.95084),
-              data: building[0]
-          },
-          {
-              content: '<div>301동, 제1공학관</div>',
-              latlng: new kakao.maps.LatLng(37.45016, 126.95259),
-              data: building[1]
-          },
-          {
-              content: '<div>302동, 제2공학관</div>',
-              latlng: new kakao.maps.LatLng(37.44887, 126.95265),
-              data: building[2]
-          }
-*/
-      ];
+    var positions = [];
 
     console.log(enumerateBuildingCrowdDensitySummary());
     enumerateBuildingCrowdDensitySummary().forEach((item, i) => {
