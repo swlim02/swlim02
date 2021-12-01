@@ -19,7 +19,7 @@ const RoomOccu = (props) => {
 		} else {
 			d3.selectAll(".selection98").remove();
 			const colorScale = d3.scaleThreshold()
-									.domain([0.3,0.6])
+									.domain([(props.selectedOptions.selectedOption_green/100),(props.selectedOptions.selectedOption_yellow/100)])
 									.range(['green','yellow','red'])
 
 			// append the svg object to the body of the page
