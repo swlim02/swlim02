@@ -5,8 +5,8 @@ import TableView from './TableView';
 import MapContainer from "./MapContainer"
 
 var selectedOptions = new Object();
-selectedOptions.selectedOption_x = "imdb_rating";
-selectedOptions.selectedOption_y = "us_gross";
+selectedOptions.selectedOption_green = "imdb_rating";
+selectedOptions.selectedOption_yellow = "us_gross";
 selectedOptions.selectedOption_Color = "none"; //none
 selectedOptions.selectedOption_Opacity = "none"; //none
 selectedOptions.selectedOption_Size = "none"; //none
@@ -242,6 +242,7 @@ const MainPlot = (props) => {
         height: '800px'
       }}>
         <MapContainer
+        selectedOptions={selectedOptions}
         />
       </div>
     </div>

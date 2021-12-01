@@ -8,12 +8,12 @@ import FloorOccu from "./FloorOccu"
 
 const { kakao } = window;
 
-const MapContainer = () => {
+const MapContainer = (props) => {
   var cb_f;
   function callBack(f) {
     cb_f = f;
   }
-
+  const selectedOptions = props.selectedOptions;
   var current_data = null;
   useEffect(() => {
     const container = document.getElementById('myMap');
@@ -200,6 +200,7 @@ function createMarkerImage(markerSize, offset, spriteOrigin) {
           roomData={room}
           roomData2={room2}
           roomData3={room3}
+          selectedOptions={selectedOptions}
         />
       </div>
     </div>

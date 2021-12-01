@@ -9,6 +9,7 @@ const FloorOccu = (props) => {
 	function callBack(f) {
 		cb_f = f;
 	}
+	const selectedOptions = props.selectedOptions;
 	var current_data = null;
 	const [selectData, setSelectData] = useState(props.data);
 	// set the dimensions and margins of the graph
@@ -34,9 +35,12 @@ const FloorOccu = (props) => {
 //				d3.select(mainBarSvg.current).remove();
 				d3.selectAll(".selection99").remove();
 
+				console.log(props.selectedOptions.selectedOption_green);
+
 				const colorScale = d3.scaleThreshold()
-                                .domain([30,60])
+                                .domain([props.selectedOptions.selectedOption_green,props.selectedOptions.selectedOption_yellow])
                                 .range(['green','yellow','red']);
+
 
         const svg = d3.select(mainBarSvg.current)
   //                      .append("svg")
@@ -176,6 +180,7 @@ const FloorOccu = (props) => {
 				<RoomOccu
 					data = {current_data}
 					callBack={callBack}
+					selectedOptions={selectedOptions}
 				/>
 			</div>
 		</div>
