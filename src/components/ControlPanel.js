@@ -18,7 +18,6 @@ const ControlPanel = (props) => {
       //nothing
     } else {
       setCurStage(evt.value);
-      props.update_f();
       console.log("update_f");
     }
   }
@@ -176,6 +175,7 @@ const ControlPanel = (props) => {
 
     props.selectedOptions.selectedOption_green = props.stage[stageNum][0];
     props.selectedOptions.selectedOption_yellow = props.stage[stageNum][0]+props.stage[stageNum][1];
+    props.update_f();
   })
 
   return (
