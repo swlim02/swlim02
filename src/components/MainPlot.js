@@ -40,6 +40,8 @@ const MainPlot = (props) => {
     cb_trend_f();
   }
 
+
+ // TODO 아래 function 8개 개발 필요.  @hskim @swlim
   function getHalfHourTrendOfUniversityCrowdDensity(date) {
     let HalfHourTrend = new Object();
     HalfHourTrend = {
