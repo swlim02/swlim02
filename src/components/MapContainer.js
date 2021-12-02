@@ -114,7 +114,7 @@ const MapContainer = (props) => {
   useEffect(() => {
     const container = document.getElementById('myMap');
     const options = {
-      center: new kakao.maps.LatLng(37.4577, 126.9535),
+      center: new kakao.maps.LatLng(37.4595, 126.9535),
       level: 5
     };
     let map = new kakao.maps.Map(container, options);
@@ -181,9 +181,7 @@ const MapContainer = (props) => {
             overOrigin = new kakao.maps.Point(gapX * 2, overOriginY); // 스프라이트 이미지에서 클릭 마커로 사용할 영역의 좌상단 좌표
 
         // 마커를 생성하고 지도위에 표시합니다
-
         addMarker(positions[i], normalOrigin, overOrigin, clickOrigin);
-
     }
 
     function makeOverListener(map, marker, infowindow) {
@@ -198,7 +196,6 @@ const MapContainer = (props) => {
             infowindow.close();
         };
     }
-
 
     // 마커를 생성하고 지도 위에 표시하고, 마커에 mouseover, mouseout, click 이벤트를 등록하는 함수입니다
     function addMarker(position, normalOrigin, overOrigin, clickOrigin) {
@@ -281,7 +278,6 @@ const MapContainer = (props) => {
                 spriteSize: spriteImageSize // 스프라이트 이미지의 크기
             }
         );
-
         return markerImage;
     }
     // TODO @hskim
@@ -310,8 +306,8 @@ const MapContainer = (props) => {
   return (
     <div>
       <div id='myMap' class="splotContainer1" style={{
-        width: '400px',
-        height: '700px'
+        width: '500px',
+        height: '600px'
       }}></div>
       <div id='floorView' class="splotContainer2" style={{
         width: '900px',

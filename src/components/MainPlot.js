@@ -4,7 +4,6 @@ import ControlPanel from './ControlPanel';
 import MapContainer from "./MapContainer"
 
 var selectedOptions = new Object();
-var tableData_o = new Object();
 
 const MainPlot = (props) => {
   var cb_f;
@@ -14,7 +13,6 @@ const MainPlot = (props) => {
 
   selectedOptions.selectedOption_green = props.stage[0][0];
   selectedOptions.selectedOption_yellow = props.stage[0][0]+props.stage[0][1];
-  tableData_o.tableData = [];
   const splotSvg = useRef(null);
 
   const svgWidth = props.margin * 2 + props.width;
@@ -23,112 +21,15 @@ const MainPlot = (props) => {
   const controlWidth = svgWidth * 2;
   const controlHeight = 50;
 
-  let xScale;
-  let yScale;
-
-  const brush = d3.brush()
-										.extent([[0, 0], [props.width, props.height]])
-										.on("end", brushed);
-
-  function update_init(){
-    xScale = d3.scaleLinear()
-      .domain([
-      d3.min(props.data, d => d[selectedOptions.selectedOption_x]),
-      d3.max(props.data, d => d[selectedOptions.selectedOption_x])
-      ])
-      .range([0, props.width]);
-
-    yScale = d3.scaleLinear()
-      .domain([
-      d3.min(props.data, d => d[selectedOptions.selectedOption_y]),
-      d3.max(props.data, d => d[selectedOptions.selectedOption_y])
-      ])
-      .range([props.height, 0]);
-
-    const xAxis = d3.axisBottom(xScale);
-    const yAxis = d3.axisLeft(yScale);
-
-    d3.select(splotSvg.current)
-    .append('g')
-    .attr("class", "xAxis")
-    .attr('transform', `translate(${props.margin}, ${props.height + props.margin})`)
-    .call(xAxis);
-
-    d3.select(splotSvg.current)
-      .append('g')
-      .attr("class", "yAxis")
-      .attr('transform', `translate(${props.margin}, ${props.margin})`)
-      .call(yAxis);
-
-    d3.select(splotSvg.current)
-      .append('g')
-      .attr("class", "chartGroup")
-      .attr('transform', `translate(${props.margin}, ${props.margin})`)
-      .selectAll('circle')
-      .data(props.data)
-      .enter()
-      .append('circle')
-//      .join('circle')
-      .attr('cx', d => xScale(d[selectedOptions.selectedOption_x]))
-      .attr('cy', d => yScale(d[selectedOptions.selectedOption_y]))
-      .attr('fill', 'Black')
-      .style("fill-opacity", 1)
-      .attr('r', props.pointSize);
-
-    d3.select(splotSvg.current)
-      .append('g')
-      .attr("class", "selection")
-      .attr('transform', `translate(${props.margin}, ${props.margin})`)
-      .call(brush);
-  }
-
   function update_new(){
     console.log("update_new");
     cb_f();
   }
 
   useEffect(() => {
-    // clarify type
-		props.data.forEach(d => {
-      d["budget"] = parseInt(d["budget"]);
-      d["us_gross"] = parseInt(d["us_gross"]);
-      d["worldwide_gross"] = parseInt(d["worldwide_gross"]);
-      d["rotten_rating"] = parseInt(d["rotten_rating"]);
-      d["imdb_rating"] = parseFloat(d["imdb_rating"]);
-      d["imdb_votes"] = parseInt(d["imdb_votes"].replace(new RegExp(",", 'g'), ""));
-		})
-    update_init();
-
-    console.log("Main");
-    console.log(tableData_o.tableData);
 
   }, []);
 
-  function brushed({selection}) {
-    tableData_o.tableData = []; //clear
-    let circle = d3.selectAll('circle');
-  	if (selection === null) {
-  		d3.selectAll(".selected").classed("selected", false);
-  	} else {
-  		d3.selectAll(".selected").classed("selected", false);
-  		let [[x0, y0], [x1, y1]] = selection;
-  		circle.classed("selected", d => {
-  			let xCoord = xScale(d[selectedOptions.selectedOption_x]);
-  			let yCoord = yScale(d[selectedOptions.selectedOption_y]);
-        if (x0 <= xCoord && xCoord <= x1 && y0 <= yCoord && yCoord <= y1) {
-          tableData_o.tableData.push(d);
-          return true;
-        } else {
-          return false;
-        }
-  		});
-  	}
-    //console.log("Main2");
-    //console.log(tableData_o.tableData);
-    //console.log(cb_f);
-    cb_f(tableData_o.tableData);
-  }
-//  const [selectData, setSelectData] = useState(tableData);
 
   return (
     <div style={{
@@ -147,7 +48,7 @@ const MainPlot = (props) => {
         />
       </div>
       <div class="splotContainer02" z-index="0" style={{
-        width: '1400px',
+        width: '1500px',
         height: '800px'
       }}>
         <MapContainer

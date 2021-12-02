@@ -1,6 +1,5 @@
 import React from "react";
 import MainPlot from "./components/MainPlot";
-import movies from "./data/movie.json";
 import "./App.css";
 
 function App() {
@@ -20,16 +19,10 @@ function App() {
 
   return (
     <div className="App">
-      <div style={{display: "flex"}}>
-        <h2 style={{marginTop: 25}}>
-          {name}
-        </h2>
-      </div>
       <div class="splotContainer">
         <MainPlot
           width={width}
           height={height}
-          data={movies}
           margin={margin}
           pointSize={pointSize}
           maxPointSize={maxPointSize}

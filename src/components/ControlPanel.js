@@ -180,12 +180,13 @@ const ControlPanel = (props) => {
 
   return (
     <div class="selectionPanel">
-      <div class="selection_label">
-        <svg  ref={densityBarSvgRef} width={330} height={28}></svg>
+      <div class="selection_label" style={{ display: "flex"}}>
+        <b><label>서울대 안전모임 도우미   </label></b>
+        <svg  ref={densityBarSvgRef} width={335} height={40} viewBox="-7 -5 335 35"></svg>
         <label>거리두기:</label>
       </div>
-      <div class="selection_item"  z-index="9999">
-        <Select options={options_x} name="x" z-index="9999"
+      <div class="selection_item">
+        <Select options={options_x} name="x"
         defaultValue={options_x[0]}
         onChange={(evt) => handleChange_x(evt)}/>
       </div>
