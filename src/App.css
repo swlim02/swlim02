@@ -60,3 +60,28 @@
   float:left;
   width : 80%;
 }
+
+.dayUnivTrendBarQr{
+  fill : red
+}
+.dayBuildingTrendBarQr{
+  fill : red
+}
+.dayFloorTrendBarQr{
+  fill : red
+}
+.dayRoomTrendBarQr{
+  fill : red
+}
+.weekUnivTrendBarQr{
+  fill : red
+}
+.weekBuildingTrendBarQr{
+  fill : red
+}
+.weekFloorTrendBarQr{
+  fill : red
+}
+.weekRoomTrendBarQr{
+  fill : red
+}
