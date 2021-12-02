@@ -1,14 +1,27 @@
 import React, { useRef, useEffect, useState} from "react";
 import * as d3 from "d3";
 import ControlPanel from './ControlPanel';
-import MapContainer from "./MapContainer"
+import MapContainer from "./MapContainer";
+import TrendView from "./TrendView";
 
 var selectedOptions = new Object();
+let selectObject_o = new Object();
 
 const MainPlot = (props) => {
+
+  selectObject_o.bdNumber = '301';
+  selectObject_o.floor = '1';
+  selectObject_o.roomNumber = '101';
+  selectObject_o.state = selectObject_o.bdNumber + selectObject_o.floor + selectObject_o.roomNumber;
+
   var cb_f;
   function callBack(f) {
     cb_f = f;
+  }
+
+  var cb_trend_f;
+  function trendCallBack(f) {
+    cb_trend_f = f;
   }
 
   selectedOptions.selectedOption_green = props.stage[0][0];
@@ -24,11 +37,126 @@ const MainPlot = (props) => {
   function update_new(){
     console.log("update_new");
     cb_f();
+    cb_trend_f();
   }
+
+  function getHalfHourTrendOfUniversityCrowdDensity(date) {
+    let HalfHourTrend = new Object();
+    HalfHourTrend = {
+     "capacity" : 300000,
+     "reserve_occupancy_trend" : [ //per 15 mins
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ],
+     "bq_occupancy_trend" : [ //per 15 mins
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ]
+    }
+    return HalfHourTrend;
+  }
+
+  function getHalfHourTrendOfBuildingCrowdDensity(bdNumber, date) {
+    let HalfHourTrend = new Object();
+    HalfHourTrend = {
+     "capacity" : 300000,
+     "reserve_occupancy_trend" : [ //per 15 mins
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ],
+     "bq_occupancy_trend" : [ //per 15 mins
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ]
+    }
+    return HalfHourTrend;
+  }
+
+  function getHalfHourTrendOfBuildingFloorDensity(bdNumber, floor, date) {
+    let HalfHourTrend = new Object();
+    HalfHourTrend = {
+     "capacity" : 300000,
+     "reserve_occupancy_trend" : [ //per 15 mins
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ],
+     "bq_occupancy_trend" : [ //per 15 mins
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ]
+    }
+    return HalfHourTrend;
+  }
+
+  function getHalfHourTrendOfBuildingRoomDensity(bdNumber, floor, roomNumber, date) {
+    let HalfHourTrend = new Object();
+    HalfHourTrend = {
+     "capacity" : 300000,
+     "reserve_occupancy_trend" : [ //per 15 mins
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ],
+     "bq_occupancy_trend" : [ //per 15 mins
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ]
+    }
+    return HalfHourTrend;
+  }
+
+  function getDayTrendOfUniversityCrowdDensity(startDate,endDate) {
+    let DayTrend = new Object();
+    DayTrend = {
+     "capacity" : 300000,
+     "reserve_occupancy_trend" : [ //per day
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ],
+     "bq_occupancy_trend" : [ //per day
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ]
+    }
+    return DayTrend;
+  }
+
+  function getDayTrendOfBuildingCrowdDensity(bdNumber, startDate,endDate) {
+    let DayTrend = new Object();
+    DayTrend = {
+     "capacity" : 300000,
+     "reserve_occupancy_trend" : [ //per day
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ],
+     "bq_occupancy_trend" : [ //per day
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ]
+    }
+    return DayTrend;
+  }
+
+  function getDayTrendOfBuildingFloorDensity(bdNumber, floor, startDate,endDate) {
+    let DayTrend = new Object();
+    DayTrend = {
+     "capacity" : 300000,
+     "reserve_occupancy_trend" : [ //per day
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ],
+     "bq_occupancy_trend" : [ //per day
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ]
+    }
+    return DayTrend;
+  }
+
+  function getDayTrendOfBuildingRoomDensity(bdNumber, floor, roomNumber, startDate,endDate) {
+    let DayTrend = new Object();
+    DayTrend = {
+     "capacity" : 300000,
+     "reserve_occupancy_trend" : [ //per day
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ],
+     "bq_occupancy_trend" : [ //per day
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
+        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ]
+    }
+    return DayTrend;
+  }
+
 
   useEffect(() => {
 
   }, []);
+
 
 
   return (
@@ -54,6 +182,24 @@ const MainPlot = (props) => {
         <MapContainer
         selectedOptions={selectedOptions}
         callBack={callBack}
+        />
+      </div>
+      <div class="splotContainer03" z-index="0" style={{
+        width: '1500px',
+        height: '500px'
+      }}>
+        <TrendView
+        callBack={trendCallBack}
+        selectedOptions={selectedOptions}
+        selectObject_o={selectObject_o}
+        getHalfHourTrendOfUniversityCrowdDensity={getHalfHourTrendOfUniversityCrowdDensity}
+        getHalfHourTrendOfBuildingCrowdDensity={getHalfHourTrendOfBuildingCrowdDensity}
+        getHalfHourTrendOfBuildingFloorDensity={getHalfHourTrendOfBuildingFloorDensity}
+        getHalfHourTrendOfBuildingRoomDensity={getHalfHourTrendOfBuildingRoomDensity}
+        getDayTrendOfUniversityCrowdDensity={getDayTrendOfUniversityCrowdDensity}
+        getDayTrendOfBuildingCrowdDensity={getDayTrendOfBuildingCrowdDensity}
+        getDayTrendOfBuildingFloorDensity={getDayTrendOfBuildingFloorDensity}
+        getDayTrendOfBuildingRoomDensity={getDayTrendOfBuildingRoomDensity}
         />
       </div>
     </div>

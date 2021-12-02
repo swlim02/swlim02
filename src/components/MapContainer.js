@@ -320,7 +320,6 @@ const MapContainer = (props) => {
           roomData2={room2}
           roomData3={room3}
           selectedOptions={selectedOptions}
-          callBack={callBack}
           floor_o={floor_o}
         />
       </div>
