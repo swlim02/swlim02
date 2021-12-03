@@ -6,6 +6,12 @@ import TrendView from "./TrendView";
 
 var selectedOptions = new Object();
 let selectObject_o = new Object();
+let today = new Date();
+
+let year = today.getFullYear();
+let month = today.getMonth()+1;
+let date = today.getDate();
+let day = today.getDay();
 
 const MainPlot = (props) => {
 
@@ -13,7 +19,7 @@ const MainPlot = (props) => {
   selectObject_o.floor = '1';
   selectObject_o.roomNumber = '101';
   selectObject_o.state = selectObject_o.bdNumber + selectObject_o.floor + selectObject_o.roomNumber;
-  //selectObject_o.date = "2021-01-30"; // TODO;
+  selectObject_o.date = [year,month,date,day];
 
   var cb_f;
   function callBack(f) {
@@ -116,11 +122,9 @@ const MainPlot = (props) => {
     DayTrend = {
      "capacity" : 300000,
      "reserve_occupancy_trend" : [ //per day
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ],
+        20000, 30000, 10000, 20000, 30000 ],
      "bq_occupancy_trend" : [ //per day
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ]
+        20000, 30000, 10000, 20000, 30000 ]
     }
     return DayTrend;
   }
@@ -130,11 +134,9 @@ const MainPlot = (props) => {
     DayTrend = {
      "capacity" : 300000,
      "reserve_occupancy_trend" : [ //per day
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ],
+      20000, 30000, 10000, 20000, 30000 ],
      "bq_occupancy_trend" : [ //per day
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ]
+      20000, 30000, 10000, 20000, 30000 ]
     }
     return DayTrend;
   }
@@ -144,11 +146,9 @@ const MainPlot = (props) => {
     DayTrend = {
      "capacity" : 300000,
      "reserve_occupancy_trend" : [ //per day
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ],
+      20000, 30000, 10000, 20000, 30000 ],
      "bq_occupancy_trend" : [ //per day
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ]
+      20000, 30000, 10000, 20000, 30000 ]
     }
     return DayTrend;
   }
