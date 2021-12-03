@@ -33,23 +33,23 @@ const TrendView = (props) => {
 	let dayRoomTrend = props.getHalfHourTrendOfBuildingRoomDensity(301, 1, 118, year+'-'+month+'-'+date);
 
 	let startEndDate = changeMonFri();
-	
+
 	let weekUnivTrend = props.getDayTrendOfUniversityCrowdDensity(year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
 	let weekBuildingTrend = props.getDayTrendOfBuildingCrowdDensity(301, year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
 	let weekFloorTrend = props.getDayTrendOfBuildingFloorDensity(301, 1, year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
 	let weekRoomTrend = props.getDayTrendOfBuildingRoomDensity(301, 1, 118, year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
 
 
-	
-	makeDayUnivTrend(dayUnivTrend);
-	makeDayBuildingTrend(dayBuildingTrend);
-	makedayFloorTrend(dayFloorTrend);
-	makedayRoomTrend(dayRoomTrend);
 
-	// makeWeekUnivTrend(weekUnivTrend);
-	// makeWeekBuildingTrend(weekBuildingTrend);
-	// makeWeekFloorTrend(weekFloorTrend);
-	// makeWeekRoomTrend(weekRoomTrend);
+	//makeDayUnivTrend(dayUnivTrend);
+	//makeDayBuildingTrend(dayBuildingTrend);
+	//makedayFloorTrend(dayFloorTrend);
+	//makedayRoomTrend(dayRoomTrend);
+
+	 makeWeekUnivTrend(weekUnivTrend);
+	 makeWeekBuildingTrend(weekBuildingTrend);
+	 makeWeekFloorTrend(weekFloorTrend);
+	 makeWeekRoomTrend(weekRoomTrend);
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////TODO dayDivide가 5개이므로 MainPlot의 거 18개중에 5개만 가져오든지 해야함 시간순으로 가져와야되긴함.(아니면 5개만 놔두는건가?)
@@ -66,7 +66,7 @@ const TrendView = (props) => {
 		univTrendSvg.append('g')
 				.attr('transform', `translate(${40}, ${80+20})`)
 				.call(d3.axisBottom(dayUnivTrendxScale));
-				
+
 		let dayUnivTrendyScale = d3.scaleLinear()
 							.domain([0,	d3.max(dayUnivTrend.reserve_occupancy_trend)])
 							.range([80,0]);
@@ -76,7 +76,7 @@ const TrendView = (props) => {
 			.call(d3.axisLeft(dayUnivTrendyScale).ticks(3));
 
 		let dayUnivTrendBar = univTrendSvg.selectAll('.dayUnivTrendBar').data(dayUnivTrend.reserve_occupancy_trend);
-		let dayUnivTrendBarQr = univTrendSvg.selectAll('.dayUnivTrendBarQr').data(dayUnivTrend.bq_occupancy_trend);	
+		let dayUnivTrendBarQr = univTrendSvg.selectAll('.dayUnivTrendBarQr').data(dayUnivTrend.bq_occupancy_trend);
 
 		dayUnivTrendBar.enter()
 						.append('rect')
@@ -100,7 +100,7 @@ const TrendView = (props) => {
 						.attr('height', (d) => 80-dayUnivTrendyScale(d));
 		dayUnivTrendBarQr.exit().remove();
 	}
-	
+
 	function makeDayBuildingTrend(dayBuildingTrend)
 	{
 		let dayBuildingTrendxScale = d3.scaleBand()
@@ -112,7 +112,7 @@ const TrendView = (props) => {
 		buildingTrendSvg.append('g')
 				.attr('transform', `translate(${40}, ${80+20})`)
 				.call(d3.axisBottom(dayBuildingTrendxScale));
-				
+
 		let dayBuildingTrendyScale = d3.scaleLinear()
 							.domain([0,	d3.max(dayBuildingTrend.reserve_occupancy_trend)])
 							.range([80,0]);
@@ -122,7 +122,7 @@ const TrendView = (props) => {
 			.call(d3.axisLeft(dayBuildingTrendyScale).ticks(3));
 
 		let dayBuildingTrendBar = buildingTrendSvg.selectAll('.dayBuildingTrendBar').data(dayBuildingTrend.reserve_occupancy_trend);
-		let dayBuildingTrendBarQr = buildingTrendSvg.selectAll('.dayBuildingTrendBarQr').data(dayBuildingTrend.bq_occupancy_trend);	
+		let dayBuildingTrendBarQr = buildingTrendSvg.selectAll('.dayBuildingTrendBarQr').data(dayBuildingTrend.bq_occupancy_trend);
 
 		dayBuildingTrendBar.enter()
 						.append('rect')
@@ -145,8 +145,8 @@ const TrendView = (props) => {
 						.attr('width', 30)
 						.attr('height', (d) => 80-dayBuildingTrendyScale(d));
 		dayBuildingTrendBarQr.exit().remove();
-	}	
-	
+	}
+
 	function makedayFloorTrend(dayFloorTrend)
 	{
 		let dayFloorTrendxScale = d3.scaleBand()
@@ -158,7 +158,7 @@ const TrendView = (props) => {
 		floorTrendSvg.append('g')
 				.attr('transform', `translate(${40}, ${80+20})`)
 				.call(d3.axisBottom(dayFloorTrendxScale));
-				
+
 		let dayFloorTrendyScale = d3.scaleLinear()
 							.domain([0,	d3.max(dayFloorTrend.reserve_occupancy_trend)])
 							.range([80,0]);
@@ -168,7 +168,7 @@ const TrendView = (props) => {
 			.call(d3.axisLeft(dayFloorTrendyScale).ticks(3));
 
 		let dayFloorTrendBar = floorTrendSvg.selectAll('.dayFloorTrendBar').data(dayFloorTrend.reserve_occupancy_trend);
-		let dayFloorTrendBarQr = floorTrendSvg.selectAll('.dayFloorTrendBarQr').data(dayFloorTrend.bq_occupancy_trend);	
+		let dayFloorTrendBarQr = floorTrendSvg.selectAll('.dayFloorTrendBarQr').data(dayFloorTrend.bq_occupancy_trend);
 
 		dayFloorTrendBar.enter()
 						.append('rect')
@@ -204,7 +204,7 @@ const TrendView = (props) => {
 		roomTrendSvg.append('g')
 				.attr('transform', `translate(${40}, ${80+20})`)
 				.call(d3.axisBottom(dayRoomTrendxScale));
-				
+
 		let dayRoomTrendyScale = d3.scaleLinear()
 							.domain([0,	d3.max(dayRoomTrend.reserve_occupancy_trend)])
 							.range([80,0]);
@@ -214,7 +214,7 @@ const TrendView = (props) => {
 			.call(d3.axisLeft(dayRoomTrendyScale).ticks(3));
 
 		let dayRoomTrendBar = roomTrendSvg.selectAll('.dayRoomTrendBar').data(dayRoomTrend.reserve_occupancy_trend);
-		let dayRoomTrendBarQr = roomTrendSvg.selectAll('.dayRoomTrendBarQr').data(dayRoomTrend.bq_occupancy_trend);	
+		let dayRoomTrendBarQr = roomTrendSvg.selectAll('.dayRoomTrendBarQr').data(dayRoomTrend.bq_occupancy_trend);
 
 		dayRoomTrendBar.enter()
 						.append('rect')
@@ -250,7 +250,7 @@ const TrendView = (props) => {
 		univTrendSvg.append('g')
 				.attr('transform', `translate(${40}, ${80+20})`)
 				.call(d3.axisBottom(weekUnivTrendxScale));
-				
+
 		let weekUnivTrendyScale = d3.scaleLinear()
 							.domain([0,	d3.max(weekUnivTrend.reserve_occupancy_trend)])
 							.range([80,0]);
@@ -260,7 +260,7 @@ const TrendView = (props) => {
 			.call(d3.axisLeft(weekUnivTrendyScale).ticks(3));
 
 		let weekUnivTrendBar = univTrendSvg.selectAll('.weekUnivTrendBar').data(weekUnivTrend.reserve_occupancy_trend);
-		let weekUnivTrendBarQr = univTrendSvg.selectAll('.weekUnivTrendBarQr').data(weekUnivTrend.bq_occupancy_trend);	
+		let weekUnivTrendBarQr = univTrendSvg.selectAll('.weekUnivTrendBarQr').data(weekUnivTrend.bq_occupancy_trend);
 
 		weekUnivTrendBar.enter()
 						.append('rect')
@@ -284,7 +284,7 @@ const TrendView = (props) => {
 						.attr('height', (d) => 80-weekUnivTrendyScale(d));
 		weekUnivTrendBarQr.exit().remove();
 	}
-	
+
 	function makeWeekBuildingTrend(weekBuildingTrend)
 	{
 		let weekBuildingTrendxScale = d3.scaleBand()
@@ -296,7 +296,7 @@ const TrendView = (props) => {
 		buildingTrendSvg.append('g')
 				.attr('transform', `translate(${40}, ${80+20})`)
 				.call(d3.axisBottom(weekBuildingTrendxScale));
-				
+
 		let weekBuildingTrendyScale = d3.scaleLinear()
 							.domain([0,	d3.max(weekBuildingTrend.reserve_occupancy_trend)])
 							.range([80,0]);
@@ -306,7 +306,7 @@ const TrendView = (props) => {
 			.call(d3.axisLeft(weekBuildingTrendyScale).ticks(3));
 
 		let weekBuildingTrendBar = buildingTrendSvg.selectAll('.weekBuildingTrendBar').data(weekBuildingTrend.reserve_occupancy_trend);
-		let weekBuildingTrendBarQr = buildingTrendSvg.selectAll('.weekBuildingTrendBarQr').data(weekBuildingTrend.bq_occupancy_trend);	
+		let weekBuildingTrendBarQr = buildingTrendSvg.selectAll('.weekBuildingTrendBarQr').data(weekBuildingTrend.bq_occupancy_trend);
 
 		weekBuildingTrendBar.enter()
 						.append('rect')
@@ -329,8 +329,8 @@ const TrendView = (props) => {
 						.attr('width', 30)
 						.attr('height', (d) => 80-weekBuildingTrendyScale(d));
 		weekBuildingTrendBarQr.exit().remove();
-	}	
-	
+	}
+
 	function makeWeekFloorTrend(weekFloorTrend)
 	{
 		let weekFloorTrendxScale = d3.scaleBand()
@@ -342,7 +342,7 @@ const TrendView = (props) => {
 		floorTrendSvg.append('g')
 				.attr('transform', `translate(${40}, ${80+20})`)
 				.call(d3.axisBottom(weekFloorTrendxScale));
-				
+
 		let weekFloorTrendyScale = d3.scaleLinear()
 							.domain([0,	d3.max(weekFloorTrend.reserve_occupancy_trend)])
 							.range([80,0]);
@@ -352,7 +352,7 @@ const TrendView = (props) => {
 			.call(d3.axisLeft(weekFloorTrendyScale).ticks(3));
 
 		let weekFloorTrendBar = floorTrendSvg.selectAll('.weekFloorTrendBar').data(weekFloorTrend.reserve_occupancy_trend);
-		let weekFloorTrendBarQr = floorTrendSvg.selectAll('.weekFloorTrendBarQr').data(weekFloorTrend.bq_occupancy_trend);	
+		let weekFloorTrendBarQr = floorTrendSvg.selectAll('.weekFloorTrendBarQr').data(weekFloorTrend.bq_occupancy_trend);
 
 		weekFloorTrendBar.enter()
 						.append('rect')
@@ -388,7 +388,7 @@ const TrendView = (props) => {
 		roomTrendSvg.append('g')
 				.attr('transform', `translate(${40}, ${80+20})`)
 				.call(d3.axisBottom(weekRoomTrendxScale));
-				
+
 		let weekRoomTrendyScale = d3.scaleLinear()
 							.domain([0,	d3.max(weekRoomTrend.reserve_occupancy_trend)])
 							.range([80,0]);
@@ -398,7 +398,7 @@ const TrendView = (props) => {
 			.call(d3.axisLeft(weekRoomTrendyScale).ticks(3));
 
 		let weekRoomTrendBar = roomTrendSvg.selectAll('.weekRoomTrendBar').data(weekRoomTrend.reserve_occupancy_trend);
-		let weekRoomTrendBarQr = roomTrendSvg.selectAll('.weekRoomTrendBarQr').data(weekRoomTrend.bq_occupancy_trend);	
+		let weekRoomTrendBarQr = roomTrendSvg.selectAll('.weekRoomTrendBarQr').data(weekRoomTrend.bq_occupancy_trend);
 
 		weekRoomTrendBar.enter()
 						.append('rect')
@@ -423,9 +423,9 @@ const TrendView = (props) => {
 		weekRoomTrendBarQr.exit().remove();
 	}
 
-	
-	
-	
+
+
+
 	function changeMonFri() {
 		var startDate = date;
 		var endDate = date;
@@ -459,18 +459,18 @@ const TrendView = (props) => {
 		if(startDate<=0)
 		{
 			switch(month) {
-				case 1 : 			
-				case 3 : 
-				case 5 : 
-				case 7 : 
-				case 8 : 
-				case 10 : 
+				case 1 :
+				case 3 :
+				case 5 :
+				case 7 :
+				case 8 :
+				case 10 :
 				case 12 : startMonth = month-1;
 							startDate = startDate+30;
 							break;
-				case 4 : 
-				case 6 : 
-				case 9 : 
+				case 4 :
+				case 6 :
+				case 9 :
 				case 11 : startMonth = month-1;
 							startDate = startDate+29;
 							break;
@@ -482,18 +482,18 @@ const TrendView = (props) => {
 		if(startDate>31)
 		{
 			switch(month) {
-				case 1 : 			
-				case 3 : 
-				case 5 : 
-				case 7 : 
-				case 8 : 
-				case 10 : 
+				case 1 :
+				case 3 :
+				case 5 :
+				case 7 :
+				case 8 :
+				case 10 :
 				case 12 : startMonth = month+1;
 							startDate = startDate-31;
 							break;
-				case 4 : 
-				case 6 : 
-				case 9 : 
+				case 4 :
+				case 6 :
+				case 9 :
 				case 11 : startMonth = month+1;
 							startDate = startDate-30;
 							break;
@@ -505,16 +505,16 @@ const TrendView = (props) => {
 		else if(startDate==31)
 		{
 			switch(month) {
-				case 1 : 			
-				case 3 : 
-				case 5 : 
-				case 7 : 
-				case 8 : 
-				case 10 : 
+				case 1 :
+				case 3 :
+				case 5 :
+				case 7 :
+				case 8 :
+				case 10 :
 				case 12 : break;
-				case 4 : 
-				case 6 : 
-				case 9 : 
+				case 4 :
+				case 6 :
+				case 9 :
 				case 11 : startMonth = month+1;
 							startDate = startDate-30;
 							break;
@@ -526,16 +526,16 @@ const TrendView = (props) => {
 		else if(startDate>=29)
 		{
 			switch(month) {
-				case 1 : 			
-				case 3 : 
-				case 5 : 
-				case 7 : 
-				case 8 : 
-				case 10 : 
+				case 1 :
+				case 3 :
+				case 5 :
+				case 7 :
+				case 8 :
+				case 10 :
 				case 12 :
-				case 4 : 
-				case 6 : 
-				case 9 : 
+				case 4 :
+				case 6 :
+				case 9 :
 				case 11 : break;
 				case 2 : startMonth = month+1;
 							startDate = startDate-28;
@@ -545,19 +545,19 @@ const TrendView = (props) => {
 		if(endDate<=0)
 		{
 			switch(month) {
-				
-				case 1 : 			
-				case 3 : 
-				case 5 : 
-				case 7 : 
-				case 8 : 
-				case 10 : 
+
+				case 1 :
+				case 3 :
+				case 5 :
+				case 7 :
+				case 8 :
+				case 10 :
 				case 12 : endMonth = month-1;
 							endDate = endDate+30;
 							break;
-				case 4 : 
-				case 6 : 
-				case 9 : 
+				case 4 :
+				case 6 :
+				case 9 :
 				case 11 : endMonth = month-1;
 							endDate = endDate+29;
 							break;
@@ -569,18 +569,18 @@ const TrendView = (props) => {
 		if(endDate>31)
 		{
 			switch(month) {
-				case 1 : 			
-				case 3 : 
-				case 5 : 
-				case 7 : 
-				case 8 : 
-				case 10 : 
+				case 1 :
+				case 3 :
+				case 5 :
+				case 7 :
+				case 8 :
+				case 10 :
 				case 12 : endMonth = month+1;
 							endDate = endDate-31;
 							break;
-				case 4 : 
-				case 6 : 
-				case 9 : 
+				case 4 :
+				case 6 :
+				case 9 :
 				case 11 : endMonth = month+1;
 							endDate = endDate-30;
 							break;
@@ -592,16 +592,16 @@ const TrendView = (props) => {
 		else if(endDate==31)
 		{
 			switch(month) {
-				case 1 : 			
-				case 3 : 
-				case 5 : 
-				case 7 : 
-				case 8 : 
-				case 10 : 
+				case 1 :
+				case 3 :
+				case 5 :
+				case 7 :
+				case 8 :
+				case 10 :
 				case 12 : break;
-				case 4 : 
-				case 6 : 
-				case 9 : 
+				case 4 :
+				case 6 :
+				case 9 :
 				case 11 : endMonth = month+1;
 							endDate = endDate-30;
 							break;
@@ -613,16 +613,16 @@ const TrendView = (props) => {
 		else if(endDate>=29)
 		{
 			switch(month) {
-				case 1 : 			
-				case 3 : 
-				case 5 : 
-				case 7 : 
-				case 8 : 
-				case 10 : 
+				case 1 :
+				case 3 :
+				case 5 :
+				case 7 :
+				case 8 :
+				case 10 :
 				case 12 :
-				case 4 : 
-				case 6 : 
-				case 9 : 
+				case 4 :
+				case 6 :
+				case 9 :
 				case 11 : break;
 				case 2 : endMonth = month+1;
 							endDate = endDate-28;
@@ -633,12 +633,12 @@ const TrendView = (props) => {
 
 		return startEndDate;
 	}
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 	// function makeAxis(data)
 	// {
 	// 	//Bar chart x axis
@@ -647,29 +647,29 @@ const TrendView = (props) => {
 	// 						.range([0, props.size])
 	// 						.align(0.5)
 	// 						.padding(props.barPadding);
-			
+
 	// 	const barxAxis = d3.axisBottom(barxScale);
 
 	// 	barsvg.append('g')
 	// 			.attr('transform', `translate(${props.margin+1}, ${props.size+props.margin})`)
 	// 			.call(barxAxis);
-				
+
 	// 	//Bar chart y asix
 	// 	let baryScale = d3.scaleLinear()
 	// 						.domain([0,	Math.max(xmean+xdev, ymean+ydev)])
 	// 						.range([props.size,0]);
-		
+
 	// 	const baryAxis = d3.axisLeft(baryScale);
 
 	// 	d3.select('.ybaraxis').remove();
 	// 	barsvg.append('g')
-	// 		.attr('transform', `translate(${props.margin+1}, ${props.margin})`)	
+	// 		.attr('transform', `translate(${props.margin+1}, ${props.margin})`)
 	// 		.attr('class', 'ybaraxis')
 	// 		.call(baryAxis);
 	// }
 
 	// makeBar(props.data);
-				
+
 	// function makeBar(selectedData)
 	// {
 	// 	//Calculate mean & deviation
@@ -684,7 +684,7 @@ const TrendView = (props) => {
 
 	// 	//For merge & exit
 	// 	let bars = barsvg.selectAll('rect').data(selectedData);
-	// 	let ebars = barsvg.selectAll('line.first').data(selectedData);		
+	// 	let ebars = barsvg.selectAll('line.first').data(selectedData);
 
 	// 	//Bar chart
 	// 	bars.enter()
@@ -710,7 +710,7 @@ const TrendView = (props) => {
 	// 		.attr('x2',(d,i) => (barxScale(xyarr[i])+barxScale.bandwidth()/2))
 	// 		.attr('y2', (d,i) => baryScale(meanarr[i]-devarr[i]));
 	// 	ebars.exit().remove();
-	// }		
+	// }
 
 
 
@@ -727,13 +727,13 @@ const TrendView = (props) => {
 			width: '1500px',
 			height: '500px'
 		}}>
-			<svg ref={univTrend} width={1400} height={120}> 
+			<svg ref={univTrend} width={1400} height={120}>
 			</svg>
-			<svg ref={buildingTrend} width={1400} height={120}> 
+			<svg ref={buildingTrend} width={1400} height={120}>
 			</svg>
-			<svg ref={floorTrend} width={1400} height={120}> 
+			<svg ref={floorTrend} width={1400} height={120}>
 			</svg>
-			<svg ref={roomTrend} width={1400} height={120}> 
+			<svg ref={roomTrend} width={1400} height={120}>
 			</svg>
 
 		</div>
