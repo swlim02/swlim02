@@ -1,12 +1,6 @@
 import React, { useRef, useEffect, useState} from "react";
 import * as d3 from "d3";
 
-let today = new Date();
-
-let year = today.getFullYear();
-let month = today.getMonth()+1;
-let date = today.getDate();
-let day = today.getDay();
 let timeDivide = ['9','9:30','10','10:30','11','11:30','12','12:30','13','13:30','14','14:30','15','15:30','16','16:30','17','17:30'];
 let dayDivide = ['Mon','Tue','Wed','Thu','Fri'];
 
@@ -29,12 +23,17 @@ const TrendView = (props) => {
 	const floorTrendSvg = d3.select(floorTrend.current);
 	const roomTrendSvg = d3.select(roomTrend.current);
 
+	let curDate = props.selectObject_o.date;
+	let startEndDate = changeMonFri(curDate);
+
+	let year = curDate[0];
+	let month = curDate[1];
+	let date = curDate[2];
+
 	let dayUnivTrend = props.getHalfHourTrendOfUniversityCrowdDensity(year+'-'+month+'-'+date);
 	let dayBuildingTrend = props.getHalfHourTrendOfBuildingCrowdDensity(301, year+'-'+month+'-'+date);
 	let dayFloorTrend = props.getHalfHourTrendOfBuildingFloorDensity(301, 1, year+'-'+month+'-'+date);
-	let dayRoomTrend = props.getHalfHourTrendOfBuildingRoomDensity(301, 1, 118, year+'-'+month+'-'+date);
-
-	let startEndDate = changeMonFri();
+	let dayRoomTrend = props.getHalfHourTrendOfBuildingRoomDensity(301, 1, 118, year+'-'+month+'-'+date);	
 
 	let weekUnivTrend = props.getDayTrendOfUniversityCrowdDensity(year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
 	let weekBuildingTrend = props.getDayTrendOfBuildingCrowdDensity(301, year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
@@ -42,20 +41,15 @@ const TrendView = (props) => {
 	let weekRoomTrend = props.getDayTrendOfBuildingRoomDensity(301, 1, 118, year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
 
 
+	makeDayUnivTrend(dayUnivTrend);
+	makeDayBuildingTrend(dayBuildingTrend);
+	makedayFloorTrend(dayFloorTrend);
+	makedayRoomTrend(dayRoomTrend);
 
-	//makeDayUnivTrend(dayUnivTrend);
-	//makeDayBuildingTrend(dayBuildingTrend);
-	//makedayFloorTrend(dayFloorTrend);
-	//makedayRoomTrend(dayRoomTrend);
-
-	 makeWeekUnivTrend(weekUnivTrend);
-	 makeWeekBuildingTrend(weekBuildingTrend);
-	 makeWeekFloorTrend(weekFloorTrend);
-	 makeWeekRoomTrend(weekRoomTrend);
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////TODO dayDivide가 5개이므로 MainPlot의 거 18개중에 5개만 가져오든지 해야함 시간순으로 가져와야되긴함.(아니면 5개만 놔두는건가?)
-
+	// makeWeekUnivTrend(weekUnivTrend);
+	// makeWeekBuildingTrend(weekBuildingTrend);
+	// makeWeekFloorTrend(weekFloorTrend);
+	// makeWeekRoomTrend(weekRoomTrend);
 
 	function makeDayUnivTrend(dayUnivTrend)
 	{
@@ -70,25 +64,27 @@ const TrendView = (props) => {
 				.call(d3.axisBottom(dayUnivTrendxScale));
 
 		let dayUnivTrendyScale = d3.scaleLinear()
-							.domain([0,	d3.max(dayUnivTrend.reserve_occupancy_trend)])
+							.domain([0,	100])
 							.range([80,0]);
 
 		univTrendSvg.append('g')
 			.attr('transform', `translate(${40}, ${20})`)
 			.call(d3.axisLeft(dayUnivTrendyScale).ticks(3));
 
+		let univCapacity = dayUnivTrend.capacity;
+		console.log(univCapacity);
 		let dayUnivTrendBar = univTrendSvg.selectAll('.dayUnivTrendBar').data(dayUnivTrend.reserve_occupancy_trend);
 		let dayUnivTrendBarQr = univTrendSvg.selectAll('.dayUnivTrendBarQr').data(dayUnivTrend.bq_occupancy_trend);
 
 		dayUnivTrendBar.enter()
 						.append('rect')
-						.attr('transform', `translate(${35}, ${20})`)
+						.attr('transform', `translate(${50}, ${20})`)
 						.attr('class', 'dayUnivTrendBar')
 						.merge(dayUnivTrendBar)
 						.attr('x', (d,i) => dayUnivTrendxScale(timeDivide[i]))
-						.attr('y', (d) => dayUnivTrendyScale(d))
-						.attr('width', 30)
-						.attr('height', (d) => 80-dayUnivTrendyScale(d));
+						.attr('y', (d) => dayUnivTrendyScale(d)/univCapacity)/////////////////////////////////////////////////////////////////////////////////여기부터 다시하기.....
+						.attr('width', 15)
+						.attr('height', (d) => dayUnivTrendyScale(d)/univCapacity);
 		dayUnivTrendBar.exit().remove();
 
 		dayUnivTrendBarQr.enter()
@@ -98,7 +94,7 @@ const TrendView = (props) => {
 						.merge(dayUnivTrendBar)
 						.attr('x', (d,i) => dayUnivTrendxScale(timeDivide[i]))
 						.attr('y', (d) => dayUnivTrendyScale(d))
-						.attr('width', 30)
+						.attr('width', 15)
 						.attr('height', (d) => 80-dayUnivTrendyScale(d));
 		dayUnivTrendBarQr.exit().remove();
 	}
@@ -128,12 +124,12 @@ const TrendView = (props) => {
 
 		dayBuildingTrendBar.enter()
 						.append('rect')
-						.attr('transform', `translate(${35}, ${20})`)
+						.attr('transform', `translate(${50}, ${20})`)
 						.attr('class', 'dayBuildingTrendBar')
 						.merge(dayBuildingTrendBar)
 						.attr('x', (d,i) => dayBuildingTrendxScale(timeDivide[i]))
 						.attr('y', (d) => dayBuildingTrendyScale(d))
-						.attr('width', 30)
+						.attr('width', 15)
 						.attr('height', (d) => 80-dayBuildingTrendyScale(d));
 		dayBuildingTrendBar.exit().remove();
 
@@ -144,7 +140,7 @@ const TrendView = (props) => {
 						.merge(dayBuildingTrendBar)
 						.attr('x', (d,i) => dayBuildingTrendxScale(timeDivide[i]))
 						.attr('y', (d) => dayBuildingTrendyScale(d))
-						.attr('width', 30)
+						.attr('width', 15)
 						.attr('height', (d) => 80-dayBuildingTrendyScale(d));
 		dayBuildingTrendBarQr.exit().remove();
 	}
@@ -174,12 +170,12 @@ const TrendView = (props) => {
 
 		dayFloorTrendBar.enter()
 						.append('rect')
-						.attr('transform', `translate(${35}, ${20})`)
+						.attr('transform', `translate(${50}, ${20})`)
 						.attr('class', 'dayFloorTrendBar')
 						.merge(dayFloorTrendBar)
 						.attr('x', (d,i) => dayFloorTrendxScale(timeDivide[i]))
 						.attr('y', (d) => dayFloorTrendyScale(d))
-						.attr('width', 30)
+						.attr('width', 15)
 						.attr('height', (d) => 80-dayFloorTrendyScale(d));
 		dayFloorTrendBar.exit().remove();
 
@@ -190,7 +186,7 @@ const TrendView = (props) => {
 						.merge(dayFloorTrendBar)
 						.attr('x', (d,i) => dayFloorTrendxScale(timeDivide[i]))
 						.attr('y', (d) => dayFloorTrendyScale(d))
-						.attr('width', 30)
+						.attr('width', 15)
 						.attr('height', (d) => 80-dayFloorTrendyScale(d));
 		dayFloorTrendBarQr.exit().remove();
 	}
@@ -220,12 +216,12 @@ const TrendView = (props) => {
 
 		dayRoomTrendBar.enter()
 						.append('rect')
-						.attr('transform', `translate(${35}, ${20})`)
+						.attr('transform', `translate(${50}, ${20})`)
 						.attr('class', 'dayRoomTrendBar')
 						.merge(dayRoomTrendBar)
 						.attr('x', (d,i) => dayRoomTrendxScale(timeDivide[i]))
 						.attr('y', (d) => dayRoomTrendyScale(d))
-						.attr('width', 30)
+						.attr('width', 15)
 						.attr('height', (d) => 80-dayRoomTrendyScale(d));
 		dayRoomTrendBar.exit().remove();
 
@@ -236,7 +232,7 @@ const TrendView = (props) => {
 						.merge(dayRoomTrendBar)
 						.attr('x', (d,i) => dayRoomTrendxScale(timeDivide[i]))
 						.attr('y', (d) => dayRoomTrendyScale(d))
-						.attr('width', 30)
+						.attr('width', 15)
 						.attr('height', (d) => 80-dayRoomTrendyScale(d));
 		dayRoomTrendBarQr.exit().remove();
 	}
@@ -266,23 +262,25 @@ const TrendView = (props) => {
 
 		weekUnivTrendBar.enter()
 						.append('rect')
-						.attr('transform', `translate(${35}, ${20})`)
+						.attr('transform', `translate(${110}, ${20})`)
 						.attr('class', 'weekUnivTrendBar')
 						.merge(weekUnivTrendBar)
 						.attr('x', (d,i) => weekUnivTrendxScale(dayDivide[i]))
 						.attr('y', (d) => weekUnivTrendyScale(d))
-						.attr('width', 30)
-						.attr('height', (d) => 80-weekUnivTrendyScale(d));
+						.attr('width', 15)
+						.attr('height', (d) => 80-weekUnivTrendyScale(d))
+						.attr('stroke','black')
+						.attr('stroke-width', 1);
 		weekUnivTrendBar.exit().remove();
 
 		weekUnivTrendBarQr.enter()
 						.append('rect')
-						.attr('transform', `translate(${65}, ${20})`)
+						.attr('transform', `translate(${125}, ${20})`)
 						.attr('class', 'weekUnivTrendBarQr')
 						.merge(weekUnivTrendBar)
 						.attr('x', (d,i) => weekUnivTrendxScale(dayDivide[i]))
 						.attr('y', (d) => weekUnivTrendyScale(d))
-						.attr('width', 30)
+						.attr('width', 15)
 						.attr('height', (d) => 80-weekUnivTrendyScale(d));
 		weekUnivTrendBarQr.exit().remove();
 	}
@@ -312,23 +310,23 @@ const TrendView = (props) => {
 
 		weekBuildingTrendBar.enter()
 						.append('rect')
-						.attr('transform', `translate(${35}, ${20})`)
+						.attr('transform', `translate(${110}, ${20})`)
 						.attr('class', 'weekBuildingTrendBar')
 						.merge(weekBuildingTrendBar)
 						.attr('x', (d,i) => weekBuildingTrendxScale(dayDivide[i]))
 						.attr('y', (d) => weekBuildingTrendyScale(d))
-						.attr('width', 30)
+						.attr('width', 15)
 						.attr('height', (d) => 80-weekBuildingTrendyScale(d));
 		weekBuildingTrendBar.exit().remove();
 
 		weekBuildingTrendBarQr.enter()
 						.append('rect')
-						.attr('transform', `translate(${65}, ${20})`)
+						.attr('transform', `translate(${125}, ${20})`)
 						.attr('class', 'weekBuildingTrendBarQr')
 						.merge(weekBuildingTrendBar)
 						.attr('x', (d,i) => weekBuildingTrendxScale(dayDivide[i]))
 						.attr('y', (d) => weekBuildingTrendyScale(d))
-						.attr('width', 30)
+						.attr('width', 15)
 						.attr('height', (d) => 80-weekBuildingTrendyScale(d));
 		weekBuildingTrendBarQr.exit().remove();
 	}
@@ -358,23 +356,23 @@ const TrendView = (props) => {
 
 		weekFloorTrendBar.enter()
 						.append('rect')
-						.attr('transform', `translate(${35}, ${20})`)
+						.attr('transform', `translate(${110}, ${20})`)
 						.attr('class', 'weekFloorTrendBar')
 						.merge(weekFloorTrendBar)
 						.attr('x', (d,i) => weekFloorTrendxScale(dayDivide[i]))
 						.attr('y', (d) => weekFloorTrendyScale(d))
-						.attr('width', 30)
+						.attr('width', 15)
 						.attr('height', (d) => 80-weekFloorTrendyScale(d));
 		weekFloorTrendBar.exit().remove();
 
 		weekFloorTrendBarQr.enter()
 						.append('rect')
-						.attr('transform', `translate(${65}, ${20})`)
+						.attr('transform', `translate(${125}, ${20})`)
 						.attr('class', 'weekFloorTrendBarQr')
 						.merge(weekFloorTrendBar)
 						.attr('x', (d,i) => weekFloorTrendxScale(dayDivide[i]))
 						.attr('y', (d) => weekFloorTrendyScale(d))
-						.attr('width', 30)
+						.attr('width', 15)
 						.attr('height', (d) => 80-weekFloorTrendyScale(d));
 		weekFloorTrendBarQr.exit().remove();
 	}
@@ -404,23 +402,23 @@ const TrendView = (props) => {
 
 		weekRoomTrendBar.enter()
 						.append('rect')
-						.attr('transform', `translate(${35}, ${20})`)
+						.attr('transform', `translate(${110}, ${20})`)
 						.attr('class', 'weekRoomTrendBar')
 						.merge(weekRoomTrendBar)
 						.attr('x', (d,i) => weekRoomTrendxScale(dayDivide[i]))
 						.attr('y', (d) => weekRoomTrendyScale(d))
-						.attr('width', 30)
+						.attr('width', 15)
 						.attr('height', (d) => 80-weekRoomTrendyScale(d));
 		weekRoomTrendBar.exit().remove();
 
 		weekRoomTrendBarQr.enter()
 						.append('rect')
-						.attr('transform', `translate(${65}, ${20})`)
+						.attr('transform', `translate(${125}, ${20})`)
 						.attr('class', 'weekRoomTrendBarQr')
 						.merge(weekRoomTrendBar)
 						.attr('x', (d,i) => weekRoomTrendxScale(dayDivide[i]))
 						.attr('y', (d) => weekRoomTrendyScale(d))
-						.attr('width', 30)
+						.attr('width', 15)
 						.attr('height', (d) => 80-weekRoomTrendyScale(d));
 		weekRoomTrendBarQr.exit().remove();
 	}
@@ -428,7 +426,11 @@ const TrendView = (props) => {
 
 
 
-	function changeMonFri() {
+	function changeMonFri(curDate) {
+
+		let month = curDate[1];
+		let date = curDate[2];		
+		let day = curDate[3];
 		var startDate = date;
 		var endDate = date;
 		var startMonth = month;
@@ -457,7 +459,17 @@ const TrendView = (props) => {
 			case 6 : startDate = date-5;
 					endDate = date-1;
 					break;
-		}
+		}	
+		
+		let startEndDate = validDate(curDate,startDate,endDate,startMonth,endMonth);
+		console.log(startEndDate);
+		return startEndDate;
+	}
+
+	function validDate(curDate,startDate,endDate,startMonth,endMonth){
+
+		let month = curDate[1];
+
 		if(startDate<=0)
 		{
 			switch(month) {
@@ -631,12 +643,9 @@ const TrendView = (props) => {
 							break;
 			}
 		}
-		let startEndDate = [startMonth,startDate,endMonth,endDate];
 
-		return startEndDate;
+		return [startMonth,startDate,endMonth,endDate];
 	}
-
-
 
 
 
