@@ -282,9 +282,13 @@ const MapContainer = (props) => {
     }
     // TODO @hskim
     //getUniversityCrowdDensity() {return UniversityCrowdDensity}
+
+    // TODO @hskim
     //function getBuildingCrowdDensity(bdNumber) {
     //  return BuildingCrowdDensity;
     //}
+
+    // TODO @hskim
     function enumerateBuildingCrowdDensitySummary() {
       let BuildingCrowdDensitySummary_arr = new Array();
       for (let i=0 ; i < buildingsInfo.length/4 ; i++) {
@@ -301,7 +305,44 @@ const MapContainer = (props) => {
       }
       return BuildingCrowdDensitySummary_arr;
     }
+
   }, []);
+
+  //  TODO 실제 데이터 반환하게 개발 @hskim
+  function getFloorDensity(bdNumber, floor) {
+    let FloorCrowdDensity = new Object();
+    FloorCrowdDensity = {
+       "bdName" : "제1공학관",
+       "floor" : 1,
+       "children" : [
+          {
+          "roomNumber" : 101,
+          "capacity" : 20,
+          "occupancy" : 5,
+          "className" : "현수님찬양",
+          "classStartTime" : "TEXT시간",
+          "classEndTime" :  "TEXT시간"
+          },
+          {
+          "roomNumber" : 102,
+          "capacity" : 50,
+          "occupancy" : 22,
+          "className" : "현수님찬양",
+          "classStartTime" : "TEXT시간",
+          "classEndTime" :  "TEXT시간"
+          },
+          {
+          "roomNumber" : 103,
+          "capacity" : 100,
+          "occupancy" : 0,
+          "className" : "현수님찬양",
+          "classStartTime" : "TEXT시간",
+          "classEndTime" :  "TEXT시간"
+          }
+       ]
+    }
+    return FloorCrowdDensity;
+  }
 
   return (
     <div>
@@ -321,6 +362,7 @@ const MapContainer = (props) => {
           roomData3={room3}
           selectedOptions={selectedOptions}
           floor_o={floor_o}
+          getFloorDensity={getFloorDensity}
         />
       </div>
     </div>

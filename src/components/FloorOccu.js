@@ -153,12 +153,53 @@ const FloorOccu = (props) => {
             .style("fill", "black");
 
 				svg.selectAll('rect')
-						.on('click', function(d, i) {
+					.on('click', function(d, i) {
 							if (clickedRectId != this.id) {
 								d3.selectAll(".element1"+clickedRectId).style("stroke-width", 1);
 								d3.selectAll(".element3"+clickedRectId).attr("font-weight", 300);
 							}
 							clickedRectId = this.id;
+
+							svg.selectAll("line")
+								.remove();
+
+							let x = 406;
+							let y = Number(document.getElementsByClassName("element1"+clickedRectId)[0].getAttribute('y'));
+							let h = Number(document.getElementsByClassName("element1"+clickedRectId)[0].getAttribute('height'));
+							console.log(x+","+y);
+							let tempdata = [x , y];
+							console.log(tempdata);
+							console.log(tempdata[0]);
+
+							svg.append("g")
+								.attr("transform", `translate(${margin.left+1}, ${0})`)
+								.attr("class", "selection99")
+								.selectAll("line")
+								.data(tempdata)
+								.join("line")
+								.style("stroke", "black")
+								.style("stroke-width", 3)
+								.attr('x1',d => x)
+								.attr('y1',d => y)
+								.attr('x2',d => x+10)
+								.attr('y2',d => y+h/2);
+
+							svg.append("g")
+								.attr("transform", `translate(${margin.left+1}, ${0})`)
+								.attr("class", "selection99")
+								.selectAll("line")
+								.data(tempdata)
+								.join("line")
+								.style("stroke", "black")
+								.style("stroke-width", 3)
+								.attr('x1',d => x+10)
+								.attr('y1',d => y+h/2)
+								.attr('x2',d => x)
+								.attr('y2',d => y+h);
+
+							// TODO 실제 선택한 층 정보를 이용하여
+							// getFloorDensity(bdNumber, floor) 호출하여 roomData를 얻어야함.
+							// @ghjeong 
 							switch (selectData.bdNumber) {
 								case "33":
 								props.floor_o.roomData = props.roomData[i.floor-1];
@@ -172,9 +213,26 @@ const FloorOccu = (props) => {
 								default:
 							}
 							props.floor_o.f(props.floor_o.roomData);
-						}
-					);
+					}
+		);
+/*
+svg.append("g")
+	.attr("transform", `translate(${margin.left+1}, ${0})`)
+	.call(svg => svg.append("path")
+	.style("stroke", "black")
+	.style("fill", "none")
+	.attr("d", draw(d3.path(),x,y)))
+	.node();
+
+		function draw(context,x,y) {
+		  context.moveTo(x, y); // move current point to ⟨10,10⟩
+		  context.lineTo(x+2, y+100); // draw straight line to ⟨100,10⟩
+		  context.lineTo(x, y+200); // draw straight line to ⟨300,10⟩
+		  // etc.
+		  return context; // not mandatory, but will make it easier to chain operations
 		}
+*/
+	}
 //	},[selectData]);
 
 	return (
@@ -186,10 +244,10 @@ const FloorOccu = (props) => {
 			{selectData === null ? ' ' : selectData.bdNumber+"동 "+selectData.bdName}
 			</h1>
 			<div id= "Floor" class="splotContainer3" style={{
-				width: '500px',
+				width: '510px',
 				height: '700px'
 			}}>
-				<svg ref={mainBarSvg} width={width+35} height={height+30} > </svg>
+				<svg ref={mainBarSvg} width={width+45} height={height+30} > </svg>
 			</div>
 			<div id='roomView' class="splotContainer4" style={{
 				width: '400px',
