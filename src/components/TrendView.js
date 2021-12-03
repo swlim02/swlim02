@@ -16,6 +16,8 @@ const TrendView = (props) => {
 	// set the dimensions and margins of the graph
 	props.callBack(setTrendData); // 갱신시 state 변경해서 rerendering 하려고 걸어 두었음.
 
+	//props.selectObject_o.state = fdsjkljsdlkjflskj;
+  //setTrendData(props.selectObject_o.state);
 
 	const univTrend = useRef(null);
 	const buildingTrend = useRef(null);
@@ -723,19 +725,24 @@ const TrendView = (props) => {
 
 // 1500 * 500 에 사이즈 맞춰주면 thx
 	return (
-		<div class="splotContainerx" style={{
-			width: '1500px',
-			height: '500px'
-		}}>
-			<svg ref={univTrend} width={1400} height={120}>
-			</svg>
-			<svg ref={buildingTrend} width={1400} height={120}>
-			</svg>
-			<svg ref={floorTrend} width={1400} height={120}>
-			</svg>
-			<svg ref={roomTrend} width={1400} height={120}>
-			</svg>
+		<div>
+			<div>
 
+			</div>
+			<div class="splotContainerx" style={{
+				width: '1500px',
+				height: '500px'
+			}}>
+				<svg ref={univTrend} width={1400} height={120}>
+				</svg>
+				<svg ref={buildingTrend} width={1400} height={120}>
+				</svg>
+				<svg ref={floorTrend} width={1400} height={120}>
+				</svg>
+				<svg ref={roomTrend} width={1400} height={120}>
+				</svg>
+
+			</div>
 		</div>
 	)
 };

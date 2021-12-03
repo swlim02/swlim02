@@ -21,6 +21,7 @@ const FloorOccu = (props) => {
 	let colorScale = d3.scaleThreshold()
                     .domain([props.selectedOptions.selectedOption_green,props.selectedOptions.selectedOption_yellow])
                     .range(['green','yellow','red']);
+	let clickedRectId = -1;
 
 //	useEffect(() => {
 
@@ -68,21 +69,7 @@ const FloorOccu = (props) => {
         // append the svg object to the body of the page
         //console.log();
 
-        //console.log(selectData);
-        // use this information to add rectangles:
-				svg.append('g')
-            .attr("transform", `translate(${margin.left+1}, ${0})`)
-						.attr("class", "selection99")
-            .selectAll("rect")
-            .data(selectData.floors)
-            .enter()
-            .append("rect")
-            .attr('x', xAxis(0))
-            .attr('y', (d,i) => yAxis(floorList[i]))
-            .attr('width', xAxis(100))
-            .attr('height', yAxis.bandwidth())
-						.style("fill", "White")
-            .style("stroke", "Black")
+
 
         svg.append('g')
             .attr("transform", `translate(${margin.left+1}, ${0})`)
@@ -92,11 +79,59 @@ const FloorOccu = (props) => {
             .data(selectData.floors)
             .enter()
             .append("rect")
+						.attr("class", (d, i) => "element2"+i)
+						.attr("id", (d, i) => i)
             .attr('x', xAxis(0))
             .attr('y', (d,i) => yAxis(floorList[i]))
             .attr('width', d => xAxis(d.occupancy/d.capacity*100))
             .attr('height', yAxis.bandwidth())
-            .style("fill", d => (d.occuancy/d.capacity*100) === 0 ? 'white' : colorScale((d.occupancy/d.capacity*100)));
+            .style("fill", d => (d.occuancy/d.capacity*100) === 0 ? 'white' : colorScale((d.occupancy/d.capacity*100)))
+						.style("stroke", "Black")
+						.on("mouseenter", function() {
+								d3.selectAll(".element1"+this.id).style("stroke-width", 3);
+								d3.selectAll(".element3"+this.id).attr("font-weight", 700);
+						})
+						.on("mouseleave", function() {
+							if (clickedRectId === this.id) {
+								//nothing
+							}else {
+								d3.selectAll(".element1"+this.id).style("stroke-width", 1);
+								d3.selectAll(".element3"+this.id).attr("font-weight", 300);
+							}
+						});
+
+				//console.log(selectData);
+        // use this information to add rectangles:
+				svg.append('g')
+            .attr("transform", `translate(${margin.left+1}, ${0})`)
+						.attr("class", "selection99")
+            .selectAll("rect")
+            .data(selectData.floors)
+            .enter()
+            .append("rect")
+						.attr("class", (d, i) => "element1"+i)
+						.attr("id", (d, i) => i)
+            .attr('x', xAxis(0))
+            .attr('y', (d,i) => yAxis(floorList[i]))
+            .attr('width', xAxis(100))
+            .attr('height', yAxis.bandwidth())
+						.style("fill", "white")
+            .style("stroke", "Black")
+						.style("fill-opacity", 0.00)
+						.on("mouseenter", function() {
+								d3.selectAll(".element1"+this.id).style("stroke-width", 3);
+								d3.selectAll(".element3"+this.id).attr("font-weight", 700);
+						})
+						.on("mouseleave", function() {
+							console.log(clickedRectId);
+							console.log(this.id);
+							if (clickedRectId === this.id) {
+								//nothing
+							}else {
+								d3.selectAll(".element1"+this.id).style("stroke-width", 1);
+								d3.selectAll(".element3"+this.id).attr("font-weight", 300);
+							}
+						});
 
 				svg.append('g')
             .attr("transform", `translate(${margin.left+1}, ${0})`)
@@ -105,14 +140,25 @@ const FloorOccu = (props) => {
             .selectAll("text")
             .data(selectData.floors)
             .join("text")
-            .attr('x', d => xAxis((d.occupancy/d.capacity*50)-3))
+						.attr("class", (d, i) => "element3"+i)
+						.attr("id", (d, i) => i)
+//            .attr('x', d => xAxis((d.occupancy/d.capacity*50)-3))
+						.attr('x', d => Math.round(d.occupancy/d.capacity*100 < 50 ?
+							xAxis(Math.round(d.occupancy/d.capacity*100))+5 : xAxis(Math.round(d.occupancy/d.capacity*100))-5 ))
             .attr('y', (d,i) => yAxis(floorList[i]) + (yAxis.bandwidth()/2+4))
-						.text((d) => Math.round(d.occupancy/d.capacity*100)+'%')
+						.text((d) => ' '+Math.round(d.occupancy/d.capacity*100)+'% ')
             .attr("font-size", "12px")
+						.attr("font-weight", 300)
+						.attr("text-anchor", d=> Math.round(d.occupancy/d.capacity*100) < 50 ? "start" : "end")
             .style("fill", "black");
 
 				svg.selectAll('rect')
 						.on('click', function(d, i) {
+							if (clickedRectId != this.id) {
+								d3.selectAll(".element1"+clickedRectId).style("stroke-width", 1);
+								d3.selectAll(".element3"+clickedRectId).attr("font-weight", 300);
+							}
+							clickedRectId = this.id;
 							switch (selectData.bdNumber) {
 								case "33":
 								props.floor_o.roomData = props.roomData[i.floor-1];
