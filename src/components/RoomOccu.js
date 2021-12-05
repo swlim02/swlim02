@@ -59,13 +59,14 @@ const RoomOccu = (props) => {
 				})
 				.on('click', function() {
 						props.selectObject_o.roomNumber = this.id;
+						console.log("click_a_room");
+						console.log(props.selectObject_o);
 						if (clickedRectId != this.id) {
 							d3.selectAll(".element11"+clickedRectId).style("stroke-width", 1);
 							d3.selectAll(".element33"+clickedRectId).attr("font-weight", 300);
+							clickedRectId = this.id;
+							props.update_trendView_f();
 						}
-						clickedRectId = this.id;
-						console.log("click_a_room");
-						console.log(props.selectObject_o);
 				})
 				.on("mouseleave", function() {
 					if (clickedRectId === this.id) {

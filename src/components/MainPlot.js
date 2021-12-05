@@ -41,12 +41,15 @@ const MainPlot = (props) => {
   const controlWidth = svgWidth * 2;
   const controlHeight = 50;
 
-  function update_new(){
+  function update_new(){ // 거리두기 수정시 호출되는 함
     console.log("update_new");
     cb_f();
-    cb_trend_f();
+    cb_trend_f(selectObject_o.bdNumber + selectObject_o.floor + selectObject_o.roomNumber);
   }
 
+  function update_trendView(){ // drlrvyObject (건물,층,룸) 정보 수정시 호출 되는 함수
+    cb_trend_f(selectObject_o.bdNumber + selectObject_o.floor + selectObject_o.roomNumber);
+  }
 
  // TODO 아래 function 8개 개발 필요.  @hskim @swlim
   function getHalfHourTrendOfUniversityCrowdDensity(date) {
@@ -182,7 +185,7 @@ const MainPlot = (props) => {
       }}>
         <MapContainer
         callBack={callBack}
-        update_f={update_new} // selectObject_o  값 갱신시 호출해주어야-1
+        update_trendView_f={update_trendView} // selectObject_o  값 갱신시 호출해주어야-1
         selectedOptions={selectedOptions}
         selectObject_o={selectObject_o}
         />

@@ -196,44 +196,46 @@ const FloorOccu = (props) => {
 								d3.selectAll(".element1"+clickedRectId).style("stroke-width", 1);
 								d3.selectAll(".element3"+clickedRectId).attr("font-weight", 300);
 								props.selectObject_o.roomNumber = null;
+								clickedRectId = this.id;
+								props.update_trendView_f();
+
+								svg.selectAll("line")
+									.remove();
+
+								let x = 406;
+								let y = Number(document.getElementsByClassName("element1"+clickedRectId)[0].getAttribute('y'));
+								let h = Number(document.getElementsByClassName("element1"+clickedRectId)[0].getAttribute('height'));
+								let tempdata = [x , y];
+
+								svg.append("g")
+									.attr("transform", `translate(${margin.left+1}, ${0})`)
+									.attr("class", "selection99")
+									.selectAll("line")
+									.data(tempdata)
+									.join("line")
+									.style("stroke", "black")
+									.style("stroke-width", 3)
+									.attr('x1',d => x)
+									.attr('y1',d => y)
+									.attr('x2',d => x+10)
+									.attr('y2',d => y+h/2);
+
+								svg.append("g")
+									.attr("transform", `translate(${margin.left+1}, ${0})`)
+									.attr("class", "selection99")
+									.selectAll("line")
+									.data(tempdata)
+									.join("line")
+									.style("stroke", "black")
+									.style("stroke-width", 3)
+									.attr('x1',d => x+10)
+									.attr('y1',d => y+h/2)
+									.attr('x2',d => x)
+									.attr('y2',d => y+h);
+
 							} else {
 								//nothing
 							}
-							clickedRectId = this.id;
-
-							svg.selectAll("line")
-								.remove();
-
-							let x = 406;
-							let y = Number(document.getElementsByClassName("element1"+clickedRectId)[0].getAttribute('y'));
-							let h = Number(document.getElementsByClassName("element1"+clickedRectId)[0].getAttribute('height'));
-							let tempdata = [x , y];
-
-							svg.append("g")
-								.attr("transform", `translate(${margin.left+1}, ${0})`)
-								.attr("class", "selection99")
-								.selectAll("line")
-								.data(tempdata)
-								.join("line")
-								.style("stroke", "black")
-								.style("stroke-width", 3)
-								.attr('x1',d => x)
-								.attr('y1',d => y)
-								.attr('x2',d => x+10)
-								.attr('y2',d => y+h/2);
-
-							svg.append("g")
-								.attr("transform", `translate(${margin.left+1}, ${0})`)
-								.attr("class", "selection99")
-								.selectAll("line")
-								.data(tempdata)
-								.join("line")
-								.style("stroke", "black")
-								.style("stroke-width", 3)
-								.attr('x1',d => x+10)
-								.attr('y1',d => y+h/2)
-								.attr('x2',d => x)
-								.attr('y2',d => y+h);
 
 							// TODO 실제 선택한 층 정보를 이용하여
 							// getFloorDensity(bdNumber, floor) 호출하여 roomData를 얻어야함.
@@ -296,7 +298,7 @@ svg.append("g")
 					callBack={callBack}
 					selectedOptions={selectedOptions}
 					selectObject_o={props.selectObject_o}
-          update_f={props.update_new} // selectObject_o  값 갱신시 호출해주어야함
+          update_trendView_f={props.update_trendView_f} // selectObject_o  값 갱신시 호출해주어야함
 				/>
 			</div>
 		</div>

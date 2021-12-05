@@ -256,6 +256,7 @@ const MapContainer = (props) => {
                 props.selectObject_o.bdNumber = current_data.bdNumber;
                 props.selectObject_o.floor = null;
                 props.selectObject_o.roomNumber = null;
+                props.update_trendView_f();
                 cb_f(current_data)
             }
 
@@ -367,7 +368,7 @@ const MapContainer = (props) => {
           floor_o={floor_o}
           getFloorDensity={getFloorDensity}
           selectObject_o={props.selectObject_o}
-          update_f={props.update_new} // selectObject_o  값 갱신시 호출해주어야함
+          update_trendView_f={props.update_trendView_f} // selectObject_o  값 갱신시 호출해주어야함
         />
       </div>
     </div>
