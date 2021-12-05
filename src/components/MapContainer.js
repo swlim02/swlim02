@@ -284,8 +284,6 @@ const MapContainer = (props) => {
         );
         return markerImage;
     }
-    // TODO @hskim
-    //getUniversityCrowdDensity() {return UniversityCrowdDensity}
 
     // TODO @hskim
     //function getBuildingCrowdDensity(bdNumber) {

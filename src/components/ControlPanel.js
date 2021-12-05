@@ -42,11 +42,14 @@ const ControlPanel = (props) => {
     let stageNum = curStage[0]-1;
     //console.log(stageNum);
 
+    const xAxis = d3.scaleLinear()
+                    .domain([0, 100])
+                    .range([ 10, 10+((props.stage[stageNum][0]+props.stage[stageNum][1]+props.stage[stageNum][2])*3)]);
+
     densityBar.selectAll(".line0")
               .data(props.stage)
               .enter()
               .append('line')
-              //.attr('transform', `translate(${props.margin}, ${props.margin})`)
               .join('.line0')
               .attr('class','line0')
               .attr('x1',10)
@@ -61,7 +64,6 @@ const ControlPanel = (props) => {
               .data(props.stage)
               .enter()
               .append('line')
-              //.attr('transform', `translate(${props.margin}, ${props.margin})`)
               .join('.line1')
               .attr('class','line1')
               .attr('x1',10)
@@ -153,7 +155,7 @@ const ControlPanel = (props) => {
                 .join('.text4')
                 .attr('class','text4')
                 .text(props.stage[stageNum][0]+"%")
-                .attr('x',(props.stage[stageNum][0]*3)-10)
+                .attr('x',(props.stage[stageNum][0]*3))
                 .attr('y',28)
                 .attr("font-family", "sans-serif")
                 .attr("font-size", "10px")
@@ -167,11 +169,58 @@ const ControlPanel = (props) => {
                 .join('.text5')
                 .attr('class','text5')
                 .text((props.stage[stageNum][0]+props.stage[stageNum][1])+"%")
-                .attr('x',((props.stage[stageNum][0]+props.stage[stageNum][1])*3)-10)
+                .attr('x',((props.stage[stageNum][0]+props.stage[stageNum][1])*3))
                 .attr('y',28)
                 .attr("font-family", "sans-serif")
                 .attr("font-size", "10px")
                 .attr('fill','black');
+
+    function drawSNUCrowdDensity(CrowdDensity) { // CrowdDensity = 0~100
+      densityBar.append('line')
+                  .attr('x1',xAxis(CrowdDensity))
+                  .attr('y1',-13)
+                  .attr('x2',xAxis(CrowdDensity))
+                  .attr('y2',16)
+                  .attr('stroke', '#0f0f70')
+                  .attr('stroke-width', 4);
+      densityBar.append('line')
+                  .attr('x1',xAxis(CrowdDensity)-1)
+                  .attr('y1',0)
+                  .attr('x2',xAxis(CrowdDensity)-6)
+                  .attr('y2',-4)
+                  .attr('stroke', '#0f0f70')
+                  .attr('stroke-width', 2);
+      densityBar.append('line')
+                  .attr('x2',xAxis(CrowdDensity)-10)
+                  .attr('y2',0)
+                  .attr('x1',xAxis(CrowdDensity)-5)
+                  .attr('y1',-4)
+                  .attr('stroke', '#0f0f70')
+                  .attr('stroke-width', 2);
+      densityBar.append('line')
+                  .attr('x2',xAxis(CrowdDensity))
+                  .attr('y2',-12)
+                  .attr('x1',xAxis(CrowdDensity)-7)
+                  .attr('y1',-12)
+                  .attr('stroke', '#0f0f70')
+                  .attr('stroke-width', 2);
+      densityBar.append('line')
+                  .attr('x2',xAxis(CrowdDensity)+5)
+                  .attr('y2',-9)
+                  .attr('x1',xAxis(CrowdDensity))
+                  .attr('y1',-9)
+                  .attr('stroke', '#0f0f70')
+                  .attr('stroke-width', 2);
+      densityBar.append('line')
+                  .attr('x2',xAxis(CrowdDensity)+5)
+                  .attr('y2',-5)
+                  .attr('x1',xAxis(CrowdDensity))
+                  .attr('y1',-5)
+                  .attr('stroke', '#0f0f70')
+                  .attr('stroke-width', 2);
+    }
+
+    drawSNUCrowdDensity(100*props.UniversityCrowdDensity_o.occupancy/props.UniversityCrowdDensity_o.capacity);
 
     props.selectedOptions.selectedOption_green = props.stage[stageNum][0];
     props.selectedOptions.selectedOption_yellow = props.stage[stageNum][0]+props.stage[stageNum][1];
@@ -181,9 +230,10 @@ const ControlPanel = (props) => {
   return (
     <div class="selectionPanel">
       <div class="selection_label" style={{ display: "flex"}}>
-        <b><label>서울대 안전모임 도우미   </label></b>
-        <svg  ref={densityBarSvgRef} width={335} height={40} viewBox="-7 -5 335 35"></svg>
-        <label>거리두기:</label>
+        <b><label> <font color="0f0f70">서울대학교 안전모임 도우미 </font></label></b>
+        <label> &nbsp;| 서울대 밀집도:</label>
+        <svg  ref={densityBarSvgRef} width={335} height={50} viewBox="-7 -5 335 35"></svg>
+        <label>| 거리두기:</label>
       </div>
       <div class="selection_item">
         <Select options={options_x} name="x"

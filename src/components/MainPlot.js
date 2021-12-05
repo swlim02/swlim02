@@ -12,6 +12,7 @@ let year = today.getFullYear();
 let month = today.getMonth()+1;
 let date = today.getDate();
 let day = today.getDay();
+let UniversityCrowdDensity = new Object();
 
 const MainPlot = (props) => {
 
@@ -31,6 +32,18 @@ const MainPlot = (props) => {
     cb_trend_f = f;
   }
 
+  // TODO @hskim
+  function getUniversityCrowdDensity() {
+    let UniversityCrowdDensity = new Object();
+    UniversityCrowdDensity = {
+      "capacity": 10000, // TODO @hskim 실제 고정된 데이터로 입력
+      "occupancy": 5000 // TODO @hskim 현재시간의 실제 예약값
+    };
+    return UniversityCrowdDensity;
+  }
+
+  UniversityCrowdDensity = getUniversityCrowdDensity();
+
   selectedOptions.selectedOption_green = props.stage[0][0];
   selectedOptions.selectedOption_yellow = props.stage[0][0]+props.stage[0][1];
   const splotSvg = useRef(null);
@@ -47,7 +60,7 @@ const MainPlot = (props) => {
     cb_trend_f(selectObject_o.bdNumber + selectObject_o.floor + selectObject_o.roomNumber);
   }
 
-  function update_trendView(){ // drlrvyObject (건물,층,룸) 정보 수정시 호출 되는 함수
+  function update_trendView(){ // drlrvyObject (건물,층,룸) 정보 수정시 호출 되는 함
     cb_trend_f(selectObject_o.bdNumber + selectObject_o.floor + selectObject_o.roomNumber);
   }
 
@@ -167,7 +180,9 @@ const MainPlot = (props) => {
     <div style={{
       height: '1000px'
     }}>
-      <div class="splotContainer01" z-index="9999">
+      <div class="splotContainer01" z-index="9999" style={{
+        height: '50px'
+      }}>
         <ControlPanel
           nominal={props.nominal}
           ordinal={props.ordinal}
@@ -177,6 +192,7 @@ const MainPlot = (props) => {
           selectedOptions={selectedOptions}
           update_f={update_new}
           stage={props.stage}
+          UniversityCrowdDensity_o={UniversityCrowdDensity}
         />
       </div>
       <div class="splotContainer02" z-index="0" style={{
