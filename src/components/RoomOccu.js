@@ -77,18 +77,65 @@ const RoomOccu = (props) => {
 					}
 				});
 
+
 			// and to add the text labels
+			let pre_y = -1;
+			let pre_width = -1;
+			let accumulated_i = 0;
+
 			svg.selectAll("text")
 				.data(root.leaves())
 				.attr("class", "selection98")
 				.join("text")
 				.attr("class", (d, i) => "element33"+d.data.roomNumber)
 				.attr("id", (d, i) => d.data.roomNumber)
-				.attr("x", function(d){ return d.x0+5})    // +10 to adjust position (more right)
-				.attr("y", function(d){ return d.y0+17})    // +20 to adjust position (lower)
+				.attr("x", function(d){
+					return d.x0+2;
+				})    // +10 to adjust position (more right)
+				.attr("y", function(d,i){
+					if ((pre_y === d.y0) && (pre_width < 89)) {
+						accumulated_i++;
+						pre_width = d.x1 - d.x0;
+						return d.y0+17+accumulated_i*15;
+					} else {
+						pre_y = d.y0;
+						accumulated_i = 0;
+						pre_width = d.x1 - d.x0;
+						return d.y0+17;
+					}
+				})    // +20 to adjust position (lower)
 				.text(function(d){ return [d.data.roomNumber+'호('+d.data.occupancy+'/'+d.data.capacity+')']})
 				.attr("font-size", "13px")
 				.attr("fill", "black");
+
+/*
+			svg.selectAll("text")
+				.data(root.leaves())
+				.attr("class", "selection98")
+				.enter()
+      	.append('text')
+				.attr("class", (d, i) => "element33"+d.data.roomNumber)
+				.attr("id", (d, i) => d.data.roomNumber)
+				.selectAll('tspan')
+				.data(d => {
+					console.log((d.data.roomNumber+'호('+d.data.occupancy+'/'+d.data.capacity+')'));
+          return (d.data.roomNumber+'호('+d.data.occupancy+'/'+d.data.capacity+')').split(/(?=[A-Z][^A-Z])/g) // split the name of movie
+              .map(v => {
+                  return {
+                      text: v,
+                      x0: d.x0,                        // keep x0 reference
+                      y0: d.y0                         // keep y0 reference
+                  }
+              });
+      	})
+				.enter()
+      	.append('tspan')
+				.attr("x", function(d){ return d.x0+5})    // +10 to adjust position (more right)
+				.attr("y", function(d,i){ return d.y0+17+(i * 10)})    // +20 to adjust position (lower)
+				.text((d) => d.text)
+				.attr("font-size", "13px")
+				.attr("fill", "black");
+*/
 
 			if (props.selectObject_o.roomNumber != null) {
 				clickedRectId = props.selectObject_o.roomNumber;
@@ -104,7 +151,7 @@ const RoomOccu = (props) => {
 				{selectData === null ? ' ' : selectData.bdName+ "동 " + selectData.floor + "층"}
         </h1>
 		<div id= "Classroom">
-			<svg ref={mainTreemapSvg} width={width+20} height={height+20}> </svg>
+			<svg ref={mainTreemapSvg} width={width+80} height={height+20}> </svg>
 		</div>
 		</fragment>
 	)
