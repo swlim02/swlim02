@@ -15,9 +15,9 @@ let day = today.getDay();
 
 const MainPlot = (props) => {
 
-  selectObject_o.bdNumber = '301';
-  selectObject_o.floor = '1';
-  selectObject_o.roomNumber = '101';
+  selectObject_o.bdNumber = null;
+  selectObject_o.floor = null;
+  selectObject_o.roomNumber = null;
   selectObject_o.state = selectObject_o.bdNumber + selectObject_o.floor + selectObject_o.roomNumber;
   selectObject_o.date = [year,month,date,day];
 
@@ -181,8 +181,10 @@ const MainPlot = (props) => {
         height: '800px'
       }}>
         <MapContainer
-        selectedOptions={selectedOptions}
         callBack={callBack}
+        update_f={update_new} // selectObject_o  값 갱신시 호출해주어야-1
+        selectedOptions={selectedOptions}
+        selectObject_o={selectObject_o}
         />
       </div>
       <div class="splotContainer03" z-index="0" style={{

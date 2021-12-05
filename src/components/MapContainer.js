@@ -250,9 +250,12 @@ const MapContainer = (props) => {
 
                 // 현재 클릭된 마커의 이미지는 클릭 이미지로 변경합니다
                 marker.setImage(clickImage);
-                floor_o.roomData = null;
+                floor_o.roomData = null; // 개발중임시사용삭제 될 예정
                 current_data = position.data;
                 console.log(current_data);
+                props.selectObject_o.bdNumber = current_data.bdNumber;
+                props.selectObject_o.floor = null;
+                props.selectObject_o.roomNumber = null;
                 cb_f(current_data)
             }
 
@@ -357,12 +360,14 @@ const MapContainer = (props) => {
         <FloorOccu
           data={current_data}
           callBack={callBack}
-          roomData={room}
-          roomData2={room2}
-          roomData3={room3}
+          roomData={room} // 개발중임시사용삭제 될 예정
+          roomData2={room2} // 개발중임시사용삭제 될 예정
+          roomData3={room3} // 개발중임시사용삭제 될 예정
           selectedOptions={selectedOptions}
           floor_o={floor_o}
           getFloorDensity={getFloorDensity}
+          selectObject_o={props.selectObject_o}
+          update_f={props.update_new} // selectObject_o  값 갱신시 호출해주어야함
         />
       </div>
     </div>
