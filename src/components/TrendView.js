@@ -4,6 +4,7 @@ import * as d3 from "d3";
 let timeDivide = ['9:30','10','10:30','11','11:30','12','12:30','13','13:30','14','14:30','15','15:30','16','16:30','17','17:30','18'];
 let dayDivide = ['Mon','Tue','Wed','Thu','Fri'];
 let t = 0;
+let s = 0;
 
 const TrendView = (props) => {
 
@@ -38,6 +39,7 @@ const TrendView = (props) => {
 		makeDayBuildingTrend(dayBuildingTrend);
 		makeDayFloorTrend(dayFloorTrend);
 		makeDayRoomTrend(dayRoomTrend);
+		s = 1;
 	}
 
 	const changeButton_perday = () => {
@@ -48,6 +50,7 @@ const TrendView = (props) => {
 		makeWeekBuildingTrend(weekBuildingTrend);
 		makeWeekFloorTrend(weekFloorTrend);
 		makeWeekRoomTrend(weekRoomTrend);
+		s = 2;
 	}
 
 	const changeDateBefore = () => {
@@ -193,8 +196,6 @@ const TrendView = (props) => {
 						.attr('y', (d) => (dayUnivTrendyScale(d/univCapacity*100)))
 						.attr('width', 15)
 						.attr('height', (d) => 80-(dayUnivTrendyScale(d/univCapacity*100)))
-						.attr('stroke','black')
-						.attr('stroke-width', 1.5)
 						.style("fill", d => (d/univCapacity*100) === 0 ? 'white' : colorScale(d/univCapacity*100));
 
 		dayUnivTrendBarQr.join('rect')
@@ -279,8 +280,6 @@ const TrendView = (props) => {
 							.attr('y', (d) => dayBuildingTrendyScale(d/buildingCapacity*100))
 							.attr('width', 15)
 							.attr('height', (d) => 80-dayBuildingTrendyScale(d/buildingCapacity*100))
-							.attr('stroke','black')
-							.attr('stroke-width', 1.5)
 							.style("fill", d => (d/buildingCapacity*100) === 0 ? 'white' : colorScale(d/buildingCapacity*100));
 		dayBuildingTrendBarQr.join('rect')
 							.attr('transform', `translate(${65}, ${20})`)
@@ -337,8 +336,6 @@ const TrendView = (props) => {
 						.attr('y', (d) => dayFloorTrendyScale(d/floorCapacity*100))
 						.attr('width', 15)
 						.attr('height', (d) => 80-dayFloorTrendyScale(d/floorCapacity*100))
-						.attr('stroke','black')
-						.attr('stroke-width', 1.5)
 						.style("fill", d => (d/floorCapacity*100) === 0 ? 'white' : colorScale(d/floorCapacity*100));
 		dayFloorTrendBarQr.join('rect')
 						.attr('transform', `translate(${65}, ${20})`)
@@ -395,8 +392,6 @@ const TrendView = (props) => {
 						.attr('y', (d) => dayRoomTrendyScale(d/roomCapacity*100))
 						.attr('width', 15)
 						.attr('height', (d) => 80-dayRoomTrendyScale(d/roomCapacity*100))
-						.attr('stroke','black')
-						.attr('stroke-width', 1.5)
 						.style("fill", d => (d/roomCapacity*100) === 0 ? 'white' : colorScale(d/roomCapacity*100));
 
 		dayRoomTrendBarQr.join('rect')
@@ -450,8 +445,6 @@ const TrendView = (props) => {
 						.attr('y', (d) => weekUnivTrendyScale(d/univCapacity*100))
 						.attr('width', 15)
 						.attr('height', (d) => 80-weekUnivTrendyScale(d/univCapacity*100))
-						.attr('stroke','black')
-						.attr('stroke-width', 1.5)
 						.style("fill", d => (d/univCapacity*100) === 0 ? 'white' : colorScale(d/univCapacity*100));
 
 		weekUnivTrendBarQr.join('rect')
@@ -536,8 +529,6 @@ const TrendView = (props) => {
 							.attr('y', (d) => weekBuildingTrendyScale(d/buildingCapacity*100))
 							.attr('width', 15)
 							.attr('height', (d) => 80-weekBuildingTrendyScale(d/buildingCapacity*100))
-							.attr('stroke','black')
-							.attr('stroke-width', 1.5)
 							.style("fill", d => (d/buildingCapacity*100) === 0 ? 'white' : colorScale(d/buildingCapacity*100));
 
 		weekBuildingTrendBarQr.join('rect')
@@ -595,10 +586,7 @@ const TrendView = (props) => {
 						.attr('y', (d) => weekFloorTrendyScale(d/floorCapacity*100))
 						.attr('width', 15)
 						.attr('height', (d) => 80-weekFloorTrendyScale(d/floorCapacity*100))
-						.attr('stroke','black')
-						.attr('stroke-width', 1.5)
 						.style("fill", d => (d/floorCapacity*100) === 0 ? 'white' : colorScale(d/floorCapacity*100));
-
 		weekFloorTrendBarQr.join('rect')
 						.attr('transform', `translate(${125}, ${20})`)
 						.attr('class', 'weekFloorTrendBarQr')
@@ -654,10 +642,7 @@ const TrendView = (props) => {
 						.attr('y', (d) => weekRoomTrendyScale(d/roomCapacity*100))
 						.attr('width', 15)
 						.attr('height', (d) => 80-weekRoomTrendyScale(d/roomCapacity*100))
-						.attr('stroke','black')
-						.attr('stroke-width', 1.5)
 						.style("fill", d => (d/roomCapacity*100) === 0 ? 'white' : colorScale(d/roomCapacity*100));
-
 		weekRoomTrendBarQr.join('rect')
 						.attr('transform', `translate(${125}, ${20})`)
 						.attr('class', 'weekRoomTrendBarQr')
@@ -890,79 +875,20 @@ const TrendView = (props) => {
 		return [startMonth,startDate,endMonth,endDate];
 	}
 
-	
-	// function makeAxis(data)
-	// {
-	// 	//Bar chart x axis
-	// 	let barxScale = d3.scaleBand()
-	// 						.domain(['x','y'])
-	// 						.range([0, props.size])
-	// 						.align(0.5)
-	// 						.padding(props.barPadding);
-
-	// 	const barxAxis = d3.axisBottom(barxScale);
-
-	// 	barsvg.append('g')
-	// 			.attr('transform', `translate(${props.margin+1}, ${props.size+props.margin})`)
-	// 			.call(barxAxis);
-
-	// 	//Bar chart y asix
-	// 	let baryScale = d3.scaleLinear()
-	// 						.domain([0,	Math.max(xmean+xdev, ymean+ydev)])
-	// 						.range([props.size,0]);
-
-	// 	const baryAxis = d3.axisLeft(baryScale);
-
-	// 	d3.select('.ybaraxis').remove();
-	// 	barsvg.append('g')
-	// 		.attr('transform', `translate(${props.margin+1}, ${props.margin})`)
-	// 		.attr('class', 'ybaraxis')
-	// 		.call(baryAxis);
-	// }
-
-	// makeBar(props.data);
-
-	// function makeBar(selectedData)
-	// {
-	// 	//Calculate mean & deviation
-	// 	let xmean = d3.mean(selectedData, d => d.x);
-	// 	let ymean = d3.mean(selectedData, d => d.y);
-	// 	let xdev = d3.deviation(selectedData, d => d.x);
-	// 	let ydev = d3.deviation(selectedData, d => d.y);
-	// 	let xyarr = ['x','y'];
-	// 	let meanarr = [xmean,ymean];
-	// 	let devarr = [xdev,ydev];
-	// 	let colorarr = ['red','skyblue']
-
-	// 	//For merge & exit
-	// 	let bars = barsvg.selectAll('rect').data(selectedData);
-	// 	let ebars = barsvg.selectAll('line.first').data(selectedData);
-
-	// 	//Bar chart
-	// 	bars.enter()
-	// 		.append('rect')
-	// 		.attr('transform', `translate(${props.margin+1}, ${props.margin})`)
-	// 		.merge(bars)
-	// 		.attr('x', (d,i) => barxScale(xyarr[i]))
-	// 		.attr('y', (d,i) => baryScale(meanarr[i]))
-	// 		.attr('width', barxScale.bandwidth())
-	// 		.attr('height', (d,i) => props.size-baryScale(meanarr[i]))
-	// 		.style('fill', (d,i) => colorarr[i]);
-	// 	bars.exit().remove();
-
-	// 	//Bar chart errorBar
-	// 	ebars.enter()
-	// 		.append('line')
-	// 		.attr("stroke", "black")
-	// 		.attr('transform', `translate(${props.margin+1}, ${props.margin})`)
-	// 		.attr('class','first')
-	// 		.merge(ebars)
-	// 		.attr('x1',(d,i) => (barxScale(xyarr[i])+barxScale.bandwidth()/2))
-	// 		.attr('y1', (d,i) => baryScale(meanarr[i]+devarr[i]))
-	// 		.attr('x2',(d,i) => (barxScale(xyarr[i])+barxScale.bandwidth()/2))
-	// 		.attr('y2', (d,i) => baryScale(meanarr[i]-devarr[i]));
-	// 	ebars.exit().remove();
-	// }
+	if(s == 1)
+	{
+		makeDayUnivTrend(dayUnivTrend);
+		makeDayBuildingTrend(dayBuildingTrend);
+		makeDayFloorTrend(dayFloorTrend);
+		makeDayRoomTrend(dayRoomTrend);
+	}
+	else if(s == 2)
+	{
+		makeWeekUnivTrend(weekUnivTrend);
+		makeWeekBuildingTrend(weekBuildingTrend);
+		makeWeekFloorTrend(weekFloorTrend);
+		makeWeekRoomTrend(weekRoomTrend);
+	}
 
 // 1500 * 500 에 사이즈 맞춰주면 thx
 	return (
