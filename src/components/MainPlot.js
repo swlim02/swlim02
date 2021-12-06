@@ -3,7 +3,7 @@ import * as d3 from "d3";
 import ControlPanel from './ControlPanel';
 import MapContainer from "./MapContainer";
 import TrendView from "./TrendView";
-import SNUBuildingCrowdDensityInfo from "../data/SNUBuildingCrowdDensityInfo.json";
+import SNUBuildingCrowdDensityInfo_Mon from "../data/SNUBuildingCrowdDensityInfo_Mon.json";
 
 var selectedOptions = new Object();
 let selectObject_o = new Object();
@@ -37,13 +37,13 @@ const MainPlot = (props) => {
   function getUniversityCrowdDensity() {
     let UniversityCrowdDensity = new Object();
     let time = 'SNU_' + '09:30';
-    console.log(SNUBuildingCrowdDensityInfo[time][0]);
-    console.log(SNUBuildingCrowdDensityInfo[time][0].capacity);
-    console.log(SNUBuildingCrowdDensityInfo[time][0].occupacncy);
+    console.log(SNUBuildingCrowdDensityInfo_Mon[time][0]);
+    console.log(SNUBuildingCrowdDensityInfo_Mon[time][0].capacity);
+    console.log(SNUBuildingCrowdDensityInfo_Mon[time][0].occupacncy);
 
     UniversityCrowdDensity = {
-      "capacity": SNUBuildingCrowdDensityInfo[time][0].capacity, // TODO @hskim 실제 고정된 데이터로 입력
-      "occupancy": SNUBuildingCrowdDensityInfo[time][0].occupacncy // TODO @hskim 현재시간의 실제 예약값
+      "capacity": SNUBuildingCrowdDensityInfo_Mon[time][0].capacity, // TODO @hskim 실제 고정된 데이터로 입력
+      "occupancy": SNUBuildingCrowdDensityInfo_Mon[time][0].occupacncy // TODO @hskim 현재시간의 실제 예약값
     };
     return UniversityCrowdDensity;
   }
