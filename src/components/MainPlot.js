@@ -37,13 +37,12 @@ const MainPlot = (props) => {
   function getUniversityCrowdDensity() {
     let UniversityCrowdDensity = new Object();
     let time = 'SNU_' + '09:30';
-    console.log(SNUBuildingCrowdDensityInfo_Mon[time][0]);
     console.log(SNUBuildingCrowdDensityInfo_Mon[time][0].capacity);
-    console.log(SNUBuildingCrowdDensityInfo_Mon[time][0].occupacncy);
+    console.log(SNUBuildingCrowdDensityInfo_Mon[time][0].occupancy);
 
     UniversityCrowdDensity = {
       "capacity": SNUBuildingCrowdDensityInfo_Mon[time][0].capacity, // TODO @hskim 실제 고정된 데이터로 입력
-      "occupancy": SNUBuildingCrowdDensityInfo_Mon[time][0].occupacncy // TODO @hskim 현재시간의 실제 예약값
+      "occupancy": SNUBuildingCrowdDensityInfo_Mon[time][0].occupancy // TODO @hskim 현재시간의 실제 예약값
     };
     return UniversityCrowdDensity;
   }

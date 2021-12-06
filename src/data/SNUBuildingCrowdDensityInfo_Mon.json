@@ -2,7 +2,7 @@
     "SNU_09:30": [
         {
             "capacity": 4535,
-            "occupacncy": 328,
+            "occupancy": 328,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -118,7 +118,7 @@
     "SNU_09:45": [
         {
             "capacity": 4535,
-            "occupacncy": 328,
+            "occupancy": 328,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -234,7 +234,7 @@
     "SNU_10:00": [
         {
             "capacity": 4535,
-            "occupacncy": 368,
+            "occupancy": 368,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -350,7 +350,7 @@
     "SNU_10:15": [
         {
             "capacity": 4535,
-            "occupacncy": 368,
+            "occupancy": 368,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -466,7 +466,7 @@
     "SNU_10:30": [
         {
             "capacity": 4535,
-            "occupacncy": 368,
+            "occupancy": 368,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -582,7 +582,7 @@
     "SNU_10:45": [
         {
             "capacity": 4535,
-            "occupacncy": 150,
+            "occupancy": 150,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -698,7 +698,7 @@
     "SNU_11:00": [
         {
             "capacity": 4535,
-            "occupacncy": 527,
+            "occupancy": 527,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -814,7 +814,7 @@
     "SNU_11:15": [
         {
             "capacity": 4535,
-            "occupacncy": 692,
+            "occupancy": 692,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -930,7 +930,7 @@
     "SNU_11:30": [
         {
             "capacity": 4535,
-            "occupacncy": 692,
+            "occupancy": 692,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -1046,7 +1046,7 @@
     "SNU_11:45": [
         {
             "capacity": 4535,
-            "occupacncy": 692,
+            "occupancy": 692,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -1162,7 +1162,7 @@
     "SNU_12:00": [
         {
             "capacity": 4535,
-            "occupacncy": 617,
+            "occupancy": 617,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -1278,7 +1278,7 @@
     "SNU_12:15": [
         {
             "capacity": 4535,
-            "occupacncy": 60,
+            "occupancy": 60,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -1394,7 +1394,7 @@
     "SNU_12:30": [
         {
             "capacity": 4535,
-            "occupacncy": 202,
+            "occupancy": 202,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -1510,7 +1510,7 @@
     "SNU_12:45": [
         {
             "capacity": 4535,
-            "occupacncy": 202,
+            "occupancy": 202,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -1626,7 +1626,7 @@
     "SNU_13:00": [
         {
             "capacity": 4535,
-            "occupacncy": 368,
+            "occupancy": 368,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -1742,7 +1742,7 @@
     "SNU_13:15": [
         {
             "capacity": 4535,
-            "occupacncy": 368,
+            "occupancy": 368,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -1858,7 +1858,7 @@
     "SNU_13:30": [
         {
             "capacity": 4535,
-            "occupacncy": 368,
+            "occupancy": 368,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -1974,7 +1974,7 @@
     "SNU_13:45": [
         {
             "capacity": 4535,
-            "occupacncy": 91,
+            "occupancy": 91,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -2090,7 +2090,7 @@
     "SNU_14:00": [
         {
             "capacity": 4535,
-            "occupacncy": 86,
+            "occupancy": 86,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -2206,7 +2206,7 @@
     "SNU_14:15": [
         {
             "capacity": 4535,
-            "occupacncy": 86,
+            "occupancy": 86,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -2322,7 +2322,7 @@
     "SNU_14:30": [
         {
             "capacity": 4535,
-            "occupacncy": 86,
+            "occupancy": 86,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -2438,7 +2438,7 @@
     "SNU_14:45": [
         {
             "capacity": 4535,
-            "occupacncy": 86,
+            "occupancy": 86,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -2554,7 +2554,7 @@
     "SNU_15:00": [
         {
             "capacity": 4535,
-            "occupacncy": 86,
+            "occupancy": 86,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -2670,7 +2670,7 @@
     "SNU_15:15": [
         {
             "capacity": 4535,
-            "occupacncy": 0,
+            "occupancy": 0,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -2792,7 +2792,7 @@
     "SNU_15:30": [
         {
             "capacity": 4535,
-            "occupacncy": 130,
+            "occupancy": 130,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -2908,7 +2908,7 @@
     "SNU_15:45": [
         {
             "capacity": 4535,
-            "occupacncy": 130,
+            "occupancy": 130,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -3024,7 +3024,7 @@
     "SNU_16:00": [
         {
             "capacity": 4535,
-            "occupacncy": 135,
+            "occupancy": 135,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -3140,7 +3140,7 @@
     "SNU_16:15": [
         {
             "capacity": 4535,
-            "occupacncy": 135,
+            "occupancy": 135,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -3256,7 +3256,7 @@
     "SNU_16:30": [
         {
             "capacity": 4535,
-            "occupacncy": 135,
+            "occupancy": 135,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -3372,7 +3372,7 @@
     "SNU_16:45": [
         {
             "capacity": 4535,
-            "occupacncy": 5,
+            "occupancy": 5,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -3488,7 +3488,7 @@
     "SNU_17:00": [
         {
             "capacity": 4535,
-            "occupacncy": 172,
+            "occupancy": 172,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -3604,7 +3604,7 @@
     "SNU_17:15": [
         {
             "capacity": 4535,
-            "occupacncy": 172,
+            "occupancy": 172,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -3720,7 +3720,7 @@
     "SNU_17:30": [
         {
             "capacity": 4535,
-            "occupacncy": 172,
+            "occupancy": 172,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -3836,7 +3836,7 @@
     "SNU_17:45": [
         {
             "capacity": 4535,
-            "occupacncy": 167,
+            "occupancy": 167,
             "buildings": [
                 {
                     "bdNumber": "19",
@@ -3952,7 +3952,7 @@
     "SNU_18:00": [
         {
             "capacity": 4535,
-            "occupacncy": 167,
+            "occupancy": 167,
             "buildings": [
                 {
                     "bdNumber": "19",
