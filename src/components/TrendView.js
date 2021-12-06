@@ -30,22 +30,24 @@ const TrendView = (props) => {
 	let floorTrendSvg = d3.select(floorTrend.current);
 	let roomTrendSvg = d3.select(roomTrend.current);
 
-	const changeButton = () => {
-		if (button == "Day"){
-			setButton("Week");
-			makeWeekUnivTrend(weekUnivTrend);
-			makeWeekBuildingTrend(weekBuildingTrend);
-			makeWeekFloorTrend(weekFloorTrend);
-			makeWeekRoomTrend(weekRoomTrend);
-			}
-		else {
-			setButton("Day");
-			makeDayUnivTrend(dayUnivTrend);
-			makeDayBuildingTrend(dayBuildingTrend);
-			makeDayFloorTrend(dayFloorTrend);
-			makeDayRoomTrend(dayRoomTrend);
-			}
+	const changeButton_per15m = () => {
+		d3.selectAll(".button2").style("background", "white");
+		d3.selectAll(".button1").style("background", "#bebebe");
+		setButton("Day");
+		makeWeekUnivTrend(weekUnivTrend);
+		makeWeekBuildingTrend(weekBuildingTrend);
+		makeWeekFloorTrend(weekFloorTrend);
+		makeWeekRoomTrend(weekRoomTrend);
 	}
+
+	const changeButton_perday = () => {
+		d3.selectAll(".button1").style("background", "white");
+		d3.selectAll(".button2").style("background", "#bebebe");
+		setButton("Week");
+		makeDayUnivTrend(dayUnivTrend);
+		makeDayBuildingTrend(dayBuildingTrend);
+		makedayFloorTrend(dayFloorTrend);
+		makedayRoomTrend(dayRoomTrend);	}
 
 	const changeDateBefore = () => {
 		if (t == 0){
@@ -64,7 +66,7 @@ const TrendView = (props) => {
 			date = curDate[2];
 			console.log("111");
 			}
-	}		
+	}
 
 	const changeDateNext = () => {
 		if (t == 0){
@@ -107,21 +109,44 @@ const TrendView = (props) => {
 
 	trendInfoBar1.join('rect')
 				.attr('class', 'trendInfo1')
-				.attr('x', 0)
-				.attr('y', 0)
+				.attr('x', 5)
+				.attr('y', 2)
 				.attr('width', 15)
-				.attr('height', 60)
-				.attr('stroke','black')
-				.attr('stroke-width', 5)
-				.style("fill", 'green');
+				.attr('height', 20)
+				.style("fill", 'gray');
+
 
 	trendInfoBar2.join('rect')
 				.attr('class', 'trendInfo2')
-				.attr('x', 15)
-				.attr('y', 0)
+				.attr('x', 21)
+				.attr('y', 7)
 				.attr('width', 15)
-				.attr('height', 60)
-				.style("fill", 'green');
+				.attr('height', 15)
+				.style("fill", 'gray');
+/*
+	trendInfoSvg
+				.append('line')
+//				.attr('class', 'trendInfo2')
+//				.merge(trendInfoBar2)
+				.attr('x1', 31)
+				.attr('y1', 13)
+				.attr('x2', 41)
+				.attr('y2', 13)
+				.attr("stroke", 'Black')
+				.attr('stroke-width', 1);
+
+		trendInfoSvg
+					.append('line')
+	//				.attr('class', 'trendInfo2')
+	//				.merge(trendInfoBar2)
+					.attr('x1', 1)
+					.attr('y1', 13)
+					.attr('x2', 11)
+					.attr('y2', 13)
+					.attr("stroke", 'Black')
+					.attr('stroke-width', 1);
+//	trendInfoBar2.exit().remove();
+*/
 
 	let colorScale = d3.scaleThreshold()
 						.domain([props.selectedOptions.selectedOption_green,props.selectedOptions.selectedOption_yellow])
@@ -268,7 +293,7 @@ const TrendView = (props) => {
 									.range([0, 1300])
 									.align(0.5)
 									.padding(0.3);
-									
+
 		d3.selectAll(".chartGroupFloor").remove();
 
 		floorTrendSvg.append('g')
@@ -368,7 +393,7 @@ const TrendView = (props) => {
 
 	function makeWeekUnivTrend(weekUnivTrend)
 	{
-		t = 1; 
+		t = 1;
 		let weekUnivTrendxScale = d3.scaleBand()
 									.domain(dayDivide)
 									.range([0, 1300])
@@ -471,7 +496,7 @@ const TrendView = (props) => {
 						.attr('transform', `translate(${40}, ${20})`)
 						.attr('class', 'chartGroupBuilding')
 						.call(d3.axisLeft(weekBuildingTrendyScale).ticks(3));
-		
+
 		d3.selectAll(".weekBuildingTrendBar").remove();
 		d3.selectAll(".weekBuildingTrendBarQr").remove();
 		d3.selectAll(".dayBuildingTrendBar").remove();
@@ -508,7 +533,7 @@ const TrendView = (props) => {
 									.range([0, 1300])
 									.align(0.5)
 									.padding(0.3);
-									
+
 		d3.selectAll(".chartGroupFloor").remove();
 
 		floorTrendSvg.append('g')
@@ -904,15 +929,6 @@ const TrendView = (props) => {
 	// 	ebars.exit().remove();
 	// }
 
-
-
-
-
-
-
-
-
-
 // 1500 * 500 에 사이즈 맞춰주면 thx
 	return (
 		<div>
@@ -923,12 +939,33 @@ const TrendView = (props) => {
 				width: '1500px',
 				height: '500px'
 			}}>
-				<div>
-					<button style={{marginLeft: 5}} onClick={changeButton}>
-						{button === "Day" ? "Week" : "Day"}
-					</button>
-					<svg ref={trendInfo} width={50} height={60}>
-					</svg>
+				<div style={{ display: "flex"}}>
+					<div>
+						<label> &nbsp;<b>트랜드 보기</b> &nbsp; </label>
+					</div>
+					<div style={{ border: "1px solid gray", height: "22px"}}>
+						<button class="button1" style={{
+							marginLeft: '5', background: 'white', border: '0'
+						}} onClick={changeButton_per15m}>
+							시간별
+						</button >
+						<button class="button2" style={{
+							marginLeft: '5', background: 'white', border: '0'
+						}} onClick={changeButton_perday}>
+							일간별
+						</button >
+					</div>
+					<div>
+						&nbsp;&nbsp;|&nbsp;&nbsp;
+					</div>
+					<div>
+					  <i>수업 정보-</i>
+						</div>
+						<svg ref={trendInfo} width={37} height={60}>
+						</svg>
+						<div>
+						<i>-바코드 정보</i>
+					</div>
 				</div>
 
 				<svg ref={univTrend} width={1400} height={120}>
@@ -939,7 +976,7 @@ const TrendView = (props) => {
 				</svg>
 				<svg ref={roomTrend} width={1400} height={120}>
 				</svg>
-				
+
 				<div>
 					<button style={{marginLeft: 5}} onClick={changeDateBefore}>
 						{button == "Before"}
