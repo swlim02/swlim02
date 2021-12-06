@@ -349,7 +349,7 @@ const MapContainer = (props) => {
   return (
     <div>
       <div id='myMap' class="splotContainer1" style={{
-        width: '500px',
+        width: '450px',
         height: '510px'
       }}></div>
       <div id='floorView' class="splotContainer2" style={{

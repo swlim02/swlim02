@@ -921,12 +921,13 @@ const TrendView = (props) => {
 
 			</div>
 			<div style={{
-				width: '1500px',
+				width: '1400px',
 				height: '500px'
 			}}>
 				<div style={{ display: "flex"}}>
 					<div>
-						<label> &nbsp;<b>트랜드 보기</b> &nbsp; </label>
+						<label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<b>트랜드 보기</b> &nbsp; </label>
 					</div>
 					<div style={{ border: "1px solid gray", height: "22px"}}>
 						<button class="button1" style={{
@@ -941,7 +942,23 @@ const TrendView = (props) => {
 						</button >
 					</div>
 					<div>
-						&nbsp;&nbsp;|&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;
+					</div>
+					<div style={{ display: "flex"}}>
+						<button style={{marginLeft: 5, height: "20px"}} onClick={changeDateBefore}>
+							{button == "Before"} &#60;
+						</button>
+							<div style={{fontSize:"15px", height: "15px" }}>
+							&nbsp;&nbsp;2021-11-29 ~ 2021-12-03&nbsp;
+							</div>
+						<button style={{marginLeft: 5, height: "20px"}} onClick={changeDateNext}>
+							{button == "Next"} &#62;
+						</button>
+					</div>
+					<div>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;<b>|</b>&nbsp;&nbsp;
 					</div>
 					<div>
 					  <i>수업 정보-</i>
@@ -950,6 +967,9 @@ const TrendView = (props) => {
 						</svg>
 						<div>
 						<i>-바코드 정보</i>
+					</div>
+					<div>
+					&nbsp;&nbsp;<b>|</b>
 					</div>
 				</div>
 				<div style={{ height: "6px", textAlign: 'center'}}>
@@ -988,14 +1008,6 @@ const TrendView = (props) => {
 				<div>
 					<svg ref={roomTrend} width={1400} height={120}>
 					</svg>
-				</div>
-				<div>
-					<button style={{marginLeft: 5}} onClick={changeDateBefore}>
-						{button == "Before"}
-					</button>
-					<button style={{marginLeft: 5}} onClick={changeDateNext}>
-						{button == "Next"}
-					</button>
 				</div>
 			</div>
 		</div>
