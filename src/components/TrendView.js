@@ -13,11 +13,13 @@ const TrendView = (props) => {
 	//props.selectObject_o.state = fdsjkljsdlkjflskj;
   //setTrendData(props.selectObject_o.state);
 
+	const trendInfo = useRef(null);
 	const univTrend = useRef(null);
 	const buildingTrend = useRef(null);
 	const floorTrend = useRef(null);
 	const roomTrend = useRef(null);
 
+	const trendInfoSvg = d3.select(trendInfo.current);
 	const univTrendSvg = d3.select(univTrend.current);
 	const buildingTrendSvg = d3.select(buildingTrend.current);
 	const floorTrendSvg = d3.select(floorTrend.current);
@@ -39,6 +41,33 @@ const TrendView = (props) => {
 	let weekBuildingTrend = props.getDayTrendOfBuildingCrowdDensity(301, year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
 	let weekFloorTrend = props.getDayTrendOfBuildingFloorDensity(301, 1, year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
 	let weekRoomTrend = props.getDayTrendOfBuildingRoomDensity(301, 1, 118, year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
+
+	let trendInfoBar1 = trendInfoSvg.selectAll('.trendInfo1').data(dayUnivTrend.reserve_occupancy_trend);
+	let trendInfoBar2 = trendInfoSvg.selectAll('.trendInfo2').data(dayUnivTrend.reserve_occupancy_trend);
+
+	trendInfoBar1.enter()
+				.append('rect')						
+				.attr('class', 'trendInfo1')
+				.merge(trendInfoBar1)
+				.attr('x', 0)
+				.attr('y', 0)
+				.attr('width', 15)
+				.attr('height', 60)
+				.attr('stroke','black')
+				.attr('stroke-width', 2)
+				.style("fill", 'green');
+	trendInfoBar1.exit().remove();
+	
+	trendInfoBar2.enter()
+				.append('rect')						
+				.attr('class', 'trendInfo2')
+				.merge(trendInfoBar2)
+				.attr('x', 15)
+				.attr('y', 0)
+				.attr('width', 15)
+				.attr('height', 60)
+				.style("fill", 'green');
+	trendInfoBar2.exit().remove();
 
 	let colorScale = d3.scaleThreshold()
 						.domain([props.selectedOptions.selectedOption_green,props.selectedOptions.selectedOption_yellow])
@@ -781,6 +810,8 @@ const TrendView = (props) => {
 				width: '1500px',
 				height: '500px'
 			}}>
+				<svg ref={trendInfo} width={50} height={60}>
+				</svg>
 				<svg ref={univTrend} width={1400} height={120}>
 				</svg>
 				<svg ref={buildingTrend} width={1400} height={120}>
