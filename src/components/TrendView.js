@@ -17,7 +17,7 @@ const TrendView = (props) => {
 	//props.selectObject_o.state = fdsjkljsdlkjflskj;
     //setTrendData(props.selectObject_o.state);
 
-	const [button, setButton] = useState("Day");
+	const [button, setButton] = useState(null);
 
 	const trendInfo = useRef(null);
 	const univTrend = useRef(null);
@@ -138,7 +138,6 @@ const TrendView = (props) => {
 				.attr('y2', 13)
 				.attr("stroke", 'Black')
 				.attr('stroke-width', 1);
-
 		trendInfoSvg
 					.append('line')
 	//				.attr('class', 'trendInfo2')
@@ -199,7 +198,7 @@ const TrendView = (props) => {
 						.style("fill", d => (d/univCapacity*100) === 0 ? 'white' : colorScale(d/univCapacity*100));
 
 		dayUnivTrendBarQr.join('rect')
-						.attr('transform', `translate(${65}, ${20})`)
+						.attr('transform', `translate(${67}, ${20})`)
 						.attr('class', 'dayUnivTrendBarQr')
 						.attr('x', (d,i) => dayUnivTrendxScale(timeDivide[i]))
 						.attr('y', (d) => (dayUnivTrendyScale(d/univCapacity*100)))
@@ -221,10 +220,9 @@ const TrendView = (props) => {
 						.attr('stroke-width', 1.5)
 						.style("fill", d => (d/univCapacity*100) === 0 ? 'white' : colorScale(d/univCapacity*100));
 		dayUnivTrendBar.exit().remove();
-
 		dayUnivTrendBarQr.enter()
 						.append('rect')
-						.attr('transform', `translate(${65}, ${20})`)
+						.attr('transform', `translate(${67}, ${20})`)
 						.attr('class', 'dayUnivTrendBarQr')
 						.merge(dayUnivTrendBar)
 						.attr('x', (d,i) => dayUnivTrendxScale(timeDivide[i]))
@@ -238,7 +236,7 @@ const TrendView = (props) => {
 
 	function makeDayBuildingTrend(dayBuildingTrend)
 	{
-		if(props.selectObject_o.bdNumber === null){ 
+		if(props.selectObject_o.bdNumber === null){
 			d3.selectAll(".chartGroupBuilding").remove();
 			d3.selectAll(".dayBuildingTrendBar").remove();
 			d3.selectAll(".dayBuildingTrendBarQr").remove();
@@ -286,7 +284,7 @@ const TrendView = (props) => {
 							.attr('height', (d) => 80-dayBuildingTrendyScale(d/buildingCapacity*100))
 							.style("fill", d => (d/buildingCapacity*100) === 0 ? 'white' : colorScale(d/buildingCapacity*100));
 		dayBuildingTrendBarQr.join('rect')
-							.attr('transform', `translate(${65}, ${20})`)
+							.attr('transform', `translate(${67}, ${20})`)
 							.attr('class', 'dayBuildingTrendBarQr')
 							.attr('x', (d,i) => dayBuildingTrendxScale(timeDivide[i]))
 							.attr('y', (d) => dayBuildingTrendyScale(d/buildingCapacity*100))
@@ -298,7 +296,7 @@ const TrendView = (props) => {
 
 	function makeDayFloorTrend(dayFloorTrend)
 	{
-		if(props.selectObject_o.floor === null){ 
+		if(props.selectObject_o.floor === null){
 			d3.selectAll(".chartGroupFloor").remove();
 			d3.selectAll(".dayFloorTrendBar").remove();
 			d3.selectAll(".dayFloorTrendBarQr").remove();
@@ -306,7 +304,7 @@ const TrendView = (props) => {
 			d3.selectAll(".weekFloorTrendBarQr").remove();
 		}
 		else{
-		
+
 		let dayFloorTrendxScale = d3.scaleBand()
 									.domain(timeDivide)
 									.range([0, 1300])
@@ -346,7 +344,7 @@ const TrendView = (props) => {
 						.attr('height', (d) => 80-dayFloorTrendyScale(d/floorCapacity*100))
 						.style("fill", d => (d/floorCapacity*100) === 0 ? 'white' : colorScale(d/floorCapacity*100));
 		dayFloorTrendBarQr.join('rect')
-						.attr('transform', `translate(${65}, ${20})`)
+						.attr('transform', `translate(${67}, ${20})`)
 						.attr('class', 'dayFloorTrendBarQr')
 						.attr('x', (d,i) => dayFloorTrendxScale(timeDivide[i]))
 						.attr('y', (d) => dayFloorTrendyScale(d/floorCapacity*100))
@@ -358,7 +356,7 @@ const TrendView = (props) => {
 
 	function makeDayRoomTrend(dayRoomTrend)
 	{
-		if(props.selectObject_o.roomNumber === null){ 
+		if(props.selectObject_o.roomNumber === null){
 			d3.selectAll(".chartGroupRoom").remove();
 			d3.selectAll(".dayRoomTrendBar").remove();
 			d3.selectAll(".dayRoomTrendBarQr").remove();
@@ -366,7 +364,7 @@ const TrendView = (props) => {
 			d3.selectAll(".weekRoomTrendBarQr").remove();
 		}
 		else{
-		
+
 		let dayRoomTrendxScale = d3.scaleBand()
 									.domain(timeDivide)
 									.range([0, 1300])
@@ -407,7 +405,7 @@ const TrendView = (props) => {
 						.style("fill", d => (d/roomCapacity*100) === 0 ? 'white' : colorScale(d/roomCapacity*100));
 
 		dayRoomTrendBarQr.join('rect')
-						.attr('transform', `translate(${65}, ${20})`)
+						.attr('transform', `translate(${67}, ${20})`)
 						.attr('class', 'dayRoomTrendBarQr')
 						.attr('x', (d,i) => dayRoomTrendxScale(timeDivide[i]))
 						.attr('y', (d) => dayRoomTrendyScale(d/roomCapacity*100))
@@ -460,7 +458,7 @@ const TrendView = (props) => {
 						.style("fill", d => (d/univCapacity*100) === 0 ? 'white' : colorScale(d/univCapacity*100));
 
 		weekUnivTrendBarQr.join('rect')
-						.attr('transform', `translate(${125}, ${20})`)
+						.attr('transform', `translate(${127}, ${20})`)
 						.attr('class', 'weekUnivTrendBarQr')
 						.attr('x', (d,i) => weekUnivTrendxScale(dayDivide[i]))
 						.attr('y', (d) => weekUnivTrendyScale(d/univCapacity*100))
@@ -482,7 +480,6 @@ const TrendView = (props) => {
 						.attr('stroke-width', 1.5)
 						.style("fill", d => (d/univCapacity*100) === 0 ? 'white' : colorScale(d/univCapacity*100));
 		weekUnivTrendBar.exit().remove();
-
 		weekUnivTrendBarQr.enter()
 						.append('rect')
 						.attr('transform', `translate(${125}, ${20})`)
@@ -499,7 +496,7 @@ const TrendView = (props) => {
 
 	function makeWeekBuildingTrend(weekBuildingTrend)
 	{
-		if(props.selectObject_o.bdNumber === null){ 
+		if(props.selectObject_o.bdNumber === null){
 			d3.selectAll(".chartGroupBuilding").remove();
 			d3.selectAll(".weekBuildingTrendBar").remove();
 			d3.selectAll(".weekBuildingTrendBarQr").remove();
@@ -548,7 +545,7 @@ const TrendView = (props) => {
 							.style("fill", d => (d/buildingCapacity*100) === 0 ? 'white' : colorScale(d/buildingCapacity*100));
 
 		weekBuildingTrendBarQr.join('rect')
-								.attr('transform', `translate(${125}, ${20})`)
+								.attr('transform', `translate(${127}, ${20})`)
 								.attr('class', 'weekBuildingTrendBarQr')
 								.attr('x', (d,i) => weekBuildingTrendxScale(dayDivide[i]))
 								.attr('y', (d) => weekBuildingTrendyScale(d/buildingCapacity*100))
@@ -560,7 +557,7 @@ const TrendView = (props) => {
 
 	function makeWeekFloorTrend(weekFloorTrend)
 	{
-		if(props.selectObject_o.floor === null){ 
+		if(props.selectObject_o.floor === null){
 			d3.selectAll(".chartGroupFloor").remove();
 			d3.selectAll(".weekFloorTrendBar").remove();
 			d3.selectAll(".weekFloorTrendBarQr").remove();
@@ -568,7 +565,7 @@ const TrendView = (props) => {
 			d3.selectAll(".dayFloorTrendBarQr").remove();
 		}
 		else{
-		
+
 		let weekFloorTrendxScale = d3.scaleBand()
 									.domain(dayDivide)
 									.range([0, 1300])
@@ -608,7 +605,7 @@ const TrendView = (props) => {
 						.attr('height', (d) => 80-weekFloorTrendyScale(d/floorCapacity*100))
 						.style("fill", d => (d/floorCapacity*100) === 0 ? 'white' : colorScale(d/floorCapacity*100));
 		weekFloorTrendBarQr.join('rect')
-						.attr('transform', `translate(${125}, ${20})`)
+						.attr('transform', `translate(${127}, ${20})`)
 						.attr('class', 'weekFloorTrendBarQr')
 						.attr('x', (d,i) => weekFloorTrendxScale(dayDivide[i]))
 						.attr('y', (d) => weekFloorTrendyScale(d/floorCapacity*100))
@@ -620,15 +617,15 @@ const TrendView = (props) => {
 
 	function makeWeekRoomTrend(weekRoomTrend)
 	{
-		if(props.selectObject_o.roomNumber === null){ 
+		if(props.selectObject_o.roomNumber === null){
 			d3.selectAll(".chartGroupRoom").remove();
-d3.selectAll(".weekRoomTrendBar").remove();
-		d3.selectAll(".weekRoomTrendBarQr").remove();
-		d3.selectAll(".dayRoomTrendBar").remove();
-		d3.selectAll(".dayRoomTrendBarQr").remove();
+			d3.selectAll(".weekRoomTrendBar").remove();
+			d3.selectAll(".weekRoomTrendBarQr").remove();
+			d3.selectAll(".dayRoomTrendBar").remove();
+			d3.selectAll(".dayRoomTrendBarQr").remove();
 		}
 		else{
-		
+
 		let weekRoomTrendxScale = d3.scaleBand()
 									.domain(dayDivide)
 									.range([0, 1300])
@@ -668,7 +665,7 @@ d3.selectAll(".weekRoomTrendBar").remove();
 						.attr('height', (d) => 80-weekRoomTrendyScale(d/roomCapacity*100))
 						.style("fill", d => (d/roomCapacity*100) === 0 ? 'white' : colorScale(d/roomCapacity*100));
 		weekRoomTrendBarQr.join('rect')
-						.attr('transform', `translate(${125}, ${20})`)
+						.attr('transform', `translate(${127}, ${20})`)
 						.attr('class', 'weekRoomTrendBarQr')
 						.attr('x', (d,i) => weekRoomTrendxScale(dayDivide[i]))
 						.attr('y', (d) => weekRoomTrendyScale(d/roomCapacity*100))
@@ -921,12 +918,13 @@ d3.selectAll(".weekRoomTrendBar").remove();
 
 			</div>
 			<div style={{
-				width: '1500px',
+				width: '1400px',
 				height: '500px'
 			}}>
 				<div style={{ display: "flex"}}>
 					<div>
-						<label> &nbsp;<b>트랜드 보기</b> &nbsp; </label>
+						<label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<b>트랜드 보기</b> &nbsp; </label>
 					</div>
 					<div style={{ border: "1px solid gray", height: "22px"}}>
 						<button class="button1" style={{
@@ -941,7 +939,23 @@ d3.selectAll(".weekRoomTrendBar").remove();
 						</button >
 					</div>
 					<div>
-						&nbsp;&nbsp;|&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;
+					</div>
+					<div style={{ display: "flex"}}>
+						<button style={{marginLeft: 5, height: "20px"}} onClick={changeDateBefore}>
+							{button == "Before"} &#60;
+						</button>
+							<div style={{fontSize:"15px", height: "15px" }}>
+							&nbsp;&nbsp;2021-11-29 ~ 2021-12-03&nbsp;
+							</div>
+						<button style={{marginLeft: 5, height: "20px"}} onClick={changeDateNext}>
+							{button == "Next"} &#62;
+						</button>
+					</div>
+					<div>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;<b>|</b>&nbsp;&nbsp;
 					</div>
 					<div>
 					  <i>수업 정보-</i>
@@ -951,24 +965,46 @@ d3.selectAll(".weekRoomTrendBar").remove();
 						<div>
 						<i>-바코드 정보</i>
 					</div>
+					<div>
+					&nbsp;&nbsp;<b>|</b>
+					</div>
 				</div>
-
-				<svg ref={univTrend} width={1400} height={120}>
-				</svg>
-				<svg ref={buildingTrend} width={1400} height={120}>
-				</svg>
-				<svg ref={floorTrend} width={1400} height={120}>
-				</svg>
-				<svg ref={roomTrend} width={1400} height={120}>
-				</svg>
-
+				<div style={{ height: "6px", textAlign: 'center'}}>
+					<h1 style={{fontSize:"7px"}}> {button === null ? '' : "서울대학교"} </h1>
+				</div>
 				<div>
-					<button style={{marginLeft: 5}} onClick={changeDateBefore}>
-						{button == "Before"}
-					</button>
-					<button style={{marginLeft: 5}} onClick={changeDateNext}>
-						{button == "Next"}
-					</button>
+					<svg ref={univTrend} width={1400} height={120}>
+					</svg>
+				</div>
+				<div style={{ height: "6px", textAlign: 'center'}}>
+					<h1 style={{fontSize:"7px"}}>
+						{((button === null) || (props.selectObject_o.bdNumber === null)) ? '' :
+							props.selectObject_o.bdNumber+"동"}
+					</h1>
+				</div>
+				<div>
+					<svg ref={buildingTrend} width={1400} height={120}>
+					</svg>
+				</div>
+				<div style={{ height: "6px", textAlign: 'center'}}>
+					<h1 style={{fontSize:"7px"}}>
+						{((button === null) || (props.selectObject_o.floor === null)) ? '' :
+							props.selectObject_o.floor+"층"}
+					</h1>
+				</div>
+				<div>
+					<svg ref={floorTrend} width={1400} height={120}>
+					</svg>
+				</div>
+				<div style={{ height: "6px", textAlign: 'center'}}>
+				<h1 style={{fontSize:"7px"}}>
+					{((button === null) || (props.selectObject_o.roomNumber === null)) ? '' :
+						props.selectObject_o.roomNumber+"호"}
+				</h1>
+				</div>
+				<div>
+					<svg ref={roomTrend} width={1400} height={120}>
+					</svg>
 				</div>
 			</div>
 		</div>
