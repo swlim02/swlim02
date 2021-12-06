@@ -166,8 +166,6 @@ const MapContainer = (props) => {
         "severity": severity
       };
       positions.push(o);
-      console.log("ddd");
-      console.log(item);
     });
 
     console.log(positions.length);
@@ -206,8 +204,8 @@ const MapContainer = (props) => {
             clickImage = createMarkerImage(markerSize, markerOffset, clickOrigin);
 
         // 마커를 생성하고 이미지는 기본 마커 이미지를 사용합니다
-        console.log("추가");
-        console.log(position);
+//        console.log("추가");
+//        console.log(position);
         var marker = new kakao.maps.Marker({
             map: map,
             position: position.latlng,
