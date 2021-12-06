@@ -31,23 +31,11 @@ const TrendView = (props) => {
 
 	const changeButton = () => {
 		if (button == "Day"){
-//			d3.selectAll('.splotContainerTrend').remove();
-
-// d3.selectAll(".dayUnivTrendBar").remove();////////////////////////////여기서 지워봤는데 아예 그리지를 않네요..
-// d3.selectAll(".dayBuildingTrendBar").remove();
-// d3.selectAll(".dayFloorTrendBar").remove();
-// d3.selectAll(".dayRoomTrendBar").remove();
-// d3.selectAll(".dayUnivTrendBarQr").remove();
-// d3.selectAll(".dayBuildingTrendBarQr").remove();
-// d3.selectAll(".dayFloorTrendBarQr").remove();
-// d3.selectAll(".dayRoomTrendBarQr").remove();
-
 			setButton("Week");
 			makeDayUnivTrend(dayUnivTrend);
 			makeDayBuildingTrend(dayBuildingTrend);
 			makedayFloorTrend(dayFloorTrend);
 			makedayRoomTrend(dayRoomTrend);
-
 			}
 		else {
 			setButton("Day");
@@ -55,18 +43,8 @@ const TrendView = (props) => {
 			makeWeekBuildingTrend(weekBuildingTrend);
 			makeWeekFloorTrend(weekFloorTrend);
 			makeWeekRoomTrend(weekRoomTrend);
-			// d3.selectAll(".weekUnivTrendBar").remove();
-			// d3.selectAll(".weekBuildingTrendBar").remove();
-			// d3.selectAll(".weekFloorTrendBar").remove();
-			// d3.selectAll(".weekRoomTrendBar").remove();
-			// d3.selectAll(".weekUnivTrendBarQr").remove();
-			// d3.selectAll(".weekBuildingTrendBarQr").remove();
-			// d3.selectAll(".weekFloorTrendBarQr").remove();
-			// d3.selectAll(".weekRoomTrendBarQr").remove();
 			}
 	}
-
-
 
 	let curDate = props.selectObject_o.date;
 	let startEndDate = changeMonFri(curDate);
