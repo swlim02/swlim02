@@ -49,6 +49,40 @@ const TrendView = (props) => {
 		makedayFloorTrend(dayFloorTrend);
 		makedayRoomTrend(dayRoomTrend);	}
 
+	const changeDateBefore = () => {
+		if (t == 0){
+			curDate[2] = curDate[2] - 1;
+			startEndDate = changeMonFri(curDate);
+			year = curDate[0];
+			month = curDate[1];
+			date = curDate[2];
+			}
+		else {
+			curDate[2] = curDate[2] - 7;
+			startEndDate = changeMonFri(curDate);
+			year = curDate[0];
+			month = curDate[1];
+			date = curDate[2];
+			}
+	}
+
+	const changeDateNext = () => {
+		if (t == 0){
+			curDate[2] = curDate[2] + 1;
+			startEndDate = changeMonFri(curDate);
+			year = curDate[0];
+			month = curDate[1];
+			date = curDate[2];
+			}
+		else {
+			curDate[2] = curDate[2] + 7;
+			startEndDate = changeMonFri(curDate);
+			year = curDate[0];
+			month = curDate[1];
+			date = curDate[2];
+			}
+	}
+
 	let curDate = props.selectObject_o.date;
 	let startEndDate = changeMonFri(curDate);
 
@@ -71,30 +105,15 @@ const TrendView = (props) => {
 
 	trendInfoBar1.join('rect')
 				.attr('class', 'trendInfo1')
-<<<<<<< HEAD
-//				.merge(trendInfoBar1)
 				.attr('x', 5)
 				.attr('y', 2)
 				.attr('width', 15)
 				.attr('height', 20)
-//				.attr('stroke','black')
-//				.attr('stroke-width', 1)
 				.style("fill", 'gray');
-//	trendInfoBar1.exit().remove();
-=======
-				.attr('x', 0)
-				.attr('y', 0)
-				.attr('width', 15)
-				.attr('height', 60)
-				.attr('stroke','black')
-				.attr('stroke-width', 5)
-				.style("fill", 'green');
->>>>>>> 4d71d909dc867f370f73b80206c421dc540ae5bf
+
 
 	trendInfoBar2.join('rect')
 				.attr('class', 'trendInfo2')
-<<<<<<< HEAD
-//				.merge(trendInfoBar2)
 				.attr('x', 21)
 				.attr('y', 7)
 				.attr('width', 15)
@@ -124,14 +143,7 @@ const TrendView = (props) => {
 					.attr('stroke-width', 1);
 //	trendInfoBar2.exit().remove();
 */
-=======
-				.attr('x', 15)
-				.attr('y', 0)
-				.attr('width', 15)
-				.attr('height', 60)
-				.style("fill", 'green');
 
->>>>>>> 4d71d909dc867f370f73b80206c421dc540ae5bf
 	let colorScale = d3.scaleThreshold()
 						.domain([props.selectedOptions.selectedOption_green,props.selectedOptions.selectedOption_yellow])
 						.range(['green','yellow','red']);
