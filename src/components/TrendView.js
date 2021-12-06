@@ -30,25 +30,6 @@ const TrendView = (props) => {
 	let floorTrendSvg = d3.select(floorTrend.current);
 	let roomTrendSvg = d3.select(roomTrend.current);
 
-	const changeButton_per15m = () => {
-		d3.selectAll(".button2").style("background", "white");
-		d3.selectAll(".button1").style("background", "#bebebe");
-		setButton("Day");
-		makeWeekUnivTrend(weekUnivTrend);
-		makeWeekBuildingTrend(weekBuildingTrend);
-		makeWeekFloorTrend(weekFloorTrend);
-		makeWeekRoomTrend(weekRoomTrend);
-	}
-
-	const changeButton_perday = () => {
-		d3.selectAll(".button1").style("background", "white");
-		d3.selectAll(".button2").style("background", "#bebebe");
-		setButton("Week");
-		makeDayUnivTrend(dayUnivTrend);
-		makeDayBuildingTrend(dayBuildingTrend);
-		makedayFloorTrend(dayFloorTrend);
-		makedayRoomTrend(dayRoomTrend);	}
-
 	const changeDateBefore = () => {
 		if (t == 0){
 			curDate[2] = curDate[2] - 1;
@@ -849,6 +830,24 @@ const TrendView = (props) => {
 		return [startMonth,startDate,endMonth,endDate];
 	}
 
+	const changeButton_per15m = () => {
+		d3.selectAll(".button2").style("background", "white");
+		d3.selectAll(".button1").style("background", "#bebebe");
+		setButton("Day");
+		makeWeekUnivTrend(weekUnivTrend);
+		makeWeekBuildingTrend(weekBuildingTrend);
+		makeWeekFloorTrend(weekFloorTrend);
+		makeWeekRoomTrend(weekRoomTrend);
+	}
+
+	const changeButton_perday = () => {
+		d3.selectAll(".button1").style("background", "white");
+		d3.selectAll(".button2").style("background", "#bebebe");
+		setButton("Week");
+		makeDayUnivTrend(dayUnivTrend);
+		makeDayBuildingTrend(dayBuildingTrend);
+		makeDayFloorTrend(dayFloorTrend);
+		makeDayRoomTrend(dayRoomTrend);	}
 
 
 
