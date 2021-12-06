@@ -13,7 +13,42 @@ const TrendView = (props) => {
 	props.callBack(setTrendData); // 갱신시 state 변경해서 rerendering 하려고 걸어 두었음.
 
 	//props.selectObject_o.state = fdsjkljsdlkjflskj;
-  //setTrendData(props.selectObject_o.state);
+    //setTrendData(props.selectObject_o.state);
+
+	const [button, setButton] = useState("Day");
+
+	const changeButton = () => {
+		if (button == "Day"){ 
+			setButton("Week");
+			makeDayUnivTrend(dayUnivTrend);
+			makeDayBuildingTrend(dayBuildingTrend);
+			makedayFloorTrend(dayFloorTrend);
+			makedayRoomTrend(dayRoomTrend);
+			// d3.selectAll(".dayUnivTrendBar").remove();////////////////////////////여기서 지워봤는데 아예 그리지를 않네요..
+			// d3.selectAll(".dayBuildingTrendBar").remove();
+			// d3.selectAll(".dayFloorTrendBar").remove();
+			// d3.selectAll(".dayRoomTrendBar").remove();
+			// d3.selectAll(".dayUnivTrendBarQr").remove();
+			// d3.selectAll(".dayBuildingTrendBarQr").remove();
+			// d3.selectAll(".dayFloorTrendBarQr").remove();
+			// d3.selectAll(".dayRoomTrendBarQr").remove();
+			}
+		else {
+			setButton("Day");
+			makeWeekUnivTrend(weekUnivTrend);
+			makeWeekBuildingTrend(weekBuildingTrend);
+			makeWeekFloorTrend(weekFloorTrend);
+			makeWeekRoomTrend(weekRoomTrend);
+			// d3.selectAll(".weekUnivTrendBar").remove();
+			// d3.selectAll(".weekBuildingTrendBar").remove();
+			// d3.selectAll(".weekFloorTrendBar").remove();
+			// d3.selectAll(".weekRoomTrendBar").remove();
+			// d3.selectAll(".weekUnivTrendBarQr").remove();
+			// d3.selectAll(".weekBuildingTrendBarQr").remove();
+			// d3.selectAll(".weekFloorTrendBarQr").remove();
+			// d3.selectAll(".weekRoomTrendBarQr").remove();
+			}  
+	}
 
 	const trendInfo = useRef(null);
 	const univTrend = useRef(null);
@@ -35,14 +70,14 @@ const TrendView = (props) => {
 	let date = curDate[2];
 
 	let dayUnivTrend = props.getHalfHourTrendOfUniversityCrowdDensity(year+'-'+month+'-'+date);
-	let dayBuildingTrend = props.getHalfHourTrendOfBuildingCrowdDensity(301, year+'-'+month+'-'+date);
-	let dayFloorTrend = props.getHalfHourTrendOfBuildingFloorDensity(301, 1, year+'-'+month+'-'+date);
-	let dayRoomTrend = props.getHalfHourTrendOfBuildingRoomDensity(301, 1, 118, year+'-'+month+'-'+date);
+	let dayBuildingTrend = props.getHalfHourTrendOfBuildingCrowdDensity(props.selectObject_o.bdNumber, year+'-'+month+'-'+date);
+	let dayFloorTrend = props.getHalfHourTrendOfBuildingFloorDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, year+'-'+month+'-'+date);
+	let dayRoomTrend = props.getHalfHourTrendOfBuildingRoomDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, props.selectObject_o.roomNumber, year+'-'+month+'-'+date);
 
 	let weekUnivTrend = props.getDayTrendOfUniversityCrowdDensity(year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
-	let weekBuildingTrend = props.getDayTrendOfBuildingCrowdDensity(301, year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
-	let weekFloorTrend = props.getDayTrendOfBuildingFloorDensity(301, 1, year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
-	let weekRoomTrend = props.getDayTrendOfBuildingRoomDensity(301, 1, 118, year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
+	let weekBuildingTrend = props.getDayTrendOfBuildingCrowdDensity(props.selectObject_o.bdNumber, year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
+	let weekFloorTrend = props.getDayTrendOfBuildingFloorDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
+	let weekRoomTrend = props.getDayTrendOfBuildingRoomDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, props.selectObject_o.roomNumber, year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
 
 	let trendInfoBar1 = trendInfoSvg.selectAll('.trendInfo1').data(dayUnivTrend.reserve_occupancy_trend);
 	let trendInfoBar2 = trendInfoSvg.selectAll('.trendInfo2').data(dayUnivTrend.reserve_occupancy_trend);
@@ -56,7 +91,7 @@ const TrendView = (props) => {
 				.attr('width', 15)
 				.attr('height', 60)
 				.attr('stroke','black')
-				.attr('stroke-width', 2)
+				.attr('stroke-width', 5)
 				.style("fill", 'green');
 	trendInfoBar1.exit().remove();
 	
@@ -74,16 +109,6 @@ const TrendView = (props) => {
 	let colorScale = d3.scaleThreshold()
 						.domain([props.selectedOptions.selectedOption_green,props.selectedOptions.selectedOption_yellow])
 						.range(['green','yellow','red']);
-
-	makeDayUnivTrend(dayUnivTrend);
-	makeDayBuildingTrend(dayBuildingTrend);
-	makedayFloorTrend(dayFloorTrend);
-	makedayRoomTrend(dayRoomTrend);
-
-	// makeWeekUnivTrend(weekUnivTrend);
-	// makeWeekBuildingTrend(weekBuildingTrend);
-	// makeWeekFloorTrend(weekFloorTrend);
-	// makeWeekRoomTrend(weekRoomTrend);
 
 	function makeDayUnivTrend(dayUnivTrend)
 	{
@@ -812,8 +837,14 @@ const TrendView = (props) => {
 				width: '1500px',
 				height: '500px'
 			}}>
-				<svg ref={trendInfo} width={50} height={60}>
-				</svg>
+				<div>
+					<button style={{marginLeft: 5}} onClick={changeButton}>
+						{button === "Day" ? "Week" : "Day"}
+					</button>
+					<svg ref={trendInfo} width={50} height={60}>
+					</svg>
+				</div>
+				
 				<svg ref={univTrend} width={1400} height={120}>
 				</svg>
 				<svg ref={buildingTrend} width={1400} height={120}>
