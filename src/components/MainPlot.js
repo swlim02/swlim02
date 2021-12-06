@@ -78,8 +78,8 @@ const MainPlot = (props) => {
     }
 
     UniversityCrowdDensity = {
-      "capacity": SNUBuildingCrowdDensityInfo[time][0].capacity, // TODO @hskim 실제 고정된 데이터로 입력
-      "occupancy": SNUBuildingCrowdDensityInfo[time][0].occupancy // TODO @hskim 현재시간의 실제 예약값
+      "capacity": SNUBuildingCrowdDensityInfo[time][0].capacity,
+      "occupancy": SNUBuildingCrowdDensityInfo[time][0].occupancy 
     };
     return UniversityCrowdDensity;
   }
