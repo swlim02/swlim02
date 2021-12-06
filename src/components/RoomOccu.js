@@ -53,9 +53,11 @@ const RoomOccu = (props) => {
 				.attr('height', function (d) { return d.y1 - d.y0; })
 				.style("stroke", "black")
 				.style("fill", d => (d.data.occupancy/d.data.capacity) === 0 ? 'white' : colorScale((d.data.occupancy/d.data.capacity)))
-				.on("mouseenter", function() {
+				.on("mouseenter", function(d) {
 						d3.selectAll(".element11"+this.id).style("stroke-width", 3);
 						d3.selectAll(".element33"+this.id).attr("font-weight", 700);
+						//TODO data에 수업정보가 추가되면 여기에 수업정보 보여주는 코드 추가
+						//mouseleave에도 수업정보 지우는 코드 추가
 				})
 				.on('click', function() {
 						props.selectObject_o.roomNumber = this.id;
