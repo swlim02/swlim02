@@ -17,7 +17,7 @@ const TrendView = (props) => {
 	//props.selectObject_o.state = fdsjkljsdlkjflskj;
     //setTrendData(props.selectObject_o.state);
 
-	const [button, setButton] = useState("Day");
+	const [button, setButton] = useState(null);
 
 	const trendInfo = useRef(null);
 	const univTrend = useRef(null);
@@ -952,16 +952,43 @@ const TrendView = (props) => {
 						<i>-바코드 정보</i>
 					</div>
 				</div>
-
-				<svg ref={univTrend} width={1400} height={120}>
-				</svg>
-				<svg ref={buildingTrend} width={1400} height={120}>
-				</svg>
-				<svg ref={floorTrend} width={1400} height={120}>
-				</svg>
-				<svg ref={roomTrend} width={1400} height={120}>
-				</svg>
-
+				<div style={{ height: "6px", textAlign: 'center'}}>
+					<h1 style={{fontSize:"7px"}}> {button === null ? '' : "서울대학교"} </h1>
+				</div>
+				<div>
+					<svg ref={univTrend} width={1400} height={120}>
+					</svg>
+				</div>
+				<div style={{ height: "6px", textAlign: 'center'}}>
+					<h1 style={{fontSize:"7px"}}>
+						{((button === null) || (props.selectObject_o.bdNumber === null)) ? '' :
+							props.selectObject_o.bdNumber+"동"}
+					</h1>
+				</div>
+				<div>
+					<svg ref={buildingTrend} width={1400} height={120}>
+					</svg>
+				</div>
+				<div style={{ height: "6px", textAlign: 'center'}}>
+					<h1 style={{fontSize:"7px"}}>
+						{((button === null) || (props.selectObject_o.floor === null)) ? '' :
+							props.selectObject_o.floor+"층"}
+					</h1>
+				</div>
+				<div>
+					<svg ref={floorTrend} width={1400} height={120}>
+					</svg>
+				</div>
+				<div style={{ height: "6px", textAlign: 'center'}}>
+				<h1 style={{fontSize:"7px"}}>
+					{((button === null) || (props.selectObject_o.roomNumber === null)) ? '' :
+						props.selectObject_o.roomNumber+"호"}
+				</h1>
+				</div>
+				<div>
+					<svg ref={roomTrend} width={1400} height={120}>
+					</svg>
+				</div>
 				<div>
 					<button style={{marginLeft: 5}} onClick={changeDateBefore}>
 						{button == "Before"}

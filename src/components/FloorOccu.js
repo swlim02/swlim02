@@ -123,8 +123,8 @@ const FloorOccu = (props) => {
 								d3.selectAll(".element3"+this.id).attr("font-weight", 700);
 						})
 						.on("mouseleave", function() {
-							console.log(clickedRectId);
-							console.log(this.id);
+//							console.log(clickedRectId);
+//							console.log(this.id);
 							if (clickedRectId === this.id) {
 								//nothing
 							}else {
