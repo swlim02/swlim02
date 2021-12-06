@@ -1,4070 +1,4 @@
 {
-    "SNU_09:30": [
-        {
-            "capacity": 4535,
-            "occupacncy": 328,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 5
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 69
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 96
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 23
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 2
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 23
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 24
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 86
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 0
-                }
-            ]
-        }
-    ],
-    "SNU_09:45": [
-        {
-            "capacity": 4535,
-            "occupacncy": 328,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 5
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 69
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 96
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 23
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 2
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 23
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 24
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 86
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 0
-                }
-            ]
-        }
-    ],
-    "SNU_10:00": [
-        {
-            "capacity": 4535,
-            "occupacncy": 368,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 5
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 69
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 96
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 29
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 16
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 2
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 23
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 24
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 18
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 86
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 0
-                }
-            ]
-        }
-    ],
-    "SNU_10:15": [
-        {
-            "capacity": 4535,
-            "occupacncy": 368,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 5
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 69
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 96
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 29
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 16
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 2
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 23
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 24
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 18
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 86
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 0
-                }
-            ]
-        }
-    ],
-    "SNU_10:30": [
-        {
-            "capacity": 4535,
-            "occupacncy": 368,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 5
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 69
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 96
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 29
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 16
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 2
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 23
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 24
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 18
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 86
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 0
-                }
-            ]
-        }
-    ],
-    "SNU_10:45": [
-        {
-            "capacity": 4535,
-            "occupacncy": 150,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 69
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 15
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 6
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 16
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 23
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 3
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 18
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 0
-                }
-            ]
-        }
-    ],
-    "SNU_11:00": [
-        {
-            "capacity": 4535,
-            "occupacncy": 527,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 22
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 69
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 62
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 6
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 16
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 31
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 65
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 23
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 3
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 18
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 212
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 0
-                }
-            ]
-        }
-    ],
-    "SNU_11:15": [
-        {
-            "capacity": 4535,
-            "occupacncy": 692,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 22
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 69
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 62
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 6
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 16
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 31
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 65
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 23
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 3
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 18
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 212
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 165
-                }
-            ]
-        }
-    ],
-    "SNU_11:30": [
-        {
-            "capacity": 4535,
-            "occupacncy": 692,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 22
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 69
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 62
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 6
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 16
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 31
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 65
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 23
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 3
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 18
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 212
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 165
-                }
-            ]
-        }
-    ],
-    "SNU_11:45": [
-        {
-            "capacity": 4535,
-            "occupacncy": 692,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 22
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 69
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 62
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 6
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 16
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 31
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 65
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 23
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 3
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 18
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 212
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 165
-                }
-            ]
-        }
-    ],
-    "SNU_12:00": [
-        {
-            "capacity": 4535,
-            "occupacncy": 617,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 22
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 62
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 16
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 31
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 65
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 23
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 3
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 18
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 212
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 165
-                }
-            ]
-        }
-    ],
-    "SNU_12:15": [
-        {
-            "capacity": 4535,
-            "occupacncy": 60,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 16
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 23
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 3
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 18
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 0
-                }
-            ]
-        }
-    ],
-    "SNU_12:30": [
-        {
-            "capacity": 4535,
-            "occupacncy": 202,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 11
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 135
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 16
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 18
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 6
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 16
-                }
-            ]
-        }
-    ],
-    "SNU_12:45": [
-        {
-            "capacity": 4535,
-            "occupacncy": 202,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 11
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 135
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 16
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 18
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 6
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 16
-                }
-            ]
-        }
-    ],
-    "SNU_13:00": [
-        {
-            "capacity": 4535,
-            "occupacncy": 368,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 11
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 102
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 135
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 7
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 6
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 107
-                }
-            ]
-        }
-    ],
-    "SNU_13:15": [
-        {
-            "capacity": 4535,
-            "occupacncy": 368,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 11
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 102
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 135
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 7
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 6
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 107
-                }
-            ]
-        }
-    ],
-    "SNU_13:30": [
-        {
-            "capacity": 4535,
-            "occupacncy": 368,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 11
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 102
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 135
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 7
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 6
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 107
-                }
-            ]
-        }
-    ],
-    "SNU_13:45": [
-        {
-            "capacity": 4535,
-            "occupacncy": 91,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 102
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 7
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 91
-                }
-            ]
-        }
-    ],
-    "SNU_14:00": [
-        {
-            "capacity": 4535,
-            "occupacncy": 86,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 4
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 102
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 42
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 96
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 4
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 7
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 18
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 72
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 26
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 47
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 5
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 27
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 59
-                }
-            ]
-        }
-    ],
-    "SNU_14:15": [
-        {
-            "capacity": 4535,
-            "occupacncy": 86,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 4
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 102
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 42
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 96
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 4
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 7
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 18
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 72
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 26
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 47
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 5
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 27
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 59
-                }
-            ]
-        }
-    ],
-    "SNU_14:30": [
-        {
-            "capacity": 4535,
-            "occupacncy": 86,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 4
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 102
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 42
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 96
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 4
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 7
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 18
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 72
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 26
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 47
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 5
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 27
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 59
-                }
-            ]
-        }
-    ],
-    "SNU_14:45": [
-        {
-            "capacity": 4535,
-            "occupacncy": 86,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 4
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 102
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 42
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 96
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 4
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 7
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 18
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 72
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 26
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 47
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 5
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 27
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 59
-                }
-            ]
-        }
-    ],
-    "SNU_15:00": [
-        {
-            "capacity": 4535,
-            "occupacncy": 86,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 4
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 103
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 42
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 90
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 15
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 7
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 24
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 72
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 26
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 67
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 5
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 27
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 59
-                }
-            ]
-        }
-    ],
-    "SNU_15:15": [
-        {
-            "capacity": 4535,
-            "occupacncy": 0,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 103
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 42
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 3
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 15
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 7
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 24
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 3
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 26
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 29
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 0
-                }
-            ]
-        }
-    ],
-    "SNU_15:30": [
-        {
-            "capacity": 4535,
-            "occupacncy": 130,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 13
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 103
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 42
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 65
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 15
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 7
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 24
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 37
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 26
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 29
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 9
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 66
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 64
-                }
-            ]
-        }
-    ],
-    "SNU_15:45": [
-        {
-            "capacity": 4535,
-            "occupacncy": 130,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 13
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 103
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 42
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 65
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 15
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 7
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 24
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 37
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 26
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 29
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 9
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 66
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 64
-                }
-            ]
-        }
-    ],
-    "SNU_16:00": [
-        {
-            "capacity": 4535,
-            "occupacncy": 135,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 13
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 69
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 42
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 65
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 33
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 24
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 37
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 26
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 29
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 12
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 71
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 64
-                }
-            ]
-        }
-    ],
-    "SNU_16:15": [
-        {
-            "capacity": 4535,
-            "occupacncy": 135,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 13
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 69
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 42
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 65
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 33
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 24
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 37
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 26
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 29
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 12
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 71
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 64
-                }
-            ]
-        }
-    ],
-    "SNU_16:30": [
-        {
-            "capacity": 4535,
-            "occupacncy": 135,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 13
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 69
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 42
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 65
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 33
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 24
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 30
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 26
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 29
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 12
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 71
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 64
-                }
-            ]
-        }
-    ],
-    "SNU_16:45": [
-        {
-            "capacity": 4535,
-            "occupacncy": 5,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 13
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 69
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 42
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 3
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 33
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 24
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 3
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 26
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 29
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 3
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 5
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 0
-                }
-            ]
-        }
-    ],
-    "SNU_17:00": [
-        {
-            "capacity": 4535,
-            "occupacncy": 172,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 13
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 32
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 8
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 33
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 28
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 20
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 10
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 83
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 89
-                }
-            ]
-        }
-    ],
-    "SNU_17:15": [
-        {
-            "capacity": 4535,
-            "occupacncy": 172,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 13
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 32
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 8
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 33
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 28
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 20
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 7
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 83
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 89
-                }
-            ]
-        }
-    ],
-    "SNU_17:30": [
-        {
-            "capacity": 4535,
-            "occupacncy": 172,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 32,
-                    "occupancy": 32
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 8
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 33
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 28
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 20
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 7
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 83
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 89
-                }
-            ]
-        }
-    ],
-    "SNU_17:45": [
-        {
-            "capacity": 4535,
-            "occupacncy": 167,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 32
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 8
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 33
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 28
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 20
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 7
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 78
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 89
-                }
-            ]
-        }
-    ],
-    "SNU_18:00": [
-        {
-            "capacity": 4535,
-            "occupacncy": 167,
-            "buildings": [
-                {
-                    "bdNumber": "19",
-                    "bdName": "자연과학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "20",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "21",
-                    "bdName": "약학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "500",
-                    "bdName": "자연과학대학",
-                    "capacity": 36,
-                    "occupancy": 8
-                },
-                {
-                    "bdNumber": "22",
-                    "bdName": "자연과학관4",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "25-1",
-                    "bdName": "자연대강의실험연구동",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "29",
-                    "bdName": "약학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "30",
-                    "bdName": "공학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "31",
-                    "bdName": "공학관2",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "32",
-                    "bdName": "공학관3",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "34",
-                    "bdName": "공학관5",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "36",
-                    "bdName": "공학관7",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "37",
-                    "bdName": "공학관8",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "38",
-                    "bdName": "글로벌공학교육센터",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "44-1",
-                    "bdName": "신양학술정보관",
-                    "capacity": 36,
-                    "occupancy": 9
-                },
-                {
-                    "bdNumber": "18",
-                    "bdName": "자연과학관1",
-                    "capacity": 36,
-                    "occupancy": 0
-                },
-                {
-                    "bdNumber": "301",
-                    "bdName": "제1공학관",
-                    "capacity": 1167,
-                    "occupancy": 78
-                },
-                {
-                    "bdNumber": "302",
-                    "bdName": "제2공학관",
-                    "capacity": 1001,
-                    "occupancy": 89
-                }
-            ]
-        }
-    ],
     "301_09:30": [
         {
             "bdNumber": "301",
@@ -4078,12 +12,12 @@
                 {
                     "floor": 2,
                     "capacity": 276,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 3,
                     "capacity": 439,
-                    "occupancy": 19 
+                    "occupancy": 19
                 }
             ]
         }
@@ -4101,12 +35,12 @@
                 {
                     "floor": 2,
                     "capacity": 276,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 3,
                     "capacity": 439,
-                    "occupancy": 19 
+                    "occupancy": 19
                 }
             ]
         }
@@ -4124,12 +58,12 @@
                 {
                     "floor": 2,
                     "capacity": 276,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 3,
                     "capacity": 439,
-                    "occupancy": 19 
+                    "occupancy": 19
                 }
             ]
         }
@@ -4147,12 +81,12 @@
                 {
                     "floor": 2,
                     "capacity": 276,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 3,
                     "capacity": 439,
-                    "occupancy": 19 
+                    "occupancy": 19
                 }
             ]
         }
@@ -4170,7 +104,7 @@
                 {
                     "floor": 2,
                     "capacity": 276,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 3,
@@ -4193,12 +127,12 @@
                 {
                     "floor": 2,
                     "capacity": 276,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 3,
                     "capacity": 439,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -4883,32 +817,32 @@
                 {
                     "floor": 2,
                     "capacity": 156,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 3,
                     "capacity": 158,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 4,
                     "capacity": 90,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 5,
                     "capacity": 150,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 7,
                     "capacity": 50,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -4926,32 +860,32 @@
                 {
                     "floor": 2,
                     "capacity": 156,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 3,
                     "capacity": 158,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 4,
                     "capacity": 90,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 5,
                     "capacity": 150,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 7,
                     "capacity": 50,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -4969,32 +903,32 @@
                 {
                     "floor": 2,
                     "capacity": 156,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 3,
                     "capacity": 158,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 4,
                     "capacity": 90,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 5,
                     "capacity": 150,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 7,
                     "capacity": 50,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5012,32 +946,32 @@
                 {
                     "floor": 2,
                     "capacity": 156,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 3,
                     "capacity": 158,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 4,
                     "capacity": 90,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 5,
                     "capacity": 150,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 7,
                     "capacity": 50,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5055,32 +989,32 @@
                 {
                     "floor": 2,
                     "capacity": 156,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 3,
                     "capacity": 158,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 4,
                     "capacity": 90,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 5,
                     "capacity": 150,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 7,
                     "capacity": 50,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5098,32 +1032,32 @@
                 {
                     "floor": 2,
                     "capacity": 156,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 3,
                     "capacity": 158,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 4,
                     "capacity": 90,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 5,
                     "capacity": 150,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 7,
                     "capacity": 50,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5146,12 +1080,12 @@
                 {
                     "floor": 3,
                     "capacity": 158,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 4,
                     "capacity": 90,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 5,
@@ -5161,12 +1095,12 @@
                 {
                     "floor": 7,
                     "capacity": 50,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5189,12 +1123,12 @@
                 {
                     "floor": 3,
                     "capacity": 158,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 4,
                     "capacity": 90,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 5,
@@ -5204,12 +1138,12 @@
                 {
                     "floor": 7,
                     "capacity": 50,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5232,12 +1166,12 @@
                 {
                     "floor": 3,
                     "capacity": 158,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 4,
                     "capacity": 90,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 5,
@@ -5247,12 +1181,12 @@
                 {
                     "floor": 7,
                     "capacity": 50,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5275,12 +1209,12 @@
                 {
                     "floor": 3,
                     "capacity": 158,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 4,
                     "capacity": 90,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 5,
@@ -5290,12 +1224,12 @@
                 {
                     "floor": 7,
                     "capacity": 50,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5318,12 +1252,12 @@
                 {
                     "floor": 3,
                     "capacity": 158,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 4,
                     "capacity": 90,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 5,
@@ -5333,12 +1267,12 @@
                 {
                     "floor": 7,
                     "capacity": 50,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5361,12 +1295,12 @@
                 {
                     "floor": 3,
                     "capacity": 158,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 4,
                     "capacity": 90,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 5,
@@ -5376,12 +1310,12 @@
                 {
                     "floor": 7,
                     "capacity": 50,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5404,12 +1338,12 @@
                 {
                     "floor": 3,
                     "capacity": 158,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 4,
                     "capacity": 90,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 5,
@@ -5419,12 +1353,12 @@
                 {
                     "floor": 7,
                     "capacity": 50,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5447,12 +1381,12 @@
                 {
                     "floor": 3,
                     "capacity": 158,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 4,
                     "capacity": 90,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 5,
@@ -5462,12 +1396,12 @@
                 {
                     "floor": 7,
                     "capacity": 50,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5490,12 +1424,12 @@
                 {
                     "floor": 3,
                     "capacity": 158,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 4,
                     "capacity": 90,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 5,
@@ -5505,12 +1439,12 @@
                 {
                     "floor": 7,
                     "capacity": 50,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5533,12 +1467,12 @@
                 {
                     "floor": 3,
                     "capacity": 158,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 4,
                     "capacity": 90,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 5,
@@ -5548,12 +1482,12 @@
                 {
                     "floor": 7,
                     "capacity": 50,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5576,12 +1510,12 @@
                 {
                     "floor": 3,
                     "capacity": 158,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 4,
                     "capacity": 90,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 5,
@@ -5591,12 +1525,12 @@
                 {
                     "floor": 7,
                     "capacity": 50,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5619,12 +1553,12 @@
                 {
                     "floor": 3,
                     "capacity": 158,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 4,
                     "capacity": 90,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 5,
@@ -5634,12 +1568,12 @@
                 {
                     "floor": 7,
                     "capacity": 50,
-                    "occupancy": 0 
+                    "occupancy": 0
                 },
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5682,7 +1616,7 @@
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5725,7 +1659,7 @@
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5768,7 +1702,7 @@
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5811,7 +1745,7 @@
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5854,7 +1788,7 @@
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5897,7 +1831,7 @@
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5940,7 +1874,7 @@
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -5983,7 +1917,7 @@
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -6026,7 +1960,7 @@
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -6069,7 +2003,7 @@
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -6112,7 +2046,7 @@
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -6155,7 +2089,7 @@
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -6198,7 +2132,7 @@
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -6241,7 +2175,7 @@
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -6284,7 +2218,7 @@
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -6327,7 +2261,7 @@
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }
@@ -6370,7 +2304,7 @@
                 {
                     "floor": 8,
                     "capacity": 25,
-                    "occupancy": 0 
+                    "occupancy": 0
                 }
             ]
         }

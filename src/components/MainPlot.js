@@ -3,10 +3,17 @@ import * as d3 from "d3";
 import ControlPanel from './ControlPanel';
 import MapContainer from "./MapContainer";
 import TrendView from "./TrendView";
+// TODO @hskim 데이터를, 실제 요일 데이터로 넣어주세요.
+import SNUBuildingCrowdDensityInfo_Mon from "../data/SNUBuildingCrowdDensityInfo_Mon.json";
+import SNUBuildingCrowdDensityInfo_Tue from "../data/SNUBuildingCrowdDensityInfo_Mon.json";
+import SNUBuildingCrowdDensityInfo_WED from "../data/SNUBuildingCrowdDensityInfo_Mon.json";
+import SNUBuildingCrowdDensityInfo_THU from "../data/SNUBuildingCrowdDensityInfo_Mon.json";
+import SNUBuildingCrowdDensityInfo_FRI from "../data/SNUBuildingCrowdDensityInfo_Mon.json";
 
 var selectedOptions = new Object();
 let selectObject_o = new Object();
 let today = new Date();
+let SNUBuildingCrowdDensityInfo;
 
 let year = today.getFullYear();
 let month = today.getMonth()+1;
@@ -32,12 +39,47 @@ const MainPlot = (props) => {
     cb_trend_f = f;
   }
 
-  // TODO @hskim
+  // @swlim 개발 - 이해안가면 물어 보삼
   function getUniversityCrowdDensity() {
     let UniversityCrowdDensity = new Object();
+
+    switch (today.getDay()) {
+      case 1:
+        SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_Mon;
+        console.log("월요일");
+        break;
+      case 2:
+        SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_Tue;
+        break;
+      case 3:
+        SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_WED;
+        break;
+      case 4:
+        SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_THU;
+        break;
+      case 5:
+      case 0: // 일요일
+      case 6: // 토요일 두요일 수업 데이터는 없음. 데모시 금요일로 대체
+        SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_FRI;
+        break;
+      default:
+        console.log("여기오면 망한거임");
+    }
+
+    let time = 'SNU_' + today.getHours() + ":" + parseInt((today.getMinutes()/15))*15; // 양자화
+    console.log (time);
+    if (       // 수업이 없는 시간으로 데모 데이터로 고정
+        ((today.getHours() === 18) && (today.getMinutes()>14)) ||
+        (today.getHours() > 18) ||
+        (today.getHours() < 9) ||
+        ((today.getHours() === 9) && (today.getMinutes()<30))
+      ) {
+      time = 'SNU_09:30';
+    }
+
     UniversityCrowdDensity = {
-      "capacity": 10000, // TODO @hskim 실제 고정된 데이터로 입력
-      "occupancy": 5000 // TODO @hskim 현재시간의 실제 예약값
+      "capacity": SNUBuildingCrowdDensityInfo[time][0].capacity,
+      "occupancy": SNUBuildingCrowdDensityInfo[time][0].occupancy 
     };
     return UniversityCrowdDensity;
   }
