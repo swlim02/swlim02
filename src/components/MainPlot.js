@@ -57,11 +57,13 @@ const MainPlot = (props) => {
   function update_new(){ // 거리두기 수정시 호출되는 함
     console.log("update_new");
     cb_f();
-    cb_trend_f(selectObject_o.bdNumber + selectObject_o.floor + selectObject_o.roomNumber);
+    cb_trend_f(selectObject_o.bdNumber + selectObject_o.floor + selectObject_o.roomNumber
+      + selectedOptions.selectedOption_green + selectedOptions.selectedOption_yellow);
   }
 
   function update_trendView(){ // drlrvyObject (건물,층,룸) 정보 수정시 호출 되는 함
-    cb_trend_f(selectObject_o.bdNumber + selectObject_o.floor + selectObject_o.roomNumber);
+    cb_trend_f(selectObject_o.bdNumber + selectObject_o.floor + selectObject_o.roomNumber
+      + selectedOptions.selectedOption_green + selectedOptions.selectedOption_yellow);
   }
 
  // TODO 아래 function 8개 개발 필요.  @hskim @swlim
