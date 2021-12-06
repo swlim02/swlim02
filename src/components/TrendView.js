@@ -29,21 +29,24 @@ const TrendView = (props) => {
 	let floorTrendSvg = d3.select(floorTrend.current);
 	let roomTrendSvg = d3.select(roomTrend.current);
 
-	const changeButton = () => {
-		if (button == "Day"){
-			setButton("Week");
-			makeDayUnivTrend(dayUnivTrend);
-			makeDayBuildingTrend(dayBuildingTrend);
-			makedayFloorTrend(dayFloorTrend);
-			makedayRoomTrend(dayRoomTrend);
-			}
-		else {
-			setButton("Day");
-			makeWeekUnivTrend(weekUnivTrend);
-			makeWeekBuildingTrend(weekBuildingTrend);
-			makeWeekFloorTrend(weekFloorTrend);
-			makeWeekRoomTrend(weekRoomTrend);
-			}
+	const changeButton_per15m = () => {
+		d3.selectAll(".button2").style("background", "white");
+		d3.selectAll(".button1").style("background", "#bebebe");
+		setButton("Day");
+		makeWeekUnivTrend(weekUnivTrend);
+		makeWeekBuildingTrend(weekBuildingTrend);
+		makeWeekFloorTrend(weekFloorTrend);
+		makeWeekRoomTrend(weekRoomTrend);
+	}
+
+	const changeButton_perday = () => {
+		d3.selectAll(".button1").style("background", "white");
+		d3.selectAll(".button2").style("background", "#bebebe");
+		setButton("Week");
+		makeDayUnivTrend(dayUnivTrend);
+		makeDayBuildingTrend(dayBuildingTrend);
+		makedayFloorTrend(dayFloorTrend);
+		makedayRoomTrend(dayRoomTrend);
 	}
 
 	let curDate = props.selectObject_o.date;
@@ -69,27 +72,49 @@ const TrendView = (props) => {
 	trendInfoBar1.enter()
 				.append('rect')
 				.attr('class', 'trendInfo1')
-				.merge(trendInfoBar1)
-				.attr('x', 0)
-				.attr('y', 0)
+//				.merge(trendInfoBar1)
+				.attr('x', 5)
+				.attr('y', 2)
 				.attr('width', 15)
-				.attr('height', 60)
-				.attr('stroke','black')
-				.attr('stroke-width', 5)
-				.style("fill", 'green');
-	trendInfoBar1.exit().remove();
+				.attr('height', 20)
+//				.attr('stroke','black')
+//				.attr('stroke-width', 1)
+				.style("fill", 'gray');
+//	trendInfoBar1.exit().remove();
 
 	trendInfoBar2.enter()
 				.append('rect')
 				.attr('class', 'trendInfo2')
-				.merge(trendInfoBar2)
-				.attr('x', 15)
-				.attr('y', 0)
+//				.merge(trendInfoBar2)
+				.attr('x', 21)
+				.attr('y', 7)
 				.attr('width', 15)
-				.attr('height', 60)
-				.style("fill", 'green');
-	trendInfoBar2.exit().remove();
+				.attr('height', 15)
+				.style("fill", 'gray');
+/*
+	trendInfoSvg
+				.append('line')
+//				.attr('class', 'trendInfo2')
+//				.merge(trendInfoBar2)
+				.attr('x1', 31)
+				.attr('y1', 13)
+				.attr('x2', 41)
+				.attr('y2', 13)
+				.attr("stroke", 'Black')
+				.attr('stroke-width', 1);
 
+		trendInfoSvg
+					.append('line')
+	//				.attr('class', 'trendInfo2')
+	//				.merge(trendInfoBar2)
+					.attr('x1', 1)
+					.attr('y1', 13)
+					.attr('x2', 11)
+					.attr('y2', 13)
+					.attr("stroke", 'Black')
+					.attr('stroke-width', 1);
+//	trendInfoBar2.exit().remove();
+*/
 	let colorScale = d3.scaleThreshold()
 						.domain([props.selectedOptions.selectedOption_green,props.selectedOptions.selectedOption_yellow])
 						.range(['green','yellow','red']);
@@ -861,15 +886,6 @@ const TrendView = (props) => {
 	// 	ebars.exit().remove();
 	// }
 
-
-
-
-
-
-
-
-
-
 // 1500 * 500 에 사이즈 맞춰주면 thx
 	return (
 		<div>
@@ -880,12 +896,33 @@ const TrendView = (props) => {
 				width: '1500px',
 				height: '500px'
 			}}>
-				<div>
-					<button style={{marginLeft: 5}} onClick={changeButton}>
-						{button === "Day" ? "Week" : "Day"}
-					</button>
-					<svg ref={trendInfo} width={50} height={60}>
-					</svg>
+				<div style={{ display: "flex"}}>
+					<div>
+						<label> &nbsp;<b>트랜드 보기</b> &nbsp; </label>
+					</div>
+					<div style={{ border: "1px solid gray", height: "22px"}}>
+						<button class="button1" style={{
+							marginLeft: '5', background: 'white', border: '0'
+						}} onClick={changeButton_per15m}>
+							시간별
+						</button >
+						<button class="button2" style={{
+							marginLeft: '5', background: 'white', border: '0'
+						}} onClick={changeButton_perday}>
+							일간별
+						</button >
+					</div>
+					<div>
+						&nbsp;&nbsp;|&nbsp;&nbsp;
+					</div>
+					<div>
+					  <i>수업 정보-</i>
+						</div>
+						<svg ref={trendInfo} width={37} height={60}>
+						</svg>
+						<div>
+						<i>-바코드 정보</i>
+					</div>
 				</div>
 
 				<svg ref={univTrend} width={1400} height={120}>
