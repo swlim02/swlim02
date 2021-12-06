@@ -37,6 +37,7 @@ const TrendView = (props) => {
 			year = curDate[0];
 			month = curDate[1];
 			date = curDate[2];
+			console.log("11");
 			}
 		else {
 			curDate[2] = curDate[2] - 7;
@@ -44,6 +45,7 @@ const TrendView = (props) => {
 			year = curDate[0];
 			month = curDate[1];
 			date = curDate[2];
+			console.log("111");
 			}
 	}
 
@@ -54,6 +56,7 @@ const TrendView = (props) => {
 			year = curDate[0];
 			month = curDate[1];
 			date = curDate[2];
+			console.log("22");
 			}
 		else {
 			curDate[2] = curDate[2] + 7;
@@ -61,6 +64,7 @@ const TrendView = (props) => {
 			year = curDate[0];
 			month = curDate[1];
 			date = curDate[2];
+			console.log("222");
 			}
 	}
 
