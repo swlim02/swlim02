@@ -69,18 +69,17 @@ const FloorOccu = (props) => {
         // append the svg object to the body of the page
         //console.log();
 
-
-
         svg.append('g')
             .attr("transform", `translate(${margin.left+1}, ${0})`)
 						.attr("class", "selection99")
 //						.attr("class", (d,i) => "element" + i)
             .selectAll("rect")
             .data(selectData.floors)
-            .enter()
-            .append("rect")
-						.attr("class", (d, i) => "element2"+i)
-						.attr("id", (d, i) => i)
+//            .enter()
+//            .append("rect")
+						.join("rect")
+						.attr("class", (d, i) => "element2"+d.floor)
+						.attr("id", (d, i) => d.floor)
             .attr('x', xAxis(0))
             .attr('y', (d,i) => yAxis(floorList[i]))
             .attr('width', d => xAxis(d.occupancy/d.capacity*100))
@@ -107,10 +106,11 @@ const FloorOccu = (props) => {
 						.attr("class", "selection99")
             .selectAll("rect")
             .data(selectData.floors)
-            .enter()
-            .append("rect")
-						.attr("class", (d, i) => "element1"+i)
-						.attr("id", (d, i) => i)
+//            .enter()
+//            .append("rect")
+						.join("rect")
+						.attr("class", (d, i) => "element1"+d.floor)
+						.attr("id", (d, i) => d.floor)
             .attr('x', xAxis(0))
             .attr('y', (d,i) => yAxis(floorList[i]))
             .attr('width', xAxis(100))
@@ -140,8 +140,8 @@ const FloorOccu = (props) => {
             .selectAll("text")
             .data(selectData.floors)
             .join("text")
-						.attr("class", (d, i) => "element3"+i)
-						.attr("id", (d, i) => i)
+						.attr("class", (d, i) => "element3"+d.floor)
+						.attr("id", (d, i) => d.floor)
 //            .attr('x', d => xAxis((d.occupancy/d.capacity*50)-3))
 						.attr('x', d => Math.round(d.occupancy/d.capacity*100 < 50 ?
 							xAxis(Math.round(d.occupancy/d.capacity*100))+5 : xAxis(Math.round(d.occupancy/d.capacity*100))-5 ))
@@ -152,54 +152,94 @@ const FloorOccu = (props) => {
 						.attr("text-anchor", d=> Math.round(d.occupancy/d.capacity*100) < 50 ? "start" : "end")
             .style("fill", "black");
 
+
+				if (props.selectObject_o.floor != null) {
+					clickedRectId = props.selectObject_o.floor;
+					d3.selectAll(".element1"+clickedRectId ).style("stroke-width", 3);
+					d3.selectAll(".element3"+clickedRectId ).attr("font-weight", 700);
+					let x = 406;
+					let y = Number(document.getElementsByClassName("element1"+clickedRectId)[0].getAttribute('y'));
+					let h = Number(document.getElementsByClassName("element1"+clickedRectId)[0].getAttribute('height'));
+					let tempdata = [x , y];
+
+					svg.append("g")
+						.attr("transform", `translate(${margin.left+1}, ${0})`)
+						.attr("class", "selection99")
+						.selectAll("line")
+						.data(tempdata)
+						.join("line")
+						.style("stroke", "black")
+						.style("stroke-width", 3)
+						.attr('x1',d => x)
+						.attr('y1',d => y)
+						.attr('x2',d => x+10)
+						.attr('y2',d => y+h/2);
+
+					svg.append("g")
+						.attr("transform", `translate(${margin.left+1}, ${0})`)
+						.attr("class", "selection99")
+						.selectAll("line")
+						.data(tempdata)
+						.join("line")
+						.style("stroke", "black")
+						.style("stroke-width", 3)
+						.attr('x1',d => x+10)
+						.attr('y1',d => y+h/2)
+						.attr('x2',d => x)
+						.attr('y2',d => y+h);
+				}
+
 				svg.selectAll('rect')
 					.on('click', function(d, i) {
+							props.selectObject_o.floor = this.id;
 							if (clickedRectId != this.id) {
 								d3.selectAll(".element1"+clickedRectId).style("stroke-width", 1);
 								d3.selectAll(".element3"+clickedRectId).attr("font-weight", 300);
+								props.selectObject_o.roomNumber = null;
+								clickedRectId = this.id;
+								props.update_trendView_f();
+
+								svg.selectAll("line")
+									.remove();
+
+								let x = 406;
+								let y = Number(document.getElementsByClassName("element1"+clickedRectId)[0].getAttribute('y'));
+								let h = Number(document.getElementsByClassName("element1"+clickedRectId)[0].getAttribute('height'));
+								let tempdata = [x , y];
+
+								svg.append("g")
+									.attr("transform", `translate(${margin.left+1}, ${0})`)
+									.attr("class", "selection99")
+									.selectAll("line")
+									.data(tempdata)
+									.join("line")
+									.style("stroke", "black")
+									.style("stroke-width", 3)
+									.attr('x1',d => x)
+									.attr('y1',d => y)
+									.attr('x2',d => x+10)
+									.attr('y2',d => y+h/2);
+
+								svg.append("g")
+									.attr("transform", `translate(${margin.left+1}, ${0})`)
+									.attr("class", "selection99")
+									.selectAll("line")
+									.data(tempdata)
+									.join("line")
+									.style("stroke", "black")
+									.style("stroke-width", 3)
+									.attr('x1',d => x+10)
+									.attr('y1',d => y+h/2)
+									.attr('x2',d => x)
+									.attr('y2',d => y+h);
+
+							} else {
+								//nothing
 							}
-							clickedRectId = this.id;
-
-							svg.selectAll("line")
-								.remove();
-
-							let x = 406;
-							let y = Number(document.getElementsByClassName("element1"+clickedRectId)[0].getAttribute('y'));
-							let h = Number(document.getElementsByClassName("element1"+clickedRectId)[0].getAttribute('height'));
-							console.log(x+","+y);
-							let tempdata = [x , y];
-							console.log(tempdata);
-							console.log(tempdata[0]);
-
-							svg.append("g")
-								.attr("transform", `translate(${margin.left+1}, ${0})`)
-								.attr("class", "selection99")
-								.selectAll("line")
-								.data(tempdata)
-								.join("line")
-								.style("stroke", "black")
-								.style("stroke-width", 3)
-								.attr('x1',d => x)
-								.attr('y1',d => y)
-								.attr('x2',d => x+10)
-								.attr('y2',d => y+h/2);
-
-							svg.append("g")
-								.attr("transform", `translate(${margin.left+1}, ${0})`)
-								.attr("class", "selection99")
-								.selectAll("line")
-								.data(tempdata)
-								.join("line")
-								.style("stroke", "black")
-								.style("stroke-width", 3)
-								.attr('x1',d => x+10)
-								.attr('y1',d => y+h/2)
-								.attr('x2',d => x)
-								.attr('y2',d => y+h);
 
 							// TODO 실제 선택한 층 정보를 이용하여
 							// getFloorDensity(bdNumber, floor) 호출하여 roomData를 얻어야함.
-							// @ghjeong 
+							// @ghjeong
 							switch (selectData.bdNumber) {
 								case "33":
 								props.floor_o.roomData = props.roomData[i.floor-1];
@@ -257,6 +297,8 @@ svg.append("g")
 					data = {props.floor_o.roomData}
 					callBack={callBack}
 					selectedOptions={selectedOptions}
+					selectObject_o={props.selectObject_o}
+          update_trendView_f={props.update_trendView_f} // selectObject_o  값 갱신시 호출해주어야함
 				/>
 			</div>
 		</div>

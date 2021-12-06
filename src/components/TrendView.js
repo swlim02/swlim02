@@ -6,6 +6,8 @@ let dayDivide = ['Mon','Tue','Wed','Thu','Fri'];
 
 const TrendView = (props) => {
 
+	console.log ("TrendView")
+
 	const [trendData, setTrendData] = useState(props.selectObject_o.state);
 	// set the dimensions and margins of the graph
 	props.callBack(setTrendData); // 갱신시 state 변경해서 rerendering 하려고 걸어 두었음.
@@ -35,7 +37,7 @@ const TrendView = (props) => {
 	let dayUnivTrend = props.getHalfHourTrendOfUniversityCrowdDensity(year+'-'+month+'-'+date);
 	let dayBuildingTrend = props.getHalfHourTrendOfBuildingCrowdDensity(301, year+'-'+month+'-'+date);
 	let dayFloorTrend = props.getHalfHourTrendOfBuildingFloorDensity(301, 1, year+'-'+month+'-'+date);
-	let dayRoomTrend = props.getHalfHourTrendOfBuildingRoomDensity(301, 1, 118, year+'-'+month+'-'+date);	
+	let dayRoomTrend = props.getHalfHourTrendOfBuildingRoomDensity(301, 1, 118, year+'-'+month+'-'+date);
 
 	let weekUnivTrend = props.getDayTrendOfUniversityCrowdDensity(year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
 	let weekBuildingTrend = props.getDayTrendOfBuildingCrowdDensity(301, year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
@@ -497,7 +499,7 @@ const TrendView = (props) => {
 	function changeMonFri(curDate) {
 
 		let month = curDate[1];
-		let date = curDate[2];		
+		let date = curDate[2];
 		let day = curDate[3];
 		var startDate = date;
 		var endDate = date;
@@ -527,8 +529,8 @@ const TrendView = (props) => {
 			case 6 : startDate = date-5;
 					endDate = date-1;
 					break;
-		}	
-		
+		}
+
 		let startEndDate = validDate(curDate,startDate,endDate,startMonth,endMonth);
 		console.log(startEndDate);
 		return startEndDate;
