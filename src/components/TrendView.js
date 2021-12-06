@@ -34,20 +34,21 @@ const TrendView = (props) => {
 		d3.selectAll(".button2").style("background", "white");
 		d3.selectAll(".button1").style("background", "#bebebe");
 		setButton("Day");
-		makeWeekUnivTrend(weekUnivTrend);
-		makeWeekBuildingTrend(weekBuildingTrend);
-		makeWeekFloorTrend(weekFloorTrend);
-		makeWeekRoomTrend(weekRoomTrend);
+		makeDayUnivTrend(dayUnivTrend);
+		makeDayBuildingTrend(dayBuildingTrend);
+		makeDayFloorTrend(dayFloorTrend);
+		makeDayRoomTrend(dayRoomTrend);
 	}
 
 	const changeButton_perday = () => {
 		d3.selectAll(".button1").style("background", "white");
 		d3.selectAll(".button2").style("background", "#bebebe");
 		setButton("Week");
-		makeDayUnivTrend(dayUnivTrend);
-		makeDayBuildingTrend(dayBuildingTrend);
-		makeDayFloorTrend(dayFloorTrend);
-		makeDayRoomTrend(dayRoomTrend);	}
+		makeWeekUnivTrend(weekUnivTrend);
+		makeWeekBuildingTrend(weekBuildingTrend);
+		makeWeekFloorTrend(weekFloorTrend);
+		makeWeekRoomTrend(weekRoomTrend);
+	}
 
 	const changeDateBefore = () => {
 		if (t == 0){
@@ -236,6 +237,11 @@ const TrendView = (props) => {
 
 	function makeDayBuildingTrend(dayBuildingTrend)
 	{
+		if(props.selectObject_o.bdNumber === null){ 
+			//null
+		}
+		else{
+
 		let dayBuildingTrendxScale = d3.scaleBand()
 									.domain(timeDivide)
 									.range([0, 1300])
@@ -284,10 +290,16 @@ const TrendView = (props) => {
 							.attr('width', 15)
 							.attr('height', (d) => 80-dayBuildingTrendyScale(d/buildingCapacity*100))
 							.style("fill", d => (d/buildingCapacity*100) === 0 ? 'white' : colorScale(d/buildingCapacity*100));
+		}
 	}
 
 	function makeDayFloorTrend(dayFloorTrend)
 	{
+		if(props.selectObject_o.floor === null){ 
+			//null
+		}
+		else{
+		
 		let dayFloorTrendxScale = d3.scaleBand()
 									.domain(timeDivide)
 									.range([0, 1300])
@@ -336,10 +348,16 @@ const TrendView = (props) => {
 						.attr('width', 15)
 						.attr('height', (d) => 80-dayFloorTrendyScale(d/floorCapacity*100))
 						.style("fill", d => (d/floorCapacity*100) === 0 ? 'white' : colorScale(d/floorCapacity*100));
+		}
 	}
 
 	function makeDayRoomTrend(dayRoomTrend)
 	{
+		if(props.selectObject_o.roomNumber === null){ 
+			//null
+		}
+		else{
+		
 		let dayRoomTrendxScale = d3.scaleBand()
 									.domain(timeDivide)
 									.range([0, 1300])
@@ -389,6 +407,7 @@ const TrendView = (props) => {
 						.attr('width', 15)
 						.attr('height', (d) => 80-dayRoomTrendyScale(d/roomCapacity*100))
 						.style("fill", d => (d/roomCapacity*100) === 0 ? 'white' : colorScale(d/roomCapacity*100));
+		}
 	}
 
 	function makeWeekUnivTrend(weekUnivTrend)
@@ -475,6 +494,11 @@ const TrendView = (props) => {
 
 	function makeWeekBuildingTrend(weekBuildingTrend)
 	{
+		if(props.selectObject_o.bdNumber === null){ 
+			//null
+		}
+		else{
+
 		let weekBuildingTrendxScale = d3.scaleBand()
 									.domain(dayDivide)
 									.range([0, 1300])
@@ -524,10 +548,16 @@ const TrendView = (props) => {
 								.attr('width', 15)
 								.attr('height', (d) => 80-weekBuildingTrendyScale(d/buildingCapacity*100))
 								.style("fill", d => (d/buildingCapacity*100) === 0 ? 'white' : colorScale(d/buildingCapacity*100));
+		}
 	}
 
 	function makeWeekFloorTrend(weekFloorTrend)
 	{
+		if(props.selectObject_o.floor === null){ 
+			//null
+		}
+		else{
+		
 		let weekFloorTrendxScale = d3.scaleBand()
 									.domain(dayDivide)
 									.range([0, 1300])
@@ -577,10 +607,16 @@ const TrendView = (props) => {
 						.attr('width', 15)
 						.attr('height', (d) => 80-weekFloorTrendyScale(d/floorCapacity*100))
 						.style("fill", d => (d/floorCapacity*100) === 0 ? 'white' : colorScale(d/floorCapacity*100));
+		}
 	}
 
 	function makeWeekRoomTrend(weekRoomTrend)
 	{
+		if(props.selectObject_o.roomNumber === null){ 
+			//null
+		}
+		else{
+		
 		let weekRoomTrendxScale = d3.scaleBand()
 									.domain(dayDivide)
 									.range([0, 1300])
@@ -630,6 +666,7 @@ const TrendView = (props) => {
 						.attr('width', 15)
 						.attr('height', (d) => 80-weekRoomTrendyScale(d/roomCapacity*100))
 						.style("fill", d => (d/roomCapacity*100) === 0 ? 'white' : colorScale(d/roomCapacity*100));
+		}
 	}
 
 	function changeMonFri(curDate) {
