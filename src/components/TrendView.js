@@ -46,8 +46,8 @@ const TrendView = (props) => {
 		setButton("Week");
 		makeDayUnivTrend(dayUnivTrend);
 		makeDayBuildingTrend(dayBuildingTrend);
-		makedayFloorTrend(dayFloorTrend);
-		makedayRoomTrend(dayRoomTrend);	}
+		makeDayFloorTrend(dayFloorTrend);
+		makeDayRoomTrend(dayRoomTrend);	}
 
 	const changeDateBefore = () => {
 		if (t == 0){
