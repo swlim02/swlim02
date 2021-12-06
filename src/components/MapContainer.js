@@ -114,7 +114,7 @@ const MapContainer = (props) => {
   useEffect(() => {
     const container = document.getElementById('myMap');
     const options = {
-      center: new kakao.maps.LatLng(37.4595, 126.9535),
+      center: new kakao.maps.LatLng(37.4580, 126.9535),
       level: 5
     };
     let map = new kakao.maps.Map(container, options);
@@ -350,11 +350,11 @@ const MapContainer = (props) => {
     <div>
       <div id='myMap' class="splotContainer1" style={{
         width: '500px',
-        height: '600px'
+        height: '510px'
       }}></div>
       <div id='floorView' class="splotContainer2" style={{
         width: '900px',
-        height: '700px'
+        height: '500px'
       }}>
         <FloorOccu
           data={current_data}

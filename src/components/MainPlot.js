@@ -198,8 +198,8 @@ const MainPlot = (props) => {
         />
       </div>
       <div class="splotContainer02" z-index="0" style={{
-        width: '1500px',
-        height: '800px'
+        width: '1450px',
+        height: '560px'
       }}>
         <MapContainer
         callBack={callBack}
