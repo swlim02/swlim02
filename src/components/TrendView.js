@@ -239,7 +239,11 @@ const TrendView = (props) => {
 	function makeDayBuildingTrend(dayBuildingTrend)
 	{
 		if(props.selectObject_o.bdNumber === null){ 
-			//null
+			d3.selectAll(".chartGroupBuilding").remove();
+			d3.selectAll(".dayBuildingTrendBar").remove();
+			d3.selectAll(".dayBuildingTrendBarQr").remove();
+			d3.selectAll(".weekBuildingTrendBar").remove();
+			d3.selectAll(".weekBuildingTrendBarQr").remove();
 		}
 		else{
 
@@ -295,7 +299,11 @@ const TrendView = (props) => {
 	function makeDayFloorTrend(dayFloorTrend)
 	{
 		if(props.selectObject_o.floor === null){ 
-			//null
+			d3.selectAll(".chartGroupFloor").remove();
+			d3.selectAll(".dayFloorTrendBar").remove();
+			d3.selectAll(".dayFloorTrendBarQr").remove();
+			d3.selectAll(".weekFloorTrendBar").remove();
+			d3.selectAll(".weekFloorTrendBarQr").remove();
 		}
 		else{
 		
@@ -351,7 +359,11 @@ const TrendView = (props) => {
 	function makeDayRoomTrend(dayRoomTrend)
 	{
 		if(props.selectObject_o.roomNumber === null){ 
-			//null
+			d3.selectAll(".chartGroupRoom").remove();
+			d3.selectAll(".dayRoomTrendBar").remove();
+			d3.selectAll(".dayRoomTrendBarQr").remove();
+			d3.selectAll(".weekRoomTrendBar").remove();
+			d3.selectAll(".weekRoomTrendBarQr").remove();
 		}
 		else{
 		
@@ -488,7 +500,11 @@ const TrendView = (props) => {
 	function makeWeekBuildingTrend(weekBuildingTrend)
 	{
 		if(props.selectObject_o.bdNumber === null){ 
-			//null
+			d3.selectAll(".chartGroupBuilding").remove();
+			d3.selectAll(".weekBuildingTrendBar").remove();
+			d3.selectAll(".weekBuildingTrendBarQr").remove();
+			d3.selectAll(".dayBuildingTrendBar").remove();
+			d3.selectAll(".dayBuildingTrendBarQr").remove();
 		}
 		else{
 
@@ -545,7 +561,11 @@ const TrendView = (props) => {
 	function makeWeekFloorTrend(weekFloorTrend)
 	{
 		if(props.selectObject_o.floor === null){ 
-			//null
+			d3.selectAll(".chartGroupFloor").remove();
+			d3.selectAll(".weekFloorTrendBar").remove();
+			d3.selectAll(".weekFloorTrendBarQr").remove();
+			d3.selectAll(".dayFloorTrendBar").remove();
+			d3.selectAll(".dayFloorTrendBarQr").remove();
 		}
 		else{
 		
@@ -601,7 +621,11 @@ const TrendView = (props) => {
 	function makeWeekRoomTrend(weekRoomTrend)
 	{
 		if(props.selectObject_o.roomNumber === null){ 
-			//null
+			d3.selectAll(".chartGroupRoom").remove();
+			d3.selectAll(".weekRoomTrendBar").remove();
+			d3.selectAll(".weekRoomTrendBarQr").remove();
+			d3.selectAll(".dayRoomTrendBar").remove();
+			d3.selectAll(".dayRoomTrendBarQr").remove();
 		}
 		else{
 		
