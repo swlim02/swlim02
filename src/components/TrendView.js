@@ -213,6 +213,14 @@ const TrendView = (props) => {
 
 	function makeDayUnivTrend(dayUnivTrend)
 	{
+		if(props.selectObject_o.bdNumber === null){
+			d3.selectAll(".chartGroupUniv").remove();
+			d3.selectAll(".dayUnivTrendBar").remove();
+			d3.selectAll(".dayUnivTrendBarQr").remove();
+			d3.selectAll(".weekUnivTrendBar").remove();
+			d3.selectAll(".weekUnivTrendBarQr").remove();
+		}
+		else{
 		t = 0;
 		let dayUnivTrendxScale = d3.scaleBand()
 									.domain(timeDivide)
@@ -261,6 +269,7 @@ const TrendView = (props) => {
 						.attr('width', 15)
 						.attr('height', (d) => 80-(dayUnivTrendyScale(d/univCapacity*100)))
 						.style("fill", d => (d/univCapacity*100) === 0 ? 'white' : colorScale(d/univCapacity*100));
+		}
 
 /*
 		dayUnivTrendBar.enter()
@@ -473,6 +482,14 @@ const TrendView = (props) => {
 
 	function makeWeekUnivTrend(weekUnivTrend)
 	{
+		if(props.selectObject_o.bdNumber === null){
+			d3.selectAll(".chartGroupUniv").remove();
+			d3.selectAll(".weekUnivTrendBar").remove();
+			d3.selectAll(".weekUnivTrendBarQr").remove();
+			d3.selectAll(".dayUnivTrendBar").remove();
+			d3.selectAll(".dayUnivTrendBarQr").remove();
+		}
+		else{
 		t = 1;
 		let weekUnivTrendxScale = d3.scaleBand()
 									.domain(dayDivide)
@@ -521,6 +538,7 @@ const TrendView = (props) => {
 						.attr('width', 15)
 						.attr('height', (d) => 80-weekUnivTrendyScale(d/univCapacity*100))
 						.style("fill", d => (d/univCapacity*100) === 0 ? 'white' : colorScale(d/univCapacity*100));
+		}
 
 /*
 		weekUnivTrendBar.enter()
@@ -952,6 +970,11 @@ const TrendView = (props) => {
 							date = date-28;
 							break;
 			}
+		}
+		if(date<10)
+		{
+			date = '0'+date;
+			console.log(date);
 		}
 		return [date,month];
 	}
