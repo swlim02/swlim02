@@ -21,6 +21,8 @@ let date = today.getDate();
 let day = today.getDay();
 let UniversityCrowdDensity = new Object();
 
+let time = 'SNU_09:30'; // default 값
+
 const MainPlot = (props) => {
 
   selectObject_o.bdNumber = null;
@@ -62,26 +64,26 @@ const MainPlot = (props) => {
     default:
       console.log("여기오면 망한거임");
   }
+  // 데이터에 있는 시간중 가장가까운 시간으로 time 셋팅
+  let time_h = today.getHours();
+  if (time_h === 9) time_h = '09';
+  let time_m = parseInt((today.getMinutes()/15))*15;
+  if (time_m === 0) time_m = '00';
+
+  time = 'SNU_' + time_h + ":" + time_m; // 양자화
+  console.log (time);
+  if (       // 수업이 없는 시간으로 데모 데이터로 고정
+      ((today.getHours() === 18) && (today.getMinutes()>14)) ||
+      (today.getHours() > 18) ||
+      (today.getHours() < 9) ||
+      ((today.getHours() === 9) && (today.getMinutes()<30))
+    ) {
+    time = 'SNU_09:30';
+  }
 
   // @swlim 개발 - 이해안가면 물어 보삼
   function getUniversityCrowdDensity() {
     let UniversityCrowdDensity = new Object();
-
-    let time_h = today.getHours();
-    if (time_h === 9) time_h = '09';
-    let time_m = parseInt((today.getMinutes()/15))*15;
-    if (time_m === 0) time_m = '00';
-
-    let time = 'SNU_' + time_h + ":" + time_m; // 양자화
-    console.log (time);
-    if (       // 수업이 없는 시간으로 데모 데이터로 고정
-        ((today.getHours() === 18) && (today.getMinutes()>14)) ||
-        (today.getHours() > 18) ||
-        (today.getHours() < 9) ||
-        ((today.getHours() === 9) && (today.getMinutes()<30))
-      ) {
-      time = 'SNU_09:30';
-    }
 
     UniversityCrowdDensity = {
       "capacity": SNUBuildingCrowdDensityInfo[time][0].capacity,
@@ -254,7 +256,8 @@ const MainPlot = (props) => {
         update_trendView_f={update_trendView} // selectObject_o  값 갱신시 호출해주어야-1
         selectedOptions={selectedOptions}
         selectObject_o={selectObject_o}
-        SNUBuildingCrowdDensityInfo_o={SNUBuildingCrowdDensityInfo}
+        SNUBuildingCrowdDensityInfo_o={SNUBuildingCrowdDensityInfo[time][0]}
+        time={time}
         />
       </div>
       <div class="splotContainer03" z-index="0" style={{

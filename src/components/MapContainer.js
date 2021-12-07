@@ -110,8 +110,9 @@ const MapContainer = (props) => {
     cb_f(current_data);
   }
   props.callBack(update);
-
+  console.log("MapContainer()");
   useEffect(() => {
+    console.log("MapContainer().useEffect()");
     const container = document.getElementById('myMap');
     const options = {
       center: new kakao.maps.LatLng(37.4580, 126.9535),
@@ -153,11 +154,15 @@ const MapContainer = (props) => {
     console.log(enumerateBuildingCrowdDensitySummary());
     enumerateBuildingCrowdDensitySummary().forEach((item, i) => {
       let crowd = item.occuancy/item.capacity;
-      let severity = building[2];
-      if (crowd > 0.6) {
-        severity = 2; // 0,1,2
+      console.log("props.selectedOptions.selectedOption_green");
+      console.log(props.selectedOptions.selectedOption_green);
+      let severity = 2; // 0=G,1=Y,2=R
+      if (crowd < props.selectedOptions.selectedOption_yellow ) {
+        severity = 1;
+        if (crowd < props.selectedOptions.selectedOption_green) {
+          severity = 0;
+        }
       }
-      severity = i%3; // TODO 실제 severity level 별로 넣어야 함.
       let o = new Object();
       o = {
         "content": '<div>'+item.bdNumber+'동, '+item.bdName+'</div>',
@@ -288,9 +293,28 @@ const MapContainer = (props) => {
     //  return BuildingCrowdDensity;
     //}
 
-    // TODO @hskim
+    // swlim 2021-12-07
     function enumerateBuildingCrowdDensitySummary() {
       let BuildingCrowdDensitySummary_arr = new Array();
+      console.log(props.SNUBuildingCrowdDensityInfo_o)
+      for (let i=0 ; i < props.SNUBuildingCrowdDensityInfo_o.buildings.length ; i++) {
+        let o = new Object();
+        let bd_index = buildingsInfo.indexOf(props.SNUBuildingCrowdDensityInfo_o.buildings[i].bdNumber);
+        if (bd_index != -1) {
+          o = {
+            "bdNumber": props.SNUBuildingCrowdDensityInfo_o.buildings[i].bdNumber,
+            "bdName": props.SNUBuildingCrowdDensityInfo_o.buildings[i].bdName,
+            "latitude": buildingsInfo.[bd_index+2],
+            "longitude": buildingsInfo[bd_index+3],
+            "capacity": props.SNUBuildingCrowdDensityInfo_o.buildings[i].bdName.capacity,
+            "occupancy": props.SNUBuildingCrowdDensityInfo_o.buildings[i].bdName.occupancy
+          };
+          BuildingCrowdDensitySummary_arr.push(o);
+        } else {
+          console.log ("망했음.없는건물번호임")
+        }
+      }
+      /*
       for (let i=0 ; i < buildingsInfo.length/4 ; i++) {
         let o = new Object();
         o = {
@@ -303,10 +327,11 @@ const MapContainer = (props) => {
         };
         BuildingCrowdDensitySummary_arr.push(o);
       }
+      */
       return BuildingCrowdDensitySummary_arr;
     }
 
-  }, []);
+  });
 
   //  TODO 실제 데이터 반환하게 개발 @hskim
   function getFloorDensity(bdNumber, floor) {
