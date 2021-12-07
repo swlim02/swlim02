@@ -156,10 +156,10 @@ const MapContainer = (props) => {
       console.log("enumerateBuildingCrowdDensitySummary()");
       console.log(enumerateBuildingCrowdDensitySummary());
       enumerateBuildingCrowdDensitySummary().forEach((item, i) => {
-        console.log(item);
+//        console.log(item);
         let crowd = parseInt(item.occupancy)/parseInt(item.capacity)*100;
-        console.log("crowd");
-        console.log(crowd);
+//        console.log("crowd");
+//        console.log(crowd);
 //        console.log("props.selectedOptions.selectedOption_green");
 //        console.log(props.selectedOptions.selectedOption_green);
         let severity = 0; // 0=R,1=Y,2=G
