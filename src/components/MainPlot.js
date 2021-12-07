@@ -135,7 +135,6 @@ const MainPlot = (props) => {
 
     let HalfHourTrend = new Object();
     let selected_date = 'snu_'+date;
-    selected_date = "snu_2021-12-01"; // 개발위해 임시 TODO 삭제
     if (CrowdDensityTrendInfo[selected_date] == null) return null;
     HalfHourTrend = {
      "capacity" : CrowdDensityTrendInfo[selected_date][0].capacity,
@@ -152,7 +151,6 @@ const MainPlot = (props) => {
     let HalfHourTrend = new Object();
     let selected_date = bdNumber+"_"+date;
     console.log(selected_date);
-    selected_date = "301_2021-12-01"; // 개발위해 임시 TODO 삭제
     console.log("CrowdDensityTrendInfo[selected_date][0].capacity");
     console.log(CrowdDensityTrendInfo[selected_date][0].capacity);
     if (CrowdDensityTrendInfo[selected_date] == null) return null;
@@ -172,7 +170,6 @@ const MainPlot = (props) => {
     let selected_date = bdNumber+"_"+floor+"_"+date;
     console.log("FloorDensity");
     console.log(selected_date);
-    selected_date = "301_1_2021-12-01"; // 개발위해 임시 TODO 삭제
     console.log("CrowdDensityTrendInfo[selected_date][0].capacity");
     console.log(CrowdDensityTrendInfo[selected_date][0].capacity);
     if (CrowdDensityTrendInfo[selected_date] == null) return null;
@@ -192,7 +189,6 @@ const MainPlot = (props) => {
     let selected_date = bdNumber+"_"+floor+"_"+roomNumber+"_"+date;
     console.log("RoomDensity");
     console.log(selected_date);
-    selected_date = "301_1_118_2021-12-01"; // 개발위해 임시 TODO 삭제
     console.log("CrowdDensityTrendInfo[selected_date][0].capacity");
     console.log(CrowdDensityTrendInfo[selected_date][0].capacity);
     if (CrowdDensityTrendInfo[selected_date] == null) return null;
@@ -211,7 +207,6 @@ const MainPlot = (props) => {
     let DayTrend = new Object();
     let selected_date = 'snu_w_'+startDate;
     console.log("selected_date:"+selected_date);
-    selected_date = "snu_w_2021-11-22"; // 개발위해 임시 TODO 삭제
     if (CrowdDensityTrendInfo[selected_date] == null) return null;
     DayTrend = {
      "capacity" : CrowdDensityTrendInfo[selected_date][0].capacity,
@@ -229,7 +224,6 @@ const MainPlot = (props) => {
     let DayTrend = new Object();
     let selected_date = bdNumber+"_w_"+startDate;
     console.log("dayBuildingSelected_date:"+selected_date);
-    selected_date = "301_w_2021-11-22"; // 개발위해 임시 TODO 삭제
     if (CrowdDensityTrendInfo[selected_date] == null) return null;
     DayTrend = {
      "capacity" : CrowdDensityTrendInfo[selected_date][0].capacity,
@@ -247,7 +241,6 @@ const MainPlot = (props) => {
     let selected_date = bdNumber+"_"+floor+"_w_"+startDate;
     console.log("DayFloorDensity");
     console.log(selected_date);
-    selected_date = "301_1_w_2021-11-22"; // 개발위해 임시 TODO 삭제
     if (CrowdDensityTrendInfo[selected_date] == null) return null;
     DayTrend = {
      "capacity" : CrowdDensityTrendInfo[selected_date][0].capacity,
@@ -265,7 +258,6 @@ const MainPlot = (props) => {
     let selected_date = bdNumber+"_"+floor+"_"+roomNumber+"_w_"+startDate;
     console.log("DayRoomDensity");
     console.log(selected_date);
-    selected_date = "301_1_118_w_2021-11-22"; // 개발위해 임시 TODO 삭제
     if (CrowdDensityTrendInfo[selected_date] == null) return null;
     DayTrend = {
      "capacity" : CrowdDensityTrendInfo[selected_date][0].capacity,

@@ -39,10 +39,10 @@ const TrendView = (props) => {
 		d3.selectAll(".button2").style("background", "white");
 		d3.selectAll(".button1").style("background", "#bebebe");
 		setButton("Day");
-		makeDayUnivTrend(dayUnivTrend);
-		makeDayBuildingTrend(dayBuildingTrend);
-		makeDayFloorTrend(dayFloorTrend);
-		makeDayRoomTrend(dayRoomTrend);
+		if(props.selectObject_o.bdNumber === null && props.selectObject_o.floor === null && props.selectObject_o.roomNumber === null) makeDayUnivTrend(dayUnivTrend);
+		if(props.selectObject_o.floor === null && props.selectObject_o.roomNumber === null) makeDayBuildingTrend(dayBuildingTrend);
+		if(props.selectObject_o.roomNumber === null) makeDayFloorTrend(dayFloorTrend);
+		else makeDayRoomTrend(dayRoomTrend);
 		s = 1;
 	}
 
@@ -50,10 +50,10 @@ const TrendView = (props) => {
 		d3.selectAll(".button1").style("background", "white");
 		d3.selectAll(".button2").style("background", "#bebebe");
 		setButton("Week");
-		makeWeekUnivTrend(weekUnivTrend);
-		makeWeekBuildingTrend(weekBuildingTrend);
-		makeWeekFloorTrend(weekFloorTrend);
-		makeWeekRoomTrend(weekRoomTrend);
+		if(props.selectObject_o.bdNumber === null && props.selectObject_o.floor === null && props.selectObject_o.roomNumber === null) makeWeekUnivTrend(weekUnivTrend);
+		if(props.selectObject_o.floor === null && props.selectObject_o.roomNumber === null) makeWeekBuildingTrend(weekBuildingTrend);
+		if(props.selectObject_o.roomNumber === null) makeWeekFloorTrend(weekFloorTrend);
+		else makeWeekRoomTrend(weekRoomTrend);
 		s = 2;
 	}
 
@@ -1012,17 +1012,17 @@ const TrendView = (props) => {
 
 	if(s == 1)
 	{
-		makeDayUnivTrend(dayUnivTrend);
-		makeDayBuildingTrend(dayBuildingTrend);
-		makeDayFloorTrend(dayFloorTrend);
-		makeDayRoomTrend(dayRoomTrend);
+		if(props.selectObject_o.bdNumber === null && props.selectObject_o.floor === null && props.selectObject_o.roomNumber === null) makeDayUnivTrend(dayUnivTrend);
+		if(props.selectObject_o.floor === null && props.selectObject_o.roomNumber === null) makeDayBuildingTrend(dayBuildingTrend);
+		if(props.selectObject_o.roomNumber === null) makeDayFloorTrend(dayFloorTrend);
+		else makeDayRoomTrend(dayRoomTrend);
 	}
 	else if(s == 2)
 	{
-		makeWeekUnivTrend(weekUnivTrend);
-		makeWeekBuildingTrend(weekBuildingTrend);
-		makeWeekFloorTrend(weekFloorTrend);
-		makeWeekRoomTrend(weekRoomTrend);
+		if(props.selectObject_o.bdNumber === null && props.selectObject_o.floor === null && props.selectObject_o.roomNumber === null) makeWeekUnivTrend(weekUnivTrend);
+		if(props.selectObject_o.floor === null && props.selectObject_o.roomNumber === null) makeWeekBuildingTrend(weekBuildingTrend);
+		if(props.selectObject_o.roomNumber === null) makeWeekFloorTrend(weekFloorTrend);
+		else makeWeekRoomTrend(weekRoomTrend);
 	}
 
 // 1500 * 500 에 사이즈 맞춰주면 thx
