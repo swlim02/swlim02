@@ -135,24 +135,23 @@ const TrendView = (props) => {
 
 	function makeString (year,month,date) {
 
-		year = toString(year);
+		year = String(year);
 
-		if(month<10)	month = '0'+ toString(month);		
-		else month = toString(month);
+		if(month<10)	month = '0'+ String(month);		
+		else month = String(month);
 
-		if(date<10)	date = '0'+ toString(date);
-		else date = toString(date);
+		if(date<10)	date = '0'+ String(date);
+		else date = String(date);
 
 		return [year,month,date];
 	}
 
 	let curDate = props.selectObject_o.date;
 	let startEndDate = changeMonFri(curDate);
-
-	let year = curDate[0];
-	let month = curDate[1];
-	let date = curDate[2];
-	makeString(year,month,date);
+	let c = makeString(curDate[0],curDate[1],curDate[2]);
+	let year = c[0];
+	let month = c[1];
+	let date = c[2];
 
 	let dayUnivTrend = props.getHalfHourTrendOfUniversityCrowdDensity(year+'-'+month+'-'+date);
 	let dayBuildingTrend = props.getHalfHourTrendOfBuildingCrowdDensity(props.selectObject_o.bdNumber, year+'-'+month+'-'+date);
