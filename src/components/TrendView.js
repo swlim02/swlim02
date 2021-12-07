@@ -20,12 +20,14 @@ const TrendView = (props) => {
 	const [button, setButton] = useState(null);
 
 	const trendInfo = useRef(null);
+	const trendDateInfo = useRef(null);
 	const univTrend = useRef(null);
 	const buildingTrend = useRef(null);
 	const floorTrend = useRef(null);
 	const roomTrend = useRef(null);
 
 	let trendInfoSvg = d3.select(trendInfo.current);
+	let trendDateInfoSvg = d3.select(trendDateInfo.current);
 	let univTrendSvg = d3.select(univTrend.current);
 	let buildingTrendSvg = d3.select(buildingTrend.current);
 	let floorTrendSvg = d3.select(floorTrend.current);
@@ -127,6 +129,20 @@ const TrendView = (props) => {
 				.attr('width', 15)
 				.attr('height', 15)
 				.style("fill", 'gray');
+	
+	let trendDateInfoText = trendDateInfoSvg.selectAll('.trendDateInfo').data(curDate);
+
+	console.log(curDate[0]);
+
+	trendDateInfoText.join('text')
+						.attr('class', 'trendDateInfo')
+						.text(d => d[0]+'-'+d[1]+'-'+d[2])
+						.attr('x', 150)
+						.attr('y', 15)
+						.attr("font-size", "15px")
+						.attr("text-anchor","middle")
+						.style("fill",'black');
+
 /*
 	trendInfoSvg
 				.append('line')
@@ -946,9 +962,8 @@ const TrendView = (props) => {
 						<button style={{marginLeft: 5, height: "20px"}} onClick={changeDateBefore}>
 							{button == "Before"} &#60;
 						</button>
-							<div style={{fontSize:"15px", height: "15px" }}>
-							&nbsp;&nbsp;2021-11-29 ~ 2021-12-03&nbsp;
-							</div>
+							<svg ref={trendDateInfo} height={20}>							
+							</svg>
 						<button style={{marginLeft: 5, height: "20px"}} onClick={changeDateNext}>
 							{button == "Next"} &#62;
 						</button>
