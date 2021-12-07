@@ -23,6 +23,9 @@ let UniversityCrowdDensity = new Object();
 
 let time = 'SNU_09:30'; // default 값
 
+let old_makers_o = new Object();
+old_makers_o.old_makers =  new Array();
+
 const MainPlot = (props) => {
 
   selectObject_o.bdNumber = null;
@@ -258,6 +261,7 @@ const MainPlot = (props) => {
         selectObject_o={selectObject_o}
         SNUBuildingCrowdDensityInfo_o={SNUBuildingCrowdDensityInfo[time][0]}
         time={time}
+        old_makers_o={old_makers_o}
         />
       </div>
       <div class="splotContainer03" z-index="0" style={{
