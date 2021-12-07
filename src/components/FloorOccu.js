@@ -1,8 +1,6 @@
-import React, { useRef, useEffect, useState} from "react";
+import React, { useRef, useState} from "react";
 import * as d3 from "d3";
 import RoomOccu from "./RoomOccu"
-
-let bdName = " ";
 
 const FloorOccu = (props) => {
 	function callBack(f) {
@@ -192,7 +190,7 @@ const FloorOccu = (props) => {
 				svg.selectAll('rect')
 					.on('click', function(d, i) {
 							props.selectObject_o.floor = this.id;
-							if (clickedRectId != this.id) {
+							if (clickedRectId !== this.id) {
 								d3.selectAll(".element1"+clickedRectId).style("stroke-width", 1);
 								d3.selectAll(".element3"+clickedRectId).attr("font-weight", 300);
 								props.selectObject_o.roomNumber = null;
