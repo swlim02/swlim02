@@ -136,6 +136,7 @@ const MapContainer = (props) => {
 
   let map;
   useEffect(() => {
+        
     const container = document.getElementById('myMap');
     const options = {
       center: new kakao.maps.LatLng(37.4545, 126.9525),
@@ -147,15 +148,16 @@ const MapContainer = (props) => {
   });
 
     function makeMakers(){
-      console.log("makeMakers");
+      //console.log("makeMakers");
       props.old_makers_o.old_makers.forEach((item, i) => {
         item.map = null;
       });
       var selectedMarker = null; // 클릭한 마커를 담을 변수
       var positions = [];
-      console.log("enumerateBuildingCrowdDensitySummary()");
-      console.log(enumerateBuildingCrowdDensitySummary());
+      //console.log("enumerateBuildingCrowdDensitySummary()");
+      //console.log(enumerateBuildingCrowdDensitySummary());
       enumerateBuildingCrowdDensitySummary().forEach((item, i) => {
+
 //        console.log(item);
         let crowd = parseInt(item.occupancy)/parseInt(item.capacity)*100;
 //        console.log("crowd");
@@ -180,7 +182,7 @@ const MapContainer = (props) => {
         positions.push(o);
       });
 
-      console.log(positions.length);
+      //console.log(positions.length);
       // 지도 위에 마커를 표시합니다
       for (var i = 0; i < positions.length; i++) {
           var gapX = (MARKER_WIDTH + SPRITE_GAP), // 스프라이트 이미지에서 마커로 사용할 이미지 X좌표 간격 값
@@ -264,7 +266,7 @@ const MapContainer = (props) => {
                   marker.setImage(clickImage);
                   floor_o.roomData = null; // 개발중임시사용삭제 될 예정
                   current_data = position.data;
-                  console.log(current_data);
+                  //console.log(current_data);
                   props.selectObject_o.bdNumber = current_data.bdNumber;
                   props.selectObject_o.floor = null;
                   props.selectObject_o.roomNumber = null;
@@ -300,8 +302,9 @@ const MapContainer = (props) => {
         return markerImage;
     }
 
-
-    let time = 'SNU_09:30'; // default 값
+    let BuildingCrowdDensity = new Object();
+    // @swlim 2021-12-07
+    //let time = +'_09:30'; // default 값
     function getBuildingCrowdDensity(bdNumber) {
 
       let BuildingCrowdDensity = new Object();
@@ -311,7 +314,7 @@ const MapContainer = (props) => {
       let time_m = parseInt((today.getMinutes()/15))*15;
       if (time_m === 0) time_m = '00';
 
-      time = 'SNU_' + time_h + ":" + time_m; // 양자화
+      let time = bdNumber +'_' + time_h + ":" + time_m; // 양자화
       console.log (time);
       if (       // 수업이 없는 시간으로 데모 데이터로 고정
           ((today.getHours() === 18) && (today.getMinutes()>14)) ||
@@ -319,15 +322,21 @@ const MapContainer = (props) => {
           (today.getHours() < 9) ||
           ((today.getHours() === 9) && (today.getMinutes()<30))
         ) {
-        time = 'SNU_09:30';
+        time = bdNumber +'_09:30';
       }
 
-      BuildingCrowdDensity = {
-        "capacity": props.SNUBuildingCrowdDensityInfo_o[time].buildings[props.SNUBuildingCrowdDensityInfo_o.buildings.indexOf(bdNumber)].capacity,
-        "occupancy": props.SNUBuildingCrowdDensityInfo_o[time].buildings[props.SNUBuildingCrowdDensityInfo_o.buildings.indexOf(bdNumber)].occupancy
-      };
+      console.log("herehrehrherherherhere");
+      //console.log(props.SNUFloorCrowdDensityInfo_o[time][0]);
+
+      //let bd_index = buildingsInfo.indexOf(bdNumber);
+
+      BuildingCrowdDensity = props.SNUFloorCrowdDensityInfo_o[time][0];
+      console.log(BuildingCrowdDensity);
      return BuildingCrowdDensity;
     }
+    BuildingCrowdDensity = getBuildingCrowdDensity('301');  
+    
+    //console.log(props.selectObject_o.bdNumber);
 
     // swlim 2021-12-07
     function enumerateBuildingCrowdDensitySummary() {
@@ -350,7 +359,7 @@ const MapContainer = (props) => {
           console.log ("망했음.없는건물번호임")
         }
       }
-      console.log(BuildingCrowdDensitySummary_arr)
+      //console.log(BuildingCrowdDensitySummary_arr)
       return BuildingCrowdDensitySummary_arr;
     }
 //  });

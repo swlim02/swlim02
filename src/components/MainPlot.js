@@ -9,12 +9,15 @@ import SNUBuildingCrowdDensityInfo_Tue from "../data/SNUBuildingCrowdDensityInfo
 import SNUBuildingCrowdDensityInfo_WED from "../data/SNUBuildingCrowdDensityInfo_Wed.json";
 import SNUBuildingCrowdDensityInfo_THU from "../data/SNUBuildingCrowdDensityInfo_Wed.json";
 import SNUBuildingCrowdDensityInfo_FRI from "../data/SNUBuildingCrowdDensityInfo_Wed.json";
+import SNUFloorCrowdDensityInfo_Tue from "../data/SNUFloorCrowdDensityInfo_Wed.json";
+import SNUFloorCrowdDensityInfo_WED from "../data/SNUFloorCrowdDensityInfo_Wed.json";
 import CrowdDensityTrendInfo from "../data/trend_sample_301.json"
 
 var selectedOptions = new Object();
 let selectObject_o = new Object();
 let today = new Date();
 let SNUBuildingCrowdDensityInfo;
+let SNUFloorCrowdDensityInfo;
 
 let year = today.getFullYear();
 let month = today.getMonth()+1;
@@ -53,9 +56,11 @@ const MainPlot = (props) => {
       break;
     case 2:
       SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_Tue;
+      SNUFloorCrowdDensityInfo = SNUFloorCrowdDensityInfo_Tue;
       break;
     case 3:
       SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_WED;
+      SNUFloorCrowdDensityInfo = SNUFloorCrowdDensityInfo_WED;
       break;
     case 4:
       SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_THU;
@@ -299,6 +304,7 @@ const MainPlot = (props) => {
         selectedOptions={selectedOptions}
         selectObject_o={selectObject_o}
         SNUBuildingCrowdDensityInfo_o={SNUBuildingCrowdDensityInfo[time][0]}
+        SNUFloorCrowdDensityInfo_o={SNUFloorCrowdDensityInfo}
         time={time}
         old_makers_o={old_makers_o}
         />
