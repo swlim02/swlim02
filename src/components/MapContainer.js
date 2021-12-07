@@ -176,7 +176,8 @@ const MapContainer = (props) => {
         o = {
           "content": '<div>'+item.bdNumber+'동, '+item.bdName+'</div>',
           "latlng": new kakao.maps.LatLng(item.latitude,item.longitude),
-          "data": building[i%3], // TODO 실제 해당 빌딩정보를 읽어서 넣어야 함.
+//          "data": building[i%3], // TODO 실제 해당 빌딩정보를 읽어서 넣어야 함.
+          "data": getBuildingCrowdDensity(item.bdNumber),
           "severity": severity
         };
         positions.push(o);
@@ -322,7 +323,7 @@ const MapContainer = (props) => {
           (today.getHours() < 9) ||
           ((today.getHours() === 9) && (today.getMinutes()<30))
         ) {
-        time = bdNumber +'_09:30';
+        time = bdNumber +'_14:30';
       }
 
       console.log("herehrehrherherherhere");
