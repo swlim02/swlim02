@@ -77,7 +77,14 @@ const RoomOccu = (props) => {
 						console.log(props.selectObject_o);
 						if (clickedRectId !== this.id) {
 							d3.selectAll(".element11"+clickedRectId).style("stroke-width", 1);
-							d3.selectAll(".element33"+clickedRectId).attr("font-weight", 300);
+							d3.selectAll(".element33"+clickedRectId).attr("font-weight", 300)
+							.text(function(d){
+								let roomNumber_text = String(d.data.roomNumber);
+								if (roomNumber_text.length > 3) {
+									roomNumber_text = roomNumber_text.substr(0, 3) + '-' + roomNumber_text.substr(4);
+								}
+								return [roomNumber_text+'호('+d.data.occupancy+'/'+d.data.capacity+')']})
+							.attr("font-size", "13px");
 							clickedRectId = this.id;
 							props.update_trendView_f();
 						}
