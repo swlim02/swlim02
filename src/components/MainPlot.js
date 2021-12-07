@@ -127,9 +127,7 @@ const MainPlot = (props) => {
     let HalfHourTrend = new Object();
     let selected_date = 'snu_'+date;
     selected_date = "snu_2021-12-01"; // 개발위해 임시 TODO 삭제
-    console.log("CrowdDensityTrendInfo[selected_date][0].capacity");
-    console.log(CrowdDensityTrendInfo[selected_date][0].capacity);
-
+    if (CrowdDensityTrendInfo[selected_date] == null) return null;
     HalfHourTrend = {
      "capacity" : CrowdDensityTrendInfo[selected_date][0].capacity,
      "reserve_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].reserve_occupancy_trend,
@@ -143,11 +141,12 @@ const MainPlot = (props) => {
     if (date === null || bdNumber === null ) return null;
 
     let HalfHourTrend = new Object();
-    let selected_date = bdNumber+date;
+    let selected_date = bdNumber+"_"+date;
+    console.log(selected_date);
     selected_date = "301_2021-12-01"; // 개발위해 임시 TODO 삭제
     console.log("CrowdDensityTrendInfo[selected_date][0].capacity");
     console.log(CrowdDensityTrendInfo[selected_date][0].capacity);
-
+    if (CrowdDensityTrendInfo[selected_date] == null) return null;
     HalfHourTrend = {
      "capacity" : CrowdDensityTrendInfo[selected_date][0].capacity,
      "reserve_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].reserve_occupancy_trend,
@@ -158,6 +157,7 @@ const MainPlot = (props) => {
   }
 
   function getHalfHourTrendOfBuildingFloorDensity(bdNumber, floor, date) {
+    if (date === null || bdNumber === null || floor === null) return null;
     let HalfHourTrend = new Object();
     HalfHourTrend = {
      "capacity" : 300000,
