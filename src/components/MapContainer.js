@@ -365,40 +365,67 @@ const MapContainer = (props) => {
 //  });
 
   //  TODO 실제 데이터 반환하게 개발 @hskim
+  let FloorCrowdDensity = new Object();
   function getFloorDensity(bdNumber, floor) {
     let FloorCrowdDensity = new Object();
-    FloorCrowdDensity = {
-       "bdName" : "제1공학관",
-       "floor" : 1,
-       "children" : [
-          {
-          "roomNumber" : 101,
-          "capacity" : 20,
-          "occupancy" : 5,
-          "className" : "현수님찬양",
-          "classStartTime" : "TEXT시간",
-          "classEndTime" :  "TEXT시간"
-          },
-          {
-          "roomNumber" : 102,
-          "capacity" : 50,
-          "occupancy" : 22,
-          "className" : "현수님찬양",
-          "classStartTime" : "TEXT시간",
-          "classEndTime" :  "TEXT시간"
-          },
-          {
-          "roomNumber" : 103,
-          "capacity" : 100,
-          "occupancy" : 0,
-          "className" : "현수님찬양",
-          "classStartTime" : "TEXT시간",
-          "classEndTime" :  "TEXT시간"
-          }
-       ]
+    // 데이터에 있는 시간중 가장가까운 시간으로 time 셋팅
+    let time_h = today.getHours();
+    if (time_h === 9) time_h = '09';
+    let time_m = parseInt((today.getMinutes()/15))*15;
+    if (time_m === 0) time_m = '00';
+
+    let time = bdNumber +'_' + floor +'_' + time_h + ":" + time_m; // 양자화
+    console.log (time);
+    if (       // 수업이 없는 시간으로 데모 데이터로 고정
+        ((today.getHours() === 18) && (today.getMinutes()>14)) ||
+        (today.getHours() > 18) ||
+        (today.getHours() < 9) ||
+        ((today.getHours() === 9) && (today.getMinutes()<30))
+      ) {
+    time = bdNumber +'_' + floor +'_09:30';
     }
+
+    console.log("here!!");
+    console.log("here!!");
+    //console.log(props.SNUFloorCrowdDensityInfo_o[time][0]);
+
+    //let bd_index = buildingsInfo.indexOf(bdNumber);
+
+    FloorCrowdDensity = props.SNURoomCrowdDensityInfo_o[time][0];
+    console.log(FloorCrowdDensity);
+    // FloorCrowdDensity = {
+    //    "bdName" : "제1공학관",
+    //    "floor" : 1,
+    //    "children" : [
+    //       {
+    //       "roomNumber" : 101,
+    //       "capacity" : 20,
+    //       "occupancy" : 5,
+    //       "className" : "현수님찬양",
+    //       "classStartTime" : "TEXT시간",
+    //       "classEndTime" :  "TEXT시간"
+    //       },
+    //       {
+    //       "roomNumber" : 102,
+    //       "capacity" : 50,
+    //       "occupancy" : 22,
+    //       "className" : "현수님찬양",
+    //       "classStartTime" : "TEXT시간",
+    //       "classEndTime" :  "TEXT시간"
+    //       },
+    //       {
+    //       "roomNumber" : 103,
+    //       "capacity" : 100,
+    //       "occupancy" : 0,
+    //       "className" : "현수님찬양",
+    //       "classStartTime" : "TEXT시간",
+    //       "classEndTime" :  "TEXT시간"
+    //       }
+    //    ]
+    // }
     return FloorCrowdDensity;
   }
+  FloorCrowdDensity = getFloorDensity('301','1');
 
   return (
     <div>
