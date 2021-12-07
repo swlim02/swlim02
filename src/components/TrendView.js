@@ -44,6 +44,7 @@ const TrendView = (props) => {
 		makeDayFloorTrend(dayFloorTrend);
 		makeDayRoomTrend(dayRoomTrend);
 		s = 1;
+		t = 0;
 	}
 
 	const changeButton_perday = () => {
@@ -55,6 +56,7 @@ const TrendView = (props) => {
 		makeWeekFloorTrend(weekFloorTrend);
 		makeWeekRoomTrend(weekRoomTrend);
 		s = 2;
+		t = 1;
 	}
 
 	const changeDateBefore = () => {
@@ -187,7 +189,7 @@ const TrendView = (props) => {
 	if(t == 0){			
 		let trendDateInfoText = trendDateInfoSvg.selectAll('.trendDateInfo').data(curDate);
 
-		console.log(curDate[2]);
+		console.log('trendDateInfoText');
 
 		trendDateInfoText.join('text')
 							.attr('class', 'trendDateInfo')
@@ -201,7 +203,7 @@ const TrendView = (props) => {
 	else{
 		let trendDateInfoText = trendDateInfoSvg.selectAll('.trendDateInfo').data(curDate);
 
-		console.log(curDate[2]);
+		console.log('trendDateInfoText');
 
 		trendDateInfoText.join('text')
 							.attr('class', 'trendDateInfo')
