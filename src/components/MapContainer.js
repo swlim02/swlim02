@@ -139,7 +139,7 @@ const MapContainer = (props) => {
         
     const container = document.getElementById('myMap');
     const options = {
-      center: new kakao.maps.LatLng(37.4580, 126.9535),
+      center: new kakao.maps.LatLng(37.4545, 126.9525),
       level: 5
     };
     map = new kakao.maps.Map(container, options);
@@ -403,7 +403,7 @@ const MapContainer = (props) => {
   return (
     <div>
       <div id='myMap' class="splotContainer1" style={{
-        width: '450px',
+        width: '420px',
         height: '510px'
       }}></div>
       <div id='floorView' class="splotContainer2" style={{
