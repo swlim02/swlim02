@@ -158,37 +158,47 @@ const MainPlot = (props) => {
 
   function getHalfHourTrendOfBuildingFloorDensity(bdNumber, floor, date) {
     if (date === null || bdNumber === null || floor === null) return null;
+
     let HalfHourTrend = new Object();
+    let selected_date = bdNumber+"_"+floor+"_"+date;
+    console.log("FloorDensity");
+    console.log(selected_date);
+    selected_date = "301_1_2021-12-01"; // 개발위해 임시 TODO 삭제
+    console.log("CrowdDensityTrendInfo[selected_date][0].capacity");
+    console.log(CrowdDensityTrendInfo[selected_date][0].capacity);
+    if (CrowdDensityTrendInfo[selected_date] == null) return null;
     HalfHourTrend = {
-     "capacity" : 300000,
-     "reserve_occupancy_trend" : [ //per 30 mins
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ],
-     "bq_occupancy_trend" : [ //per 30 mins
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ]
+     "capacity" : CrowdDensityTrendInfo[selected_date][0].capacity,
+     "reserve_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].reserve_occupancy_trend,
+     "bq_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].bq_occupancy_trend
     }
+    console.log(HalfHourTrend);
     return HalfHourTrend;
   }
 
   function getHalfHourTrendOfBuildingRoomDensity(bdNumber, floor, roomNumber, date) {
+    if (date === null || bdNumber === null || floor === null || roomNumber === null) return null;
+
     let HalfHourTrend = new Object();
+    let selected_date = bdNumber+"_"+floor+"_"+roomNumber+"_"+date;
+    console.log("RoomDensity");
+    console.log(selected_date);
+    selected_date = "301_1_118_2021-12-01"; // 개발위해 임시 TODO 삭제
+    console.log("CrowdDensityTrendInfo[selected_date][0].capacity");
+    console.log(CrowdDensityTrendInfo[selected_date][0].capacity);
+    if (CrowdDensityTrendInfo[selected_date] == null) return null;
     HalfHourTrend = {
-     "capacity" : 300000,
-     "reserve_occupancy_trend" : [ //per 30 mins
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ],
-     "bq_occupancy_trend" : [ //per 30 mins
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000,
-        20000, 30000, 10000, 20000, 30000, 10000, 20000, 30000, 10000 ]
+     "capacity" : CrowdDensityTrendInfo[selected_date][0].capacity,
+     "reserve_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].reserve_occupancy_trend,
+     "bq_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].bq_occupancy_trend
     }
+    console.log(HalfHourTrend);
     return HalfHourTrend;
   }
 
   function getDayTrendOfUniversityCrowdDensity(startDate,endDate) {
 //    console.log(startDate);
     let DayTrend = new Object();
-
 
     DayTrend = {
      "capacity" : 300000,
