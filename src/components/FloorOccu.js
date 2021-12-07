@@ -34,7 +34,7 @@ const FloorOccu = (props) => {
 //				d3.select(mainBarSvg.current).remove();
 				d3.selectAll(".selection99").remove();
 
-				console.log(props.selectedOptions.selectedOption_green);
+	//			console.log(props.selectedOptions.selectedOption_green);
 
         const svg = d3.select(mainBarSvg.current)
   //                      .append("svg")
