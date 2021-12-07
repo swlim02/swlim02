@@ -971,11 +971,12 @@ const TrendView = (props) => {
 							break;
 			}
 		}
-		if(date<10)
-		{
-			date = '0'+date;
-			console.log(date);
-		}
+
+		// if(date<10)
+		// {
+		// 	date = '0'+date;
+		// 	console.log(date);
+		// }
 		return [date,month];
 	}
 
