@@ -4,7 +4,7 @@ import room from "../data/data.json";
 import room2 from "../data/data2.json";
 import room3 from "../data/data3.json";
 import FloorOccu from "./FloorOccu"
-
+let today = new Date();
 const { kakao } = window;
 const buildingsInfo = [
 "24","자연과학관6",37.45942,126.94989,
@@ -308,9 +308,33 @@ const MapContainer = (props) => {
     }
 
     // TODO @hskim
-    //function getBuildingCrowdDensity(bdNumber) {
-    //  return BuildingCrowdDensity;
-    //}
+    let time = 'SNU_09:30'; // default 값
+    function getBuildingCrowdDensity(bdNumber) {
+
+      let BuildingCrowdDensity = new Object();
+      // 데이터에 있는 시간중 가장가까운 시간으로 time 셋팅
+      let time_h = today.getHours();
+      if (time_h === 9) time_h = '09';
+      let time_m = parseInt((today.getMinutes()/15))*15;
+      if (time_m === 0) time_m = '00';
+
+      time = 'SNU_' + time_h + ":" + time_m; // 양자화
+      console.log (time);
+      if (       // 수업이 없는 시간으로 데모 데이터로 고정
+          ((today.getHours() === 18) && (today.getMinutes()>14)) ||
+          (today.getHours() > 18) ||
+          (today.getHours() < 9) ||
+          ((today.getHours() === 9) && (today.getMinutes()<30))
+        ) {
+        time = 'SNU_09:30';
+      }
+
+      BuildingCrowdDensity = {
+        "capacity": props.SNUBuildingCrowdDensityInfo_o[time].buildings[props.SNUBuildingCrowdDensityInfo_o.buildings.indexOf(bdNumber)].capacity,
+        "occupancy": props.SNUBuildingCrowdDensityInfo_o[time].buildings[props.SNUBuildingCrowdDensityInfo_o.buildings.indexOf(bdNumber)].occupancy
+      };
+     return BuildingCrowdDensity;
+    }
 
     // swlim 2021-12-07
     function enumerateBuildingCrowdDensitySummary() {
@@ -323,7 +347,7 @@ const MapContainer = (props) => {
           o = {
             "bdNumber": props.SNUBuildingCrowdDensityInfo_o.buildings[i].bdNumber,
             "bdName": props.SNUBuildingCrowdDensityInfo_o.buildings[i].bdName,
-            "latitude": buildingsInfo.[bd_index+2],
+            "latitude": buildingsInfo[bd_index+2],
             "longitude": buildingsInfo[bd_index+3],
             "capacity": props.SNUBuildingCrowdDensityInfo_o.buildings[i].capacity,
             "occupancy": props.SNUBuildingCrowdDensityInfo_o.buildings[i].occupancy
