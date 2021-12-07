@@ -252,7 +252,7 @@ const MainPlot = (props) => {
   }
 
   function getDayTrendOfBuildingRoomDensity(bdNumber, floor, roomNumber, startDate,endDate) {
-    if (startDate === null || bdNumber === null || floor === null || roomNumber === null) return null;
+    if (startDate === null || bdNumber === null || floor === null || roomNumber === null) {console.log("야야야야야야야야"); return null;}
 
     let DayTrend = new Object();
     let selected_date = bdNumber+"_"+floor+"_"+roomNumber+"_w_"+startDate;
