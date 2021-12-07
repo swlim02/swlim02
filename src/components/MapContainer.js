@@ -304,7 +304,7 @@ const MapContainer = (props) => {
 
     let BuildingCrowdDensity = new Object();
     // @swlim 2021-12-07
-    let time = 'SNU_09:30'; // default 값
+    //let time = +'_09:30'; // default 값
     function getBuildingCrowdDensity(bdNumber) {
 
       let BuildingCrowdDensity = new Object();
@@ -314,7 +314,7 @@ const MapContainer = (props) => {
       let time_m = parseInt((today.getMinutes()/15))*15;
       if (time_m === 0) time_m = '00';
 
-      time = 'SNU_' + time_h + ":" + time_m; // 양자화
+      let time = bdNumber +'_' + time_h + ":" + time_m; // 양자화
       console.log (time);
       if (       // 수업이 없는 시간으로 데모 데이터로 고정
           ((today.getHours() === 18) && (today.getMinutes()>14)) ||
@@ -322,24 +322,21 @@ const MapContainer = (props) => {
           (today.getHours() < 9) ||
           ((today.getHours() === 9) && (today.getMinutes()<30))
         ) {
-        time = 'SNU_09:30';
+        time = bdNumber +'_09:30';
       }
+
       console.log("herehrehrherherherhere");
-      console.log(props.SNUBuildingCrowdDensityInfo_o.buildings[0]);
-      console.log(props.SNUBuildingCrowdDensityInfo_o.buildings.indexOf(bdNumber));
-      
-      BuildingCrowdDensity = {
-        "bdNumber": bdNumber,
-        "bdName": "제1공학관",
-        
-        // "capacity": props.SNUBuildingCrowdDensityInfo_o[time].buildings[props.SNUBuildingCrowdDensityInfo_o.buildings.indexOf(bdNumber)].capacity,
-        // "occupancy": props.SNUBuildingCrowdDensityInfo_o[time].buildings[props.SNUBuildingCrowdDensityInfo_o.buildings.indexOf(bdNumber)].occupancy
-      };
+      //console.log(props.SNUFloorCrowdDensityInfo_o[time][0]);
+
+      //let bd_index = buildingsInfo.indexOf(bdNumber);
+
+      BuildingCrowdDensity = props.SNUFloorCrowdDensityInfo_o[time][0];
+      console.log(BuildingCrowdDensity);
      return BuildingCrowdDensity;
     }
-    BuildingCrowdDensity = getBuildingCrowdDensity(props.selectObject_o.bdNumber);
+    BuildingCrowdDensity = getBuildingCrowdDensity('301');  
     
-    console.log(props.selectObject_o.bdNumber);
+    //console.log(props.selectObject_o.bdNumber);
 
     // swlim 2021-12-07
     function enumerateBuildingCrowdDensitySummary() {
