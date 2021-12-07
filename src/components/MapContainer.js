@@ -302,7 +302,7 @@ const MapContainer = (props) => {
         return markerImage;
     }
 
-
+    let BuildingCrowdDensity = new Object();
     // @swlim 2021-12-07
     let time = 'SNU_09:30'; // default 값
     function getBuildingCrowdDensity(bdNumber) {
