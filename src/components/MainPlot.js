@@ -256,8 +256,8 @@ const MainPlot = (props) => {
 
     let DayTrend = new Object();
     let selected_date = bdNumber+"_"+floor+"_"+roomNumber+"_w_"+startDate;
-    // console.log("DayRoomDensity");
-    // console.log(selected_date);
+     console.log("DayRoomDensity");
+     console.log(selected_date);
     if (CrowdDensityTrendInfo[selected_date] == null) return null;
     DayTrend = {
      "capacity" : CrowdDensityTrendInfo[selected_date][0].capacity,
