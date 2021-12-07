@@ -55,7 +55,7 @@ const MainPlot = (props) => {
   switch (day) {
     case 1:
       SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_Mon;
-      console.log("월요일");
+      //console.log("월요일");
       break;
     case 2:
       SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_Tue;
@@ -76,7 +76,7 @@ const MainPlot = (props) => {
       SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_FRI;
       break;
     default:
-      console.log("여기오면 망한거임");
+      //console.log("여기오면 망한거임");
   }
   // 데이터에 있는 시간중 가장가까운 시간으로 time 셋팅
   let time_h = today.getHours();
@@ -85,7 +85,7 @@ const MainPlot = (props) => {
   if (time_m === 0) time_m = '00';
 
   time = 'SNU_' + time_h + ":" + time_m; // 양자화
-  console.log (time);
+  //console.log (time);
   if (       // 수업이 없는 시간으로 데모 데이터로 고정
       ((today.getHours() === 18) && (today.getMinutes()>14)) ||
       (today.getHours() > 18) ||
@@ -118,7 +118,7 @@ const MainPlot = (props) => {
   const controlHeight = 50;
 
   function update_new(){ // 거리두기 수정시 호출되는 함
-    console.log("update_new");
+    //console.log("update_new");
     cb_f();
     cb_trend_f(selectObject_o.bdNumber + selectObject_o.floor + selectObject_o.roomNumber
       + selectedOptions.selectedOption_green + selectedOptions.selectedOption_yellow);
@@ -141,7 +141,7 @@ const MainPlot = (props) => {
      "reserve_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].reserve_occupancy_trend,
      "bq_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].bq_occupancy_trend
     }
-    console.log(HalfHourTrend);
+    //console.log(HalfHourTrend);
     return HalfHourTrend;
   }
 
@@ -150,16 +150,16 @@ const MainPlot = (props) => {
 
     let HalfHourTrend = new Object();
     let selected_date = bdNumber+"_"+date;
-    console.log(selected_date);
-    console.log("CrowdDensityTrendInfo[selected_date][0].capacity");
-    console.log(CrowdDensityTrendInfo[selected_date][0].capacity);
+    // console.log(selected_date);
+    // console.log("CrowdDensityTrendInfo[selected_date][0].capacity");
+    // console.log(CrowdDensityTrendInfo[selected_date][0].capacity);
     if (CrowdDensityTrendInfo[selected_date] == null) return null;
     HalfHourTrend = {
      "capacity" : CrowdDensityTrendInfo[selected_date][0].capacity,
      "reserve_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].reserve_occupancy_trend,
      "bq_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].bq_occupancy_trend
     }
-    console.log(HalfHourTrend);
+    // console.log(HalfHourTrend);
     return HalfHourTrend;
   }
 
@@ -168,17 +168,17 @@ const MainPlot = (props) => {
 
     let HalfHourTrend = new Object();
     let selected_date = bdNumber+"_"+floor+"_"+date;
-    console.log("FloorDensity");
-    console.log(selected_date);
-    console.log("CrowdDensityTrendInfo[selected_date][0].capacity");
-    console.log(CrowdDensityTrendInfo[selected_date][0].capacity);
+    // console.log("FloorDensity");
+    // console.log(selected_date);
+    // console.log("CrowdDensityTrendInfo[selected_date][0].capacity");
+    // console.log(CrowdDensityTrendInfo[selected_date][0].capacity);
     if (CrowdDensityTrendInfo[selected_date] == null) return null;
     HalfHourTrend = {
      "capacity" : CrowdDensityTrendInfo[selected_date][0].capacity,
      "reserve_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].reserve_occupancy_trend,
      "bq_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].bq_occupancy_trend
     }
-    console.log(HalfHourTrend);
+    // console.log(HalfHourTrend);
     return HalfHourTrend;
   }
 
@@ -187,17 +187,17 @@ const MainPlot = (props) => {
 
     let HalfHourTrend = new Object();
     let selected_date = bdNumber+"_"+floor+"_"+roomNumber+"_"+date;
-    console.log("RoomDensity");
-    console.log(selected_date);
-    console.log("CrowdDensityTrendInfo[selected_date][0].capacity");
-    console.log(CrowdDensityTrendInfo[selected_date][0].capacity);
+    // console.log("RoomDensity");
+    // console.log(selected_date);
+    // console.log("CrowdDensityTrendInfo[selected_date][0].capacity");
+    // console.log(CrowdDensityTrendInfo[selected_date][0].capacity);
     if (CrowdDensityTrendInfo[selected_date] == null) return null;
     HalfHourTrend = {
      "capacity" : CrowdDensityTrendInfo[selected_date][0].capacity,
      "reserve_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].reserve_occupancy_trend,
      "bq_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].bq_occupancy_trend
     }
-    console.log(HalfHourTrend);
+    // console.log(HalfHourTrend);
     return HalfHourTrend;
   }
 
@@ -206,15 +206,15 @@ const MainPlot = (props) => {
 
     let DayTrend = new Object();
     let selected_date = 'snu_w_'+startDate;
-    console.log("selected_date:"+selected_date);
+     console.log("selected_date:"+selected_date);
     if (CrowdDensityTrendInfo[selected_date] == null) return null;
     DayTrend = {
      "capacity" : CrowdDensityTrendInfo[selected_date][0].capacity,
      "reserve_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].reserve_occupancy_trend,
      "bq_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].bq_occupancy_trend
     }
-    console.log("DayTrend");
-    console.log(DayTrend);
+    // console.log("DayTrend");
+    // console.log(DayTrend);
     return DayTrend;
   }
 
@@ -223,14 +223,14 @@ const MainPlot = (props) => {
 
     let DayTrend = new Object();
     let selected_date = bdNumber+"_w_"+startDate;
-    console.log("dayBuildingSelected_date:"+selected_date);
+    // console.log("dayBuildingSelected_date:"+selected_date);
     if (CrowdDensityTrendInfo[selected_date] == null) return null;
     DayTrend = {
      "capacity" : CrowdDensityTrendInfo[selected_date][0].capacity,
      "reserve_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].reserve_occupancy_trend,
      "bq_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].bq_occupancy_trend
     }
-    console.log(DayTrend);
+    // console.log(DayTrend);
     return DayTrend;
   }
 
@@ -239,15 +239,15 @@ const MainPlot = (props) => {
 
     let DayTrend = new Object();
     let selected_date = bdNumber+"_"+floor+"_w_"+startDate;
-    console.log("DayFloorDensity");
-    console.log(selected_date);
+    // console.log("DayFloorDensity");
+    // console.log(selected_date);
     if (CrowdDensityTrendInfo[selected_date] == null) return null;
     DayTrend = {
      "capacity" : CrowdDensityTrendInfo[selected_date][0].capacity,
      "reserve_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].reserve_occupancy_trend,
      "bq_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].bq_occupancy_trend
     }
-    console.log(DayTrend);
+    // console.log(DayTrend);
     return DayTrend;
   }
 
@@ -256,15 +256,15 @@ const MainPlot = (props) => {
 
     let DayTrend = new Object();
     let selected_date = bdNumber+"_"+floor+"_"+roomNumber+"_w_"+startDate;
-    console.log("DayRoomDensity");
-    console.log(selected_date);
+    // console.log("DayRoomDensity");
+    // console.log(selected_date);
     if (CrowdDensityTrendInfo[selected_date] == null) return null;
     DayTrend = {
      "capacity" : CrowdDensityTrendInfo[selected_date][0].capacity,
      "reserve_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].reserve_occupancy_trend,
      "bq_occupancy_trend" : CrowdDensityTrendInfo[selected_date][0].bq_occupancy_trend
     }
-    console.log(DayTrend);
+    //console.log(DayTrend);
     return DayTrend;
   }
 

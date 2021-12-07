@@ -39,10 +39,10 @@ const TrendView = (props) => {
 		d3.selectAll(".button2").style("background", "white");
 		d3.selectAll(".button1").style("background", "#bebebe");
 		setButton("Day");
-		if(props.selectObject_o.bdNumber === null && props.selectObject_o.floor === null && props.selectObject_o.roomNumber === null) makeDayUnivTrend(dayUnivTrend);
-		if(props.selectObject_o.floor === null && props.selectObject_o.roomNumber === null) makeDayBuildingTrend(dayBuildingTrend);
-		if(props.selectObject_o.roomNumber === null) makeDayFloorTrend(dayFloorTrend);
-		else makeDayRoomTrend(dayRoomTrend);
+		makeDayUnivTrend(dayUnivTrend);
+		makeDayBuildingTrend(dayBuildingTrend);
+		makeDayFloorTrend(dayFloorTrend);
+		makeDayRoomTrend(dayRoomTrend);
 		s = 1;
 	}
 
@@ -50,10 +50,10 @@ const TrendView = (props) => {
 		d3.selectAll(".button1").style("background", "white");
 		d3.selectAll(".button2").style("background", "#bebebe");
 		setButton("Week");
-		if(props.selectObject_o.bdNumber === null && props.selectObject_o.floor === null && props.selectObject_o.roomNumber === null) makeWeekUnivTrend(weekUnivTrend);
-		if(props.selectObject_o.floor === null && props.selectObject_o.roomNumber === null) makeWeekBuildingTrend(weekBuildingTrend);
-		if(props.selectObject_o.roomNumber === null) makeWeekFloorTrend(weekFloorTrend);
-		else makeWeekRoomTrend(weekRoomTrend);
+		makeWeekUnivTrend(weekUnivTrend);
+		makeWeekBuildingTrend(weekBuildingTrend);
+		makeWeekFloorTrend(weekFloorTrend);
+		makeWeekRoomTrend(weekRoomTrend);
 		s = 2;
 	}
 
@@ -158,13 +158,13 @@ const TrendView = (props) => {
 	let dayFloorTrend = props.getHalfHourTrendOfBuildingFloorDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, year+'-'+month+'-'+date);
 	let dayRoomTrend = props.getHalfHourTrendOfBuildingRoomDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, props.selectObject_o.roomNumber, year+'-'+month+'-'+date);
 
-	let weekUnivTrend = props.getDayTrendOfUniversityCrowdDensity(year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
-	let weekBuildingTrend = props.getDayTrendOfBuildingCrowdDensity(props.selectObject_o.bdNumber, year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
-	let weekFloorTrend = props.getDayTrendOfBuildingFloorDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
-	let weekRoomTrend = props.getDayTrendOfBuildingRoomDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, props.selectObject_o.roomNumber, year+'-'+startEndDate[0]+'-'+startEndDate[1],year+'-'+startEndDate[2]+'-'+startEndDate[3]);
+	let weekUnivTrend = props.getDayTrendOfUniversityCrowdDensity(year+'-'+startEndDate[2]+'-'+startEndDate[0],year+'-'+startEndDate[3]+'-'+startEndDate[1]);
+	let weekBuildingTrend = props.getDayTrendOfBuildingCrowdDensity(props.selectObject_o.bdNumber, year+'-'+startEndDate[2]+'-'+startEndDate[0],year+'-'+startEndDate[3]+'-'+startEndDate[1]);
+	let weekFloorTrend = props.getDayTrendOfBuildingFloorDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, year+'-'+startEndDate[2]+'-'+startEndDate[0],year+'-'+startEndDate[3]+'-'+startEndDate[1]);
+	let weekRoomTrend = props.getDayTrendOfBuildingRoomDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, props.selectObject_o.roomNumber, year+'-'+startEndDate[0]+'-'+startEndDate[2],year+'-'+startEndDate[3]+'-'+startEndDate[1]);
 
-	let trendInfoBar1 = trendInfoSvg.selectAll('.trendInfo1').data(dayUnivTrend.reserve_occupancy_trend);
-	let trendInfoBar2 = trendInfoSvg.selectAll('.trendInfo2').data(dayUnivTrend.reserve_occupancy_trend);
+	let trendInfoBar1 = trendInfoSvg.selectAll('.trendInfo1').data(curDate);
+	let trendInfoBar2 = trendInfoSvg.selectAll('.trendInfo2').data(curDate);
 
 	trendInfoBar1.join('rect')
 				.attr('class', 'trendInfo1')
@@ -243,7 +243,7 @@ const TrendView = (props) => {
 
 	function makeDayUnivTrend(dayUnivTrend)
 	{
-		if(props.selectObject_o.bdNumber === null){
+		if(dayUnivTrend === null){
 			d3.selectAll(".chartGroupUniv").remove();
 			d3.selectAll(".dayUnivTrendBar").remove();
 			d3.selectAll(".dayUnivTrendBarQr").remove();
@@ -331,7 +331,7 @@ const TrendView = (props) => {
 
 	function makeDayBuildingTrend(dayBuildingTrend)
 	{
-		if(props.selectObject_o.bdNumber === null){
+		if(dayBuildingTrend === null){
 			d3.selectAll(".chartGroupBuilding").remove();
 			d3.selectAll(".dayBuildingTrendBar").remove();
 			d3.selectAll(".dayBuildingTrendBarQr").remove();
@@ -339,7 +339,7 @@ const TrendView = (props) => {
 			d3.selectAll(".weekBuildingTrendBarQr").remove();
 		}
 		else{
-
+		t = 0;
 		let dayBuildingTrendxScale = d3.scaleBand()
 									.domain(timeDivide)
 									.range([0, 1300])
@@ -391,7 +391,7 @@ const TrendView = (props) => {
 
 	function makeDayFloorTrend(dayFloorTrend)
 	{
-		if(props.selectObject_o.floor === null){
+		if(dayFloorTrend === null){
 			d3.selectAll(".chartGroupFloor").remove();
 			d3.selectAll(".dayFloorTrendBar").remove();
 			d3.selectAll(".dayFloorTrendBarQr").remove();
@@ -399,7 +399,7 @@ const TrendView = (props) => {
 			d3.selectAll(".weekFloorTrendBarQr").remove();
 		}
 		else{
-
+			t = 0;
 		let dayFloorTrendxScale = d3.scaleBand()
 									.domain(timeDivide)
 									.range([0, 1300])
@@ -451,7 +451,7 @@ const TrendView = (props) => {
 
 	function makeDayRoomTrend(dayRoomTrend)
 	{
-		if(props.selectObject_o.roomNumber === null){
+		if(dayRoomTrend === null){
 			d3.selectAll(".chartGroupRoom").remove();
 			d3.selectAll(".dayRoomTrendBar").remove();
 			d3.selectAll(".dayRoomTrendBarQr").remove();
@@ -459,7 +459,7 @@ const TrendView = (props) => {
 			d3.selectAll(".weekRoomTrendBarQr").remove();
 		}
 		else{
-
+			t = 0;
 		let dayRoomTrendxScale = d3.scaleBand()
 									.domain(timeDivide)
 									.range([0, 1300])
@@ -512,7 +512,7 @@ const TrendView = (props) => {
 
 	function makeWeekUnivTrend(weekUnivTrend)
 	{
-		if(props.selectObject_o.bdNumber === null){
+		if(weekUnivTrend === null){
 			d3.selectAll(".chartGroupUniv").remove();
 			d3.selectAll(".weekUnivTrendBar").remove();
 			d3.selectAll(".weekUnivTrendBarQr").remove();
@@ -600,7 +600,7 @@ const TrendView = (props) => {
 
 	function makeWeekBuildingTrend(weekBuildingTrend)
 	{
-		if(props.selectObject_o.bdNumber === null){
+		if(weekBuildingTrend === null){
 			d3.selectAll(".chartGroupBuilding").remove();
 			d3.selectAll(".weekBuildingTrendBar").remove();
 			d3.selectAll(".weekBuildingTrendBarQr").remove();
@@ -608,7 +608,7 @@ const TrendView = (props) => {
 			d3.selectAll(".dayBuildingTrendBarQr").remove();
 		}
 		else{
-
+			t = 1;
 		let weekBuildingTrendxScale = d3.scaleBand()
 									.domain(dayDivide)
 									.range([0, 1300])
@@ -661,7 +661,7 @@ const TrendView = (props) => {
 
 	function makeWeekFloorTrend(weekFloorTrend)
 	{
-		if(props.selectObject_o.floor === null){
+		if(weekFloorTrend === null){
 			d3.selectAll(".chartGroupFloor").remove();
 			d3.selectAll(".weekFloorTrendBar").remove();
 			d3.selectAll(".weekFloorTrendBarQr").remove();
@@ -669,7 +669,7 @@ const TrendView = (props) => {
 			d3.selectAll(".dayFloorTrendBarQr").remove();
 		}
 		else{
-
+			t = 1;
 		let weekFloorTrendxScale = d3.scaleBand()
 									.domain(dayDivide)
 									.range([0, 1300])
@@ -721,7 +721,7 @@ const TrendView = (props) => {
 
 	function makeWeekRoomTrend(weekRoomTrend)
 	{
-		if(props.selectObject_o.roomNumber === null){
+		if(weekRoomTrend === null){
 			d3.selectAll(".chartGroupRoom").remove();
 			d3.selectAll(".weekRoomTrendBar").remove();
 			d3.selectAll(".weekRoomTrendBarQr").remove();
@@ -729,7 +729,7 @@ const TrendView = (props) => {
 			d3.selectAll(".dayRoomTrendBarQr").remove();
 		}
 		else{
-
+			t = 1;
 		let weekRoomTrendxScale = d3.scaleBand()
 									.domain(dayDivide)
 									.range([0, 1300])
@@ -1012,17 +1012,17 @@ const TrendView = (props) => {
 
 	if(s == 1)
 	{
-		if(props.selectObject_o.bdNumber === null && props.selectObject_o.floor === null && props.selectObject_o.roomNumber === null) makeDayUnivTrend(dayUnivTrend);
-		if(props.selectObject_o.floor === null && props.selectObject_o.roomNumber === null) makeDayBuildingTrend(dayBuildingTrend);
-		if(props.selectObject_o.roomNumber === null) makeDayFloorTrend(dayFloorTrend);
-		else makeDayRoomTrend(dayRoomTrend);
+		makeDayUnivTrend(dayUnivTrend);
+		makeDayBuildingTrend(dayBuildingTrend);
+		makeDayFloorTrend(dayFloorTrend);
+		makeDayRoomTrend(dayRoomTrend);
 	}
 	else if(s == 2)
 	{
-		if(props.selectObject_o.bdNumber === null && props.selectObject_o.floor === null && props.selectObject_o.roomNumber === null) makeWeekUnivTrend(weekUnivTrend);
-		if(props.selectObject_o.floor === null && props.selectObject_o.roomNumber === null) makeWeekBuildingTrend(weekBuildingTrend);
-		if(props.selectObject_o.roomNumber === null) makeWeekFloorTrend(weekFloorTrend);
-		else makeWeekRoomTrend(weekRoomTrend);
+		makeWeekUnivTrend(weekUnivTrend);
+		makeWeekBuildingTrend(weekBuildingTrend);
+		makeWeekFloorTrend(weekFloorTrend);
+		makeWeekRoomTrend(weekRoomTrend);
 	}
 
 // 1500 * 500 에 사이즈 맞춰주면 thx
