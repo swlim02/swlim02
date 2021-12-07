@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState} from "react";
+import React, { useRef, useState} from "react";
 import * as d3 from "d3";
 import { func } from "prop-types";
 
@@ -120,7 +120,7 @@ const TrendView = (props) => {
 	}
 
 	function makeString (num) {
-		if(num<10)	num = '0'+ String(num);		
+		if(num<10)	num = '0'+ String(num);
 		else num = String(num);
 		return num;
 	}
@@ -131,7 +131,7 @@ const TrendView = (props) => {
 	let year = makeString(curDate[0]);
 	let month = makeString(curDate[1]);
 	let date = makeString(curDate[2]);
-	
+
 	let dayUnivTrend = props.getHalfHourTrendOfUniversityCrowdDensity(year+'-'+month+'-'+date);
 	let dayBuildingTrend = props.getHalfHourTrendOfBuildingCrowdDensity(props.selectObject_o.bdNumber, year+'-'+month+'-'+date);
 	let dayFloorTrend = props.getHalfHourTrendOfBuildingFloorDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, year+'-'+month+'-'+date);
@@ -166,9 +166,9 @@ const TrendView = (props) => {
 				.attr('width', 15)
 				.attr('height', 15)
 				.style("fill", 'gray');
-	
-	
-	if(t == 0){			
+
+
+	if(t == 0){
 		let trendDateInfoText = trendDateInfoSvg.selectAll('.trendDateInfo').data(curDate);
 
 		console.log('trendDateInfoText');
@@ -266,7 +266,7 @@ const TrendView = (props) => {
 		let dayUnivTrendBar = univTrendSvg.selectAll('.dayUnivTrendBar').data(dayUnivTrend.reserve_occupancy_trend);
 		let dayUnivTrendBarQr = univTrendSvg.selectAll('.dayUnivTrendBarQr').data(dayUnivTrend.bq_occupancy_trend);
 
-		dayUnivTrendBar	.join('rect')
+		dayUnivTrendBar.join('rect')
 						.attr('transform', `translate(${50}, ${20})`)
 						.attr('class', 'dayUnivTrendBar')
 						.attr('x', (d,i) => dayUnivTrendxScale(timeDivide[i]))
@@ -1050,7 +1050,7 @@ const TrendView = (props) => {
 						<button style={{marginLeft: 5, height: "20px"}} onClick={changeDateBefore}>
 							{button == "Before"} &#60;
 						</button>
-							<svg ref={trendDateInfo} height={20}>							
+							<svg ref={trendDateInfo} height={20}>
 							</svg>
 						<button style={{marginLeft: 5, height: "20px"}} onClick={changeDateNext}>
 							{button == "Next"} &#62;

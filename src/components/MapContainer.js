@@ -300,8 +300,8 @@ const MapContainer = (props) => {
         return markerImage;
     }
 
-    let BuildingCrowdDensity = new Object();
-    // @swlim 2021-12-07
+
+    // @ghjeong 2021-12-07
     //let time = +'_09:30'; // default 값
     function getBuildingCrowdDensity(bdNumber) {
 
@@ -332,7 +332,6 @@ const MapContainer = (props) => {
       console.log(BuildingCrowdDensity);
      return BuildingCrowdDensity;
     }
-    BuildingCrowdDensity = getBuildingCrowdDensity('301');
 
     //console.log(props.selectObject_o.bdNumber);
 
@@ -343,7 +342,7 @@ const MapContainer = (props) => {
       for (let i=0 ; i < props.SNUBuildingCrowdDensityInfo_o.buildings.length ; i++) {
         let o = new Object();
         let bd_index = buildingsInfo.indexOf(props.SNUBuildingCrowdDensityInfo_o.buildings[i].bdNumber);
-        if (bd_index != -1) {
+        if (bd_index !== -1) {
           o = {
             "bdNumber": props.SNUBuildingCrowdDensityInfo_o.buildings[i].bdNumber,
             "bdName": props.SNUBuildingCrowdDensityInfo_o.buildings[i].bdName,

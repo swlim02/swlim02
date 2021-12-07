@@ -263,7 +263,7 @@ svg.append("g")
 			width: '1000px',
 			height: '700px'
 		}}>
-			<h1 style={{marginLeft: 20, marginTop: 10, marginBottom: 0, fontSize: 25}}>
+			<h1 style={{marginLeft: 20, marginTop: 10, marginBottom: 0, fontSize: 25, width: '400px'}}>
 			{selectData === null ? ' ' : selectData.bdNumber+"동 "+selectData.bdName}
 			</h1>
 			<div id= "Floor" class="splotContainer3" style={{
