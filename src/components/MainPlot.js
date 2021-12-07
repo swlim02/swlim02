@@ -129,7 +129,7 @@ const MainPlot = (props) => {
       + selectedOptions.selectedOption_green + selectedOptions.selectedOption_yellow);
   }
 
- // TODO 아래 function 8개 개발 필요.  @hskim @swlim
+ //  function 8개 개발   @swlim 완요 2021-12-07
   function getHalfHourTrendOfUniversityCrowdDensity(date) {
     if (date === null ) return null;
 

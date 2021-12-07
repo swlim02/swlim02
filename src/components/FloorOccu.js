@@ -234,22 +234,7 @@ const FloorOccu = (props) => {
 							} else {
 								//nothing
 							}
-
-							// TODO 실제 선택한 층 정보를 이용하여
-							// getFloorDensity(bdNumber, floor) 호출하여 roomData를 얻어야함.
-							// @ghjeong
-							switch (selectData.bdNumber) {
-								case "33":
-								props.floor_o.roomData = props.roomData[i.floor-1];
-								break;
-								case "301":
-								props.floor_o.roomData = props.roomData2[i.floor-1];
-								break;
-								case "302":
-								props.floor_o.roomData = props.roomData3[i.floor-1];
-								break;
-								default:
-							}
+							props.floor_o.roomData = props.getFloorDensity(selectData.bdNumber,props.selectObject_o.floor);
 							props.floor_o.f(props.floor_o.roomData);
 					}
 		);
