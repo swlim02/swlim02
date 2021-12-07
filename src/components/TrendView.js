@@ -68,13 +68,9 @@ const TrendView = (props) => {
 			curDate[1] = a[1];
 			console.log(curDate);
 			startEndDate = changeMonFri(curDate);
-			year = curDate[0];
-			month = curDate[1];
-			date = curDate[2];
-			let b = makeString(year,month,date);
-			year = b[0];
-			month = b[1];
-			date = b[2];
+			year = makeString(curDate[0]);
+			month = makeString(curDate[1]);
+			date = makeString(curDate[2]);
 			console.log("11");
 			setNowDate(curDate[2]);
 			}
@@ -85,13 +81,9 @@ const TrendView = (props) => {
 			curDate[1] = a[1];
 			console.log(curDate);
 			startEndDate = changeMonFri(curDate);
-			year = curDate[0];
-			month = curDate[1];
-			date = curDate[2];
-			let b = makeString(year,month,date);
-			year = b[0];
-			month = b[1];
-			date = b[2];
+			year = makeString(curDate[0]);
+			month = makeString(curDate[1]);
+			date = makeString(curDate[2]);
 			console.log("111");
 			setNowDate(curDate[2]);
 			}
@@ -106,13 +98,9 @@ const TrendView = (props) => {
 			curDate[1] = a[1];
 			console.log(curDate);
 			startEndDate = changeMonFri(curDate);
-			year = curDate[0];
-			month = curDate[1];
-			date = curDate[2];
-			let b = makeString(year,month,date);
-			year = b[0];
-			month = b[1];
-			date = b[2];
+			year = makeString(curDate[0]);
+			month = makeString(curDate[1]);
+			date = makeString(curDate[2]);
 			console.log("22");
 			setNowDate(curDate[2]);
 			}
@@ -123,47 +111,41 @@ const TrendView = (props) => {
 			curDate[1] = a[1];
 			console.log(curDate);
 			startEndDate = changeMonFri(curDate);
-			year = curDate[0];
-			month = curDate[1];
-			date = curDate[2];
-			let b = makeString(year,month,date);
-			year = b[0];
-			month = b[1];
-			date = b[2];
+			year = makeString(curDate[0]);
+			month = makeString(curDate[1]);
+			date = makeString(curDate[2]);
 			console.log("222");
 			setNowDate(curDate[2]);
 			}
 	}
 
-	function makeString (year,month,date) {
-
-		year = String(year);
-
-		if(month<10)	month = '0'+ String(month);		
-		else month = String(month);
-
-		if(date<10)	date = '0'+ String(date);
-		else date = String(date);
-
-		return [year,month,date];
+	function makeString (num) {
+		if(num<10)	num = '0'+ String(num);		
+		else num = String(num);
+		return num;
 	}
 
 	let curDate = props.selectObject_o.date;
 	let startEndDate = changeMonFri(curDate);
-	let c = makeString(curDate[0],curDate[1],curDate[2]);
-	let year = c[0];
-	let month = c[1];
-	let date = c[2];
 
+	let year = makeString(curDate[0]);
+	let month = makeString(curDate[1]);
+	let date = makeString(curDate[2]);
+	
 	let dayUnivTrend = props.getHalfHourTrendOfUniversityCrowdDensity(year+'-'+month+'-'+date);
 	let dayBuildingTrend = props.getHalfHourTrendOfBuildingCrowdDensity(props.selectObject_o.bdNumber, year+'-'+month+'-'+date);
 	let dayFloorTrend = props.getHalfHourTrendOfBuildingFloorDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, year+'-'+month+'-'+date);
 	let dayRoomTrend = props.getHalfHourTrendOfBuildingRoomDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, props.selectObject_o.roomNumber, year+'-'+month+'-'+date);
 
-	let weekUnivTrend = props.getDayTrendOfUniversityCrowdDensity(year+'-'+startEndDate[2]+'-'+startEndDate[0],year+'-'+startEndDate[3]+'-'+startEndDate[1]);
-	let weekBuildingTrend = props.getDayTrendOfBuildingCrowdDensity(props.selectObject_o.bdNumber, year+'-'+startEndDate[2]+'-'+startEndDate[0],year+'-'+startEndDate[3]+'-'+startEndDate[1]);
-	let weekFloorTrend = props.getDayTrendOfBuildingFloorDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, year+'-'+startEndDate[2]+'-'+startEndDate[0],year+'-'+startEndDate[3]+'-'+startEndDate[1]);
-	let weekRoomTrend = props.getDayTrendOfBuildingRoomDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, props.selectObject_o.roomNumber, year+'-'+startEndDate[2]+'-'+startEndDate[0],year+'-'+startEndDate[3]+'-'+startEndDate[1]);
+	let q = makeString(startEndDate[2]);
+	let w = makeString(startEndDate[0]);
+	let e = makeString(startEndDate[3]);
+	let r = makeString(startEndDate[1]);
+
+	let weekUnivTrend = props.getDayTrendOfUniversityCrowdDensity(year+'-'+q+'-'+w,year+'-'+e+'-'+r);
+	let weekBuildingTrend = props.getDayTrendOfBuildingCrowdDensity(props.selectObject_o.bdNumber, year+'-'+q+'-'+w,year+'-'+e+'-'+r);
+	let weekFloorTrend = props.getDayTrendOfBuildingFloorDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, year+'-'+q+'-'+w,year+'-'+e+'-'+r);
+	let weekRoomTrend = props.getDayTrendOfBuildingRoomDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, props.selectObject_o.roomNumber, year+'-'+q+'-'+w,year+'-'+e+'-'+r);
 
 	let trendInfoBar1 = trendInfoSvg.selectAll('.trendInfo1').data(curDate);
 	let trendInfoBar2 = trendInfoSvg.selectAll('.trendInfo2').data(curDate);
