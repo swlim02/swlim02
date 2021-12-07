@@ -136,6 +136,7 @@ const MapContainer = (props) => {
 
   let map;
   useEffect(() => {
+        
     const container = document.getElementById('myMap');
     const options = {
       center: new kakao.maps.LatLng(37.4580, 126.9535),
@@ -155,19 +156,19 @@ const MapContainer = (props) => {
         */
 
     function makeMakers(){
-      console.log("makeMakers");
+      //console.log("makeMakers");
       props.old_makers_o.old_makers.forEach((item, i) => {
         item.map = null;
       });
       var selectedMarker = null; // 클릭한 마커를 담을 변수
       var positions = [];
-      console.log("enumerateBuildingCrowdDensitySummary()");
-      console.log(enumerateBuildingCrowdDensitySummary());
+      //console.log("enumerateBuildingCrowdDensitySummary()");
+      //console.log(enumerateBuildingCrowdDensitySummary());
       enumerateBuildingCrowdDensitySummary().forEach((item, i) => {
-        console.log(item);
+        //console.log(item);
         let crowd = parseInt(item.occupancy)/parseInt(item.capacity)*100;
-        console.log("crowd");
-        console.log(crowd);
+        //console.log("crowd");
+        //console.log(crowd);
 //        console.log("props.selectedOptions.selectedOption_green");
 //        console.log(props.selectedOptions.selectedOption_green);
         let severity = 2; // 0=G,1=Y,2=R
@@ -187,7 +188,7 @@ const MapContainer = (props) => {
         positions.push(o);
       });
 
-      console.log(positions.length);
+      //console.log(positions.length);
       // 지도 위에 마커를 표시합니다
       for (var i = 0; i < positions.length; i++) {
           var gapX = (MARKER_WIDTH + SPRITE_GAP), // 스프라이트 이미지에서 마커로 사용할 이미지 X좌표 간격 값
@@ -271,7 +272,7 @@ const MapContainer = (props) => {
                   marker.setImage(clickImage);
                   floor_o.roomData = null; // 개발중임시사용삭제 될 예정
                   current_data = position.data;
-                  console.log(current_data);
+                  //console.log(current_data);
                   props.selectObject_o.bdNumber = current_data.bdNumber;
                   props.selectObject_o.floor = null;
                   props.selectObject_o.roomNumber = null;
@@ -306,7 +307,7 @@ const MapContainer = (props) => {
         );
         return markerImage;
     }
-
+    let BuildingCrowdDensity = new Object();
     // TODO @hskim
     let time = 'SNU_09:30'; // default 값
     function getBuildingCrowdDensity(bdNumber) {
@@ -328,13 +329,22 @@ const MapContainer = (props) => {
         ) {
         time = 'SNU_09:30';
       }
-
+      console.log("herehrehrherherherhere");
+      console.log(props.SNUBuildingCrowdDensityInfo_o.buildings[0]);
+      console.log(props.SNUBuildingCrowdDensityInfo_o.buildings.indexOf(bdNumber));
+      
       BuildingCrowdDensity = {
-        "capacity": props.SNUBuildingCrowdDensityInfo_o[time].buildings[props.SNUBuildingCrowdDensityInfo_o.buildings.indexOf(bdNumber)].capacity,
-        "occupancy": props.SNUBuildingCrowdDensityInfo_o[time].buildings[props.SNUBuildingCrowdDensityInfo_o.buildings.indexOf(bdNumber)].occupancy
+        "bdNumber": bdNumber,
+        "bdName": "제1공학관",
+        
+        // "capacity": props.SNUBuildingCrowdDensityInfo_o[time].buildings[props.SNUBuildingCrowdDensityInfo_o.buildings.indexOf(bdNumber)].capacity,
+        // "occupancy": props.SNUBuildingCrowdDensityInfo_o[time].buildings[props.SNUBuildingCrowdDensityInfo_o.buildings.indexOf(bdNumber)].occupancy
       };
      return BuildingCrowdDensity;
     }
+    BuildingCrowdDensity = getBuildingCrowdDensity(props.selectObject_o.bdNumber);
+    
+    console.log(props.selectObject_o.bdNumber);
 
     // swlim 2021-12-07
     function enumerateBuildingCrowdDensitySummary() {
@@ -357,7 +367,7 @@ const MapContainer = (props) => {
           console.log ("망했음.없는건물번호임")
         }
       }
-      console.log(BuildingCrowdDensitySummary_arr)
+      //console.log(BuildingCrowdDensitySummary_arr)
       return BuildingCrowdDensitySummary_arr;
     }
 //  });
