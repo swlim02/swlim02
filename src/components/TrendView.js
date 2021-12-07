@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState} from "react";
 import * as d3 from "d3";
+import { func } from "prop-types";
 
 let timeDivide = ['9:30','10','10:30','11','11:30','12','12:30','13','13:30','14','14:30','15','15:30','16','16:30','17','17:30','18'];
 let dayDivide = ['Mon','Tue','Wed','Thu','Fri'];
@@ -68,6 +69,10 @@ const TrendView = (props) => {
 			year = curDate[0];
 			month = curDate[1];
 			date = curDate[2];
+			let b = makeString(year,month,date);
+			year = b[0];
+			month = b[1];
+			date = b[2];
 			console.log("11");
 			setNowDate(curDate[2]);
 			}
@@ -81,6 +86,10 @@ const TrendView = (props) => {
 			year = curDate[0];
 			month = curDate[1];
 			date = curDate[2];
+			let b = makeString(year,month,date);
+			year = b[0];
+			month = b[1];
+			date = b[2];
 			console.log("111");
 			setNowDate(curDate[2]);
 			}
@@ -98,6 +107,10 @@ const TrendView = (props) => {
 			year = curDate[0];
 			month = curDate[1];
 			date = curDate[2];
+			let b = makeString(year,month,date);
+			year = b[0];
+			month = b[1];
+			date = b[2];
 			console.log("22");
 			setNowDate(curDate[2]);
 			}
@@ -111,9 +124,26 @@ const TrendView = (props) => {
 			year = curDate[0];
 			month = curDate[1];
 			date = curDate[2];
+			let b = makeString(year,month,date);
+			year = b[0];
+			month = b[1];
+			date = b[2];
 			console.log("222");
 			setNowDate(curDate[2]);
 			}
+	}
+
+	function makeString (year,month,date) {
+
+		year = toString(year);
+
+		if(month<10)	month = '0'+ toString(month);		
+		else month = toString(month);
+
+		if(date<10)	date = '0'+ toString(date);
+		else date = toString(date);
+
+		return [year,month,date];
 	}
 
 	let curDate = props.selectObject_o.date;
@@ -122,6 +152,7 @@ const TrendView = (props) => {
 	let year = curDate[0];
 	let month = curDate[1];
 	let date = curDate[2];
+	makeString(year,month,date);
 
 	let dayUnivTrend = props.getHalfHourTrendOfUniversityCrowdDensity(year+'-'+month+'-'+date);
 	let dayBuildingTrend = props.getHalfHourTrendOfBuildingCrowdDensity(props.selectObject_o.bdNumber, year+'-'+month+'-'+date);
@@ -975,7 +1006,7 @@ const TrendView = (props) => {
 		// if(date<10)
 		// {
 		// 	date = '0'+date;
-		// 	console.log(date);
+		// 	console.log(date-1);
 		// }
 		return [date,month];
 	}
