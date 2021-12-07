@@ -67,7 +67,10 @@ const TrendView = (props) => {
 			year = curDate[0];
 			month = curDate[1];
 			date = curDate[2];
-			console.log("11");
+			console.log("11");setButton("Day");makeDayUnivTrend(dayUnivTrend);
+			makeDayBuildingTrend(dayBuildingTrend);
+			makeDayFloorTrend(dayFloorTrend);
+			makeDayRoomTrend(dayRoomTrend);
 			}
 		else {
 			curDate[2] = curDate[2] - 7;
@@ -80,6 +83,11 @@ const TrendView = (props) => {
 			month = curDate[1];
 			date = curDate[2];
 			console.log("111");
+			setButton("Week");
+			makeWeekUnivTrend(weekUnivTrend);
+			makeWeekBuildingTrend(weekBuildingTrend);
+			makeWeekFloorTrend(weekFloorTrend);
+			makeWeekRoomTrend(weekRoomTrend);
 			}
 	}
 
@@ -95,7 +103,10 @@ const TrendView = (props) => {
 			year = curDate[0];
 			month = curDate[1];
 			date = curDate[2];
-			console.log("22");
+			console.log("22");setButton("Day");makeDayUnivTrend(dayUnivTrend);
+			makeDayBuildingTrend(dayBuildingTrend);
+			makeDayFloorTrend(dayFloorTrend);
+			makeDayRoomTrend(dayRoomTrend);
 			}
 		else {
 			curDate[2] = curDate[2] + 7;
@@ -108,6 +119,11 @@ const TrendView = (props) => {
 			month = curDate[1];
 			date = curDate[2];
 			console.log("222");
+			setButton("Week");
+			makeWeekUnivTrend(weekUnivTrend);
+			makeWeekBuildingTrend(weekBuildingTrend);
+			makeWeekFloorTrend(weekFloorTrend);
+			makeWeekRoomTrend(weekRoomTrend);
 			}
 	}
 
