@@ -18,6 +18,7 @@ const TrendView = (props) => {
     //setTrendData(props.selectObject_o.state);
 
 	const [button, setButton] = useState(null);
+	const [nowDate, setNowDate] = useState(null);
 
 	const trendInfo = useRef(null);
 	const trendDateInfo = useRef(null);
@@ -59,7 +60,7 @@ const TrendView = (props) => {
 		if (t == 0){
 			curDate[2] = curDate[2] - 1;
 			curDate[3] = (curDate[3] + 6)%7;
-			let a = validDate(curDate[2],curDate[1]);
+			let a = validDate1(curDate[2],curDate[1]);
 			curDate[2] = a[0];
 			curDate[1] = a[1];
 			console.log(curDate);
@@ -67,14 +68,12 @@ const TrendView = (props) => {
 			year = curDate[0];
 			month = curDate[1];
 			date = curDate[2];
-			console.log("11");setButton("Day");makeDayUnivTrend(dayUnivTrend);
-			makeDayBuildingTrend(dayBuildingTrend);
-			makeDayFloorTrend(dayFloorTrend);
-			makeDayRoomTrend(dayRoomTrend);
+			console.log("11");
+			setNowDate(curDate[2]);
 			}
 		else {
 			curDate[2] = curDate[2] - 7;
-			let a = validDate(curDate[2],curDate[1]);
+			let a = validDate1(curDate[2],curDate[1]);
 			curDate[2] = a[0];
 			curDate[1] = a[1];
 			console.log(curDate);
@@ -83,11 +82,7 @@ const TrendView = (props) => {
 			month = curDate[1];
 			date = curDate[2];
 			console.log("111");
-			setButton("Week");
-			makeWeekUnivTrend(weekUnivTrend);
-			makeWeekBuildingTrend(weekBuildingTrend);
-			makeWeekFloorTrend(weekFloorTrend);
-			makeWeekRoomTrend(weekRoomTrend);
+			setNowDate(curDate[2]);
 			}
 	}
 
@@ -95,7 +90,7 @@ const TrendView = (props) => {
 		if (t == 0){
 			curDate[2] = curDate[2] + 1;
 			curDate[3] = (curDate[3] + 1)%7;
-			let a = validDate(curDate[2],curDate[1]);
+			let a = validDate1(curDate[2],curDate[1]);
 			curDate[2] = a[0];
 			curDate[1] = a[1];
 			console.log(curDate);
@@ -103,14 +98,12 @@ const TrendView = (props) => {
 			year = curDate[0];
 			month = curDate[1];
 			date = curDate[2];
-			console.log("22");setButton("Day");makeDayUnivTrend(dayUnivTrend);
-			makeDayBuildingTrend(dayBuildingTrend);
-			makeDayFloorTrend(dayFloorTrend);
-			makeDayRoomTrend(dayRoomTrend);
+			console.log("22");
+			setNowDate(curDate[2]);
 			}
 		else {
 			curDate[2] = curDate[2] + 7;
-			let a = validDate(curDate[2],curDate[1]);
+			let a = validDate1(curDate[2],curDate[1]);
 			curDate[2] = a[0];
 			curDate[1] = a[1];
 			console.log(curDate);
@@ -119,11 +112,7 @@ const TrendView = (props) => {
 			month = curDate[1];
 			date = curDate[2];
 			console.log("222");
-			setButton("Week");
-			makeWeekUnivTrend(weekUnivTrend);
-			makeWeekBuildingTrend(weekBuildingTrend);
-			makeWeekFloorTrend(weekFloorTrend);
-			makeWeekRoomTrend(weekRoomTrend);
+			setNowDate(curDate[2]);
 			}
 	}
 
@@ -807,6 +796,97 @@ const TrendView = (props) => {
 							break;
 				case 2 : month = month-1;
 							date = date+27;
+							break;
+			}
+		}
+		if(date>31)
+		{
+			switch(month) {
+				case 1 :
+				case 3 :
+				case 5 :
+				case 7 :
+				case 8 :
+				case 10 :
+				case 12 : month = month+1;
+							date = date-31;
+							break;
+				case 4 :
+				case 6 :
+				case 9 :
+				case 11 : month = month+1;
+							date = date-30;
+							break;
+				case 2 : month = month+1;
+							date = date-28;
+							break;
+			}
+		}
+		else if(date==31)
+		{
+			switch(month) {
+				case 1 :
+				case 3 :
+				case 5 :
+				case 7 :
+				case 8 :
+				case 10 :
+				case 12 : break;
+				case 4 :
+				case 6 :
+				case 9 :
+				case 11 : month = month+1;
+							date = date-30;
+							break;
+				case 2 : month = month+1;
+							date = date-28;
+							break;
+			}
+		}
+		else if(date>=29)
+		{
+			switch(month) {
+				case 1 :
+				case 3 :
+				case 5 :
+				case 7 :
+				case 8 :
+				case 10 :
+				case 12 :
+				case 4 :
+				case 6 :
+				case 9 :
+				case 11 : break;
+				case 2 : month = month+1;
+							date = date-28;
+							break;
+			}
+		}
+		return [date,month];
+	}
+
+	function validDate1(date,month){
+
+		if(date<=0)
+		{
+			switch(month-1) {
+				case 1 :
+				case 3 :
+				case 5 :
+				case 7 :
+				case 8 :
+				case 10 :
+				case 12 : month = month-1;
+							date = date+31;
+							break;
+				case 4 :
+				case 6 :
+				case 9 :
+				case 11 : month = month-1;
+							date = date+30;
+							break;
+				case 2 : month = month-1;
+							date = date+28;
 							break;
 			}
 		}
