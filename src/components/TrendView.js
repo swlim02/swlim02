@@ -163,7 +163,7 @@ const TrendView = (props) => {
 	let weekUnivTrend = props.getDayTrendOfUniversityCrowdDensity(year+'-'+startEndDate[2]+'-'+startEndDate[0],year+'-'+startEndDate[3]+'-'+startEndDate[1]);
 	let weekBuildingTrend = props.getDayTrendOfBuildingCrowdDensity(props.selectObject_o.bdNumber, year+'-'+startEndDate[2]+'-'+startEndDate[0],year+'-'+startEndDate[3]+'-'+startEndDate[1]);
 	let weekFloorTrend = props.getDayTrendOfBuildingFloorDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, year+'-'+startEndDate[2]+'-'+startEndDate[0],year+'-'+startEndDate[3]+'-'+startEndDate[1]);
-	let weekRoomTrend = props.getDayTrendOfBuildingRoomDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, props.selectObject_o.roomNumber, year+'-'+startEndDate[0]+'-'+startEndDate[2],year+'-'+startEndDate[3]+'-'+startEndDate[1]);
+	let weekRoomTrend = props.getDayTrendOfBuildingRoomDensity(props.selectObject_o.bdNumber, props.selectObject_o.floor, props.selectObject_o.roomNumber, year+'-'+startEndDate[2]+'-'+startEndDate[0],year+'-'+startEndDate[3]+'-'+startEndDate[1]);
 
 	let trendInfoBar1 = trendInfoSvg.selectAll('.trendInfo1').data(curDate);
 	let trendInfoBar2 = trendInfoSvg.selectAll('.trendInfo2').data(curDate);
@@ -729,8 +729,14 @@ const TrendView = (props) => {
 			d3.selectAll(".weekRoomTrendBarQr").remove();
 			d3.selectAll(".dayRoomTrendBar").remove();
 			d3.selectAll(".dayRoomTrendBarQr").remove();
+			console.log('props.selectObject_o.roomNumber');
+			console.log(props.selectObject_o.roomNumber);
+			console.log(props.selectObject_o.roomNumber);
+			console.log(props.selectObject_o.roomNumber);
+			console.log(props.selectObject_o.roomNumber);
 		}
 		else{
+			console.log("hoho");
 			t = 1;
 		let weekRoomTrendxScale = d3.scaleBand()
 									.domain(dayDivide)
