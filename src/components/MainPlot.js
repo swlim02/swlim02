@@ -92,7 +92,7 @@ const MainPlot = (props) => {
       (today.getHours() < 9) ||
       ((today.getHours() === 9) && (today.getMinutes()<30))
     ) {
-    time = 'SNU_14:30';
+    time = 'SNU_14:00';
   }
 
   // @swlim 개발 - 이해안가면 물어 보삼

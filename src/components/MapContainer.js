@@ -317,7 +317,7 @@ const MapContainer = (props) => {
           (today.getHours() < 9) ||
           ((today.getHours() === 9) && (today.getMinutes()<30))
         ) {
-        time = bdNumber +'_14:30';
+        time = bdNumber +'_14:00';
       }
 
       console.log("herehrehrherherherhere");
@@ -375,7 +375,7 @@ const MapContainer = (props) => {
         (today.getHours() < 9) ||
         ((today.getHours() === 9) && (today.getMinutes()<30))
       ) {
-    time = bdNumber +'_' + floor +'_14:30';
+    time = bdNumber +'_' + floor +'_14:00';
     }
 
     console.log("here!!");
