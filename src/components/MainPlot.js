@@ -13,7 +13,7 @@ import SNUFloorCrowdDensityInfo_Tue from "../data/SNUFloorCrowdDensityInfo_Wed.j
 import SNUFloorCrowdDensityInfo_WED from "../data/SNUFloorCrowdDensityInfo_Wed.json";
 import SNURoomCrowdDensityInfo_Tue from "../data/SNURoomCrowdDensityInfo_Wed.json";
 import SNURoomCrowdDensityInfo_WED from "../data/SNURoomCrowdDensityInfo_Wed.json";
-import CrowdDensityTrendInfo from "../data/trend_sample_301.json"
+import CrowdDensityTrendInfo from "../data/trend_301.json"
 
 var selectedOptions = new Object();
 let selectObject_o = new Object();

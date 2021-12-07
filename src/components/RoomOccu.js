@@ -56,8 +56,20 @@ const RoomOccu = (props) => {
 				.on("mouseenter", function(d) {
 						d3.selectAll(".element11"+this.id).style("stroke-width", 3);
 						d3.selectAll(".element33"+this.id).attr("font-weight", 700);
-						//TODO data에 수업정보가 추가되면 여기에 수업정보 보여주는 코드 추가
-						//mouseleave에도 수업정보 지우는 코드 추가
+						d3.selectAll(".element33"+this.id).text(function(d){
+							let roomNumber_text = String(d.data.roomNumber);
+							if (roomNumber_text.length > 3) {
+								roomNumber_text = roomNumber_text.substr(0, 3) + '-' + roomNumber_text.substr(4);
+							}
+							if (d.data.occupancy > 0) {
+								return [roomNumber_text+'호('+d.data.occupancy+'/'+d.data.capacity+')'+" "
+								+d.data.className+'('+d.data.classStartTime+'~'+d.data.classEndTime+')']
+							} else {
+								return [roomNumber_text+'호('+d.data.occupancy+'/'+d.data.capacity+')']
+							}
+						}
+						).attr("font-size", "8px");
+
 				})
 				.on('click', function() {
 						props.selectObject_o.roomNumber = this.id;
@@ -75,7 +87,14 @@ const RoomOccu = (props) => {
 						//nothing
 					}else {
 						d3.selectAll(".element11"+this.id).style("stroke-width", 1);
-						d3.selectAll(".element33"+this.id).attr("font-weight", 300);
+						d3.selectAll(".element33"+this.id).attr("font-weight", 300)
+						.text(function(d){
+							let roomNumber_text = String(d.data.roomNumber);
+							if (roomNumber_text.length > 3) {
+								roomNumber_text = roomNumber_text.substr(0, 3) + '-' + roomNumber_text.substr(4);
+							}
+							return [roomNumber_text+'호('+d.data.occupancy+'/'+d.data.capacity+')']})
+						.attr("font-size", "13px");
 					}
 				});
 
