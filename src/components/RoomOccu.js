@@ -106,7 +106,12 @@ const RoomOccu = (props) => {
 						return d.y0+17;
 					}
 				})    // +20 to adjust position (lower)
-				.text(function(d){ return [d.data.roomNumber+'호('+d.data.occupancy+'/'+d.data.capacity+')']})
+				.text(function(d){
+					let roomNumber_text = String(d.data.roomNumber);
+					if (roomNumber_text.length > 3) {
+						roomNumber_text = roomNumber_text.substr(0, 3) + '-' + roomNumber_text.substr(4);
+					}
+					return [roomNumber_text+'호('+d.data.occupancy+'/'+d.data.capacity+')']})
 				.attr("font-size", "13px")
 				.attr("fill", "black");
 
