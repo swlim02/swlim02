@@ -58,6 +58,11 @@ const TrendView = (props) => {
 	const changeDateBefore = () => {
 		if (t == 0){
 			curDate[2] = curDate[2] - 1;
+			curDate[3] = (curDate[3] + 6)%7;
+			let a = validDate(curDate[2],curDate[1]);
+			curDate[2] = a[0];
+			curDate[1] = a[1];
+			console.log(curDate);
 			startEndDate = changeMonFri(curDate);
 			year = curDate[0];
 			month = curDate[1];
@@ -66,6 +71,10 @@ const TrendView = (props) => {
 			}
 		else {
 			curDate[2] = curDate[2] - 7;
+			let a = validDate(curDate[2],curDate[1]);
+			curDate[2] = a[0];
+			curDate[1] = a[1];
+			console.log(curDate);
 			startEndDate = changeMonFri(curDate);
 			year = curDate[0];
 			month = curDate[1];
@@ -77,6 +86,11 @@ const TrendView = (props) => {
 	const changeDateNext = () => {
 		if (t == 0){
 			curDate[2] = curDate[2] + 1;
+			curDate[3] = (curDate[3] + 1)%7;
+			let a = validDate(curDate[2],curDate[1]);
+			curDate[2] = a[0];
+			curDate[1] = a[1];
+			console.log(curDate);
 			startEndDate = changeMonFri(curDate);
 			year = curDate[0];
 			month = curDate[1];
@@ -85,6 +99,10 @@ const TrendView = (props) => {
 			}
 		else {
 			curDate[2] = curDate[2] + 7;
+			let a = validDate(curDate[2],curDate[1]);
+			curDate[2] = a[0];
+			curDate[1] = a[1];
+			console.log(curDate);
 			startEndDate = changeMonFri(curDate);
 			year = curDate[0];
 			month = curDate[1];
@@ -130,18 +148,35 @@ const TrendView = (props) => {
 				.attr('height', 15)
 				.style("fill", 'gray');
 	
-	let trendDateInfoText = trendDateInfoSvg.selectAll('.trendDateInfo').data(curDate);
+	
+	if(t == 0){			
+		let trendDateInfoText = trendDateInfoSvg.selectAll('.trendDateInfo').data(curDate);
 
-	console.log(curDate[0]);
+		console.log(curDate[2]);
 
-	trendDateInfoText.join('text')
-						.attr('class', 'trendDateInfo')
-						.text(d => d[0]+'-'+d[1]+'-'+d[2])
-						.attr('x', 150)
-						.attr('y', 15)
-						.attr("font-size", "15px")
-						.attr("text-anchor","middle")
-						.style("fill",'black');
+		trendDateInfoText.join('text')
+							.attr('class', 'trendDateInfo')
+							.text(curDate[0]+'-'+curDate[1]+'-'+curDate[2])
+							.attr('x', 150)
+							.attr('y', 15)
+							.attr("font-size", "15px")
+							.attr("text-anchor","middle")
+							.style("fill",'black');
+	}
+	else{
+		let trendDateInfoText = trendDateInfoSvg.selectAll('.trendDateInfo').data(curDate);
+
+		console.log(curDate[2]);
+
+		trendDateInfoText.join('text')
+							.attr('class', 'trendDateInfo')
+							.text(curDate[0]+'-'+startEndDate[2]+'-'+startEndDate[0]+' ~ '+curDate[0]+'-'+startEndDate[3]+'-'+startEndDate[1])
+							.attr('x', 150)
+							.attr('y', 15)
+							.attr("font-size", "15px")
+							.attr("text-anchor","middle")
+							.style("fill",'black');
+	}
 
 /*
 	trendInfoSvg
@@ -726,16 +761,17 @@ const TrendView = (props) => {
 					break;
 		}
 
-		let startEndDate = validDate(curDate,startDate,endDate,startMonth,endMonth);
+		let a = validDate(startDate,startMonth);
+		let b = validDate(endDate,endMonth);
+
+		let startEndDate = [a[0],b[0],a[1],b[1]];
 		console.log(startEndDate);
 		return startEndDate;
 	}
 
-	function validDate(curDate,startDate,endDate,startMonth,endMonth){
+	function validDate(date,month){
 
-		let month = curDate[1];
-
-		if(startDate<=0)
+		if(date<=0)
 		{
 			switch(month) {
 				case 1 :
@@ -744,21 +780,21 @@ const TrendView = (props) => {
 				case 7 :
 				case 8 :
 				case 10 :
-				case 12 : startMonth = month-1;
-							startDate = startDate+30;
+				case 12 : month = month-1;
+							date = date+30;
 							break;
 				case 4 :
 				case 6 :
 				case 9 :
-				case 11 : startMonth = month-1;
-							startDate = startDate+29;
+				case 11 : month = month-1;
+							date = date+29;
 							break;
-				case 2 : startMonth = month-1;
-							startDate = startDate+27;
+				case 2 : month = month-1;
+							date = date+27;
 							break;
 			}
 		}
-		if(startDate>31)
+		if(date>31)
 		{
 			switch(month) {
 				case 1 :
@@ -767,21 +803,21 @@ const TrendView = (props) => {
 				case 7 :
 				case 8 :
 				case 10 :
-				case 12 : startMonth = month+1;
-							startDate = startDate-31;
+				case 12 : month = month+1;
+							date = date-31;
 							break;
 				case 4 :
 				case 6 :
 				case 9 :
-				case 11 : startMonth = month+1;
-							startDate = startDate-30;
+				case 11 : month = month+1;
+							date = date-30;
 							break;
-				case 2 : startMonth = month+1;
-							startDate = startDate-28;
+				case 2 : month = month+1;
+							date = date-28;
 							break;
 			}
 		}
-		else if(startDate==31)
+		else if(date==31)
 		{
 			switch(month) {
 				case 1 :
@@ -794,15 +830,15 @@ const TrendView = (props) => {
 				case 4 :
 				case 6 :
 				case 9 :
-				case 11 : startMonth = month+1;
-							startDate = startDate-30;
+				case 11 : month = month+1;
+							date = date-30;
 							break;
-				case 2 : startMonth = month+1;
-							startDate = startDate-28;
+				case 2 : month = month+1;
+							date = date-28;
 							break;
 			}
 		}
-		else if(startDate>=29)
+		else if(date>=29)
 		{
 			switch(month) {
 				case 1 :
@@ -816,100 +852,12 @@ const TrendView = (props) => {
 				case 6 :
 				case 9 :
 				case 11 : break;
-				case 2 : startMonth = month+1;
-							startDate = startDate-28;
+				case 2 : month = month+1;
+							date = date-28;
 							break;
 			}
 		}
-		if(endDate<=0)
-		{
-			switch(month) {
-
-				case 1 :
-				case 3 :
-				case 5 :
-				case 7 :
-				case 8 :
-				case 10 :
-				case 12 : endMonth = month-1;
-							endDate = endDate+30;
-							break;
-				case 4 :
-				case 6 :
-				case 9 :
-				case 11 : endMonth = month-1;
-							endDate = endDate+29;
-							break;
-				case 2 : endMonth = month-1;
-							endDate = endDate+27;
-							break;
-			}
-		}
-		if(endDate>31)
-		{
-			switch(month) {
-				case 1 :
-				case 3 :
-				case 5 :
-				case 7 :
-				case 8 :
-				case 10 :
-				case 12 : endMonth = month+1;
-							endDate = endDate-31;
-							break;
-				case 4 :
-				case 6 :
-				case 9 :
-				case 11 : endMonth = month+1;
-							endDate = endDate-30;
-							break;
-				case 2 : endMonth = month+1;
-							endDate = endDate-28;
-							break;
-			}
-		}
-		else if(endDate==31)
-		{
-			switch(month) {
-				case 1 :
-				case 3 :
-				case 5 :
-				case 7 :
-				case 8 :
-				case 10 :
-				case 12 : break;
-				case 4 :
-				case 6 :
-				case 9 :
-				case 11 : endMonth = month+1;
-							endDate = endDate-30;
-							break;
-				case 2 : endMonth = month+1;
-							endDate = endDate-28;
-							break;
-			}
-		}
-		else if(endDate>=29)
-		{
-			switch(month) {
-				case 1 :
-				case 3 :
-				case 5 :
-				case 7 :
-				case 8 :
-				case 10 :
-				case 12 :
-				case 4 :
-				case 6 :
-				case 9 :
-				case 11 : break;
-				case 2 : endMonth = month+1;
-							endDate = endDate-28;
-							break;
-			}
-		}
-
-		return [startMonth,startDate,endMonth,endDate];
+		return [date,month];
 	}
 
 	if(s == 1)
