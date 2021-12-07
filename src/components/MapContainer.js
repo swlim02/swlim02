@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import building from "../data/building.json";
 import room from "../data/data.json";
 import room2 from "../data/data2.json";
 import room3 from "../data/data3.json";
@@ -176,7 +175,7 @@ const MapContainer = (props) => {
         o = {
           "content": '<div>'+item.bdNumber+'동, '+item.bdName+'</div>',
           "latlng": new kakao.maps.LatLng(item.latitude,item.longitude),
-//          "data": building[i%3], // TODO 실제 해당 빌딩정보를 읽어서 넣어야 함.
+//          "data": building[i%3],
           "data": getBuildingCrowdDensity(item.bdNumber),
           "severity": severity
         };
@@ -287,8 +286,6 @@ const MapContainer = (props) => {
       }
     }
 
-
-
     // MakrerImage 객체를 생성하여 반환하는 함수입니다
     function createMarkerImage(markerSize, offset, spriteOrigin) {
         var markerImage = new kakao.maps.MarkerImage(
@@ -365,8 +362,7 @@ const MapContainer = (props) => {
     }
 //  });
 
-  //  TODO 실제 데이터 반환하게 개발 @hskim
-  let FloorCrowdDensity = new Object();
+  //  ghjeong 2021-12-07
   function getFloorDensity(bdNumber, floor) {
     let FloorCrowdDensity = new Object();
     // 데이터에 있는 시간중 가장가까운 시간으로 time 셋팅
@@ -383,7 +379,7 @@ const MapContainer = (props) => {
         (today.getHours() < 9) ||
         ((today.getHours() === 9) && (today.getMinutes()<30))
       ) {
-    time = bdNumber +'_' + floor +'_09:30';
+    time = bdNumber +'_' + floor +'_14:30';
     }
 
     console.log("here!!");
@@ -391,42 +387,10 @@ const MapContainer = (props) => {
     //console.log(props.SNUFloorCrowdDensityInfo_o[time][0]);
 
     //let bd_index = buildingsInfo.indexOf(bdNumber);
-
     FloorCrowdDensity = props.SNURoomCrowdDensityInfo_o[time][0];
     console.log(FloorCrowdDensity);
-    // FloorCrowdDensity = {
-    //    "bdName" : "제1공학관",
-    //    "floor" : 1,
-    //    "children" : [
-    //       {
-    //       "roomNumber" : 101,
-    //       "capacity" : 20,
-    //       "occupancy" : 5,
-    //       "className" : "현수님찬양",
-    //       "classStartTime" : "TEXT시간",
-    //       "classEndTime" :  "TEXT시간"
-    //       },
-    //       {
-    //       "roomNumber" : 102,
-    //       "capacity" : 50,
-    //       "occupancy" : 22,
-    //       "className" : "현수님찬양",
-    //       "classStartTime" : "TEXT시간",
-    //       "classEndTime" :  "TEXT시간"
-    //       },
-    //       {
-    //       "roomNumber" : 103,
-    //       "capacity" : 100,
-    //       "occupancy" : 0,
-    //       "className" : "현수님찬양",
-    //       "classStartTime" : "TEXT시간",
-    //       "classEndTime" :  "TEXT시간"
-    //       }
-    //    ]
-    // }
     return FloorCrowdDensity;
   }
-  FloorCrowdDensity = getFloorDensity('301','1');
 
   return (
     <div>

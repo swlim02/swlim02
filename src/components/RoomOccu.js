@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState} from "react";
+import React, { useRef, useState} from "react";
 import * as d3 from "d3";
 
 const RoomOccu = (props) => {
@@ -150,7 +150,7 @@ const RoomOccu = (props) => {
 	return (
 		<fragment>
         <h1 style={{marginLeft: 20, marginTop: 10, marginBottom: 0, fontSize: 25}}>
-				{selectData === null ? ' ' : selectData.bdName+ "동 " + selectData.floor + "층"}
+				{selectData === null ? ' ' : selectData.bdName+" "+ selectData.floor + "층"}
         </h1>
 		<div id= "Classroom">
 			<svg ref={mainTreemapSvg} width={width+80} height={height+20}> </svg>
