@@ -5,10 +5,10 @@ import MapContainer from "./MapContainer";
 import TrendView from "./TrendView";
 // TODO @hskim 데이터를, 실제 요일 데이터로 넣어주세요.
 import SNUBuildingCrowdDensityInfo_Mon from "../data/SNUBuildingCrowdDensityInfo_Mon.json";
-import SNUBuildingCrowdDensityInfo_Tue from "../data/SNUBuildingCrowdDensityInfo_Mon.json";
-import SNUBuildingCrowdDensityInfo_WED from "../data/SNUBuildingCrowdDensityInfo_Mon.json";
-import SNUBuildingCrowdDensityInfo_THU from "../data/SNUBuildingCrowdDensityInfo_Mon.json";
-import SNUBuildingCrowdDensityInfo_FRI from "../data/SNUBuildingCrowdDensityInfo_Mon.json";
+import SNUBuildingCrowdDensityInfo_Tue from "../data/SNUBuildingCrowdDensityInfo_Wed.json";
+import SNUBuildingCrowdDensityInfo_WED from "../data/SNUBuildingCrowdDensityInfo_Wed.json";
+import SNUBuildingCrowdDensityInfo_THU from "../data/SNUBuildingCrowdDensityInfo_Wed.json";
+import SNUBuildingCrowdDensityInfo_FRI from "../data/SNUBuildingCrowdDensityInfo_Wed.json";
 
 var selectedOptions = new Object();
 let selectObject_o = new Object();
@@ -39,32 +39,33 @@ const MainPlot = (props) => {
     cb_trend_f = f;
   }
 
+  // 오늘의 데이터 선택
+  switch (day) {
+    case 1:
+      SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_Mon;
+      console.log("월요일");
+      break;
+    case 2:
+      SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_Tue;
+      break;
+    case 3:
+      SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_WED;
+      break;
+    case 4:
+      SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_THU;
+      break;
+    case 5:
+    case 0: // 일요일
+    case 6: // 토요일 두요일 수업 데이터는 없음. 데모시 금요일로 대체
+      SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_FRI;
+      break;
+    default:
+      console.log("여기오면 망한거임");
+  }
+
   // @swlim 개발 - 이해안가면 물어 보삼
   function getUniversityCrowdDensity() {
     let UniversityCrowdDensity = new Object();
-
-    switch (today.getDay()) {
-      case 1:
-        SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_Mon;
-        console.log("월요일");
-        break;
-      case 2:
-        SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_Tue;
-        break;
-      case 3:
-        SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_WED;
-        break;
-      case 4:
-        SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_THU;
-        break;
-      case 5:
-      case 0: // 일요일
-      case 6: // 토요일 두요일 수업 데이터는 없음. 데모시 금요일로 대체
-        SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_FRI;
-        break;
-      default:
-        console.log("여기오면 망한거임");
-    }
 
     let time_h = today.getHours();
     if (time_h === 9) time_h = '09';
@@ -253,6 +254,7 @@ const MainPlot = (props) => {
         update_trendView_f={update_trendView} // selectObject_o  값 갱신시 호출해주어야-1
         selectedOptions={selectedOptions}
         selectObject_o={selectObject_o}
+        SNUBuildingCrowdDensityInfo_o={SNUBuildingCrowdDensityInfo}
         />
       </div>
       <div class="splotContainer03" z-index="0" style={{
