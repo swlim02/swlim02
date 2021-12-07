@@ -1,4 +1,4 @@
-import React, { Component, Fragment, useState, useRef, useEffect  } from 'react';
+import React, { useState, useRef, useEffect  } from 'react';
 import * as d3 from "d3";
 import Select from 'react-select'
 
