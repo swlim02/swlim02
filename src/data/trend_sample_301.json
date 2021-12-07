@@ -1,5 +1,5 @@
 {
-    "snu_w0": [
+    "snu_w_2021-11-22": [
         {
             "capacity": 2168,
             "reserve_occupancy_trend": [
@@ -10,7 +10,7 @@
             ]
         }
     ],
-    "snu_w1": [
+    "snu_w_2021-11-29": [
         {
             "capacity": 2168,
             "reserve_occupancy_trend": [
@@ -18,11 +18,22 @@
             ],
             "bq_occupancy_trend": [
                 100, 100, 100, 100, 100
+            ]
+        }
+    ],
+    "snu_w_2021-12-06": [
+        {
+            "capacity": 2168,
+            "reserve_occupancy_trend": [
+                100, 100
+            ],
+            "bq_occupancy_trend": [
+                100, 100
             ]
         }
     ],
 
-    "301_w0": [
+    "301_w_2021-11-22": [
         {
             "capacity": 1167,
             "reserve_occupancy_trend": [
@@ -33,7 +44,7 @@
             ]
         }
     ],
-    "301_1_w0": [
+    "301_1_w_2021-11-22": [
         {
             "capacity": 442,
             "reserve_occupancy_trend": [
@@ -44,7 +55,7 @@
             ]
         }
     ],
-    "301_2_w0": [
+    "301_2_w_2021-11-22": [
         {
             "capacity": 276,
             "reserve_occupancy_trend": [
@@ -55,7 +66,7 @@
             ]
         }
     ],
-    "301_3_w0": [
+    "301_3_w_2021-11-22": [
         {
             "capacity": 439,
             "reserve_occupancy_trend": [
@@ -66,7 +77,7 @@
             ]
         }
     ],
-    "301_1_101_w0": [
+    "301_1_101_w_2021-11-22": [
         {
             "capacity": 52,
             "reserve_occupancy_trend": [
@@ -77,7 +88,7 @@
             ]
         }
     ],
-    "301_1_102_w0": [
+    "301_1_102_w_2021-11-22": [
         {
             "capacity": 60,
             "reserve_occupancy_trend": [
@@ -88,7 +99,7 @@
             ]
         }
     ],
-    "301_1_103_w0": [
+    "301_1_103_w_2021-11-22": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -99,7 +110,7 @@
             ]
         }
     ],
-    "301_1_104_w0": [
+    "301_1_104_w_2021-11-22": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -110,7 +121,7 @@
             ]
         }
     ],
-    "301_1_105_w0": [
+    "301_1_105_w_2021-11-22": [
         {
             "capacity": 120,
             "reserve_occupancy_trend": [
@@ -121,7 +132,7 @@
             ]
         }
     ],
-    "301_1_106_w0": [
+    "301_1_106_w_2021-11-22": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -132,7 +143,7 @@
             ]
         }
     ],
-    "301_1_118_w0": [
+    "301_1_118_w_2021-11-22": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -143,7 +154,7 @@
             ]
         }
     ],
-    "301_2_201_w0": [
+    "301_2_201_w_2021-11-22": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -155,7 +166,7 @@
             ]
         }
     ],
-    "301_2_202_w0": [
+    "301_2_202_w_2021-11-22": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -166,7 +177,7 @@
             ]
         }
     ],
-    "301_2_203_w0": [
+    "301_2_203_w_2021-11-22": [
         {
             "capacity": 96,
             "reserve_occupancy_trend": [
@@ -177,7 +188,7 @@
             ]
         }
     ],
-    "301_2_204_w0": [
+    "301_2_204_w_2021-11-22": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -188,7 +199,7 @@
             ]
         }
     ],
-    "301_3_301_w0": [
+    "301_3_301_w_2021-11-22": [
         {
             "capacity": 84,
             "reserve_occupancy_trend": [
@@ -199,7 +210,7 @@
             ]
         }
     ],
-    "301_3_302_w0": [
+    "301_3_302_w_2021-11-22": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -210,7 +221,7 @@
             ]
         }
     ],
-    "301_3_303_w0": [
+    "301_3_303_w_2021-11-22": [
         {
             "capacity": 38,
             "reserve_occupancy_trend": [
@@ -221,7 +232,7 @@
             ]
         }
     ],
-    "301_3_304_w0": [
+    "301_3_304_w_2021-11-22": [
         {
             "capacity": 42,
             "reserve_occupancy_trend": [
@@ -233,7 +244,7 @@
             ]
         }
     ],
-    "301_3_305_w0": [
+    "301_3_305_w_2021-11-22": [
         {
             "capacity": 108,
             "reserve_occupancy_trend": [
@@ -244,7 +255,7 @@
             ]
         }
     ],
-    "301_3_306_w0": [
+    "301_3_306_w_2021-11-22": [
         {
             "capacity": 87,
             "reserve_occupancy_trend": [
@@ -255,7 +266,7 @@
             ]
         }
     ],
-    "301_3_308_w0": [
+    "301_3_308_w_2021-11-22": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -266,7 +277,7 @@
             ]
         }
     ],
-    "301_w1": [
+    "301_w_2021-11-29": [
         {
             "capacity": 1167,
             "reserve_occupancy_trend": [
@@ -277,7 +288,7 @@
             ]
         }
     ],
-    "301_1_w1": [
+    "301_1_w_2021-11-29": [
         {
             "capacity": 442,
             "reserve_occupancy_trend": [
@@ -288,7 +299,7 @@
             ]
         }
     ],
-    "301_2_w1": [
+    "301_2_w_2021-11-29": [
         {
             "capacity": 276,
             "reserve_occupancy_trend": [
@@ -299,7 +310,7 @@
             ]
         }
     ],
-    "301_3_w1": [
+    "301_3_w_2021-11-29": [
         {
             "capacity": 439,
             "reserve_occupancy_trend": [
@@ -310,7 +321,7 @@
             ]
         }
     ],
-    "301_1_101_w1": [
+    "301_1_101_w_2021-11-29": [
         {
             "capacity": 52,
             "reserve_occupancy_trend": [
@@ -321,7 +332,7 @@
             ]
         }
     ],
-    "301_1_102_w1": [
+    "301_1_102_w_2021-11-29": [
         {
             "capacity": 60,
             "reserve_occupancy_trend": [
@@ -332,7 +343,7 @@
             ]
         }
     ],
-    "301_1_103_w1": [
+    "301_1_103_w_2021-11-29": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -343,7 +354,7 @@
             ]
         }
     ],
-    "301_1_104_w1": [
+    "301_1_104_w_2021-11-29": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -354,7 +365,7 @@
             ]
         }
     ],
-    "301_1_105_w1": [
+    "301_1_105_w_2021-11-29": [
         {
             "capacity": 120,
             "reserve_occupancy_trend": [
@@ -365,7 +376,7 @@
             ]
         }
     ],
-    "301_1_106_w1": [
+    "301_1_106_w_2021-11-29": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -376,7 +387,7 @@
             ]
         }
     ],
-    "301_1_118_w1": [
+    "301_1_118_w_2021-11-29": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -387,19 +398,18 @@
             ]
         }
     ],
-    "301_2_201_w1": [
+    "301_2_201_w_2021-11-29": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
                 0,0,0,11,11
-
             ],
             "bq_occupancy_trend" : [
                 0,0,0,0,0
             ]
         }
     ],
-    "301_2_202_w1": [
+    "301_2_202_w_2021-11-29": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -410,7 +420,7 @@
             ]
         }
     ],
-    "301_2_203_w1": [
+    "301_2_203_w_2021-11-29": [
         {
             "capacity": 96,
             "reserve_occupancy_trend": [
@@ -421,7 +431,7 @@
             ]
         }
     ],
-    "301_2_204_w1": [
+    "301_2_204_w_2021-11-29": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -432,7 +442,7 @@
             ]
         }
     ],
-    "301_3_301_w1": [
+    "301_3_301_w_2021-11-29": [
         {
             "capacity": 84,
             "reserve_occupancy_trend": [
@@ -443,7 +453,7 @@
             ]
         }
     ],
-    "301_3_302_w1": [
+    "301_3_302_w_2021-11-29": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -454,7 +464,7 @@
             ]
         }
     ],
-    "301_3_303_w1": [
+    "301_3_303_w_2021-11-29": [
         {
             "capacity": 38,
             "reserve_occupancy_trend": [
@@ -465,19 +475,18 @@
             ]
         }
     ],
-    "301_3_304_w1": [
+    "301_3_304_w_2021-11-29": [
         {
             "capacity": 42,
             "reserve_occupancy_trend": [
                 0,0,0,42,42
-
             ],
             "bq_occupancy_trend" : [
                 0,0,0,0,0
             ]
         }
     ],
-    "301_3_305_w1": [
+    "301_3_305_w_2021-11-29": [
         {
             "capacity": 108,
             "reserve_occupancy_trend": [
@@ -488,7 +497,7 @@
             ]
         }
     ],
-    "301_3_306_w1": [
+    "301_3_306_w_2021-11-29": [
         {
             "capacity": 87,
             "reserve_occupancy_trend": [
@@ -499,7 +508,7 @@
             ]
         }
     ],
-    "301_3_308_w1": [
+    "301_3_308_w_2021-11-29": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -510,8 +519,251 @@
             ]
         }
     ],
+    "301_w_2021-12-06": [
+        {
+            "capacity": 1167,
+            "reserve_occupancy_trend": [
+                860,860
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_1_w_2021-12-06": [
+        {
+            "capacity": 442,
+            "reserve_occupancy_trend": [
+                67,67
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_2_w_2021-12-06": [
+        {
+            "capacity": 276,
+            "reserve_occupancy_trend": [
+                0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_3_w_2021-12-06": [
+        {
+            "capacity": 439,
+            "reserve_occupancy_trend": [
+                19,19
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_1_101_w_2021-12-06": [
+        {
+            "capacity": 52,
+            "reserve_occupancy_trend": [
+                0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_1_102_w_2021-12-06": [
+        {
+            "capacity": 60,
+            "reserve_occupancy_trend": [
+                0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_1_103_w_2021-12-06": [
+        {
+            "capacity": 35,
+            "reserve_occupancy_trend": [
+                0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_1_104_w_2021-12-06": [
+        {
+            "capacity": 35,
+            "reserve_occupancy_trend": [
+                0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_1_105_w_2021-12-06": [
+        {
+            "capacity": 120,
+            "reserve_occupancy_trend": [
+                0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_1_106_w_2021-12-06": [
+        {
+            "capacity": 40,
+            "reserve_occupancy_trend": [
+                0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_1_118_w_2021-12-06": [
+        {
+            "capacity": 100,
+            "reserve_occupancy_trend": [
+                67,67
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_2_201_w_2021-12-06": [
+        {
+            "capacity": 40,
+            "reserve_occupancy_trend": [
+                0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_2_202_w_2021-12-06": [
+        {
+            "capacity": 40,
+            "reserve_occupancy_trend": [
+                0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_2_203_w_2021-12-06": [
+        {
+            "capacity": 96,
+            "reserve_occupancy_trend": [
+                0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_2_204_w_2021-12-06": [
+        {
+            "capacity": 100,
+            "reserve_occupancy_trend": [
+                0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_3_301_w_2021-12-06": [
+        {
+            "capacity": 84,
+            "reserve_occupancy_trend": [
+                0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_3_302_w_2021-12-06": [
+        {
+            "capacity": 40,
+            "reserve_occupancy_trend": [
+                0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_3_303_w_2021-12-06": [
+        {
+            "capacity": 38,
+            "reserve_occupancy_trend": [
+                19,19
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_3_304_w_2021-12-06": [
+        {
+            "capacity": 42,
+            "reserve_occupancy_trend": [
+                0,0
 
-    "snu_d0": [
+            ],
+            "bq_ncy_trend" : [
+                0,0,0,0,0
+            ]
+        }
+    ],
+    "301_3_305_w_2021-12-06": [
+        {
+            "capacity": 108,
+            "reserve_occupancy_trend": [
+                0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_3_306_w_2021-12-06": [
+        {
+            "capacity": 87,
+            "reserve_occupancy_trend": [
+                0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+    "301_3_308_w_2021-12-06": [
+        {
+            "capacity": 40,
+            "reserve_occupancy_trend": [
+                0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0
+            ]
+        }
+    ],
+
+    "snu_2021-11-22": [
         {
             "capacity": 2168,
             "reserve_occupancy_trend": [
@@ -522,7 +774,7 @@
             ]
         }
     ],
-    "snu_d1": [
+    "snu_2021-11-23": [
         {
             "capacity": 2168,
             "reserve_occupancy_trend": [
@@ -533,7 +785,7 @@
             ]
         }
     ],
-    "snu_d2": [
+    "snu_2021-11-24": [
         {
             "capacity": 2168,
             "reserve_occupancy_trend": [
@@ -544,7 +796,7 @@
             ]
         }
     ],
-    "snu_d3": [
+    "snu_2021-11-25": [
         {
             "capacity": 2168,
             "reserve_occupancy_trend": [
@@ -555,7 +807,7 @@
             ]
         }
     ],
-    "snu_d4": [
+    "snu_2021-11-26": [
         {
             "capacity": 2168,
             "reserve_occupancy_trend": [
@@ -566,7 +818,7 @@
             ]
         }
     ],
-    "snu_d5": [
+    "snu_2021-11-29": [
         {
             "capacity": 2168,
             "reserve_occupancy_trend": [
@@ -577,7 +829,7 @@
             ]
         }
     ],
-    "snu_d6": [
+    "snu_2021-11-30": [
         {
             "capacity": 2168,
             "reserve_occupancy_trend": [
@@ -588,7 +840,7 @@
             ]
         }
     ],
-    "snu_d7": [
+    "snu_2021-12-01": [
         {
             "capacity": 2168,
             "reserve_occupancy_trend": [
@@ -599,7 +851,7 @@
             ]
         }
     ],
-    "snu_d8": [
+    "snu_2021-12-02": [
         {
             "capacity": 2168,
             "reserve_occupancy_trend": [
@@ -610,7 +862,7 @@
             ]
         }
     ],
-    "snu_d9": [
+    "snu_2021-12-03": [
         {
             "capacity": 2168,
             "reserve_occupancy_trend": [
@@ -621,7 +873,29 @@
             ]
         }
     ],
-    "301_d0": [
+    "snu_2021-12-06": [
+        {
+            "capacity": 2168,
+            "reserve_occupancy_trend": [
+                86,86,86,212,212,212,6,6,6,27,27,27,66,71,71,83,83,78
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "snu_2021-12-07": [
+        {
+            "capacity": 2168,
+            "reserve_occupancy_trend": [
+                86,86,86,212,212,212,6,6,6,27,27,27,66,71,71,83,83,78
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_2021-11-22": [
         {
             "capacity": 1167,
             "reserve_occupancy_trend": [
@@ -632,7 +906,7 @@
             ]
         }
     ],
-    "301_1_d0": [
+    "301_1_2021-11-22": [
         {
             "capacity": 442,
             "reserve_occupancy_trend": [
@@ -643,7 +917,7 @@
             ]
         }
     ],
-    "301_2_d0": [
+    "301_2_2021-11-22": [
         {
             "capacity": 276,
             "reserve_occupancy_trend": [
@@ -654,7 +928,7 @@
             ]
         }
     ],
-    "301_3_d0": [
+    "301_3_2021-11-22": [
         {
             "capacity": 439,
             "reserve_occupancy_trend": [
@@ -666,7 +940,7 @@
         }
     ],
     
-    "301_1_101_d0": [
+    "301_1_101_2021-11-22": [
         {
             "capacity": 52,
             "reserve_occupancy_trend": [
@@ -677,7 +951,7 @@
             ]
         }
     ],
-    "301_1_102_d0": [
+    "301_1_102_2021-11-22": [
         {
             "capacity": 60,
             "reserve_occupancy_trend": [
@@ -688,7 +962,7 @@
             ]
         }
     ],
-    "301_1_103_d0": [
+    "301_1_103_2021-11-22": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -699,7 +973,7 @@
             ]
         }
     ],
-    "301_1_104_d0": [
+    "301_1_104_2021-11-22": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -710,7 +984,7 @@
             ]
         }
     ],
-    "301_1_105_d0": [
+    "301_1_105_2021-11-22": [
         {
             "capacity": 120,
             "reserve_occupancy_trend": [
@@ -721,7 +995,7 @@
             ]
         }
     ],
-    "301_1_106_d0": [
+    "301_1_106_2021-11-22": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -732,7 +1006,7 @@
             ]
         }
     ],
-    "301_1_118_d0": [
+    "301_1_118_2021-11-22": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -743,7 +1017,7 @@
             ]
         }
     ],
-    "301_2_201_d0": [
+    "301_2_201_2021-11-22": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -754,7 +1028,7 @@
             ]
         }
     ],
-    "301_2_202_d0": [
+    "301_2_202_2021-11-22": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -765,7 +1039,7 @@
             ]
         }
     ],
-    "301_2_203_d0": [
+    "301_2_203_2021-11-22": [
         {
             "capacity": 96,
             "reserve_occupancy_trend": [
@@ -776,7 +1050,7 @@
             ]
         }
     ],
-    "301_2_204_d0": [
+    "301_2_204_2021-11-22": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -787,7 +1061,7 @@
             ]
         }
     ],
-    "301_3_301_d0": [
+    "301_3_301_2021-11-22": [
         {
             "capacity": 84,
             "reserve_occupancy_trend": [
@@ -798,7 +1072,7 @@
             ]
         }
     ],
-    "301_3_302_d0": [
+    "301_3_302_2021-11-22": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -809,7 +1083,7 @@
             ]
         }
     ],
-    "301_3_303_d0": [
+    "301_3_303_2021-11-22": [
         {
             "capacity": 38,
             "reserve_occupancy_trend": [
@@ -820,7 +1094,7 @@
             ]
         }
     ],
-    "301_3_304_d0": [
+    "301_3_304_2021-11-22": [
         {
             "capacity": 42,
             "reserve_occupancy_trend": [
@@ -831,7 +1105,7 @@
             ]
         }
     ],
-    "301_3_305_d0": [
+    "301_3_305_2021-11-22": [
         {
             "capacity": 108,
             "reserve_occupancy_trend": [
@@ -842,7 +1116,7 @@
             ]
         }
     ],
-    "301_3_306_d0": [
+    "301_3_306_2021-11-22": [
         {
             "capacity": 87,
             "reserve_occupancy_trend": [
@@ -853,7 +1127,7 @@
             ]
         }
     ],
-    "301_3_308_d0": [
+    "301_3_308_2021-11-22": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -864,7 +1138,7 @@
             ]
         }
     ],
-    "301_d1": [
+    "301_2021-11-23": [
         {
             "capacity": 1167,
             "reserve_occupancy_trend": [
@@ -875,7 +1149,7 @@
             ]
         }
     ],
-    "301_1_d1": [
+    "301_1_2021-11-23": [
         {
             "capacity": 442,
             "reserve_occupancy_trend": [
@@ -886,7 +1160,7 @@
             ]
         }
     ],
-    "301_2_d1": [
+    "301_2_2021-11-23": [
         {
             "capacity": 276,
             "reserve_occupancy_trend": [
@@ -897,7 +1171,7 @@
             ]
         }
     ],
-    "301_3_d1": [
+    "301_3_2021-11-23": [
         {
             "capacity": 439,
             "reserve_occupancy_trend": [
@@ -909,7 +1183,7 @@
         }
     ],
     
-    "301_1_101_d1": [
+    "301_1_101_2021-11-23": [
         {
             "capacity": 52,
             "reserve_occupancy_trend": [
@@ -920,7 +1194,7 @@
             ]
         }
     ],
-    "301_1_102_d1": [
+    "301_1_102_2021-11-23": [
         {
             "capacity": 60,
             "reserve_occupancy_trend": [
@@ -931,7 +1205,7 @@
             ]
         }
     ],
-    "301_1_103_d1": [
+    "301_1_103_2021-11-23": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -942,7 +1216,7 @@
             ]
         }
     ],
-    "301_1_104_d1": [
+    "301_1_104_2021-11-23": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -953,7 +1227,7 @@
             ]
         }
     ],
-    "301_1_105_d1": [
+    "301_1_105_2021-11-23": [
         {
             "capacity": 120,
             "reserve_occupancy_trend": [
@@ -964,7 +1238,7 @@
             ]
         }
     ],
-    "301_1_106_d1": [
+    "301_1_106_2021-11-23": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -975,7 +1249,7 @@
             ]
         }
     ],
-    "301_1_118_d1": [
+    "301_1_118_2021-11-23": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -986,7 +1260,7 @@
             ]
         }
     ],
-    "301_2_201_d1": [
+    "301_2_201_2021-11-23": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -998,7 +1272,7 @@
             ]
         }
     ],
-    "301_2_202_d1": [
+    "301_2_202_2021-11-23": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1009,7 +1283,7 @@
             ]
         }
     ],
-    "301_2_203_d1": [
+    "301_2_203_2021-11-23": [
         {
             "capacity": 96,
             "reserve_occupancy_trend": [
@@ -1020,7 +1294,7 @@
             ]
         }
     ],
-    "301_2_204_d1": [
+    "301_2_204_2021-11-23": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -1031,7 +1305,7 @@
             ]
         }
     ],
-    "301_3_301_d1": [
+    "301_3_301_2021-11-23": [
         {
             "capacity": 84,
             "reserve_occupancy_trend": [
@@ -1042,7 +1316,7 @@
             ]
         }
     ],
-    "301_3_302_d1": [
+    "301_3_302_2021-11-23": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1053,7 +1327,7 @@
             ]
         }
     ],
-    "301_3_303_d1": [
+    "301_3_303_2021-11-23": [
         {
             "capacity": 38,
             "reserve_occupancy_trend": [
@@ -1064,7 +1338,7 @@
             ]
         }
     ],
-    "301_3_304_d1": [
+    "301_3_304_2021-11-23": [
         {
             "capacity": 42,
             "reserve_occupancy_trend": [
@@ -1076,7 +1350,7 @@
             ]
         }
     ],
-    "301_3_305_d1": [
+    "301_3_305_2021-11-23": [
         {
             "capacity": 108,
             "reserve_occupancy_trend": [
@@ -1087,7 +1361,7 @@
             ]
         }
     ],
-    "301_3_306_d1": [
+    "301_3_306_2021-11-23": [
         {
             "capacity": 87,
             "reserve_occupancy_trend": [
@@ -1098,7 +1372,7 @@
             ]
         }
     ],
-    "301_3_308_d1": [
+    "301_3_308_2021-11-23": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1109,7 +1383,7 @@
             ]
         }
     ],
-    "301_d2": [
+    "301_2021-11-24": [
         {
             "capacity": 1167,
             "reserve_occupancy_trend": [
@@ -1120,7 +1394,7 @@
             ]
         }
     ],
-    "301_1_d2": [
+    "301_1_2021-11-24": [
         {
             "capacity": 442,
             "reserve_occupancy_trend": [
@@ -1131,7 +1405,7 @@
             ]
         }
     ],
-    "301_2_d2": [
+    "301_2_2021-11-24": [
         {
             "capacity": 276,
             "reserve_occupancy_trend": [
@@ -1142,7 +1416,7 @@
             ]
         }
     ],
-    "301_3_d2": [
+    "301_3_2021-11-24": [
         {
             "capacity": 439,
             "reserve_occupancy_trend": [
@@ -1154,7 +1428,7 @@
         }
     ],
     
-    "301_1_101_d2": [
+    "301_1_101_2021-11-24": [
         {
             "capacity": 52,
             "reserve_occupancy_trend": [
@@ -1165,7 +1439,7 @@
             ]
         }
     ],
-    "301_1_102_d2": [
+    "301_1_102_2021-11-24": [
         {
             "capacity": 60,
             "reserve_occupancy_trend": [
@@ -1176,7 +1450,7 @@
             ]
         }
     ],
-    "301_1_103_d2": [
+    "301_1_103_2021-11-24": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -1187,7 +1461,7 @@
             ]
         }
     ],
-    "301_1_104_d2": [
+    "301_1_104_2021-11-24": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -1198,7 +1472,7 @@
             ]
         }
     ],
-    "301_1_105_d2": [
+    "301_1_105_2021-11-24": [
         {
             "capacity": 120,
             "reserve_occupancy_trend": [
@@ -1209,7 +1483,7 @@
             ]
         }
     ],
-    "301_1_106_d2": [
+    "301_1_106_2021-11-24": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1220,7 +1494,7 @@
             ]
         }
     ],
-    "301_1_118_d2": [
+    "301_1_118_2021-11-24": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -1231,7 +1505,7 @@
             ]
         }
     ],
-    "301_2_201_d2": [
+    "301_2_201_2021-11-24": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1243,7 +1517,7 @@
             ]
         }
     ],
-    "301_2_202_d2": [
+    "301_2_202_2021-11-24": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1254,7 +1528,7 @@
             ]
         }
     ],
-    "301_2_203_d2": [
+    "301_2_203_2021-11-24": [
         {
             "capacity": 96,
             "reserve_occupancy_trend": [
@@ -1265,7 +1539,7 @@
             ]
         }
     ],
-    "301_2_204_d2": [
+    "301_2_204_2021-11-24": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -1276,7 +1550,7 @@
             ]
         }
     ],
-    "301_3_301_d2": [
+    "301_3_301_2021-11-24": [
         {
             "capacity": 84,
             "reserve_occupancy_trend": [
@@ -1287,7 +1561,7 @@
             ]
         }
     ],
-    "301_3_302_d2": [
+    "301_3_302_2021-11-24": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1298,7 +1572,7 @@
             ]
         }
     ],
-    "301_3_303_d2": [
+    "301_3_303_2021-11-24": [
         {
             "capacity": 38,
             "reserve_occupancy_trend": [
@@ -1309,7 +1583,7 @@
             ]
         }
     ],
-    "301_3_304_d2": [
+    "301_3_304_2021-11-24": [
         {
             "capacity": 42,
             "reserve_occupancy_trend": [
@@ -1321,7 +1595,7 @@
             ]
         }
     ],
-    "301_3_305_d2": [
+    "301_3_305_2021-11-24": [
         {
             "capacity": 108,
             "reserve_occupancy_trend": [
@@ -1332,7 +1606,7 @@
             ]
         }
     ],
-    "301_3_306_d2": [
+    "301_3_306_2021-11-24": [
         {
             "capacity": 87,
             "reserve_occupancy_trend": [
@@ -1343,7 +1617,7 @@
             ]
         }
     ],
-    "301_3_308_d2": [
+    "301_3_308_2021-11-24": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1354,7 +1628,7 @@
             ]
         }
     ],
-    "301_d3": [
+    "301_2021-11-25": [
         {
             "capacity": 1167,
             "reserve_occupancy_trend": [
@@ -1365,7 +1639,7 @@
             ]
         }
     ],
-    "301_1_d3": [
+    "301_1_2021-11-25": [
         {
             "capacity": 442,
             "reserve_occupancy_trend": [
@@ -1376,7 +1650,7 @@
             ]
         }
     ],
-    "301_2_d3": [
+    "301_2_2021-11-25": [
         {
             "capacity": 276,
             "reserve_occupancy_trend": [
@@ -1387,7 +1661,7 @@
             ]
         }
     ],
-    "301_3_d3": [
+    "301_3_2021-11-25": [
         {
             "capacity": 439,
             "reserve_occupancy_trend": [
@@ -1399,7 +1673,7 @@
         }
     ],
     
-    "301_1_101_d3": [
+    "301_1_101_2021-11-25": [
         {
             "capacity": 52,
             "reserve_occupancy_trend": [
@@ -1410,7 +1684,7 @@
             ]
         }
     ],
-    "301_1_102_d3": [
+    "301_1_102_2021-11-25": [
         {
             "capacity": 60,
             "reserve_occupancy_trend": [
@@ -1421,7 +1695,7 @@
             ]
         }
     ],
-    "301_1_103_d3": [
+    "301_1_103_2021-11-25": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -1432,7 +1706,7 @@
             ]
         }
     ],
-    "301_1_104_d3": [
+    "301_1_104_2021-11-25": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -1443,7 +1717,7 @@
             ]
         }
     ],
-    "301_1_105_d3": [
+    "301_1_105_2021-11-25": [
         {
             "capacity": 120,
             "reserve_occupancy_trend": [
@@ -1454,7 +1728,7 @@
             ]
         }
     ],
-    "301_1_106_d3": [
+    "301_1_106_2021-11-25": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1465,7 +1739,7 @@
             ]
         }
     ],
-    "301_1_118_d3": [
+    "301_1_118_2021-11-25": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -1476,7 +1750,7 @@
             ]
         }
     ],
-    "301_2_201_d3": [
+    "301_2_201_2021-11-25": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1488,7 +1762,7 @@
             ]
         }
     ],
-    "301_2_202_d3": [
+    "301_2_202_2021-11-25": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1499,7 +1773,7 @@
             ]
         }
     ],
-    "301_2_203_d3": [
+    "301_2_203_2021-11-25": [
         {
             "capacity": 96,
             "reserve_occupancy_trend": [
@@ -1510,7 +1784,7 @@
             ]
         }
     ],
-    "301_2_204_d3": [
+    "301_2_204_2021-11-25": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -1521,7 +1795,7 @@
             ]
         }
     ],
-    "301_3_301_d3": [
+    "301_3_301_2021-11-25": [
         {
             "capacity": 84,
             "reserve_occupancy_trend": [
@@ -1532,7 +1806,7 @@
             ]
         }
     ],
-    "301_3_302_d3": [
+    "301_3_302_2021-11-25": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1543,7 +1817,7 @@
             ]
         }
     ],
-    "301_3_303_d3": [
+    "301_3_303_2021-11-25": [
         {
             "capacity": 38,
             "reserve_occupancy_trend": [
@@ -1554,7 +1828,7 @@
             ]
         }
     ],
-    "301_3_304_d3": [
+    "301_3_304_2021-11-25": [
         {
             "capacity": 42,
             "reserve_occupancy_trend": [
@@ -1566,7 +1840,7 @@
             ]
         }
     ],
-    "301_3_305_d3": [
+    "301_3_305_2021-11-25": [
         {
             "capacity": 108,
             "reserve_occupancy_trend": [
@@ -1577,7 +1851,7 @@
             ]
         }
     ],
-    "301_3_306_d3": [
+    "301_3_306_2021-11-25": [
         {
             "capacity": 87,
             "reserve_occupancy_trend": [
@@ -1588,7 +1862,7 @@
             ]
         }
     ],
-    "301_3_308_d3": [
+    "301_3_308_2021-11-25": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1599,7 +1873,7 @@
             ]
         }
     ],
-    "301_d4": [
+    "301_2021-11-26": [
         {
             "capacity": 1167,
             "reserve_occupancy_trend": [
@@ -1610,7 +1884,7 @@
             ]
         }
     ],
-    "301_1_d4": [
+    "301_1_2021-11-26": [
         {
             "capacity": 442,
             "reserve_occupancy_trend": [
@@ -1621,7 +1895,7 @@
             ]
         }
     ],
-    "301_2_d4": [
+    "301_2_2021-11-26": [
         {
             "capacity": 276,
             "reserve_occupancy_trend": [
@@ -1632,7 +1906,7 @@
             ]
         }
     ],
-    "301_3_d4": [
+    "301_3_2021-11-26": [
         {
             "capacity": 439,
             "reserve_occupancy_trend": [
@@ -1644,7 +1918,7 @@
         }
     ],
     
-    "301_1_101_d4": [
+    "301_1_101_2021-11-26": [
         {
             "capacity": 52,
             "reserve_occupancy_trend": [
@@ -1655,7 +1929,7 @@
             ]
         }
     ],
-    "301_1_102_d4": [
+    "301_1_102_2021-11-26": [
         {
             "capacity": 60,
             "reserve_occupancy_trend": [
@@ -1666,7 +1940,7 @@
             ]
         }
     ],
-    "301_1_103_d4": [
+    "301_1_103_2021-11-26": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -1677,7 +1951,7 @@
             ]
         }
     ],
-    "301_1_104_d4": [
+    "301_1_104_2021-11-26": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -1688,7 +1962,7 @@
             ]
         }
     ],
-    "301_1_105_d4": [
+    "301_1_105_2021-11-26": [
         {
             "capacity": 120,
             "reserve_occupancy_trend": [
@@ -1699,7 +1973,7 @@
             ]
         }
     ],
-    "301_1_106_d4": [
+    "301_1_106_2021-11-26": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1710,7 +1984,7 @@
             ]
         }
     ],
-    "301_1_118_d4": [
+    "301_1_118_2021-11-26": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -1721,7 +1995,7 @@
             ]
         }
     ],
-    "301_2_201_d4": [
+    "301_2_201_2021-11-26": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1733,7 +2007,7 @@
             ]
         }
     ],
-    "301_2_202_d4": [
+    "301_2_202_2021-11-26": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1744,7 +2018,7 @@
             ]
         }
     ],
-    "301_2_203_d4": [
+    "301_2_203_2021-11-26": [
         {
             "capacity": 96,
             "reserve_occupancy_trend": [
@@ -1755,7 +2029,7 @@
             ]
         }
     ],
-    "301_2_204_d4": [
+    "301_2_204_2021-11-26": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -1766,7 +2040,7 @@
             ]
         }
     ],
-    "301_3_301_d4": [
+    "301_3_301_2021-11-26": [
         {
             "capacity": 84,
             "reserve_occupancy_trend": [
@@ -1777,7 +2051,7 @@
             ]
         }
     ],
-    "301_3_302_d4": [
+    "301_3_302_2021-11-26": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1788,7 +2062,7 @@
             ]
         }
     ],
-    "301_3_303_d4": [
+    "301_3_303_2021-11-26": [
         {
             "capacity": 38,
             "reserve_occupancy_trend": [
@@ -1799,7 +2073,7 @@
             ]
         }
     ],
-    "301_3_304_d4": [
+    "301_3_304_2021-11-26": [
         {
             "capacity": 42,
             "reserve_occupancy_trend": [
@@ -1811,7 +2085,7 @@
             ]
         }
     ],
-    "301_3_305_d4": [
+    "301_3_305_2021-11-26": [
         {
             "capacity": 108,
             "reserve_occupancy_trend": [
@@ -1822,7 +2096,7 @@
             ]
         }
     ],
-    "301_3_306_d4": [
+    "301_3_306_2021-11-26": [
         {
             "capacity": 87,
             "reserve_occupancy_trend": [
@@ -1833,7 +2107,7 @@
             ]
         }
     ],
-    "301_3_308_d4": [
+    "301_3_308_2021-11-26": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1844,7 +2118,7 @@
             ]
         }
     ],
-    "301_d5": [
+    "301_2021-11-29": [
         {
             "capacity": 1167,
             "reserve_occupancy_trend": [
@@ -1855,7 +2129,7 @@
             ]
         }
     ],
-    "301_1_d5": [
+    "301_1_2021-11-29": [
         {
             "capacity": 442,
             "reserve_occupancy_trend": [
@@ -1866,7 +2140,7 @@
             ]
         }
     ],
-    "301_2_d5": [
+    "301_2_2021-11-29": [
         {
             "capacity": 276,
             "reserve_occupancy_trend": [
@@ -1877,7 +2151,7 @@
             ]
         }
     ],
-    "301_3_d5": [
+    "301_3_2021-11-29": [
         {
             "capacity": 439,
             "reserve_occupancy_trend": [
@@ -1889,7 +2163,7 @@
         }
     ],
     
-    "301_1_101_d5": [
+    "301_1_101_2021-11-29": [
         {
             "capacity": 52,
             "reserve_occupancy_trend": [
@@ -1900,7 +2174,7 @@
             ]
         }
     ],
-    "301_1_102_d5": [
+    "301_1_102_2021-11-29": [
         {
             "capacity": 60,
             "reserve_occupancy_trend": [
@@ -1911,7 +2185,7 @@
             ]
         }
     ],
-    "301_1_103_d5": [
+    "301_1_103_2021-11-29": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -1922,7 +2196,7 @@
             ]
         }
     ],
-    "301_1_104_d5": [
+    "301_1_104_2021-11-29": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -1933,7 +2207,7 @@
             ]
         }
     ],
-    "301_1_105_d5": [
+    "301_1_105_2021-11-29": [
         {
             "capacity": 120,
             "reserve_occupancy_trend": [
@@ -1944,7 +2218,7 @@
             ]
         }
     ],
-    "301_1_106_d5": [
+    "301_1_106_2021-11-29": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1955,7 +2229,7 @@
             ]
         }
     ],
-    "301_1_118_d5": [
+    "301_1_118_2021-11-29": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -1966,7 +2240,7 @@
             ]
         }
     ],
-    "301_2_201_d5": [
+    "301_2_201_2021-11-29": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1978,7 +2252,7 @@
             ]
         }
     ],
-    "301_2_202_d5": [
+    "301_2_202_2021-11-29": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -1989,7 +2263,7 @@
             ]
         }
     ],
-    "301_2_203_d5": [
+    "301_2_203_2021-11-29": [
         {
             "capacity": 96,
             "reserve_occupancy_trend": [
@@ -2000,7 +2274,7 @@
             ]
         }
     ],
-    "301_2_204_d5": [
+    "301_2_204_2021-11-29": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -2011,7 +2285,7 @@
             ]
         }
     ],
-    "301_3_301_d5": [
+    "301_3_301_2021-11-29": [
         {
             "capacity": 84,
             "reserve_occupancy_trend": [
@@ -2022,7 +2296,7 @@
             ]
         }
     ],
-    "301_3_302_d5": [
+    "301_3_302_2021-11-29": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2033,7 +2307,7 @@
             ]
         }
     ],
-    "301_3_303_d5": [
+    "301_3_303_2021-11-29": [
         {
             "capacity": 38,
             "reserve_occupancy_trend": [
@@ -2044,7 +2318,7 @@
             ]
         }
     ],
-    "301_3_304_d5": [
+    "301_3_304_2021-11-29": [
         {
             "capacity": 42,
             "reserve_occupancy_trend": [
@@ -2056,7 +2330,7 @@
             ]
         }
     ],
-    "301_3_305_d5": [
+    "301_3_305_2021-11-29": [
         {
             "capacity": 108,
             "reserve_occupancy_trend": [
@@ -2067,7 +2341,7 @@
             ]
         }
     ],
-    "301_3_306_d5": [
+    "301_3_306_2021-11-29": [
         {
             "capacity": 87,
             "reserve_occupancy_trend": [
@@ -2078,7 +2352,7 @@
             ]
         }
     ],
-    "301_3_308_d5": [
+    "301_3_308_2021-11-29": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2089,7 +2363,7 @@
             ]
         }
     ],
-    "301_d6": [
+    "301_2021-11-30": [
         {
             "capacity": 1167,
             "reserve_occupancy_trend": [
@@ -2100,7 +2374,7 @@
             ]
         }
     ],
-    "301_1_d6": [
+    "301_1_2021-11-30": [
         {
             "capacity": 442,
             "reserve_occupancy_trend": [
@@ -2111,7 +2385,7 @@
             ]
         }
     ],
-    "301_2_d6": [
+    "301_2_2021-11-30": [
         {
             "capacity": 276,
             "reserve_occupancy_trend": [
@@ -2122,7 +2396,7 @@
             ]
         }
     ],
-    "301_3_d6": [
+    "301_3_2021-11-30": [
         {
             "capacity": 439,
             "reserve_occupancy_trend": [
@@ -2134,7 +2408,7 @@
         }
     ],
     
-    "301_1_101_d6": [
+    "301_1_101_2021-11-30": [
         {
             "capacity": 52,
             "reserve_occupancy_trend": [
@@ -2145,7 +2419,7 @@
             ]
         }
     ],
-    "301_1_102_d6": [
+    "301_1_102_2021-11-30": [
         {
             "capacity": 60,
             "reserve_occupancy_trend": [
@@ -2156,7 +2430,7 @@
             ]
         }
     ],
-    "301_1_103_d6": [
+    "301_1_103_2021-11-30": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -2167,7 +2441,7 @@
             ]
         }
     ],
-    "301_1_104_d6": [
+    "301_1_104_2021-11-30": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -2178,7 +2452,7 @@
             ]
         }
     ],
-    "301_1_105_d6": [
+    "301_1_105_2021-11-30": [
         {
             "capacity": 120,
             "reserve_occupancy_trend": [
@@ -2189,7 +2463,7 @@
             ]
         }
     ],
-    "301_1_106_d6": [
+    "301_1_106_2021-11-30": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2200,7 +2474,7 @@
             ]
         }
     ],
-    "301_1_118_d6": [
+    "301_1_118_2021-11-30": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -2211,7 +2485,7 @@
             ]
         }
     ],
-    "301_2_201_d6": [
+    "301_2_201_2021-11-30": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2223,7 +2497,7 @@
             ]
         }
     ],
-    "301_2_202_d6": [
+    "301_2_202_2021-11-30": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2234,7 +2508,7 @@
             ]
         }
     ],
-    "301_2_203_d6": [
+    "301_2_203_2021-11-30": [
         {
             "capacity": 96,
             "reserve_occupancy_trend": [
@@ -2245,7 +2519,7 @@
             ]
         }
     ],
-    "301_2_204_d6": [
+    "301_2_204_2021-11-30": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -2256,7 +2530,7 @@
             ]
         }
     ],
-    "301_3_301_d6": [
+    "301_3_301_2021-11-30": [
         {
             "capacity": 84,
             "reserve_occupancy_trend": [
@@ -2267,7 +2541,7 @@
             ]
         }
     ],
-    "301_3_302_d6": [
+    "301_3_302_2021-11-30": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2278,7 +2552,7 @@
             ]
         }
     ],
-    "301_3_303_d6": [
+    "301_3_303_2021-11-30": [
         {
             "capacity": 38,
             "reserve_occupancy_trend": [
@@ -2289,7 +2563,7 @@
             ]
         }
     ],
-    "301_3_304_d6": [
+    "301_3_304_2021-11-30": [
         {
             "capacity": 42,
             "reserve_occupancy_trend": [
@@ -2301,7 +2575,7 @@
             ]
         }
     ],
-    "301_3_305_d6": [
+    "301_3_305_2021-11-30": [
         {
             "capacity": 108,
             "reserve_occupancy_trend": [
@@ -2312,7 +2586,7 @@
             ]
         }
     ],
-    "301_3_306_d6": [
+    "301_3_306_2021-11-30": [
         {
             "capacity": 87,
             "reserve_occupancy_trend": [
@@ -2323,7 +2597,7 @@
             ]
         }
     ],
-    "301_3_308_d6": [
+    "301_3_308_2021-11-30": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2334,7 +2608,7 @@
             ]
         }
     ],
-    "301_d7": [
+    "301_2021-12-01": [
         {
             "capacity": 1167,
             "reserve_occupancy_trend": [
@@ -2345,7 +2619,7 @@
             ]
         }
     ],
-    "301_1_d7": [
+    "301_1_2021-12-01": [
         {
             "capacity": 442,
             "reserve_occupancy_trend": [
@@ -2356,7 +2630,7 @@
             ]
         }
     ],
-    "301_2_d7": [
+    "301_2_2021-12-01": [
         {
             "capacity": 276,
             "reserve_occupancy_trend": [
@@ -2367,7 +2641,7 @@
             ]
         }
     ],
-    "301_3_d7": [
+    "301_3_2021-12-01": [
         {
             "capacity": 439,
             "reserve_occupancy_trend": [
@@ -2379,7 +2653,7 @@
         }
     ],
     
-    "301_1_101_d7": [
+    "301_1_101_2021-12-01": [
         {
             "capacity": 52,
             "reserve_occupancy_trend": [
@@ -2390,7 +2664,7 @@
             ]
         }
     ],
-    "301_1_102_d7": [
+    "301_1_102_2021-12-01": [
         {
             "capacity": 60,
             "reserve_occupancy_trend": [
@@ -2401,7 +2675,7 @@
             ]
         }
     ],
-    "301_1_103_d7": [
+    "301_1_103_2021-12-01": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -2412,7 +2686,7 @@
             ]
         }
     ],
-    "301_1_104_d7": [
+    "301_1_104_2021-12-01": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -2423,7 +2697,7 @@
             ]
         }
     ],
-    "301_1_105_d7": [
+    "301_1_105_2021-12-01": [
         {
             "capacity": 120,
             "reserve_occupancy_trend": [
@@ -2434,7 +2708,7 @@
             ]
         }
     ],
-    "301_1_106_d7": [
+    "301_1_106_2021-12-01": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2445,7 +2719,7 @@
             ]
         }
     ],
-    "301_1_118_d7": [
+    "301_1_118_2021-12-01": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -2456,7 +2730,7 @@
             ]
         }
     ],
-    "301_2_201_d7": [
+    "301_2_201_2021-12-01": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2468,7 +2742,7 @@
             ]
         }
     ],
-    "301_2_202_d7": [
+    "301_2_202_2021-12-01": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2479,7 +2753,7 @@
             ]
         }
     ],
-    "301_2_203_d7": [
+    "301_2_203_2021-12-01": [
         {
             "capacity": 96,
             "reserve_occupancy_trend": [
@@ -2490,7 +2764,7 @@
             ]
         }
     ],
-    "301_2_204_d7": [
+    "301_2_204_2021-12-01": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -2501,7 +2775,7 @@
             ]
         }
     ],
-    "301_3_301_d7": [
+    "301_3_301_2021-12-01": [
         {
             "capacity": 84,
             "reserve_occupancy_trend": [
@@ -2512,7 +2786,7 @@
             ]
         }
     ],
-    "301_3_302_d7": [
+    "301_3_302_2021-12-01": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2523,7 +2797,7 @@
             ]
         }
     ],
-    "301_3_303_d7": [
+    "301_3_303_2021-12-01": [
         {
             "capacity": 38,
             "reserve_occupancy_trend": [
@@ -2534,7 +2808,7 @@
             ]
         }
     ],
-    "301_3_304_d7": [
+    "301_3_304_2021-12-01": [
         {
             "capacity": 42,
             "reserve_occupancy_trend": [
@@ -2546,7 +2820,7 @@
             ]
         }
     ],
-    "301_3_305_d7": [
+    "301_3_305_2021-12-01": [
         {
             "capacity": 108,
             "reserve_occupancy_trend": [
@@ -2557,7 +2831,7 @@
             ]
         }
     ],
-    "301_3_306_d7": [
+    "301_3_306_2021-12-01": [
         {
             "capacity": 87,
             "reserve_occupancy_trend": [
@@ -2568,7 +2842,7 @@
             ]
         }
     ],
-    "301_3_308_d7": [
+    "301_3_308_2021-12-01": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2579,7 +2853,7 @@
             ]
         }
     ],
-    "301_d8": [
+    "301_2021-12-02": [
         {
             "capacity": 1167,
             "reserve_occupancy_trend": [
@@ -2590,7 +2864,7 @@
             ]
         }
     ],
-    "301_1_d8": [
+    "301_1_2021-12-02": [
         {
             "capacity": 442,
             "reserve_occupancy_trend": [
@@ -2601,7 +2875,7 @@
             ]
         }
     ],
-    "301_2_d8": [
+    "301_2_2021-12-02": [
         {
             "capacity": 276,
             "reserve_occupancy_trend": [
@@ -2612,7 +2886,7 @@
             ]
         }
     ],
-    "301_3_d8": [
+    "301_3_2021-12-02": [
         {
             "capacity": 439,
             "reserve_occupancy_trend": [
@@ -2624,7 +2898,7 @@
         }
     ],
     
-    "301_1_101_d8": [
+    "301_1_101_2021-12-02": [
         {
             "capacity": 52,
             "reserve_occupancy_trend": [
@@ -2635,7 +2909,7 @@
             ]
         }
     ],
-    "301_1_102_d8": [
+    "301_1_102_2021-12-02": [
         {
             "capacity": 60,
             "reserve_occupancy_trend": [
@@ -2646,7 +2920,7 @@
             ]
         }
     ],
-    "301_1_103_d8": [
+    "301_1_103_2021-12-02": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -2657,7 +2931,7 @@
             ]
         }
     ],
-    "301_1_104_d8": [
+    "301_1_104_2021-12-02": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -2668,7 +2942,7 @@
             ]
         }
     ],
-    "301_1_105_d8": [
+    "301_1_105_2021-12-02": [
         {
             "capacity": 120,
             "reserve_occupancy_trend": [
@@ -2679,7 +2953,7 @@
             ]
         }
     ],
-    "301_1_106_d8": [
+    "301_1_106_2021-12-02": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2690,7 +2964,7 @@
             ]
         }
     ],
-    "301_1_118_d8": [
+    "301_1_118_2021-12-02": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -2701,7 +2975,7 @@
             ]
         }
     ],
-    "301_2_201_d8": [
+    "301_2_201_2021-12-02": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2713,7 +2987,7 @@
             ]
         }
     ],
-    "301_2_202_d8": [
+    "301_2_202_2021-12-02": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2724,7 +2998,7 @@
             ]
         }
     ],
-    "301_2_203_d8": [
+    "301_2_203_2021-12-02": [
         {
             "capacity": 96,
             "reserve_occupancy_trend": [
@@ -2735,7 +3009,7 @@
             ]
         }
     ],
-    "301_2_204_d8": [
+    "301_2_204_2021-12-02": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -2746,7 +3020,7 @@
             ]
         }
     ],
-    "301_3_301_d8": [
+    "301_3_301_2021-12-02": [
         {
             "capacity": 84,
             "reserve_occupancy_trend": [
@@ -2757,7 +3031,7 @@
             ]
         }
     ],
-    "301_3_302_d8": [
+    "301_3_302_2021-12-02": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2768,7 +3042,7 @@
             ]
         }
     ],
-    "301_3_303_d8": [
+    "301_3_303_2021-12-02": [
         {
             "capacity": 38,
             "reserve_occupancy_trend": [
@@ -2779,7 +3053,7 @@
             ]
         }
     ],
-    "301_3_304_d8": [
+    "301_3_304_2021-12-02": [
         {
             "capacity": 42,
             "reserve_occupancy_trend": [
@@ -2791,7 +3065,7 @@
             ]
         }
     ],
-    "301_3_305_d8": [
+    "301_3_305_2021-12-02": [
         {
             "capacity": 108,
             "reserve_occupancy_trend": [
@@ -2802,7 +3076,7 @@
             ]
         }
     ],
-    "301_3_306_d8": [
+    "301_3_306_2021-12-02": [
         {
             "capacity": 87,
             "reserve_occupancy_trend": [
@@ -2813,7 +3087,7 @@
             ]
         }
     ],
-    "301_3_308_d8": [
+    "301_3_308_2021-12-02": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2824,7 +3098,7 @@
             ]
         }
     ],
-    "301_d9": [
+    "301_2021-12-03": [
         {
             "capacity": 1167,
             "reserve_occupancy_trend": [
@@ -2835,7 +3109,7 @@
             ]
         }
     ],
-    "301_1_d9": [
+    "301_1_2021-12-03": [
         {
             "capacity": 442,
             "reserve_occupancy_trend": [
@@ -2846,7 +3120,7 @@
             ]
         }
     ],
-    "301_2_d9": [
+    "301_2_2021-12-03": [
         {
             "capacity": 276,
             "reserve_occupancy_trend": [
@@ -2857,7 +3131,7 @@
             ]
         }
     ],
-    "301_3_d9": [
+    "301_3_2021-12-03": [
         {
             "capacity": 439,
             "reserve_occupancy_trend": [
@@ -2869,7 +3143,7 @@
         }
     ],
     
-    "301_1_101_d9": [
+    "301_1_101_2021-12-03": [
         {
             "capacity": 52,
             "reserve_occupancy_trend": [
@@ -2880,7 +3154,7 @@
             ]
         }
     ],
-    "301_1_102_d9": [
+    "301_1_102_2021-12-03": [
         {
             "capacity": 60,
             "reserve_occupancy_trend": [
@@ -2891,7 +3165,7 @@
             ]
         }
     ],
-    "301_1_103_d9": [
+    "301_1_103_2021-12-03": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -2902,7 +3176,7 @@
             ]
         }
     ],
-    "301_1_104_d9": [
+    "301_1_104_2021-12-03": [
         {
             "capacity": 35,
             "reserve_occupancy_trend": [
@@ -2913,7 +3187,7 @@
             ]
         }
     ],
-    "301_1_105_d9": [
+    "301_1_105_2021-12-03": [
         {
             "capacity": 120,
             "reserve_occupancy_trend": [
@@ -2924,7 +3198,7 @@
             ]
         }
     ],
-    "301_1_106_d9": [
+    "301_1_106_2021-12-03": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2935,7 +3209,7 @@
             ]
         }
     ],
-    "301_1_118_d9": [
+    "301_1_118_2021-12-03": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -2946,7 +3220,7 @@
             ]
         }
     ],
-    "301_2_201_d9": [
+    "301_2_201_2021-12-03": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2958,7 +3232,7 @@
             ]
         }
     ],
-    "301_2_202_d9": [
+    "301_2_202_2021-12-03": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -2969,7 +3243,7 @@
             ]
         }
     ],
-    "301_2_203_d9": [
+    "301_2_203_2021-12-03": [
         {
             "capacity": 96,
             "reserve_occupancy_trend": [
@@ -2980,7 +3254,7 @@
             ]
         }
     ],
-    "301_2_204_d9": [
+    "301_2_204_2021-12-03": [
         {
             "capacity": 100,
             "reserve_occupancy_trend": [
@@ -2991,7 +3265,7 @@
             ]
         }
     ],
-    "301_3_301_d9": [
+    "301_3_301_2021-12-03": [
         {
             "capacity": 84,
             "reserve_occupancy_trend": [
@@ -3002,7 +3276,7 @@
             ]
         }
     ],
-    "301_3_302_d9": [
+    "301_3_302_2021-12-03": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [
@@ -3013,7 +3287,7 @@
             ]
         }
     ],
-    "301_3_303_d9": [
+    "301_3_303_2021-12-03": [
         {
             "capacity": 38,
             "reserve_occupancy_trend": [
@@ -3024,7 +3298,7 @@
             ]
         }
     ],
-    "301_3_304_d9": [
+    "301_3_304_2021-12-03": [
         {
             "capacity": 42,
             "reserve_occupancy_trend": [
@@ -3036,7 +3310,7 @@
             ]
         }
     ],
-    "301_3_305_d9": [
+    "301_3_305_2021-12-03": [
         {
             "capacity": 108,
             "reserve_occupancy_trend": [
@@ -3047,7 +3321,7 @@
             ]
         }
     ],
-    "301_3_306_d9": [
+    "301_3_306_2021-12-03": [
         {
             "capacity": 87,
             "reserve_occupancy_trend": [
@@ -3058,7 +3332,486 @@
             ]
         }
     ],
-    "301_3_308_d9": [
+    "301_3_308_2021-12-03": [
+        {
+            "capacity": 40,
+            "reserve_occupancy_trend": [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_1_2021-12-06": [
+        {
+            "capacity": 442,
+            "reserve_occupancy_trend": [
+                67,67,67,67,67,67,6,6,6,14,14,14,24,29,29,5,5,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_2_2021-12-06": [
+        {
+            "capacity": 276,
+            "reserve_occupancy_trend": [
+                0,0,0,41,41,41,0,0,0,0,0,0,0,0,0,65,65,65
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_3_2021-12-06": [
+        {
+            "capacity": 439,
+            "reserve_occupancy_trend": [
+                19,19,19,104,104,104,0,0,0,13,13,13,42,42,42,13,13,13
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    
+    "301_1_101_2021-12-06": [
+        {
+            "capacity": 52,
+            "reserve_occupancy_trend": [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_1_102_2021-12-06": [
+        {
+            "capacity": 60,
+            "reserve_occupancy_trend": [
+                0,0,0,0,0,0,0,0,0,0,0,0,9,9,9,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_1_103_2021-12-06": [
+        {
+            "capacity": 35,
+            "reserve_occupancy_trend": [
+                0,0,0,0,0,0,0,0,0,0,0,0,15,15,15,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_1_104_2021-12-06": [
+        {
+            "capacity": 35,
+            "reserve_occupancy_trend": [
+                0,0,0,7,7,7,0,0,0,14,14,14,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_1_105_2021-12-06": [
+        {
+            "capacity": 120,
+            "reserve_occupancy_trend": [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_1_106_2021-12-06": [
+        {
+            "capacity": 40,
+            "reserve_occupancy_trend": [
+                0,0,0,0,0,0,6,6,6,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_1_118_2021-12-06": [
+        {
+            "capacity": 100,
+            "reserve_occupancy_trend": [
+                67,67,67,60,60,60,0,0,0,0,0,0,0,5,5,5,5,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_2_201_2021-12-06": [
+        {
+            "capacity": 40,
+            "reserve_occupancy_trend": [
+                0,0,0,11,11,11,0,0,0,0,0,0,0,0,0,40,40,40
+
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_2_202_2021-12-06": [
+        {
+            "capacity": 40,
+            "reserve_occupancy_trend": [
+                0,0,0,10,10,10,0,0,0,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_2_203_2021-12-06": [
+        {
+            "capacity": 96,
+            "reserve_occupancy_trend": [
+                0,0,0,20,20,20,0,0,0,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_2_204_2021-12-06": [
+        {
+            "capacity": 100,
+            "reserve_occupancy_trend": [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,25,25
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_3_301_2021-12-06": [
+        {
+            "capacity": 84,
+            "reserve_occupancy_trend": [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_3_302_2021-12-06": [
+        {
+            "capacity": 40,
+            "reserve_occupancy_trend": [
+                0,0,0,18,18,18,0,0,0,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_3_303_2021-12-06": [
+        {
+            "capacity": 38,
+            "reserve_occupancy_trend": [
+                19,19,19,23,23,23,0,0,0,13,13,13,0,0,0,13,13,13
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_3_304_2021-12-06": [
+        {
+            "capacity": 42,
+            "reserve_occupancy_trend": [
+                0,0,0,42,42,42,0,0,0,0,0,0,42,42,42,0,0,0
+
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_3_305_2021-12-06": [
+        {
+            "capacity": 108,
+            "reserve_occupancy_trend": [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_3_306_2021-12-06": [
+        {
+            "capacity": 87,
+            "reserve_occupancy_trend": [
+                0,0,0,21,21,21,0,0,0,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_3_308_2021-12-06": [
+        {
+            "capacity": 40,
+            "reserve_occupancy_trend": [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_2021-12-07": [
+        {
+            "capacity": 1167,
+            "reserve_occupancy_trend": [
+                86,86,86,212,212,212,6,6,6,27,27,27,66,71,71,83,83,78
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_1_2021-12-07": [
+        {
+            "capacity": 442,
+            "reserve_occupancy_trend": [
+                67,67,67,67,67,67,6,6,6,14,14,14,24,29,29,5,5,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_2_2021-12-07": [
+        {
+            "capacity": 276,
+            "reserve_occupancy_trend": [
+                0,0,0,41,41,41,0,0,0,0,0,0,0,0,0,65,65,65
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_3_2021-12-07": [
+        {
+            "capacity": 439,
+            "reserve_occupancy_trend": [
+                19,19,19,104,104,104,0,0,0,13,13,13,42,42,42,13,13,13
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    
+    "301_1_101_2021-12-07": [
+        {
+            "capacity": 52,
+            "reserve_occupancy_trend": [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_1_102_2021-12-07": [
+        {
+            "capacity": 60,
+            "reserve_occupancy_trend": [
+                0,0,0,0,0,0,0,0,0,0,0,0,9,9,9,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_1_103_2021-12-07": [
+        {
+            "capacity": 35,
+            "reserve_occupancy_trend": [
+                0,0,0,0,0,0,0,0,0,0,0,0,15,15,15,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_1_104_2021-12-07": [
+        {
+            "capacity": 35,
+            "reserve_occupancy_trend": [
+                0,0,0,7,7,7,0,0,0,14,14,14,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_1_105_2021-12-07": [
+        {
+            "capacity": 120,
+            "reserve_occupancy_trend": [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_1_106_2021-12-07": [
+        {
+            "capacity": 40,
+            "reserve_occupancy_trend": [
+                0,0,0,0,0,0,6,6,6,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_1_118_2021-12-07": [
+        {
+            "capacity": 100,
+            "reserve_occupancy_trend": [
+                67,67,67,60,60,60,0,0,0,0,0,0,0,5,5,5,5,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_2_201_2021-12-07": [
+        {
+            "capacity": 40,
+            "reserve_occupancy_trend": [
+                0,0,0,11,11,11,0,0,0,0,0,0,0,0,0,40,40,40
+
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_2_202_2021-12-07": [
+        {
+            "capacity": 40,
+            "reserve_occupancy_trend": [
+                0,0,0,10,10,10,0,0,0,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_2_203_2021-12-07": [
+        {
+            "capacity": 96,
+            "reserve_occupancy_trend": [
+                0,0,0,20,20,20,0,0,0,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_2_204_2021-12-07": [
+        {
+            "capacity": 100,
+            "reserve_occupancy_trend": [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,25,25
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_3_301_2021-12-07": [
+        {
+            "capacity": 84,
+            "reserve_occupancy_trend": [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_3_302_2021-12-07": [
+        {
+            "capacity": 40,
+            "reserve_occupancy_trend": [
+                0,0,0,18,18,18,0,0,0,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_3_303_2021-12-07": [
+        {
+            "capacity": 38,
+            "reserve_occupancy_trend": [
+                19,19,19,23,23,23,0,0,0,13,13,13,0,0,0,13,13,13
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_3_304_2021-12-07": [
+        {
+            "capacity": 42,
+            "reserve_occupancy_trend": [
+                0,0,0,42,42,42,0,0,0,0,0,0,42,42,42,0,0,0
+
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_3_305_2021-12-07": [
+        {
+            "capacity": 108,
+            "reserve_occupancy_trend": [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_3_306_2021-12-07": [
+        {
+            "capacity": 87,
+            "reserve_occupancy_trend": [
+                0,0,0,21,21,21,0,0,0,0,0,0,0,0,0,0,0,0
+            ],
+            "bq_occupancy_trend" : [
+                0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+            ]
+        }
+    ],
+    "301_3_308_2021-12-07": [
         {
             "capacity": 40,
             "reserve_occupancy_trend": [

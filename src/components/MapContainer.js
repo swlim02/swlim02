@@ -147,14 +147,6 @@ const MapContainer = (props) => {
     makeMakers();
   });
 
-    /*
-    var positions = [  // 마커의 위치
-            new kakao.maps.LatLng(37.45625, 126.95084),
-            new kakao.maps.LatLng(37.45016, 126.95259),
-            new kakao.maps.LatLng(37.44887, 126.95265)
-        ]
-        */
-
     function makeMakers(){
       //console.log("makeMakers");
       props.old_makers_o.old_makers.forEach((item, i) => {
@@ -165,19 +157,21 @@ const MapContainer = (props) => {
       //console.log("enumerateBuildingCrowdDensitySummary()");
       //console.log(enumerateBuildingCrowdDensitySummary());
       enumerateBuildingCrowdDensitySummary().forEach((item, i) => {
-        //console.log(item);
+
+//        console.log(item);
         let crowd = parseInt(item.occupancy)/parseInt(item.capacity)*100;
-        //console.log("crowd");
-        //console.log(crowd);
+//        console.log("crowd");
+//        console.log(crowd);
 //        console.log("props.selectedOptions.selectedOption_green");
 //        console.log(props.selectedOptions.selectedOption_green);
-        let severity = 2; // 0=G,1=Y,2=R
+        let severity = 0; // 0=R,1=Y,2=G
         if (crowd < props.selectedOptions.selectedOption_yellow ) {
           severity = 1;
           if (crowd < props.selectedOptions.selectedOption_green) {
-            severity = 0;
+            severity = 2;
           }
         }
+
         let o = new Object();
         o = {
           "content": '<div>'+item.bdNumber+'동, '+item.bdName+'</div>',
@@ -307,8 +301,9 @@ const MapContainer = (props) => {
         );
         return markerImage;
     }
-    let BuildingCrowdDensity = new Object();
-    // TODO @hskim
+
+
+    // @swlim 2021-12-07
     let time = 'SNU_09:30'; // default 값
     function getBuildingCrowdDensity(bdNumber) {
 
