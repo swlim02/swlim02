@@ -1,7 +1,4 @@
 import React, { useEffect } from 'react';
-import room from "../data/data.json";
-import room2 from "../data/data2.json";
-import room3 from "../data/data3.json";
 import FloorOccu from "./FloorOccu"
 let today = new Date();
 const { kakao } = window;
@@ -404,9 +401,6 @@ const MapContainer = (props) => {
         <FloorOccu
           data={current_data}
           callBack={callBack}
-          roomData={room} // 개발중임시사용삭제 될 예정
-          roomData2={room2} // 개발중임시사용삭제 될 예정
-          roomData3={room3} // 개발중임시사용삭제 될 예정
           selectedOptions={selectedOptions}
           floor_o={floor_o}
           getFloorDensity={getFloorDensity}
