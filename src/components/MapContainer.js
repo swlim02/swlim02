@@ -136,10 +136,10 @@ const MapContainer = (props) => {
 
   let map;
   useEffect(() => {
-        
+
     const container = document.getElementById('myMap');
     const options = {
-      center: new kakao.maps.LatLng(37.4545, 126.9525),
+      center: new kakao.maps.LatLng(37.4545, 126.9530),
       level: 5
     };
     map = new kakao.maps.Map(container, options);
@@ -334,8 +334,8 @@ const MapContainer = (props) => {
       console.log(BuildingCrowdDensity);
      return BuildingCrowdDensity;
     }
-    BuildingCrowdDensity = getBuildingCrowdDensity('301');  
-    
+    BuildingCrowdDensity = getBuildingCrowdDensity('301');
+
     //console.log(props.selectObject_o.bdNumber);
 
     // swlim 2021-12-07
