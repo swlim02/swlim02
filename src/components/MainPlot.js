@@ -66,7 +66,12 @@ const MainPlot = (props) => {
         console.log("여기오면 망한거임");
     }
 
-    let time = 'SNU_' + today.getHours() + ":" + parseInt((today.getMinutes()/15))*15; // 양자화
+    let time_h = today.getHours();
+    if (time_h === 9) time_h = '09';
+    let time_m = parseInt((today.getMinutes()/15))*15;
+    if (time_m === 0) time_m = '00';
+
+    let time = 'SNU_' + time_h + ":" + time_m; // 양자화
     console.log (time);
     if (       // 수업이 없는 시간으로 데모 데이터로 고정
         ((today.getHours() === 18) && (today.getMinutes()>14)) ||
@@ -79,7 +84,7 @@ const MainPlot = (props) => {
 
     UniversityCrowdDensity = {
       "capacity": SNUBuildingCrowdDensityInfo[time][0].capacity,
-      "occupancy": SNUBuildingCrowdDensityInfo[time][0].occupancy 
+      "occupancy": SNUBuildingCrowdDensityInfo[time][0].occupancy
     };
     return UniversityCrowdDensity;
   }
