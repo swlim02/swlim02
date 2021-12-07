@@ -63,7 +63,7 @@ const RoomOccu = (props) => {
 						props.selectObject_o.roomNumber = this.id;
 						console.log("click_a_room");
 						console.log(props.selectObject_o);
-						if (clickedRectId != this.id) {
+						if (clickedRectId !== this.id) {
 							d3.selectAll(".element11"+clickedRectId).style("stroke-width", 1);
 							d3.selectAll(".element33"+clickedRectId).attr("font-weight", 300);
 							clickedRectId = this.id;

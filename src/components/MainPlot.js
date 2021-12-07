@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState} from "react";
+import React, { useEffect} from "react";
 import * as d3 from "d3";
 import ControlPanel from './ControlPanel';
 import MapContainer from "./MapContainer";
@@ -100,7 +100,6 @@ const MainPlot = (props) => {
 
   selectedOptions.selectedOption_green = props.stage[0][0];
   selectedOptions.selectedOption_yellow = props.stage[0][0]+props.stage[0][1];
-  const splotSvg = useRef(null);
 
   const svgWidth = props.margin * 2 + props.width;
   const svgHeight = props.margin * 2 + props.height;
