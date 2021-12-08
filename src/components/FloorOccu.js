@@ -118,7 +118,7 @@ const FloorOccu = (props) => {
 						.style("fill-opacity", 0.00)
 						.on("mouseenter", function() {
 								d3.selectAll(".element1"+this.id).style("stroke-width", 3).style("stroke", "gray");
-								d3.selectAll(".element3"+this.id).attr("font-weight", 700).style("fill", "gray");
+								d3.selectAll(".element3"+this.id).attr("font-weight", 700);
 						})
 						.on("mouseleave", function() {
 //							console.log(clickedRectId);
