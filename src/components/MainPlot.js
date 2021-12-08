@@ -4,7 +4,7 @@ import ControlPanel from './ControlPanel';
 import MapContainer from "./MapContainer";
 import TrendView from "./TrendView";
 // TODO @hskim 데이터를, 실제 요일 데이터로 넣어주세요.
-import SNUBuildingCrowdDensityInfo_Mon from "../data/SNUBuildingCrowdDensityInfo_Mon.json";
+import SNUBuildingCrowdDensityInfo_Mon from "../data/SNUBuildingCrowdDensityInfo_Wed.json";
 import SNUBuildingCrowdDensityInfo_Tue from "../data/SNUBuildingCrowdDensityInfo_Wed.json";
 import SNUBuildingCrowdDensityInfo_WED from "../data/SNUBuildingCrowdDensityInfo_Wed.json";
 import SNUBuildingCrowdDensityInfo_THU from "../data/SNUBuildingCrowdDensityInfo_Wed.json";
@@ -55,6 +55,8 @@ const MainPlot = (props) => {
   switch (day) {
     case 1:
       SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_Mon;
+      SNUFloorCrowdDensityInfo = SNUFloorCrowdDensityInfo_WED;
+      SNURoomCrowdDensityInfo = SNURoomCrowdDensityInfo_WED;
       //console.log("월요일");
       break;
     case 2:
@@ -69,11 +71,15 @@ const MainPlot = (props) => {
       break;
     case 4:
       SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_THU;
+      SNUFloorCrowdDensityInfo = SNUFloorCrowdDensityInfo_WED;
+      SNURoomCrowdDensityInfo = SNURoomCrowdDensityInfo_WED;
       break;
     case 5:
     case 0: // 일요일
     case 6: // 토요일 두요일 수업 데이터는 없음. 데모시 금요일로 대체
       SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_FRI;
+      SNUFloorCrowdDensityInfo = SNUFloorCrowdDensityInfo_WED;
+      SNURoomCrowdDensityInfo = SNURoomCrowdDensityInfo_WED;
       break;
     default:
       //console.log("여기오면 망한거임");
@@ -94,6 +100,8 @@ const MainPlot = (props) => {
     ) {
     time = 'SNU_14:00';
   }
+  // 데모영상준비를 위해 임시 TODO 지워야함
+  time = 'SNU_14:00';
 
   // @swlim 개발 - 이해안가면 물어 보삼
   function getUniversityCrowdDensity() {

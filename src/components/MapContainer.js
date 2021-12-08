@@ -319,6 +319,8 @@ const MapContainer = (props) => {
         ) {
         time = bdNumber +'_14:00';
       }
+      // 데모영상준비를 위해 임시 TODO 지워야함
+      time = bdNumber +'_14:00';
 
       console.log("herehrehrherherherhere");
       //console.log(props.SNUFloorCrowdDensityInfo_o[time][0]);
@@ -377,6 +379,8 @@ const MapContainer = (props) => {
       ) {
     time = bdNumber +'_' + floor +'_14:00';
     }
+    // 데모영상준비를 위해 임시 TODO 지워야함
+    time = bdNumber +'_' + floor +'_14:00';
 
     console.log("here!!");
     console.log("here!!");
