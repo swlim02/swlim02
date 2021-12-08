@@ -342,7 +342,7 @@ const MapContainer = (props) => {
         if (bd_index !== -1) {
           o = {
             "bdNumber": props.SNUBuildingCrowdDensityInfo_o.buildings[i].bdNumber,
-            "bdName": props.SNUBuildingCrowdDensityInfo_o.buildings[i].bdName,
+            "bdName": buildingsInfo[bd_index+1],
             "latitude": buildingsInfo[bd_index+2],
             "longitude": buildingsInfo[bd_index+3],
             "capacity": props.SNUBuildingCrowdDensityInfo_o.buildings[i].capacity,
