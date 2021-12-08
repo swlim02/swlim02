@@ -117,8 +117,8 @@ const FloorOccu = (props) => {
             .style("stroke", "Black")
 						.style("fill-opacity", 0.00)
 						.on("mouseenter", function() {
-								d3.selectAll(".element1"+this.id).style("stroke-width", 3);
-								d3.selectAll(".element3"+this.id).attr("font-weight", 700);
+								d3.selectAll(".element1"+this.id).style("stroke-width", 3).style("stroke", "gray");
+								d3.selectAll(".element3"+this.id).attr("font-weight", 700).style("fill", "gray");
 						})
 						.on("mouseleave", function() {
 //							console.log(clickedRectId);
@@ -126,8 +126,8 @@ const FloorOccu = (props) => {
 							if (clickedRectId === this.id) {
 								//nothing
 							}else {
-								d3.selectAll(".element1"+this.id).style("stroke-width", 1);
-								d3.selectAll(".element3"+this.id).attr("font-weight", 300);
+								d3.selectAll(".element1"+this.id).style("stroke-width", 1).style("stroke", "black");
+								d3.selectAll(".element3"+this.id).attr("font-weight", 300).style("fill", "black");
 							}
 						});
 
@@ -191,8 +191,8 @@ const FloorOccu = (props) => {
 					.on('click', function(d, i) {
 							props.selectObject_o.floor = this.id;
 							if (clickedRectId !== this.id) {
-								d3.selectAll(".element1"+clickedRectId).style("stroke-width", 1);
-								d3.selectAll(".element3"+clickedRectId).attr("font-weight", 300);
+								d3.selectAll(".element1"+clickedRectId).style("stroke-width", 1).style("stroke", "black");
+								d3.selectAll(".element3"+clickedRectId).attr("font-weight", 300).style("fill", "black");;
 								props.selectObject_o.roomNumber = null;
 								clickedRectId = this.id;
 								props.update_trendView_f();
@@ -211,7 +211,7 @@ const FloorOccu = (props) => {
 									.selectAll("line")
 									.data(tempdata)
 									.join("line")
-									.style("stroke", "black")
+									.style("stroke", "gray")
 									.style("stroke-width", 3)
 									.attr('x1',d => x)
 									.attr('y1',d => y)
@@ -224,7 +224,7 @@ const FloorOccu = (props) => {
 									.selectAll("line")
 									.data(tempdata)
 									.join("line")
-									.style("stroke", "black")
+									.style("stroke", "gray")
 									.style("stroke-width", 3)
 									.attr('x1',d => x+10)
 									.attr('y1',d => y+h/2)

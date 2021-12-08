@@ -54,8 +54,8 @@ const RoomOccu = (props) => {
 				.style("stroke", "black")
 				.style("fill", d => (d.data.occupancy/d.data.capacity) === 0 ? 'white' : colorScale((d.data.occupancy/d.data.capacity)))
 				.on("mouseenter", function(d) {
-						d3.selectAll(".element11"+this.id).style("stroke-width", 3);
-						d3.selectAll(".element33"+this.id).attr("font-weight", 700);
+						d3.selectAll(".element11"+this.id).style("stroke-width", 3).style("stroke", "gray");
+						d3.selectAll(".element33"+this.id).attr("font-weight", 700).style("fill", "gray");
 						d3.selectAll(".element33"+this.id).text(function(d){
 							let roomNumber_text = String(d.data.roomNumber);
 							if (roomNumber_text.length > 3) {
@@ -76,8 +76,8 @@ const RoomOccu = (props) => {
 						console.log("click_a_room");
 						console.log(props.selectObject_o);
 						if (clickedRectId !== this.id) {
-							d3.selectAll(".element11"+clickedRectId).style("stroke-width", 1);
-							d3.selectAll(".element33"+clickedRectId).attr("font-weight", 300)
+							d3.selectAll(".element11"+clickedRectId).style("stroke-width", 1).style("stroke", "black");
+							d3.selectAll(".element33"+clickedRectId).attr("font-weight", 300).style("fill", "black")
 							.text(function(d){
 								let roomNumber_text = String(d.data.roomNumber);
 								if (roomNumber_text.length > 3) {
@@ -93,8 +93,8 @@ const RoomOccu = (props) => {
 					if (clickedRectId === this.id) {
 						//nothing
 					}else {
-						d3.selectAll(".element11"+this.id).style("stroke-width", 1);
-						d3.selectAll(".element33"+this.id).attr("font-weight", 300)
+						d3.selectAll(".element11"+this.id).style("stroke-width", 1).style("stroke", "gray");
+						d3.selectAll(".element33"+this.id).attr("font-weight", 300).style("fill", "gray")
 						.text(function(d){
 							let roomNumber_text = String(d.data.roomNumber);
 							if (roomNumber_text.length > 3) {
