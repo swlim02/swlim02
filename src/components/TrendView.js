@@ -1,6 +1,6 @@
 import React, { useRef, useState} from "react";
 import * as d3 from "d3";
-import { func } from "prop-types";
+import { func, node } from "prop-types";
 
 let timeDivide = ['9:30','10','10:30','11','11:30','12','12:30','13','13:30','14','14:30','15','15:30','16','16:30','17','17:30','18'];
 let dayDivide = ['Mon','Tue','Wed','Thu','Fri'];
@@ -168,21 +168,44 @@ const TrendView = (props) => {
 				.style("fill", 'gray');
 
 
+	function makeStringDay(day) {
+		switch(day) {
+			case 0 : day = '일';
+					break;
+			case 1 : day = '월';
+					break;
+			case 2 : day = '화';
+					break;
+			case 3 : day = '수';
+					break;
+			case 4 : day = '목';
+					break;
+			case 5 : day = '금';
+					break;
+			case 6 : day = '토';
+					break;
+		}
+		return day;
+	}
+
+
 	if(t == 0){
+
+		let nowDay = makeStringDay(curDate[3]);
 		let trendDateInfoText = trendDateInfoSvg.selectAll('.trendDateInfo').data(curDate);
 
 		console.log('trendDateInfoText');
 
 		trendDateInfoText.join('text')
 							.attr('class', 'trendDateInfo')
-							.text(curDate[0]+'-'+curDate[1]+'-'+curDate[2])
+							.text(curDate[0]+'-'+curDate[1]+'-'+curDate[2]+' ('+nowDay+')')
 							.attr('x', 150)
 							.attr('y', 15)
 							.attr("font-size", "15px")
 							.attr("text-anchor","middle")
 							.style("fill",'black');
 	}
-	else{
+	else{		
 		let trendDateInfoText = trendDateInfoSvg.selectAll('.trendDateInfo').data(curDate);
 
 		console.log('trendDateInfoText');
