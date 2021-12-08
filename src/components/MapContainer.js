@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import FloorOccu from "./FloorOccu"
+import logo from '../data/logo.png';
+
 let today = new Date();
 const { kakao } = window;
 const buildingsInfo = [
@@ -118,8 +120,8 @@ const MapContainer = (props) => {
   OVER_MARKER_HEIGHT = 42, // 오버 마커의 높이
   OVER_OFFSET_X = 13, // 오버 마커의 기준 X좌표
   OVER_OFFSET_Y = OVER_MARKER_HEIGHT, // 오버 마커의 기준 Y좌표
-//    SPRITE_MARKER_URL = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markers_sprites2.png', // 스프라이트 마커 이미지 URL
-  SPRITE_MARKER_URL = 'http://mmlab.snu.ac.kr/~ghjeong/imking.png',
+  SPRITE_MARKER_URL = logo, // 스프라이트 마커 이미지 URL
+//  SPRITE_MARKER_URL = 'http://mmlab.snu.ac.kr/~ghjeong/imking.png',
   SPRITE_WIDTH = 126, // 스프라이트 이미지 너비
   SPRITE_HEIGHT = 146, // 스프라이트 이미지 높이
   SPRITE_GAP = 10; // 스프라이트 이미지에서 마커간 간격
