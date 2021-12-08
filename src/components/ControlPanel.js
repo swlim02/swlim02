@@ -70,7 +70,7 @@ const ControlPanel = (props) => {
               .attr('y1',10)
               .attr('x2',10+props.stage[stageNum][0]*3)
               .attr('y2',10)
-              .attr('stroke', 'green')
+              .attr('stroke', '#4CAF50')
               .attr('stroke-width', 18)
               .attr('stroke-linecap','round');
           //console.log(props.stage[stageNum][0]*3);
@@ -86,7 +86,7 @@ const ControlPanel = (props) => {
               .attr('y1',10)
               .attr('x2',10+((props.stage[stageNum][0]+props.stage[stageNum][1]+props.stage[stageNum][2])*3))
               .attr('y2',10)
-              .attr('stroke', 'red')
+              .attr('stroke', '#F44336')
               .attr('stroke-width', 18)
               .attr('stroke-linecap','round');
 
@@ -101,7 +101,7 @@ const ControlPanel = (props) => {
               .attr('y1',10)
               .attr('x2',10+(props.stage[stageNum][0]+props.stage[stageNum][1])*3)
               .attr('y2',10)
-              .attr('stroke', 'yellow')
+              .attr('stroke', '#FFC107')
               .attr('stroke-width', 18)
               .attr('stroke-linecap','butt');;
 

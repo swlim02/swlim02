@@ -27,7 +27,7 @@ const RoomOccu = (props) => {
 
 			const colorScale = d3.scaleThreshold()
 									.domain([(props.selectedOptions.selectedOption_green/100),(props.selectedOptions.selectedOption_yellow/100)])
-									.range(['green','yellow','red'])
+									.range(['#4CAF50','#FFC107','#F44336'])
 
 			// Give the data to this cluster layout:
 			const root = d3.hierarchy(selectData).sum(function(d){ return d.capacity}) // Here the size of each leave is given in the 'value' field in input data

@@ -246,7 +246,7 @@ const TrendView = (props) => {
 
 	let colorScale = d3.scaleThreshold()
 						.domain([props.selectedOptions.selectedOption_green,props.selectedOptions.selectedOption_yellow])
-						.range(['green','yellow','red']);
+						.range(['#4CAF50','#FFC107','#F44336']);
 
 	function makeDayUnivTrend(dayUnivTrend)
 	{
