@@ -1264,9 +1264,9 @@
                     "roomNumber": 106,
                     "capacity": 40,
                     "occupancy": 6,
-                    "className": null,
-                    "classStartTime": null,
-                    "classEndTime": null
+                    "className": "전자에너지변환론",
+                    "classStartTime": "12:30",
+                    "classEndTime": "15:20"
                 },
                 {
                     "roomNumber": 118,
