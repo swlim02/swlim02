@@ -735,9 +735,6 @@ const TrendView = (props) => {
 			d3.selectAll(".dayRoomTrendBarQr").remove();
 			console.log('props.selectObject_o.roomNumber');
 			console.log(props.selectObject_o.roomNumber);
-			console.log(props.selectObject_o.roomNumber);
-			console.log(props.selectObject_o.roomNumber);
-			console.log(props.selectObject_o.roomNumber);
 		}
 		else{
 			console.log("hoho");

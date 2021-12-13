@@ -1,4 +1,4 @@
-import React, { useEffect} from "react";
+import React, {useEffect} from "react";
 import ControlPanel from './ControlPanel';
 import MapContainer from "./MapContainer";
 import TrendView from "./TrendView";
@@ -25,14 +25,22 @@ let year = today.getFullYear();
 let month = today.getMonth()+1;
 let date = today.getDate();
 let day = today.getDay();
+
 let UniversityCrowdDensity = new Object();
 
-let time = 'SNU_09:30'; // default 값
+let time = '';
 
 let old_makers_o = new Object();
 old_makers_o.old_makers =  new Array();
 
 const MainPlot = (props) => {
+  if (props.demo_mode === 'y') {
+    console.log('demo_mode');
+    date = props.demo_date;
+    day = props.demo_day;
+    console.log(date);
+    console.log(day);
+  }
 
   selectObject_o.bdNumber = null;
   selectObject_o.floor = null;
@@ -51,6 +59,7 @@ const MainPlot = (props) => {
   }
 
   // 오늘의 데이터 선택
+  // TODO 실제 데이터로 수정 필요
   switch (day) {
     case 1:
       SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_Mon;
@@ -64,6 +73,7 @@ const MainPlot = (props) => {
       SNURoomCrowdDensityInfo = SNURoomCrowdDensityInfo_Tue;
       break;
     case 3:
+    console.log('수요일');
       SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_WED;
       SNUFloorCrowdDensityInfo = SNUFloorCrowdDensityInfo_WED;
       SNURoomCrowdDensityInfo = SNURoomCrowdDensityInfo_WED;
@@ -97,15 +107,15 @@ const MainPlot = (props) => {
       (today.getHours() < 9) ||
       ((today.getHours() === 9) && (today.getMinutes()<30))
     ) {
-    time = 'SNU_14:00';
+    time = 'SNU_'+props.exception_time;
   }
-  // 데모영상준비를 위해 임시 TODO 지워야함
-  time = 'SNU_14:00';
+  if (props.demo_mode === 'y') {
+      time = 'SNU_'+ props.demo_time;
+  }
 
-  // @swlim 개발 - 이해안가면 물어 보삼
+  // @swlim 개발
   function getUniversityCrowdDensity() {
     let UniversityCrowdDensity = new Object();
-
     UniversityCrowdDensity = {
       "capacity": SNUBuildingCrowdDensityInfo[time][0].capacity,
       "occupancy": SNUBuildingCrowdDensityInfo[time][0].occupancy
@@ -310,8 +320,12 @@ const MainPlot = (props) => {
         SNUBuildingCrowdDensityInfo_o={SNUBuildingCrowdDensityInfo[time][0]}
         SNUFloorCrowdDensityInfo_o={SNUFloorCrowdDensityInfo}
         SNURoomCrowdDensityInfo_o={SNURoomCrowdDensityInfo}
-        time={time}
         old_makers_o={old_makers_o}
+        demo_mode={props.demo_mode}
+        demo_time={props.demo_time}
+        demo_date={props.demo_date}
+        demo_day={props.demo_day}
+        exception_time={props.exception_time}
         />
       </div>
       <div class="splotContainer03" z-index="0" style={{

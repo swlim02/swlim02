@@ -311,23 +311,21 @@ const MapContainer = (props) => {
       if (time_m === 0) time_m = '00';
 
       let time = bdNumber +'_' + time_h + ":" + time_m; // 양자화
-      console.log (time);
       if (       // 수업이 없는 시간으로 데모 데이터로 고정
           ((today.getHours() === 18) && (today.getMinutes()>14)) ||
           (today.getHours() > 18) ||
           (today.getHours() < 9) ||
           ((today.getHours() === 9) && (today.getMinutes()<30))
         ) {
-        time = bdNumber +'_14:00';
+        time = bdNumber +'_' + props.exception_time;
       }
-      // 데모영상준비를 위해 임시 TODO 지워야함
-      time = bdNumber +'_14:00';
-
-      console.log("herehrehrherherherhere");
+      if (props.demo_mode === 'y') {
+        time = bdNumber +'_' + props.demo_time;
+      }
       //console.log(props.SNUFloorCrowdDensityInfo_o[time][0]);
 
       //let bd_index = buildingsInfo.indexOf(bdNumber);
-
+      console.log (time);
       BuildingCrowdDensity = props.SNUFloorCrowdDensityInfo_o[time][0];
       console.log(BuildingCrowdDensity);
      return BuildingCrowdDensity;
@@ -378,15 +376,11 @@ const MapContainer = (props) => {
         (today.getHours() < 9) ||
         ((today.getHours() === 9) && (today.getMinutes()<30))
       ) {
-    time = bdNumber +'_' + floor +'_14:00';
+      time = bdNumber +'_' + floor +'_' + props.exception_time;
     }
-    // 데모영상준비를 위해 임시 TODO 지워야함
-    time = bdNumber +'_' + floor +'_14:00';
-
-    console.log("here!!");
-    console.log("here!!");
-    //console.log(props.SNUFloorCrowdDensityInfo_o[time][0]);
-
+    if (props.demo_mode === 'y') {
+      time = bdNumber +'_' + floor +'_' + props.demo_time;
+    }
     //let bd_index = buildingsInfo.indexOf(bdNumber);
     FloorCrowdDensity = props.SNURoomCrowdDensityInfo_o[time][0];
     console.log(FloorCrowdDensity);
