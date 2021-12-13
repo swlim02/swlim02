@@ -110,7 +110,6 @@ const MapContainer = (props) => {
   }
 
   props.callBack(update);
-  console.log("MapContainer()");
 
   var MARKER_WIDTH = 33, // 기본, 클릭 마커의 너비
   MARKER_HEIGHT = 36, // 기본, 클릭 마커의 높이

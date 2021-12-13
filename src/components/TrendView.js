@@ -9,8 +9,7 @@ let s = 0;
 
 const TrendView = (props) => {
 
-	console.log ("TrendView")
-
+//	console.log ("TrendView")
 	const [trendData, setTrendData] = useState(props.selectObject_o.state);
 	// set the dimensions and margins of the graph
 	props.callBack(setTrendData); // 갱신시 state 변경해서 rerendering 하려고 걸어 두었음.
@@ -205,7 +204,7 @@ const TrendView = (props) => {
 							.attr("text-anchor","middle")
 							.style("fill",'black');
 	}
-	else{		
+	else{
 		let trendDateInfoText = trendDateInfoSvg.selectAll('.trendDateInfo').data(curDate);
 
 		console.log('trendDateInfoText');

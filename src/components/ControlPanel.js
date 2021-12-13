@@ -10,9 +10,7 @@ const ControlPanel = (props) => {
   options_x.push({"value":'2 단계', "label":'2 단계'});
   options_x.push({"value":'3 단계', "label":'3 단계'});
   options_x.push({"value":'4 단계', "label":'4 단계'});
-  console.log("before");
   const [curStage, setCurStage] = useState('1 단계')
-  console.log("after");
   function handleChange_x(evt) {
     if (evt.value === curStage) {
       //nothing

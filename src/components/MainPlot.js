@@ -1,5 +1,4 @@
 import React, { useEffect} from "react";
-import * as d3 from "d3";
 import ControlPanel from './ControlPanel';
 import MapContainer from "./MapContainer";
 import TrendView from "./TrendView";
@@ -260,7 +259,7 @@ const MainPlot = (props) => {
   }
 
   function getDayTrendOfBuildingRoomDensity(bdNumber, floor, roomNumber, startDate,endDate) {
-    if (startDate === null || bdNumber === null || floor === null || roomNumber === null) {console.log("야야야야야야야야"); return null;}
+    if (startDate === null || bdNumber === null || floor === null || roomNumber === null) {return null;}
 
     let DayTrend = new Object();
     let selected_date = bdNumber+"_"+floor+"_"+roomNumber+"_w_"+startDate;

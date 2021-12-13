@@ -3,9 +3,9 @@ import MainPlot from "./components/MainPlot";
 import "./App.css";
 
 function App() {
-  const nominal = ["genre", "creative_type", "source"];
-  const ordinal = ["release", "rating"];
-  const quantitative = ["budget", "us_gross", "worldwide_gross", "rotten_rating", "imdb_rating", "imdb_votes"];
+  const demo_mode = 'y'; // 'y' or 'n'
+  const demo_day = 'wed';
+  const demo_time = '';
 
   const width = 500;
   const height = 350;
@@ -21,12 +21,10 @@ function App() {
           width={width}
           height={height}
           margin={margin}
-          pointSize={pointSize}
-          maxPointSize={maxPointSize}
-          nominal={nominal}
-          ordinal={ordinal}
-          quantitative={quantitative}
           stage={stage}
+          demo_mode={demo_mode}
+          demo_day={demo_day}
+          demo_time={demo_time}
         />
       </div>
     </div>

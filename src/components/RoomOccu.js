@@ -62,8 +62,8 @@ const RoomOccu = (props) => {
 								roomNumber_text = roomNumber_text.substr(0, 3) + '-' + roomNumber_text.substr(4);
 							}
 							if (d.data.occupancy > 0) {
-								return [roomNumber_text+'호('+d.data.occupancy+'/'+d.data.capacity+')'+" "
-								+d.data.className+'('+d.data.classStartTime+'~'+d.data.classEndTime+')']
+								return [roomNumber_text+'호('+d.data.occupancy+'/'+d.data.capacity+') '+
+								d.data.className+'('+d.data.classStartTime+'~'+d.data.classEndTime+')']
 							} else {
 								return [roomNumber_text+'호('+d.data.occupancy+'/'+d.data.capacity+')']
 							}
