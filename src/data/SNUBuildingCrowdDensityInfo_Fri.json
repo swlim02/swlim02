@@ -1,0 +1,2802 @@
+{
+    "SNU_09:30": [
+        {
+            "capacity": 5202,
+            "occupancy": 86,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 3
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 37
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 37
+                }
+            ]
+        }
+    ],
+    "SNU_09:45": [
+        {
+            "capacity": 5202,
+            "occupancy": 86,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 3
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 37
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 37
+                }
+            ]
+        }
+    ],
+    "SNU_10:00": [
+        {
+            "capacity": 5202,
+            "occupancy": 188,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 74
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 37
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 37
+                }
+            ]
+        }
+    ],
+    "SNU_10:15": [
+        {
+            "capacity": 5202,
+            "occupancy": 188,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 74
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 37
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 37
+                }
+            ]
+        }
+    ],
+    "SNU_10:30": [
+        {
+            "capacity": 5202,
+            "occupancy": 188,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 74
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 37
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 37
+                }
+            ]
+        }
+    ],
+    "SNU_10:45": [
+        {
+            "capacity": 5202,
+            "occupancy": 188,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 74
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 37
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 37
+                }
+            ]
+        }
+    ],
+    "SNU_11:00": [
+        {
+            "capacity": 5202,
+            "occupancy": 205,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 5
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 74
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 12
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 37
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 37
+                }
+            ]
+        }
+    ],
+    "SNU_11:15": [
+        {
+            "capacity": 5202,
+            "occupancy": 196,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 5
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 74
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 12
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 37
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 37
+                }
+            ]
+        }
+    ],
+    "SNU_11:30": [
+        {
+            "capacity": 5202,
+            "occupancy": 196,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 5
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 74
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 12
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 37
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 37
+                }
+            ]
+        }
+    ],
+    "SNU_11:45": [
+        {
+            "capacity": 5202,
+            "occupancy": 196,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 5
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 74
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 12
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 37
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 37
+                }
+            ]
+        }
+    ],
+    "SNU_12:00": [
+        {
+            "capacity": 5202,
+            "occupancy": 110,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 5
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 37
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 37
+                }
+            ]
+        }
+    ],
+    "SNU_12:15": [
+        {
+            "capacity": 5202,
+            "occupancy": 110,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 5
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 37
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 37
+                }
+            ]
+        }
+    ],
+    "SNU_12:30": [
+        {
+            "capacity": 5202,
+            "occupancy": 101,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 5
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 37
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 37
+                }
+            ]
+        }
+    ],
+    "SNU_12:45": [
+        {
+            "capacity": 5202,
+            "occupancy": 101,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 5
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 37
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 37
+                }
+            ]
+        }
+    ],
+    "SNU_13:00": [
+        {
+            "capacity": 5202,
+            "occupancy": 85,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 5
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 8
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 38
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 8
+                }
+            ]
+        }
+    ],
+    "SNU_13:15": [
+        {
+            "capacity": 5202,
+            "occupancy": 85,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 5
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 8
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 38
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 8
+                }
+            ]
+        }
+    ],
+    "SNU_13:30": [
+        {
+            "capacity": 5202,
+            "occupancy": 85,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 5
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 8
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 38
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 8
+                }
+            ]
+        }
+    ],
+    "SNU_13:45": [
+        {
+            "capacity": 5202,
+            "occupancy": 77,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 5
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 8
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 38
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 0
+                }
+            ]
+        }
+    ],
+    "SNU_14:00": [
+        {
+            "capacity": 5202,
+            "occupancy": 375,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 55
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 10
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 6
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 8
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 72
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 143
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 46
+                }
+            ]
+        }
+    ],
+    "SNU_14:15": [
+        {
+            "capacity": 5202,
+            "occupancy": 375,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 55
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 10
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 6
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 8
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 72
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 143
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 46
+                }
+            ]
+        }
+    ],
+    "SNU_14:30": [
+        {
+            "capacity": 5202,
+            "occupancy": 375,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 55
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 10
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 6
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 8
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 72
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 143
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 46
+                }
+            ]
+        }
+    ],
+    "SNU_14:45": [
+        {
+            "capacity": 5202,
+            "occupancy": 374,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 55
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 22
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 10
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 6
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 8
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 72
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 143
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 46
+                }
+            ]
+        }
+    ],
+    "SNU_15:00": [
+        {
+            "capacity": 5202,
+            "occupancy": 360,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 55
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 7
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 9
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 10
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 6
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 8
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 72
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 143
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 46
+                }
+            ]
+        }
+    ],
+    "SNU_15:15": [
+        {
+            "capacity": 5202,
+            "occupancy": 341,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 55
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 7
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 6
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 8
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 72
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 143
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 46
+                }
+            ]
+        }
+    ],
+    "SNU_15:30": [
+        {
+            "capacity": 5202,
+            "occupancy": 351,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 55
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 7
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 10
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 6
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 8
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 72
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 143
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 46
+                }
+            ]
+        }
+    ],
+    "SNU_15:45": [
+        {
+            "capacity": 5202,
+            "occupancy": 351,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 55
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 7
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 10
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 6
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 8
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 72
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 143
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 46
+                }
+            ]
+        }
+    ],
+    "SNU_16:00": [
+        {
+            "capacity": 5202,
+            "occupancy": 283,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 55
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 7
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 10
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 6
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 12
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 143
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 46
+                }
+            ]
+        }
+    ],
+    "SNU_16:15": [
+        {
+            "capacity": 5202,
+            "occupancy": 283,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 55
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 7
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 10
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 6
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 12
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 143
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 46
+                }
+            ]
+        }
+    ],
+    "SNU_16:30": [
+        {
+            "capacity": 5202,
+            "occupancy": 283,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 55
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 7
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 10
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 6
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 12
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 143
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 46
+                }
+            ]
+        }
+    ],
+    "SNU_16:45": [
+        {
+            "capacity": 5202,
+            "occupancy": 273,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 55
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 7
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 6
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 12
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 143
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 46
+                }
+            ]
+        }
+    ],
+    "SNU_17:00": [
+        {
+            "capacity": 5202,
+            "occupancy": 255,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 55
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 7
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 143
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 46
+                }
+            ]
+        }
+    ],
+    "SNU_17:15": [
+        {
+            "capacity": 5202,
+            "occupancy": 255,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 55
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 7
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 143
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 46
+                }
+            ]
+        }
+    ],
+    "SNU_17:30": [
+        {
+            "capacity": 5202,
+            "occupancy": 255,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 55
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 7
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 143
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 46
+                }
+            ]
+        }
+    ],
+    "SNU_17:45": [
+        {
+            "capacity": 5202,
+            "occupancy": 255,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 55
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 7
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 143
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 46
+                }
+            ]
+        }
+    ],
+    "SNU_18:00": [
+        {
+            "capacity": 5202,
+            "occupancy": 21,
+            "buildings": [
+                {
+                    "bdNumber": "56",
+                    "bdName": "자연과학관10",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "143",
+                    "bdName": "약대신약개발연구센터",
+                    "capacity": 280,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "24",
+                    "bdName": "자연과학관6",
+                    "capacity": 544,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "35",
+                    "bdName": "공학관6",
+                    "capacity": 322,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "39",
+                    "bdName": "대학원교육연구동",
+                    "capacity": 235,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "19",
+                    "bdName": "자연과학관2",
+                    "capacity": 85,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "20",
+                    "bdName": "약학관3",
+                    "capacity": 350,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "500",
+                    "bdName": "자연과학대학",
+                    "capacity": 778,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "32",
+                    "bdName": "공학관3",
+                    "capacity": 72,
+                    "occupancy": 4
+                },
+                {
+                    "bdNumber": "37",
+                    "bdName": "공학관8",
+                    "capacity": 46,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "301",
+                    "bdName": "제1공학관",
+                    "capacity": 1167,
+                    "occupancy": 0
+                },
+                {
+                    "bdNumber": "302",
+                    "bdName": "제2공학관",
+                    "capacity": 1001,
+                    "occupancy": 17
+                }
+            ]
+        }
+    ]
+}
