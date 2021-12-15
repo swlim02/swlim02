@@ -325,9 +325,9 @@ const MapContainer = (props) => {
       //console.log(props.SNUFloorCrowdDensityInfo_o[time][0]);
 
       //let bd_index = buildingsInfo.indexOf(bdNumber);
-      console.log (time);
+//      console.log (time);
       BuildingCrowdDensity = props.SNUFloorCrowdDensityInfo_o[time][0];
-      console.log(BuildingCrowdDensity);
+//      console.log(BuildingCrowdDensity);
      return BuildingCrowdDensity;
     }
 

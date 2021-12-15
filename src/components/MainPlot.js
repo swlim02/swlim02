@@ -3,15 +3,21 @@ import ControlPanel from './ControlPanel';
 import MapContainer from "./MapContainer";
 import TrendView from "./TrendView";
 // TODO @hskim 데이터를, 실제 요일 데이터로 넣어주세요.
-import SNUBuildingCrowdDensityInfo_Mon from "../data/SNUBuildingCrowdDensityInfo_Wed.json";
-import SNUBuildingCrowdDensityInfo_Tue from "../data/SNUBuildingCrowdDensityInfo_Wed.json";
+import SNUBuildingCrowdDensityInfo_Mon from "../data/SNUBuildingCrowdDensityInfo_Mon.json";
+import SNUBuildingCrowdDensityInfo_Tue from "../data/SNUBuildingCrowdDensityInfo_Tue.json";
 import SNUBuildingCrowdDensityInfo_WED from "../data/SNUBuildingCrowdDensityInfo_Wed.json";
-import SNUBuildingCrowdDensityInfo_THU from "../data/SNUBuildingCrowdDensityInfo_Wed.json";
-import SNUBuildingCrowdDensityInfo_FRI from "../data/SNUBuildingCrowdDensityInfo_Wed.json";
-import SNUFloorCrowdDensityInfo_Tue from "../data/SNUFloorCrowdDensityInfo_Wed.json";
+import SNUBuildingCrowdDensityInfo_Thu from "../data/SNUBuildingCrowdDensityInfo_Thu.json";
+import SNUBuildingCrowdDensityInfo_Fri from "../data/SNUBuildingCrowdDensityInfo_Fri.json";
+import SNUFloorCrowdDensityInfo_Mon from "../data/SNUFloorCrowdDensityInfo_Mon.json";
+import SNUFloorCrowdDensityInfo_Tue from "../data/SNUFloorCrowdDensityInfo_Tue.json";
 import SNUFloorCrowdDensityInfo_WED from "../data/SNUFloorCrowdDensityInfo_Wed.json";
-import SNURoomCrowdDensityInfo_Tue from "../data/SNURoomCrowdDensityInfo_Wed.json";
+import SNUFloorCrowdDensityInfo_Thu from "../data/SNUFloorCrowdDensityInfo_Thu.json";
+import SNUFloorCrowdDensityInfo_Fri from "../data/SNUFloorCrowdDensityInfo_Fri.json";
+import SNURoomCrowdDensityInfo_Mon from "../data/SNURoomCrowdDensityInfo_Mon.json";
+import SNURoomCrowdDensityInfo_Tue from "../data/SNURoomCrowdDensityInfo_Tue.json";
 import SNURoomCrowdDensityInfo_WED from "../data/SNURoomCrowdDensityInfo_Wed.json";
+import SNURoomCrowdDensityInfo_Thu from "../data/SNURoomCrowdDensityInfo_Thu.json";
+import SNURoomCrowdDensityInfo_Fri from "../data/SNURoomCrowdDensityInfo_Fri.json";
 import CrowdDensityTrendInfo from "../data/trend.json"
 
 var selectedOptions = new Object();
@@ -38,8 +44,7 @@ const MainPlot = (props) => {
     console.log('demo_mode');
     date = props.demo_date;
     day = props.demo_day;
-    console.log(date);
-    console.log(day);
+    console.log(date+"일");
   }
 
   selectObject_o.bdNumber = null;
@@ -62,12 +67,13 @@ const MainPlot = (props) => {
   // TODO 실제 데이터로 수정 필요
   switch (day) {
     case 1:
+      console.log("월요일");
       SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_Mon;
-      SNUFloorCrowdDensityInfo = SNUFloorCrowdDensityInfo_WED;
-      SNURoomCrowdDensityInfo = SNURoomCrowdDensityInfo_WED;
-      //console.log("월요일");
+      SNUFloorCrowdDensityInfo = SNUFloorCrowdDensityInfo_Mon;
+      SNURoomCrowdDensityInfo = SNURoomCrowdDensityInfo_Mon;
       break;
     case 2:
+    console.log('화요일');
       SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_Tue;
       SNUFloorCrowdDensityInfo = SNUFloorCrowdDensityInfo_Tue;
       SNURoomCrowdDensityInfo = SNURoomCrowdDensityInfo_Tue;
@@ -78,17 +84,17 @@ const MainPlot = (props) => {
       SNUFloorCrowdDensityInfo = SNUFloorCrowdDensityInfo_WED;
       SNURoomCrowdDensityInfo = SNURoomCrowdDensityInfo_WED;
       break;
-    case 4:
-      SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_THU;
-      SNUFloorCrowdDensityInfo = SNUFloorCrowdDensityInfo_WED;
-      SNURoomCrowdDensityInfo = SNURoomCrowdDensityInfo_WED;
+    case 4: // 목요일
+      SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_Thu;
+      SNUFloorCrowdDensityInfo = SNUFloorCrowdDensityInfo_Thu;
+      SNURoomCrowdDensityInfo = SNURoomCrowdDensityInfo_Thu;
       break;
-    case 5:
+    case 5: // 금요일
     case 0: // 일요일
     case 6: // 토요일 두요일 수업 데이터는 없음. 데모시 금요일로 대체
-      SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_FRI;
-      SNUFloorCrowdDensityInfo = SNUFloorCrowdDensityInfo_WED;
-      SNURoomCrowdDensityInfo = SNURoomCrowdDensityInfo_WED;
+      SNUBuildingCrowdDensityInfo = SNUBuildingCrowdDensityInfo_Fri;
+      SNUFloorCrowdDensityInfo = SNUFloorCrowdDensityInfo_Fri;
+      SNURoomCrowdDensityInfo = SNURoomCrowdDensityInfo_Fri;
       break;
     default:
       //console.log("여기오면 망한거임");
